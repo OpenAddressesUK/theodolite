@@ -30,5 +30,4 @@ RSpec.describe Import do
 
     expect(Address.count).to eq 125
   end
-
 end
