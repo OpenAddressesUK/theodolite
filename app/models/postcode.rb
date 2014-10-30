@@ -1,6 +1,5 @@
-class Postcode < ActiveRecord::Base
+class Postcode < AddressObject
 
-  belongs_to :address
   has_one :town
   has_one :locality
 

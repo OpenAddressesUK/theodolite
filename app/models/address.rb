@@ -1,12 +1,12 @@
-class Address < ActiveRecord::Base
+class Address
+  include Mongoid::Document
 
-  ['street', 'locality', 'town', 'postcode'].each do |type|
-    has_one type.to_sym
+  field :pao, type: String
+  field :sao, type: String
 
-    define_method("#{type}_name=") do |val|
-      self.send("#{type.to_sym}=", eval(type.classify).first_or_create(name: val))
-    end
-
-  end
+  embeds_one :street
+  embeds_one :locality
+  embeds_one :town
+  embeds_one :postcode
 
 end

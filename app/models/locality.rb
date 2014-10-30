@@ -1,8 +1,7 @@
-class Locality < ActiveRecord::Base
+class Locality < AddressObject
 
-  belongs_to :address
-  belongs_to :town
   has_many :postcodes
   has_many :streets
+  belongs_to :town
 
 end
