@@ -41,10 +41,13 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'mysql2'
+gem 'httparty'
+gem 'dotenv'
 
 group :test do
   gem 'rspec-rails', '~> 3.0.0'
   gem 'factory_girl_rails'
   gem 'database_cleaner'
   gem 'pry'
+  gem 'webmock'
 end
