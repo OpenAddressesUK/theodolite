@@ -20,4 +20,16 @@ RSpec.describe Address, :type => :model do
     expect(address.pao).to eq "123"
   end
 
+  it "creates an address using virtual attributes" do
+    address = Address.new
+    address.street_name = "Toy Street"
+    address.locality_name = "Toyville"
+    address.town_name = "Toytown"
+    address.postcode_name = "TOY 123"
+
+    address.save
+
+    expect(address.street.name).to eq "Toy Street"
+  end
+
 end
