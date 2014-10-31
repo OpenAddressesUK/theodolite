@@ -22,7 +22,3 @@ development:
 test:
   <<: *default
   database: theodolite_test
-
-production:
-  <<: *default
-  database: theodolite_production
