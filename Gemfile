@@ -52,4 +52,5 @@ group :test do
   gem 'database_cleaner'
   gem 'pry'
   gem 'webmock'
+  gem 'json_spec'
 end

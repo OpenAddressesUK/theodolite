@@ -1,4 +1,6 @@
 class AddressController < ApplicationController
+  respond_to :json, :html
+
   def show
 
     @address = Address.where(
