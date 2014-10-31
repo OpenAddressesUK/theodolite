@@ -28,7 +28,7 @@ class Address
         :town,
         :postcode
       ].each do |element|
-        self.send("#{element}_slug=".to_sym, element.to_s.to_url)
+        self.send("#{element}_slug=".to_sym, self.send(element).to_s.to_url)
       end
     end
 
