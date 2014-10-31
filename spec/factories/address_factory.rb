@@ -1,11 +1,12 @@
 FactoryGirl.define do
 
   factory :address do
-    postcode { FactoryGirl.create(:postcode) }
-    town { FactoryGirl.create(:town) }
-    locality { FactoryGirl.create(:locality) }
-    street { FactoryGirl.create(:street) }
-    pao "123"
+    postcode "BAT 123"
+    town "Gotham City"
+    locality "Arkham"
+    street "123 Bat Street"
+    pao "Stately Wayne Manor"
+    sao "The Batcave"
   end
 
 end

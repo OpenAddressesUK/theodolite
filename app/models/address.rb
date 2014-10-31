@@ -3,10 +3,9 @@ class Address
 
   field :pao, type: String
   field :sao, type: String
-
-  embeds_one :street
-  embeds_one :locality
-  embeds_one :town
-  embeds_one :postcode
+  field :street, type: String
+  field :locality, type: String
+  field :town, type: String
+  field :postcode, type: String
 
 end
