@@ -10,10 +10,10 @@ class Import
         Address.create(
           sao: address['saon'],
           pao: address['paon'],
-          street_name: address['street'],
-          locality_name: address['locality'],
-          town_name: address['town'],
-          postcode_name: address['postcode']
+          street: address['street'],
+          locality: address['locality'],
+          town: address['town'],
+          postcode: address['postcode']
         )
       end
     end
