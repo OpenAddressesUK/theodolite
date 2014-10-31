@@ -1,0 +1,16 @@
+language: ruby
+cache: bundler
+sudo: false
+rvm:
+- 2.1.3
+notifications:
+  irc:
+    channels:
+    - irc.freenode.net#openaddresses
+    template:
+    - "%{repository} %{branch} - %{message} %{build_url}"
+    on_success: change
+    on_failure: always
+env:
+  global:
+    secure: e+4d+AekfbT0XxjqWLms55l76Q1vMyfXdSnujb1YBv8ZrI0yo3z+Qk5YQjQacK7JhECYC/L2mfjBHLKc6gsHFOaJdftAz7cFLsqAJ74afQpt9pSI3bQV3pk5NZocgX05VKF6rnTyiDHT8ExEyZGDPmEFZKONiAVz6XUfpaiAP5s=
