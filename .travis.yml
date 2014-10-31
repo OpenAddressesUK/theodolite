@@ -1,6 +1,8 @@
 language: ruby
 cache: bundler
 sudo: false
+services:
+  - mongodb
 rvm:
 - 2.1.3
 notifications:
