@@ -5,20 +5,26 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 #
-default: &default
+#default: &default
+#  adapter: sqlite3
+#  username: root
+#  password:
+#  pool: 5
+#  timeout: 5000
+
+development:
   adapter: sqlite3
   username: root
   password:
   pool: 5
-  timeout: 5000
-
-development:
-  <<: *default
-  database: theodolite
+  timeout: 5000  database: theodolite
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  <<: *default
-  database: theodolite_test
+  adapter: sqlite3
+  username: root
+  password:
+  pool: 5
+  timeout: 5000  database: theodolite_test
