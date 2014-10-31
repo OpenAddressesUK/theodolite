@@ -56,9 +56,4 @@ group :test do
   gem 'pry'
   gem 'webmock'
   gem 'json_spec'
-  gem 'sqlite3'
-end
-
-group :development do
-  gem 'sqlite3'
 end
