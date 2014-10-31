@@ -4,4 +4,5 @@ class Town < AddressObject
   has_many :localities
   has_many :streets
 
+  
 end

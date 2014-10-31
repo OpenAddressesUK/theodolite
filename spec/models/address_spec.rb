@@ -3,7 +3,6 @@ require "rails_helper"
 RSpec.describe Address, :type => :model do
 
   it "creates an address" do
-    binding.pry
     town = Town.create(name: "Toytown")
     postcode = Postcode.create(name: "TOY 123")
     street = Street.create(name: "Toy Street")

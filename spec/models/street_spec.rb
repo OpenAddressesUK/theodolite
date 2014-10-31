@@ -18,7 +18,7 @@ RSpec.describe Street, :type => :model do
 
     street = FactoryGirl.create(:street)
     street.postcodes = postcodes
-    street.addresses = addresses
+  #  street.addresses = addresses
     street.town = town
     street.locality = locality
     street.save
