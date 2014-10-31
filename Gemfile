@@ -44,6 +44,7 @@ gem 'mongoid'
 gem 'bson_ext'
 gem 'httparty'
 gem 'dotenv'
+gem 'stringex'
 
 group :test do
   gem 'rspec-rails', '~> 3.0.0'
