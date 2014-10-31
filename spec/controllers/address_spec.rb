@@ -10,7 +10,7 @@ RSpec.describe AddressController, :type => :controller do
       pao = "Stately Wayne Manor"
       sao = "The Batcave"
 
-      FactoryGirl.create(:address, sao: sao, pao: pao, street_name: street, locality_name: locality, postcode_name: postcode)
+      FactoryGirl.create(:address, sao: sao, pao: pao, street: street, locality: locality, postcode: postcode)
       get :show, town: town.parameterize, locality: locality.parameterize, postcode: postcode.parameterize, street: street.parameterize, pao: pao.parameterize, sao: sao.parameterize
       expect(response).to be_success
       expect(response).to have_http_status(200)
