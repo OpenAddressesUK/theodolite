@@ -1,5 +1,14 @@
 class AddressController < ApplicationController
   def show
-    Address.where('street.name' => params[:street])
+
+    @address = Address.where(
+      :postcode_slug => params[:postcode],
+      :town_slug => params[:town],
+      :locality_slug => params[:locality],
+      :street_slug => params[:street],
+      :pao_slug => params[:pao],
+      :sao_slug => params[:sao]
+    ).first
+
   end
 end

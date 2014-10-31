@@ -1,7 +1,7 @@
 class Address
   include Mongoid::Document
 
-  after_create :create_slugs
+  before_create :create_slugs
 
   field :pao, type: String
   field :sao, type: String
