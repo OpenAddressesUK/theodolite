@@ -49,6 +49,7 @@ gem 'httparty'
 gem 'dotenv'
 gem 'stringex'
 gem 'kaminari'
+gem 'thin'
 
 group :test do
   gem 'rspec-rails', '~> 3.0.0'
