@@ -63,7 +63,7 @@ RSpec.describe AddressesController, :type => :controller do
 
       json = JSON.parse(response.body)
 
-      expect(json['addresses'].first['url']).to match /addresses\/[0-9]+/
+      expect(json['addresses'].first['url']).to match /http:\/\/test\.host\/addresses\/[0-9]+/
     end
   end
 
