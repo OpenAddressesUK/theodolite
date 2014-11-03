@@ -1,6 +1,57 @@
 require 'rails_helper'
 
 RSpec.describe AddressController, :type => :controller do
+  describe 'GET #index' do
+    render_views
+
+    it 'responds successfully' do
+      get :index, format: :json
+
+      expect(response).to be_success
+      expect(response).to have_http_status(200)
+    end
+
+    it 'shows the correct amount of adresses' do
+      25.times do
+        FactoryGirl.create(:address)
+      end
+
+      get :index, format: :json
+
+      json = JSON.parse(response.body)
+
+      expect(json['addresses'].count).to eq(25)
+    end
+
+    it 'shows the correct pagination information' do
+      30.times do
+        FactoryGirl.create(:address)
+      end
+
+      get :index, format: :json
+
+      json = JSON.parse(response.body)
+
+      expect(json['page']).to eq(1)
+      expect(json['per_page']).to eq(25)
+      expect(json['pages']).to eq(2)
+      expect(json['total']).to eq(30)
+    end
+
+    it 'shows the correct pagination information when page is specified' do
+      30.times do
+        FactoryGirl.create(:address)
+      end
+
+      get :index, page: 2, format: :json
+
+      json = JSON.parse(response.body)
+
+      expect(json['page']).to eq(2)
+      expect(json['addresses'].count).to eq(5)
+    end
+  end
+
   describe 'GET #show' do
     render_views
 

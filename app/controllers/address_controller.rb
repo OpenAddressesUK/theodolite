@@ -1,6 +1,15 @@
 class AddressController < ApplicationController
   respond_to :json, :html
 
+  def index
+    @page = (params[:page] || 1).to_i
+    @per_page = (params[:per_page] || 25).to_i
+    @total = Address.count
+    @pages = (@total.to_f / @per_page.to_f).ceil
+
+    @addresses = Address.all.page(@page).per(@per_page)
+  end
+
   def show
     @address = Address.find(params[:id])
   end

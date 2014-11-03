@@ -68,6 +68,9 @@ GEM
     json_spec (1.1.4)
       multi_json (~> 1.0)
       rspec (>= 2.0, < 4.0)
+    kaminari (0.16.1)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
     mail (2.6.1)
       mime-types (>= 1.16, < 3)
     method_source (0.8.2)
@@ -185,6 +188,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   json_spec
+  kaminari
   mongoid
   pry
   rails (= 4.1.6)

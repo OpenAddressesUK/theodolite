@@ -48,6 +48,7 @@ gem 'bson_ext'
 gem 'httparty'
 gem 'dotenv'
 gem 'stringex'
+gem 'kaminari'
 
 group :test do
   gem 'rspec-rails', '~> 3.0.0'
