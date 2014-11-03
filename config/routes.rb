@@ -4,4 +4,11 @@ Rails.application.routes.draw do
 
   get '/addresses/:town/:locality/:postcode/:street/:pao/:sao' => 'addresses#query'
 
+  get '/postcode/:postcode' => 'addresses#query', defaults: {
+                                town: '-',
+                                locality: '-',
+                                street: '-',
+                                sao: '-',
+                                pao: '-'}
+
 end
