@@ -51,6 +51,7 @@ gem 'dotenv'
 gem 'stringex'
 gem 'kaminari'
 gem 'thin'
+gem 'api-pagination'
 
 group :test do
   gem 'rspec-rails', '~> 3.0.0'

@@ -4,10 +4,12 @@ class AddressesController < ApplicationController
   def index
     @page = (params[:page] || 1).to_i
     @per_page = (params[:per_page] || 25).to_i
-    @total = Address.count
-    @pages = (@total.to_f / @per_page.to_f).ceil
 
     @addresses = Address.all.page(@page).per(@per_page)
+
+    respond_to do |format|
+      format.json { paginate @addresses }
+    end
   end
 
   def show

@@ -30,15 +30,11 @@ RSpec.describe AddressesController, :type => :controller do
 
       get :index, format: :json
 
-      json = JSON.parse(response.body)
-
-      expect(json['page']).to eq(1)
-      expect(json['per_page']).to eq(25)
-      expect(json['pages']).to eq(2)
-      expect(json['total']).to eq(30)
+      expect(response.header["Link"]).to eq("<http://test.host/addresses.json?page=2>; rel=\"last\", <http://test.host/addresses.json?page=2>; rel=\"next\"")
+      expect(response.header["Total"]).to eq("30")
     end
 
-    it 'shows the correct pagination information when page is specified' do
+    it 'shows the correct data when page is specified' do
       30.times do
         FactoryGirl.create(:address)
       end
@@ -47,8 +43,17 @@ RSpec.describe AddressesController, :type => :controller do
 
       json = JSON.parse(response.body)
 
-      expect(json['page']).to eq(2)
       expect(json['addresses'].count).to eq(5)
+      expect(response.header["Link"]).to eq("<http://test.host/addresses.json?page=1>; rel=\"first\", <http://test.host/addresses.json?page=1>; rel=\"prev\"")
+    end
+
+    it 'shows the correct pagination information when per_page is specified' do
+      30.times do
+        FactoryGirl.create(:address)
+      end
+
+      get :index, page: 2, per_page: 4, format: :json
+      expect(response.header["Link"]).to eq("<http://test.host/addresses.json?page=1&per_page=4>; rel=\"first\", <http://test.host/addresses.json?page=1&per_page=4>; rel=\"prev\", <http://test.host/addresses.json?page=8&per_page=4>; rel=\"last\", <http://test.host/addresses.json?page=3&per_page=4>; rel=\"next\"")
     end
 
     it 'shows the url for addresses' do
