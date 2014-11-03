@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 #ruby=ruby-2.1.3
+ruby '2.1.3'
 #ruby-gemset=theodolite
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
