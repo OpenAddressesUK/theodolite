@@ -184,5 +184,18 @@ RSpec.describe AddressesController, :type => :controller do
               sao: @sao.to_url
           }.to raise_error(ActionController::RoutingError)
     end
+
+    it 'redirects if parameters are missing' do
+      get :query,
+          town: @town.to_url,
+          locality: '-',
+          postcode: @postcode.to_url,
+          street: @street.to_url,
+          pao: @pao.to_url,
+          sao: @sao.to_url,
+          format: :json
+
+      expect(response).to redirect_to("/addresses/#{@address.id}.json")
+    end
   end
 end

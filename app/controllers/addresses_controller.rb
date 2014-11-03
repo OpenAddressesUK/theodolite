@@ -17,14 +17,16 @@ class AddressesController < ApplicationController
   end
 
   def query
-    @address = Address.where(
+    queries = {
       :postcode_slug => params[:postcode],
       :town_slug => params[:town],
       :locality_slug => params[:locality],
       :street_slug => params[:street],
       :pao_slug => params[:pao],
       :sao_slug => params[:sao]
-    ).first or raise ActionController::RoutingError.new('Not Found')
+    }.select { |k, v| v != '-' }
+
+    @address = Address.where(queries).first or raise ActionController::RoutingError.new('Not Found')
 
     redirect_to polymorphic_url(@address, format: params[:format])
   end
