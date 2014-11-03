@@ -157,7 +157,7 @@ RSpec.describe AddressesController, :type => :controller do
           pao: @pao.to_url,
           sao: @sao.to_url
 
-      expect(assigns(:address)).to eq (@address)
+      expect(assigns(:addresses).first).to eq (@address)
     end
 
     it 'retains the format of the original request' do
@@ -196,6 +196,29 @@ RSpec.describe AddressesController, :type => :controller do
           format: :json
 
       expect(response).to redirect_to("/addresses/#{@address.id}.json")
+    end
+
+    context 'with multiple results' do
+
+      it 'lists all possible results if parameters are missing' do
+        1.upto(4) do |i|
+          FactoryGirl.create(:address, sao: i, pao: @pao, street: @street, locality: @locality, postcode: @postcode)
+        end
+
+        get :query,
+            town: @town.to_url,
+            locality: @locality.to_url,
+            postcode: @postcode.to_url,
+            street: @street.to_url,
+            pao: @pao.to_url,
+            sao: '-',
+            format: :json
+
+        json = JSON.parse(response.body)
+
+        expect(json['addresses'].count).to eq(5)
+      end
+
     end
   end
 end

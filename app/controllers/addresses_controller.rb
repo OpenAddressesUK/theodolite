@@ -26,8 +26,16 @@ class AddressesController < ApplicationController
       :sao_slug => params[:sao]
     }.select { |k, v| v != '-' }
 
-    @address = Address.where(queries).first or raise ActionController::RoutingError.new('Not Found')
+    @addresses = Address.where(queries)
 
-    redirect_to polymorphic_url(@address, format: params[:format])
+    raise ActionController::RoutingError.new('Not Found') if @addresses.count == 0
+
+    if @addresses.count == 1
+      redirect_to polymorphic_url(@addresses.first, format: params[:format])
+    else
+      respond_to do |format|
+        format.json { render "addresses/index"}
+      end
+    end
   end
 end
