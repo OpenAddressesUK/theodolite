@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  get '/addresses/:town/:locality/:postcode/:street/:pao/:sao' => 'address#show'
+
+  resources :address
+
+  get '/addresses/:town/:locality/:postcode/:street/:pao/:sao' => 'address#query'
+
 end
