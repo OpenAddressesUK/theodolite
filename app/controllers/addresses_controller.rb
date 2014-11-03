@@ -1,6 +1,8 @@
 class AddressesController < ApplicationController
   respond_to :json, :html
 
+  before_filter :parse_postcode, only: :query
+
   def index
     @page = (params[:page] || 1).to_i
     @per_page = (params[:per_page] || 25).to_i
@@ -38,4 +40,12 @@ class AddressesController < ApplicationController
       end
     end
   end
+
+  private
+
+    def parse_postcode
+      postcode = UKPostcode.new(params[:postcode].gsub("-", " "))
+      params[:postcode] = postcode.norm.to_url
+    end
+
 end

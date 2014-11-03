@@ -1,7 +1,7 @@
 FactoryGirl.define do
 
   factory :address do
-    postcode "BAT 123"
+    postcode "W12 8QT"
     town "Gotham City"
     locality "Arkham"
     street "123 Bat Street"

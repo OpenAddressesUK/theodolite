@@ -52,6 +52,7 @@ gem 'stringex'
 gem 'kaminari'
 gem 'thin'
 gem 'api-pagination'
+gem 'uk_postcode'
 
 group :test do
   gem 'rspec-rails', '~> 3.0.0'

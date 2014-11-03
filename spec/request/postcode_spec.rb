@@ -21,4 +21,12 @@ RSpec.describe 'Postcode Entry Point', type: :request do
     json = JSON.parse(response.body)
     expect(json['addresses'].count).to eq(5)
   end
+
+  it 'supports non-url encoded postcodes' do
+    address = FactoryGirl.create(:address, postcode: 'SW1A 1AA')
+
+    get "/postcode/SW1A%201AA.json"
+
+    expect(response).to redirect_to("/addresses/#{address.id}.json")
+  end
 end

@@ -71,7 +71,7 @@ RSpec.describe AddressesController, :type => :controller do
     render_views
 
     before :each do
-      @postcode = "BAT 123"
+      @postcode = "W12 8QT"
       @town = "Gotham City"
       @locality = "Arkham"
       @street = "Bat Street"
@@ -125,7 +125,7 @@ RSpec.describe AddressesController, :type => :controller do
     render_views
 
     before :each do
-      @postcode = "BAT 123"
+      @postcode = "W12 8QT"
       @town = "Gotham City"
       @locality = "Arkham"
       @street = "Bat Street"
