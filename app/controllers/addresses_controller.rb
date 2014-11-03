@@ -1,4 +1,4 @@
-class AddressController < ApplicationController
+class AddressesController < ApplicationController
   respond_to :json, :html
 
   def index

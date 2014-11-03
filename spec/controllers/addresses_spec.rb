@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe AddressController, :type => :controller do
+RSpec.describe AddressesController, :type => :controller do
   describe 'GET #index' do
     render_views
 
@@ -49,6 +49,16 @@ RSpec.describe AddressController, :type => :controller do
 
       expect(json['page']).to eq(2)
       expect(json['addresses'].count).to eq(5)
+    end
+
+    it 'shows the url for addresses' do
+      FactoryGirl.create(:address)
+
+      get :index, format: :json
+
+      json = JSON.parse(response.body)
+
+      expect(json['addresses'].first['url']).to match /address\/[0-9]+/
     end
   end
 

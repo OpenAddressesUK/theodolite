@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
-  resources :address
+  resources :addresses
 
-  get '/addresses/:town/:locality/:postcode/:street/:pao/:sao' => 'address#query'
+  get '/addresses/:town/:locality/:postcode/:street/:pao/:sao' => 'addresses#query'
 
 end
