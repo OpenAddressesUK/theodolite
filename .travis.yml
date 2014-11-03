@@ -18,6 +18,7 @@ env:
     secure: e+4d+AekfbT0XxjqWLms55l76Q1vMyfXdSnujb1YBv8ZrI0yo3z+Qk5YQjQacK7JhECYC/L2mfjBHLKc6gsHFOaJdftAz7cFLsqAJ74afQpt9pSI3bQV3pk5NZocgX05VKF6rnTyiDHT8ExEyZGDPmEFZKONiAVz6XUfpaiAP5s=
 deploy:
   provider: heroku
+  strategy: api
   api_key:
     secure: CJrk6UhdbltH1eFJzlBTftZmnnYRGfYEhQOy/g5ORcoUwk8mUpU1YgCqa2e9qbPUHszM9ASYM4x16EEHlhM6bTfgTm+Rmbwe4d0Tbvtc/+kn6uFXjr98LQVxKWFoidqEfjihqnbDKpElDaT0gJqVUrua7XVTCgjPxJgy0S/4RIw=
   app: pacific-beyond-9370
