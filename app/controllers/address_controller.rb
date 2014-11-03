@@ -13,7 +13,7 @@ class AddressController < ApplicationController
       :street_slug => params[:street],
       :pao_slug => params[:pao],
       :sao_slug => params[:sao]
-    ).first
+    ).first or raise ActionController::RoutingError.new('Not Found')
 
     redirect_to url_for(@address)
   end

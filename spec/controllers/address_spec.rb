@@ -93,5 +93,17 @@ RSpec.describe AddressController, :type => :controller do
 
       expect(assigns(:address)).to eq (@address)
     end
+
+    it 'returns 404 if address is not found' do
+      expect {
+          get :query,
+              town: 'fake-town',
+              locality: @locality.to_url,
+              postcode: @postcode.to_url,
+              street: @street.to_url,
+              pao: @pao.to_url,
+              sao: @sao.to_url
+          }.to raise_error(ActionController::RoutingError)
+    end
   end
 end
