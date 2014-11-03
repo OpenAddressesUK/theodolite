@@ -220,5 +220,18 @@ RSpec.describe AddressesController, :type => :controller do
       end
 
     end
+
+    it 'redirects on non-URL-encoded strings' do
+      get :query,
+          town: @town,
+          locality: @locality,
+          postcode: @postcode,
+          street: @street,
+          pao: @pao,
+          sao: @sao,
+          format: :json
+
+      expect(response).to redirect_to("/addresses/#{@address.id}.json")
+    end
   end
 end

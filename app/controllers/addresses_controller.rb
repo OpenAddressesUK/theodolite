@@ -2,6 +2,7 @@ class AddressesController < ApplicationController
   respond_to :json, :html
 
   before_filter :parse_postcode, only: :query
+  before_filter :parse_parts, only: :query
 
   def index
     @page = (params[:page] || 1).to_i
@@ -26,7 +27,7 @@ class AddressesController < ApplicationController
       :street_slug => params[:street],
       :pao_slug => params[:pao],
       :sao_slug => params[:sao]
-    }.select { |k, v| v != '-' }
+    }.select { |k, v| ['', '-'].exclude? v }
 
     @addresses = Address.where(queries)
 
@@ -48,4 +49,9 @@ class AddressesController < ApplicationController
       params[:postcode] = postcode.norm.to_url
     end
 
+    def parse_parts
+      params.each_pair do |k, v|
+        params[k] = v.to_url unless k == :postcode
+      end
+    end
 end
