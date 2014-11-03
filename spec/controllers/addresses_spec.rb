@@ -145,7 +145,7 @@ RSpec.describe AddressesController, :type => :controller do
           sao: @sao.to_url
 
       expect(response).to be_redirect
-      expect(response).to have_http_status(302)
+      expect(response).to have_http_status(307)
     end
 
     it 'assigns correctly' do

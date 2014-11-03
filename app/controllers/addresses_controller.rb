@@ -31,7 +31,7 @@ class AddressesController < ApplicationController
     raise ActionController::RoutingError.new('Not Found') if @addresses.count == 0
 
     if @addresses.count == 1
-      redirect_to polymorphic_url(@addresses.first, format: params[:format])
+      redirect_to polymorphic_url(@addresses.first, format: params[:format]), status: 307
     else
       respond_to do |format|
         format.json { render "addresses/index"}
