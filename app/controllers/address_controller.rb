@@ -15,6 +15,6 @@ class AddressController < ApplicationController
       :sao_slug => params[:sao]
     ).first or raise ActionController::RoutingError.new('Not Found')
 
-    redirect_to url_for(@address)
+    redirect_to polymorphic_url(@address, format: params[:format])
   end
 end

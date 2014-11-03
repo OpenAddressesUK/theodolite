@@ -94,6 +94,19 @@ RSpec.describe AddressController, :type => :controller do
       expect(assigns(:address)).to eq (@address)
     end
 
+    it 'retains the format of the original request' do
+      get :query,
+          town: @town.to_url,
+          locality: @locality.to_url,
+          postcode: @postcode.to_url,
+          street: @street.to_url,
+          pao: @pao.to_url,
+          sao: @sao.to_url,
+          format: :json
+
+      expect(response.header["Location"]).to match /\.json/
+    end
+
     it 'returns 404 if address is not found' do
       expect {
           get :query,
