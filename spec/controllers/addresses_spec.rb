@@ -5,6 +5,9 @@ RSpec.describe AddressesController, :type => :controller do
     render_views
 
     it 'responds successfully' do
+      25.times do
+        FactoryGirl.create(:address)
+      end
       get :index, format: :json
 
       expect(response).to be_success
@@ -57,6 +60,7 @@ RSpec.describe AddressesController, :type => :controller do
     end
 
     it 'shows the url for addresses' do
+      FactoryGirl.create(:address)
       FactoryGirl.create(:address)
 
       get :index, format: :json
@@ -136,7 +140,7 @@ RSpec.describe AddressesController, :type => :controller do
     end
 
     it 'redirects successfully' do
-      get :query,
+      get :index,
           town: @town.to_url,
           locality: @locality.to_url,
           postcode: @postcode.to_url,
@@ -149,7 +153,7 @@ RSpec.describe AddressesController, :type => :controller do
     end
 
     it 'assigns correctly' do
-      get :query,
+      get :index,
           town: @town.to_url,
           locality: @locality.to_url,
           postcode: @postcode.to_url,
@@ -161,7 +165,7 @@ RSpec.describe AddressesController, :type => :controller do
     end
 
     it 'retains the format of the original request' do
-      get :query,
+      get :index,
           town: @town.to_url,
           locality: @locality.to_url,
           postcode: @postcode.to_url,
@@ -175,7 +179,7 @@ RSpec.describe AddressesController, :type => :controller do
 
     it 'returns 404 if address is not found' do
       expect {
-          get :query,
+          get :index,
               town: 'fake-town',
               locality: @locality.to_url,
               postcode: @postcode.to_url,
@@ -186,7 +190,7 @@ RSpec.describe AddressesController, :type => :controller do
     end
 
     it 'redirects if parameters are missing' do
-      get :query,
+      get :index,
           town: @town.to_url,
           locality: '-',
           postcode: @postcode.to_url,
@@ -205,7 +209,7 @@ RSpec.describe AddressesController, :type => :controller do
           FactoryGirl.create(:address, sao: i, pao: @pao, street: @street, locality: @locality, postcode: @postcode)
         end
 
-        get :query,
+        get :index,
             town: @town.to_url,
             locality: @locality.to_url,
             postcode: @postcode.to_url,
@@ -222,7 +226,7 @@ RSpec.describe AddressesController, :type => :controller do
     end
 
     it 'redirects on non-URL-encoded strings' do
-      get :query,
+      get :index,
           town: @town,
           locality: @locality,
           postcode: @postcode,
