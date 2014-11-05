@@ -192,7 +192,7 @@ RSpec.describe AddressesController, :type => :controller do
     it 'redirects if parameters are missing' do
       get :index,
           town: @town.to_url,
-          locality: '-',
+          #locality: nil,
           postcode: @postcode.to_url,
           street: @street.to_url,
           pao: @pao.to_url,
@@ -215,7 +215,7 @@ RSpec.describe AddressesController, :type => :controller do
             postcode: @postcode.to_url,
             street: @street.to_url,
             pao: @pao.to_url,
-            sao: '-',
+            #sao: nil,
             format: :json
 
         json = JSON.parse(response.body)

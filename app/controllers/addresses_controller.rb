@@ -48,7 +48,7 @@ class AddressesController < ApplicationController
         :street_slug => params[:street],
         :pao_slug => params[:pao],
         :sao_slug => params[:sao]
-      }.select { |k, v| ['', '-'].exclude? v }.compact
+      }.compact
 
     end
     
