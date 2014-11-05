@@ -3,6 +3,8 @@ class Address
 
   before_create :create_slugs
 
+  field :_id, type: String, default: ->{ SecureRandom.uuid }
+
   field :pao, type: String
   field :sao, type: String
   field :street, type: String
