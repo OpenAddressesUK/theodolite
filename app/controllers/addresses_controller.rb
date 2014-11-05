@@ -26,30 +26,22 @@ class AddressesController < ApplicationController
     def parse_postcode
       if params[:postcode]
         postcode = UKPostcode.new(params[:postcode].gsub("-", " "))
-        params[:postcode] = postcode.norm.to_url
+        params[:postcode] = postcode.norm
       end
     end
 
     def build_query
+      @queries = {}
       [
         :town,
         :locality,
         :street,
         :pao,
-        :sao
+        :sao,
+        :postcode
       ].each do |name|
-        params[name] = params[name].to_url if params[name]
+        @queries[:"#{name}_slug"] = params[name].to_url if params[name]
       end
-        
-      @queries = {
-        :postcode_slug => params[:postcode],
-        :town_slug => params[:town],
-        :locality_slug => params[:locality],
-        :street_slug => params[:street],
-        :pao_slug => params[:pao],
-        :sao_slug => params[:sao]
-      }.compact
-
     end
     
     def pagination
