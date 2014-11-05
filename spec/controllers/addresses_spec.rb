@@ -177,16 +177,18 @@ RSpec.describe AddressesController, :type => :controller do
       expect(response.header["Location"]).to match /\.json/
     end
 
-    it 'returns 404 if address is not found' do
-      expect {
-          get :index,
-              town: 'fake-town',
-              locality: @locality.to_url,
-              postcode: @postcode.to_url,
-              street: @street.to_url,
-              pao: @pao.to_url,
-              sao: @sao.to_url
-          }.to raise_error(ActionController::RoutingError)
+    it 'returns empty list if no addresses are found' do
+      get :index,
+          town: 'fake-town',
+          locality: @locality.to_url,
+          postcode: @postcode.to_url,
+          street: @street.to_url,
+          pao: @pao.to_url,
+          sao: @sao.to_url,
+          format: :json
+          
+      json = JSON.parse(response.body)
+      expect(json['addresses'].count).to eq(0)
     end
 
     it 'redirects if parameters are missing' do

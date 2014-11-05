@@ -49,9 +49,7 @@ class AddressesController < ApplicationController
       @per_page = (params[:per_page] || 25).to_i
     end
     
-    def render_paginated_addresses
-      raise ActionController::RoutingError.new('Not Found') if @addresses.count == 0
-      
+    def render_paginated_addresses    
       if @addresses.count == 1
         redirect_to polymorphic_url(@addresses.first, format: params[:format]), status: 307
       else
