@@ -26,3 +26,7 @@ ERNEST_ADDRESS_ENDPOINT={URL for the list of addresses from the Ernest master da
 If you want to only import a limited amount of addresses for development, you can run (where `n` is the number of pages you want to import from the Ernest API (25 per page))
 
 `rake theodolite:import[n]`
+
+### Run the server
+
+`rails c`
