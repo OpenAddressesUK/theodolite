@@ -29,4 +29,4 @@ If you want to only import a limited amount of addresses for development, you ca
 
 ### Run the server
 
-`rails c`
+`rails s`
