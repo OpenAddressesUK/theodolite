@@ -43,4 +43,18 @@ RSpec.describe Address, :type => :model do
     expect(address.postcode_slug).to eq "ec1a-1aa"
   end
 
+  it "generates a full address" do
+    address = FactoryGirl.create(
+                            :address,
+                            pao: "Flat 19a",
+                            sao: "Rubik's House",
+                            street: "Other Street",
+                            locality: "New Townsville",
+                            town: "Newton-le-Willows",
+                            postcode: "EC1A 1AA"
+                          )
+
+    expect(address.full_address).to eq("Flat 19a, Rubik's House, Other Street, New Townsville, Newton-le-Willows, EC1A 1AA")
+  end
+
 end

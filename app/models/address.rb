@@ -1,6 +1,15 @@
 class Address
   include Mongoid::Document
 
+  ADDRESS_ELEMENTS = [
+    :pao,
+    :sao,
+    :street,
+    :locality,
+    :town,
+    :postcode
+  ]
+
   before_create :create_slugs
 
   field :_id, type: String, default: ->{ SecureRandom.uuid }
@@ -19,17 +28,16 @@ class Address
   field :town_slug, type: String
   field :postcode_slug, type: String
 
+  def full_address
+    address = ADDRESS_ELEMENTS.map { |element| self.send(element) }
+
+    address.reject { |e| e.nil? }.join(", ")
+  end
+
   private
 
     def create_slugs
-      [
-        :pao,
-        :sao,
-        :street,
-        :locality,
-        :town,
-        :postcode
-      ].each do |element|
+      ADDRESS_ELEMENTS.each do |element|
         self.send("#{element}_slug=".to_sym, self.send(element).to_s.to_url)
       end
     end
