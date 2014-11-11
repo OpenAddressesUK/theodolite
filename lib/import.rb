@@ -1,3 +1,6 @@
+require 'dotenv'
+Dotenv.load
+
 class Import
 
   def self.perform(pages = nil)
