@@ -30,4 +30,18 @@ RSpec.describe Import do
 
     expect(Address.count).to eq 125
   end
+
+  it "imports a selected number of pages" do
+    stub_request(:get, ENV['ERNEST_ADDRESS_ENDPOINT']).
+      to_return(body: File.read(File.join(Rails.root, "spec", "fixtures", "multi-page.json")),
+                headers: {"Content-Type" => "application/json"})
+
+    stub_request(:get, /#{ENV['ERNEST_ADDRESS_ENDPOINT']}\?page=./).
+      to_return(body: File.read(File.join(Rails.root, "spec", "fixtures", "multi-page.json")),
+                headers: {"Content-Type" => "application/json"})
+
+    Import.perform(3)
+
+    expect(Address.count).to eq 75
+  end
 end
