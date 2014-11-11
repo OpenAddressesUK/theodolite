@@ -5,7 +5,7 @@ class Import
 
   def self.perform(pages = nil)
     response = HTTParty.get(ENV['ERNEST_ADDRESS_ENDPOINT']).parsed_response
-    pages = pages || response["pages"].to_i
+    pages = (pages || response["pages"]).to_i
 
     1.upto(pages) do |i|
       response = HTTParty.get("#{ENV['ERNEST_ADDRESS_ENDPOINT']}?page=#{i}").parsed_response
