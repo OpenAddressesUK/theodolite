@@ -3,6 +3,10 @@
 
 This is the main public API for the OpenAddresses service
 
+## Dependencies
+
+As well as Ruby version 2.1.3, you'll also need MongoDB installed. [See installation instructions](http://docs.mongodb.org/manual/installation/).
+
 ## Running
 
 ### Clone the repo:
