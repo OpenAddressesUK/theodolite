@@ -67,7 +67,7 @@ RSpec.describe AddressesController, :type => :controller do
 
       json = JSON.parse(response.body)
 
-      expect(json['addresses'].first['url']).to match /http:\/\/test\.host\/addresses\/[0-9]+/
+      expect(json['addresses'].first['url']).to match /http:\/\/test\.host\/addresses\/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/
     end
   end
 
@@ -186,7 +186,7 @@ RSpec.describe AddressesController, :type => :controller do
           pao: @pao.to_url,
           sao: @sao.to_url,
           format: :json
-          
+
       json = JSON.parse(response.body)
       expect(json['addresses'].count).to eq(0)
     end
