@@ -40,7 +40,7 @@ class AddressesController < ApplicationController
         :sao,
         :postcode
       ].each do |name|
-        @queries[:"#{name}_slug"] = params[name].to_url if params[name]
+        @queries[:"#{name}_slug"] = params[name].to_url if params[name] && params[name] != ''
       end
     end
     
