@@ -18,10 +18,12 @@
 
 <h1>Results:</h1>
 
+<div id="map"></div>
+
 <ul>
 <% @addresses.each do |address| %>
 
-  <li><%= link_to address.full_address, address %></li>
+  <li data-postcode="<%= address.postcode %>"><%= link_to address.full_address, address %></li>
 
 <% end %>
 </ul>
