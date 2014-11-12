@@ -58,6 +58,10 @@ class AddressesController < ApplicationController
             paginate @addresses 
             render "addresses/index"
           end
+          format.html do 
+            paginate @addresses 
+            render "addresses/index"
+          end
         end
       end
     end

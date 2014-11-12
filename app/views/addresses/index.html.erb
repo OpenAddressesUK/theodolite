@@ -1,0 +1,11 @@
+<h1>Results:</h1>
+
+<ul>
+<% @addresses.each do |address| %>
+
+  <li><%= link_to address.full_address, address %></li>
+
+<% end %>
+</ul>
+
+<%= paginate @addresses %>
