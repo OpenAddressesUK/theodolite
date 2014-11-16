@@ -2,8 +2,8 @@ class Address
   include Mongoid::Document
 
   ADDRESS_ELEMENTS = [
-    :pao,
     :sao,
+    :pao,
     :street,
     :locality,
     :town,
@@ -28,10 +28,23 @@ class Address
   field :town_slug, type: String
   field :postcode_slug, type: String
 
-  def full_address
-    address = ADDRESS_ELEMENTS.map { |element| self.send(element) }
+  def full_address_lines
+    address = ADDRESS_ELEMENTS.map { |element| 
+      val = self.send(element)
+      unless element == :pao && val =~ /\d/
+        if element == :street && self.pao =~ /\d/ && !self.send(element).nil?
+          self.pao + ' ' + self.send(element)
+        else
+          self.send(element) 
+        end
+      end
+    }
 
-    address.reject { |e| e.nil? }.join(", ")
+    address.reject { |e| e.nil? }
+  end
+
+  def full_address
+    self.full_address_lines.join(", ")
   end
 
   private

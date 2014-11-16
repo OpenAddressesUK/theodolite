@@ -1,10 +1,5 @@
-<h1><%= @address.full_address %></h1>
-
-<p>
-  <strong>PAO</strong> <%= @address.pao %><br>
-  <strong>SAO</strong> <%= @address.sao %><br>
-  <strong>Street</strong> <%= @address.street %><br>
-  <strong>Locality</strong> <%= @address.locality %><br>
-  <strong>Town</strong> <%= @address.town %><br>
-  <strong>Postcode</strong> <%= @address.postcode %><br>
-</p>
+<h1>
+	<% @address.full_address_lines.each do |line| %>
+		<%= line %><br>
+	<% end %>
+</h1>
