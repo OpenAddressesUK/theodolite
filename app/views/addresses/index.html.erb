@@ -2,16 +2,16 @@
 	<div class="form-group">
 		<div class="input-group">
 			<label class="sr-only" for="street">Street</label>
-			<input type="text" class="form-control" id="street" name="street" placeholder="Street">
+			<input type="text" class="form-control" id="street" name="street" placeholder="Street" value="<%= params[:street]%>">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="sr-only" for="town">Town</label>
-		<input type="text" class="form-control" id="town" name="town" placeholder="Town or City">
+		<input type="text" class="form-control" id="town" name="town" placeholder="Town or City" value="<%= params[:town]%>">
 	</div>
 	<div class="form-group">
 		<label class="sr-only" for="postcode">Postcode</label>
-		<input type="text" class="form-control" id="postcode" name="postcode" placeholder="Postcode">
+		<input type="text" class="form-control" id="postcode" name="postcode" placeholder="Postcode" value="<%= params[:postcode]%>">
 	</div>
 	<button type="submit" class="btn btn-primary">Search for addresses</button>
 </form>
