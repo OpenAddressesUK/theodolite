@@ -2,7 +2,9 @@
   function filterSearch(){
     // cribbed off stackoverflow like a boss: https://stackoverflow.com/questions/2417928/delete-empty-values-from-forms-params-before-submitting-it
     form = jQuery("#search");
-    form.find(':input[value=""]').attr('disabled', true);
+    form.find(':input', this).each(function() {
+        this.disabled = !($(this).val());
+    });
   }
 </script>
 
