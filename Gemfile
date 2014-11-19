@@ -5,7 +5,7 @@ ruby '2.1.3'
 #ruby-gemset=theodolite
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.6'
+gem 'rails', '4.1.7'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
@@ -53,6 +53,7 @@ gem 'kaminari'
 gem 'thin'
 gem 'api-pagination'
 gem 'uk_postcode'
+gem 'mongoid_address_models', github: 'openaddressesuk/mongoid_address_models'
 
 group :test do
   gem 'rspec-rails', '~> 3.0.0'

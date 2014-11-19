@@ -1,6 +1,6 @@
 json.sao address.sao
 json.pao address.pao
-json.street address.street
-json.locality address.locality
-json.town address.town
-json.postcode address.postcode
+json.street address.street.try(:name)
+json.locality address.locality.try(:name)
+json.town address.town.try(:name)
+json.postcode address.postcode.try(:name)

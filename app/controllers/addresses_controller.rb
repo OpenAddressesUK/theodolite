@@ -18,7 +18,6 @@ class AddressesController < ApplicationController
     @addresses = @addresses.page(@page).per(@per_page)
 
     render_paginated_addresses
-
   end
 
   private
@@ -33,33 +32,38 @@ class AddressesController < ApplicationController
     def build_query
       @queries = {}
       [
+        :pao,
+        :sao
+      ].each do |name|
+        @queries[:"#{name}"] = params[name] if params[name]
+      end
+
+      [
         :town,
         :locality,
         :street,
-        :pao,
-        :sao,
         :postcode
       ].each do |name|
-        @queries[:"#{name}_slug"] = params[name].to_url if params[name] && params[name] != ''
+        @queries[:"#{name}.name"] = params[name] if params[name] && params[name] != ''
       end
     end
-    
+
     def pagination
       @page = (params[:page] || 1).to_i
       @per_page = (params[:per_page] || 25).to_i
     end
-    
-    def render_paginated_addresses    
+
+    def render_paginated_addresses
       if @addresses.count == 1
         redirect_to polymorphic_url(@addresses.first, format: params[:format]), status: 307
       else
         respond_to do |format|
           format.json do
-            paginate @addresses 
+            paginate @addresses
             render "addresses/index"
           end
-          format.html do 
-            paginate @addresses 
+          format.html do
+            paginate @addresses
             render "addresses/index"
           end
         end
