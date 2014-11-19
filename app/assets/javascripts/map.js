@@ -11,19 +11,13 @@ $(document).ready(function () {
 
 	var locations = [];
 
-	$('*[data-postcode]').each(function () {
-		var $address = $(this);
-		var postcode = $address.attr('data-postcode').replace(/ /, '');
-		$.getJSON('http://uk-postcodes.com/postcode/' + postcode + '.json', function (data) {
-			var geo = data.geo;
-			var lat = geo.lat;
-			var long = geo.lng;
-			if (!(lat === undefined || long === undefined)) {
-				var marker = L.marker([lat, long], { icon: oaIcon, riseOnHover: true }).addTo(map);
-				locations.push([lat, long]);
-				map.fitBounds(L.latLngBounds(locations));
-			}
-		});
+	$('*[data-latlng]').each(function () {
+		var latlng = $(this).attr('data-latlng').split(",");
+		var lat = latlng[0];
+		var long = latlng[1];
+		var marker = L.marker([lat, long], { icon: oaIcon, riseOnHover: true }).addTo(map);
+		locations.push([lat, long]);
+		map.fitBounds(L.latLngBounds(locations));
 	});
 
 });

@@ -31,7 +31,7 @@
 <ul>
 <% @addresses.each do |address| %>
 
-  <li data-postcode="<%= address.postcode %>"><%= link_to address.full_address, address %></li>
+  <li data-latlng="<%= address.postcode.lat_lng.to_a.join(",") %>"><%= link_to address.full_address, address %></li>
 
 <% end %>
 </ul>
