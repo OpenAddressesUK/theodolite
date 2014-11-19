@@ -1,4 +1,6 @@
-<h1>
+<div id="map"></div>
+
+<h1 data-latlng="<%= @address.postcode.lat_lng.to_a.join(",") %>">
 	<% @address.full_address_lines.each do |line| %>
 		<%= line %><br>
 	<% end %>
