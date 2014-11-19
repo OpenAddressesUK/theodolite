@@ -125,23 +125,23 @@ RSpec.describe AddressesController, :type => :controller do
 
     before :each do
       @postcode = FactoryGirl.create(:postcode, name: "W12 8QT")
-      @town = FactoryGirl.create(:town, name: "Gotham City")
-      @locality = FactoryGirl.create(:locality, name: "Arkham")
-      @street = FactoryGirl.create(:street, name: "Bat Street")
-      @pao = "Stately Wayne Manor"
-      @sao = "The Batcave"
+      @town = FactoryGirl.create(:town, name: "GOTHAM CITY")
+      @locality = FactoryGirl.create(:locality, name: "ARKHAM")
+      @street = FactoryGirl.create(:street, name: "BAT STREET")
+      @pao = "STATELY WAYNE MANOR"
+      @sao = "THE BATCAVE"
 
-      @address = FactoryGirl.create(:address, sao: @sao, pao: @pao, street: @street, locality: @locality, postcode: @postcode)
+      @address = FactoryGirl.create(:address, sao: @sao, pao: @pao, street: @street, locality: @locality, town: @town, postcode: @postcode)
     end
 
     it 'redirects successfully' do
       get :index,
-          town: @town.name,
-          locality: @locality.name,
-          postcode: @postcode.name,
-          street: @street.name,
-          pao: @pao,
-          sao: @sao,
+          town: @town.name.downcase,
+          locality: @locality.name.downcase,
+          postcode: @postcode.name.downcase,
+          street: @street.name.downcase,
+          pao: @pao.downcase,
+          sao: @sao.downcase,
           format: :json
 
       expect(response).to be_redirect
