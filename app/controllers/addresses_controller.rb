@@ -35,7 +35,7 @@ class AddressesController < ApplicationController
         :pao,
         :sao
       ].each do |name|
-        @queries[:"#{name}"] = params[name] if params[name]
+        @queries[:"#{name}"] = params[name].upcase if params[name]
       end
 
       [
@@ -44,7 +44,7 @@ class AddressesController < ApplicationController
         :street,
         :postcode
       ].each do |name|
-        @queries[:"#{name}.name"] = params[name] if params[name] && params[name] != ''
+        @queries[:"#{name}.name"] = params[name].upcase if params[name] && params[name] != ''
       end
     end
 
