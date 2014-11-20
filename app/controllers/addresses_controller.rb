@@ -35,7 +35,7 @@ class AddressesController < ApplicationController
         :pao,
         :sao
       ].each do |name|
-        @queries[:"#{name}"] = params[name] if params[name]
+        @queries[:"#{name}"] = params[name].upcase if params[name]
       end
 
       [
@@ -44,7 +44,7 @@ class AddressesController < ApplicationController
         :street,
         :postcode
       ].each do |name|
-        @queries[:"#{name}.name"] = params[name] if params[name]
+        @queries[:"#{name}.name"] = params[name].upcase if params[name] && params[name] != ''
       end
     end
 
@@ -59,6 +59,10 @@ class AddressesController < ApplicationController
       else
         respond_to do |format|
           format.json do
+            paginate @addresses
+            render "addresses/index"
+          end
+          format.html do
             paginate @addresses
             render "addresses/index"
           end

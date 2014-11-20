@@ -1,0 +1,41 @@
+<script>
+  function filterSearch(){
+    // cribbed off stackoverflow like a boss: https://stackoverflow.com/questions/2417928/delete-empty-values-from-forms-params-before-submitting-it
+    form = jQuery("#search");
+    form.find(':input', this).each(function() {
+        this.disabled = !($(this).val());
+    });
+  }
+</script>
+
+<form action="/addresses" class="well form-inline" role="form" id="search" onSubmit="filterSearch(); return true" >
+	<div class="form-group">
+		<div class="input-group">
+			<label class="sr-only" for="street">Street</label>
+			<input type="text" class="form-control" id="street" name="street" placeholder="Street" value="<%= params[:street]%>">
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="sr-only" for="town">Town</label>
+		<input type="text" class="form-control" id="town" name="town" placeholder="Town or City" value="<%= params[:town]%>">
+	</div>
+	<div class="form-group">
+		<label class="sr-only" for="postcode">Postcode</label>
+		<input type="text" class="form-control" id="postcode" name="postcode" placeholder="Postcode" value="<%= params[:postcode]%>">
+	</div>
+	<button type="submit" class="btn btn-primary">Search for addresses</button>
+</form>
+
+<h1>Results:</h1>
+
+<div id="map"></div>
+
+<ul>
+<% @addresses.each do |address| %>
+
+  <li data-latlng="<%= address.postcode.lat_lng.to_a.join(",") %>"><%= link_to address.full_address, address %></li>
+
+<% end %>
+</ul>
+
+<%= paginate @addresses %>
