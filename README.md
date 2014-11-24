@@ -38,6 +38,6 @@ If you want to only import a limited amount of addresses for development, you ca
 `rails s`
 
 ##Licence
-The theodolite picture is sourced from Wikimedia Commons.
+The theodolite picture is sourced from [Wikimedia Commons](http://commons.wikimedia.org/wiki/File:SovietTheodolite.jpg).
 
 ![Creative Commons License](http://i.creativecommons.org/l/by/4.0/88x31.png "Creative Commons License") This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
