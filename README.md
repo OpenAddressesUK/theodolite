@@ -1,7 +1,9 @@
-# Theodolite
+Theodolite
+==========
+
  ![](https://upload.wikimedia.org/wikipedia/commons/3/30/SovietTheodolite.jpg)
 
-This is the main public API for the OpenAddresses service
+This repository is about Open Addresses' publishing APIs software component. It is named "theodolite", after [the precision instrument for measuring angles in the horizontal and vertical planes, used mainly for surveying applications](http://en.wikipedia.org/wiki/Theodolite). Theodolite is part of the solution Open Addresses deployed for the Alpha stage of our services. Read about Theodolite [here](http://openaddressesuk.org/docs) or learn about Open Addresses in general [here](http://openaddressesuk.org).
 
 ## Dependencies
 
@@ -34,3 +36,8 @@ If you want to only import a limited amount of addresses for development, you ca
 ### Run the server
 
 `rails s`
+
+##Licence
+The theodolite picture is sourced from Wikimedia Commons.
+
+![Creative Commons License](http://i.creativecommons.org/l/by/4.0/88x31.png "Creative Commons License") This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
