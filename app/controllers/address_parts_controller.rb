@@ -42,6 +42,10 @@ class AddressPartsController < ApplicationController
         format.json do
           paginate @addresses
         end
+        format.html do
+          paginate @addresses
+          render "addresses/index"
+        end
       end
     end
 

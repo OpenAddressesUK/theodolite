@@ -8,6 +8,13 @@ RSpec.describe AddressPartsController, :type => :controller do
       @street = FactoryGirl.create(:street)
     end
 
+    it 'responds successfully' do
+      get :street, id: @street.token
+
+      expect(response).to be_success
+      expect(response).to have_http_status(200)
+    end
+
     it 'shows the correct JSON for a street' do
       get :street, id: @street.token,
                    format: :json
@@ -54,6 +61,13 @@ RSpec.describe AddressPartsController, :type => :controller do
       @locality = FactoryGirl.create(:locality)
     end
 
+    it 'responds successfully' do
+      get :locality, id: @locality.token
+
+      expect(response).to be_success
+      expect(response).to have_http_status(200)
+    end
+
     it 'shows the correct JSON for a locality' do
       get :locality, id: @locality.token,
                      format: :json
@@ -88,6 +102,13 @@ RSpec.describe AddressPartsController, :type => :controller do
       @town = FactoryGirl.create(:town)
     end
 
+    it 'responds successfully' do
+      get :town, id: @town.token
+
+      expect(response).to be_success
+      expect(response).to have_http_status(200)
+    end
+
     it 'shows the correct JSON for a locality' do
       get :town, id: @town.token,
                      format: :json
@@ -120,6 +141,13 @@ RSpec.describe AddressPartsController, :type => :controller do
 
     before(:each) do
       @postcode = FactoryGirl.create(:postcode)
+    end
+
+    it 'responds successfully' do
+      get :postcode, id: @postcode.token
+
+      expect(response).to be_success
+      expect(response).to have_http_status(200)
     end
 
     it 'shows the correct JSON for a locality' do
