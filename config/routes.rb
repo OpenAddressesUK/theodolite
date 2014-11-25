@@ -4,10 +4,10 @@ Rails.application.routes.draw do
 
   resources :addresses
 
-  get '/streets/:id' => "address_parts#show", as: "street"
-  get '/localities/:id' => "address_parts#show", as: "locality"
-  get '/towns/:id' => "address_parts#show", as: "town"
-  get '/postcodes/:id' => "address_parts#show", as: "postcode"
+  get '/streets/:id' => "address_parts#street", as: "street"
+  get '/localities/:id' => "address_parts#locality", as: "locality"
+  get '/towns/:id' => "address_parts#town", as: "town"
+  get '/postcodes/:id' => "address_parts#postcode", as: "postcode"
 
   get '/postcode/:postcode' => 'addresses#index'
 
