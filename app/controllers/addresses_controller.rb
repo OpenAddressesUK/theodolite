@@ -40,11 +40,6 @@ class AddressesController < ApplicationController
       end
     end
 
-    def pagination
-      @page = (params[:page] || 1).to_i
-      @per_page = (params[:per_page] || 25).to_i
-    end
-
     def render_paginated_addresses
       if @addresses.count == 1
         redirect_to polymorphic_url(@addresses.first, format: params[:format]), status: 307
