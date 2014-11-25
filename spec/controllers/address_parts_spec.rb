@@ -33,6 +33,18 @@ RSpec.describe AddressPartsController, :type => :controller do
       expect(json['street']['addresses'].count).to eq(5)
     end
 
+    it 'shows the correct pagination information' do
+      30.times do |i|
+        FactoryGirl.create(:address, pao: i, street: @street)
+      end
+
+      get :street, id: @street.token,
+                   format: :json
+
+      expect(response.header["Link"]).to eq("<http://test.host/streets/#{@street.token}.json?page=2>; rel=\"last\", <http://test.host/streets/#{@street.token}.json?page=2>; rel=\"next\"")
+      expect(response.header["Total"]).to eq("30")
+    end
+
   end
 
   describe 'GET #locality' do
