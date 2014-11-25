@@ -135,5 +135,21 @@ RSpec.describe AddressPartsController, :type => :controller do
       expect(json['postcode']['addresses'].count).to eq(5)
     end
 
+    context 'with a postcode' do
+
+      it 'shows the correct JSON for a locality' do
+        get :postcode, id: @postcode.name,
+                       format: :json
+
+        json = JSON.parse(response.body)
+
+        expect(response).to be_success
+        expect(response).to have_http_status(200)
+        expect(response.headers['Content-Type']).to match /application\/json/
+        expect(json['postcode']['name']).to eq(@postcode.name)
+      end
+
+    end
+
   end
 end

@@ -1,7 +1,6 @@
 class AddressesController < ApplicationController
   respond_to :json, :html
 
-  before_filter :parse_postcode, only: :index
   before_filter :build_query, only: :index
   before_filter :pagination, only: :index
 
@@ -21,13 +20,6 @@ class AddressesController < ApplicationController
   end
 
   private
-
-    def parse_postcode
-      if params[:postcode]
-        postcode = UKPostcode.new(params[:postcode].gsub("-", " "))
-        params[:postcode] = postcode.norm
-      end
-    end
 
     def build_query
       @queries = {}

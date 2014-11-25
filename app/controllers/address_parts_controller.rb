@@ -16,8 +16,14 @@ class AddressPartsController < ApplicationController
   end
 
   def postcode
-    @postcode = Postcode.find(params[:id])
-    @addresses = Address.where("postcode.token" => params[:id])
+    postcode = UKPostcode.new(params[:id].gsub("-", " "))
+    if postcode.valid?
+      @postcode = Postcode.where(name: postcode.norm).first
+      @addresses = Address.where("postcode.token" => @postcode.token)
+    else
+      @postcode = Postcode.find(params[:id])
+      @addresses = Address.where("postcode.token" => params[:id])
+    end
   end
 
 end
