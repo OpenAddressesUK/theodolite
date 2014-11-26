@@ -40,6 +40,7 @@ gem 'spring',        group: :development
 
 group :production do
   gem 'rails_12factor'
+  gem 'unicorn'
 end
 
 gem 'mongoid'
