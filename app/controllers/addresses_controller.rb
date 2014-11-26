@@ -1,7 +1,6 @@
 class AddressesController < ApplicationController
   respond_to :json, :html
 
-  before_filter :parse_postcode, only: :index
   before_filter :build_query, only: :index
   before_filter :pagination, only: :index
 
@@ -22,13 +21,6 @@ class AddressesController < ApplicationController
 
   private
 
-    def parse_postcode
-      if params[:postcode]
-        postcode = UKPostcode.new(params[:postcode].gsub("-", " "))
-        params[:postcode] = postcode.norm
-      end
-    end
-
     def build_query
       @queries = {}
       [
@@ -46,11 +38,6 @@ class AddressesController < ApplicationController
       ].each do |name|
         @queries[:"#{name}.name"] = params[name].upcase if params[name] && params[name] != ''
       end
-    end
-
-    def pagination
-      @page = (params[:page] || 1).to_i
-      @per_page = (params[:per_page] || 25).to_i
     end
 
     def render_paginated_addresses
