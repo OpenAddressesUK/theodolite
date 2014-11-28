@@ -14,7 +14,7 @@ class AddressesController < ApplicationController
     else
       @addresses = Address.where(@queries)
     end
-    @addresses = @addresses.page(@page).per(@per_page)
+    @addresses = @addresses.page(@page).per(@per_page).no_timeout
 
     render_paginated_addresses
   end
