@@ -207,6 +207,13 @@ RSpec.describe AddressesController, :type => :controller do
       expect(response).to redirect_to("/addresses/#{@address.token}.json")
     end
 
+    it 'works when a postcode has no space' do
+      get :index,
+          postcode: @postcode.name.downcase.gsub(" ", "")
+
+      expect(response).to redirect_to("/addresses/#{@address.token}")
+    end
+
     context 'with multiple results' do
 
       it 'lists all possible results if parameters are missing' do

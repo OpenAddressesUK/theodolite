@@ -31,10 +31,14 @@ class AddressesController < ApplicationController
       [
         :town,
         :locality,
-        :street,
-        :postcode
+        :street
       ].each do |name|
         @queries[:"#{name}.name"] = params[name].upcase if params[name] && params[name] != ''
+      end
+
+      if !params[:postcode].blank?
+        postcode = UKPostcode.new(params[:postcode]).normalize
+        @queries[:"postcode.name"] = postcode
       end
     end
 
