@@ -26,16 +26,20 @@
 	<button type="submit" class="btn btn-primary">Search for addresses</button>
 </form>
 
-<h1>Results:</h1>
+<% if @addresses %>
 
-<div id="map"></div>
+  <h1>Results:</h1>
 
-<ul>
-<% @addresses.each do |address| %>
+  <div id="map"></div>
 
-  <li data-latlng="<%= address.postcode.lat_lng.to_a.join(",") %>"><%= link_to address.full_address, address %></li>
+  <ul>
+  <% @addresses.each do |address| %>
+
+    <li data-latlng="<%= address.postcode.lat_lng.to_a.join(",") %>"><%= link_to address.full_address, address %></li>
+
+  <% end %>
+  </ul>
+
+  <%= paginate @addresses %>
 
 <% end %>
-</ul>
-
-<%= paginate @addresses %>
