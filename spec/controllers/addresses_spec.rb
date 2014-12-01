@@ -6,9 +6,9 @@ RSpec.describe AddressesController, :type => :controller do
 
     it 'responds successfully' do
       25.times do |i|
-        FactoryGirl.create(:address, pao: i)
+        FactoryGirl.create(:address, pao: i, town: FactoryGirl.create(:town, name: "GOTHAM CITY"))
       end
-      get :index, format: :json
+      get :index, format: :json, town: Address.last.town.name
 
       expect(response).to be_success
       expect(response).to have_http_status(200)
@@ -16,10 +16,10 @@ RSpec.describe AddressesController, :type => :controller do
 
     it 'shows the correct amount of adresses' do
       25.times do |i|
-        FactoryGirl.create(:address, pao: i)
+        FactoryGirl.create(:address, pao: i, town: FactoryGirl.create(:town, name: "GOTHAM CITY"))
       end
 
-      get :index, format: :json
+      get :index, format: :json, town: Address.last.town.name
 
       json = JSON.parse(response.body)
 
@@ -28,42 +28,42 @@ RSpec.describe AddressesController, :type => :controller do
 
     it 'shows the correct pagination information' do
       30.times do |i|
-        FactoryGirl.create(:address, pao: i)
+        FactoryGirl.create(:address, pao: i, town: FactoryGirl.create(:town, name: "GOTHAM CITY"))
       end
 
-      get :index, format: :json
+      get :index, format: :json, town: Address.last.town.name
 
-      expect(response.header["Link"]).to eq("<http://test.host/addresses.json?page=2>; rel=\"last\", <http://test.host/addresses.json?page=2>; rel=\"next\"")
+      expect(response.header["Link"]).to eq("<http://test.host/addresses.json?page=2&town=GOTHAM+CITY>; rel=\"last\", <http://test.host/addresses.json?page=2&town=GOTHAM+CITY>; rel=\"next\"")
       expect(response.header["Total"]).to eq("30")
     end
 
     it 'shows the correct data when page is specified' do
       30.times do |i|
-        FactoryGirl.create(:address, pao: i)
+        FactoryGirl.create(:address, pao: i, town: FactoryGirl.create(:town, name: "GOTHAM CITY"))
       end
 
-      get :index, page: 2, format: :json
+      get :index, page: 2, format: :json, town: Address.last.town.name
 
       json = JSON.parse(response.body)
 
       expect(json['addresses'].count).to eq(5)
-      expect(response.header["Link"]).to eq("<http://test.host/addresses.json?page=1>; rel=\"first\", <http://test.host/addresses.json?page=1>; rel=\"prev\"")
+      expect(response.header["Link"]).to eq("<http://test.host/addresses.json?page=1&town=GOTHAM+CITY>; rel=\"first\", <http://test.host/addresses.json?page=1&town=GOTHAM+CITY>; rel=\"prev\"")
     end
 
     it 'shows the correct pagination information when per_page is specified' do
       30.times do |i|
-        FactoryGirl.create(:address, pao: i)
+        FactoryGirl.create(:address, pao: i, town: FactoryGirl.create(:town, name: "GOTHAM CITY"))
       end
 
-      get :index, page: 2, per_page: 4, format: :json
-      expect(response.header["Link"]).to eq("<http://test.host/addresses.json?page=1&per_page=4>; rel=\"first\", <http://test.host/addresses.json?page=1&per_page=4>; rel=\"prev\", <http://test.host/addresses.json?page=8&per_page=4>; rel=\"last\", <http://test.host/addresses.json?page=3&per_page=4>; rel=\"next\"")
+      get :index, page: 2, per_page: 4, format: :json, town: Address.last.town.name
+      expect(response.header["Link"]).to eq("<http://test.host/addresses.json?page=1&per_page=4&town=GOTHAM+CITY>; rel=\"first\", <http://test.host/addresses.json?page=1&per_page=4&town=GOTHAM+CITY>; rel=\"prev\", <http://test.host/addresses.json?page=8&per_page=4&town=GOTHAM+CITY>; rel=\"last\", <http://test.host/addresses.json?page=3&per_page=4&town=GOTHAM+CITY>; rel=\"next\"")
     end
 
     it 'shows the url for addresses' do
-      FactoryGirl.create(:address)
-      FactoryGirl.create(:address, pao: "456")
+      FactoryGirl.create(:address, town: FactoryGirl.create(:town, name: "GOTHAM CITY"))
+      FactoryGirl.create(:address, pao: "456", town: FactoryGirl.create(:town, name: "GOTHAM CITY"))
 
-      get :index, format: :json
+      get :index, format: :json, town: Address.last.town.name
 
       json = JSON.parse(response.body)
 
