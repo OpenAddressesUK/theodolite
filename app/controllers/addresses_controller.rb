@@ -9,14 +9,12 @@ class AddressesController < ApplicationController
   end
 
   def index
-    if @queries.empty?
-      @addresses = Address.all
+    if !@queries.empty?
+      @addresses = Address.where(@queries).page(@page).per(@per_page)
+      render_paginated_addresses
     else
-      @addresses = Address.where(@queries)
+      render "addresses/index"
     end
-    @addresses = @addresses.page(@page).per(@per_page).no_timeout
-
-    render_paginated_addresses
   end
 
   private
