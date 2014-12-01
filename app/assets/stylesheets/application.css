@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+#search {
+  width: 100%;
+}
+
+#search .form-group {
+  width: 24%;
+}
+
+#search input {
+  width: 100%;
+}

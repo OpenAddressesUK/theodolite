@@ -23,7 +23,9 @@
 		<label class="sr-only" for="postcode">Postcode</label>
 		<input type="text" class="form-control" id="postcode" name="postcode" placeholder="Postcode" value="<%= params[:postcode]%>">
 	</div>
-	<button type="submit" class="btn btn-primary">Search for addresses</button>
+  <div class="form-group">
+	   <button type="submit" class="btn btn-primary">Search for addresses</button>
+  </div>
 </form>
 
 <% if @addresses %>
