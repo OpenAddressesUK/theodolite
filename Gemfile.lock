@@ -9,6 +9,13 @@ GIT
       rails (~> 4.1.7)
       stringex
 
+GIT
+  remote: git://github.com/theodi/alternate-rails.git
+  revision: 83a5b8b73655283b2d9729eeae848488881eecc4
+  specs:
+    alternate_rails (0.0.2)
+      rails (>= 3.2.13)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -208,6 +215,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  alternate_rails!
   api-pagination
   bson_ext
   coffee-rails (~> 4.0.0)

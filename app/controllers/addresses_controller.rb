@@ -3,6 +3,7 @@ class AddressesController < ApplicationController
 
   before_filter :build_query, only: :index
   before_filter :pagination, only: :index
+  before_filter(:only => [:index, :show]) { alternate_formats [:json] }
 
   def show
     @address = Address.find(params[:id])

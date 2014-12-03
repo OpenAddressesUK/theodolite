@@ -4,14 +4,10 @@ development:
       database: distiller
       hosts:
         - localhost:27017
+
 test:
   sessions:
     default:
       database: distiller_test
       hosts:
         - localhost:27017
-
-production:
-  sessions:
-    default:
-      uri: <%= ENV['MONGOLAB_URI'] %>
