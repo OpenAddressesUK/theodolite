@@ -211,7 +211,7 @@ RSpec.describe AddressesController, :type => :controller do
       get :index,
           postcode: @postcode.name.downcase.gsub(" ", "")
 
-      expect(response).to redirect_to("/addresses/#{@address.token}")
+      expect(response).to redirect_to("/addresses/#{@address.token}.html")
     end
 
     context 'with multiple results' do
