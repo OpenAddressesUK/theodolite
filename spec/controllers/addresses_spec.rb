@@ -69,6 +69,12 @@ RSpec.describe AddressesController, :type => :controller do
 
       expect(json['addresses'].first['url']).to match /http:\/\/test\.host\/addresses\/[0-9a-z]+/i
     end
+
+    it 'shows an message when there are no addresses found for a query' do
+      get :index, town: "Nowheretown"
+
+      expect(response.body).to match(/Sorry, there were no results for your query/)
+    end
   end
 
   describe 'GET #show' do
