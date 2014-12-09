@@ -19,23 +19,13 @@ As well as Ruby version 2.1.3, you'll also need MongoDB installed. [See installa
 
 `bundle install`
 
-### Add a file called `.env` with the following contents:
-
-```
-ERNEST_ADDRESS_ENDPOINT={URL for the list of addresses from the Ernest master database}
-```
-
-### Import some addresses
-
-`rake theodolite:import`
-
-If you want to only import a limited amount of addresses for development, you can run (where `n` is the number of pages you want to import from the Ernest API (25 per page))
-
-`rake theodolite:import[n]`
-
 ### Run the server
 
 `rails s`
+
+### Get some addresses
+
+Follow the instructions in [Distiller](https://github.com/OpenAddressesUK/distiller/blob/master/README.md) to find out how to import addresses for use in the app.
 
 ##Licence
 The theodolite picture is sourced from [Wikimedia Commons](http://commons.wikimedia.org/wiki/File:SovietTheodolite.jpg). The code is open source under the MIT license. See the LICENSE.md file for full details.
