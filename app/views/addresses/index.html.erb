@@ -30,20 +30,28 @@
 
 <% if @addresses %>
 
-  <h1>Results:</h1>
+  <% if @addresses.count == 0 %>
+    <div class="alert alert-warning" role="alert">
+      <p>Sorry, there were no results for your query.</p>
+    </div>
+  <% else %>
 
-  <div id="map"></div>
+    <h1>Results:</h1>
 
-  <ul>
-  <% @addresses.each do |address| %>
+    <div id="map"></div>
 
-    <li data-latlng="<%= address.postcode.lat_lng.to_a.join(",") %>"><%= link_to address.full_address, address %></li>
+    <ul>
+    <% @addresses.each do |address| %>
+
+      <li data-latlng="<%= address.postcode.lat_lng.to_a.join(",") %>"><%= link_to address.full_address, address %></li>
+
+    <% end %>
+    </ul>
+
+    <%= paginate @addresses %>
+
+    <%= alternate_link_buttons(class: 'btn btn-sm btn-primary') %>
 
   <% end %>
-  </ul>
-
-  <%= paginate @addresses %>
-
-  <%= alternate_link_buttons(class: 'btn btn-sm btn-primary') %>
 
 <% end %>
