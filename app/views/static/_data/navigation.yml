@@ -2,7 +2,7 @@
   path: /about
   children:
     - title: Vision
-      path: /about/data
+      path: /about/vision
     - title: Team
       path: /about/team
     - title: FAQ
