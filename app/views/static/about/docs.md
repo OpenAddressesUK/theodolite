@@ -7,7 +7,7 @@ This document describes the Open Addresses solution for the *Alpha* stage. It wa
 
 The description follows the flow of data processing from its third party Open Data or public data sources down through the final Open Addresses database.
 
-<a href='/assets/docs/data_workflow.png'><img src="/assets/docs/data_workflow_preview.png"></a>
+<%= link_to image_tag("docs/data_workflow_preview.png"), image_path("docs/data_workflow.png") %>
 
 Click on the diagram to see the full version.
 
