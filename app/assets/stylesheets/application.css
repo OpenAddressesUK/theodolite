@@ -12,5 +12,6 @@
  *
  *= require bootstrap
  *= require custom
+ *= require map
  *= require_self
  */
