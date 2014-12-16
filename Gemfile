@@ -46,7 +46,7 @@ end
 gem 'mongoid'
 gem 'bson_ext'
 gem 'httparty'
-gem 'dotenv'
+gem 'dotenv-rails'
 gem 'stringex'
 gem 'kaminari'
 gem 'thin'
@@ -56,6 +56,7 @@ gem 'mongoid_address_models', github: 'openaddressesuk/mongoid_address_models'
 gem 'alternate_rails', github: 'theodi/alternate-rails'
 
 gem 'jekylly', github: 'OpenAddressesUK/jekylly'
+gem 'bugherd'
 
 group :test do
   gem 'rspec-rails', '~> 3.0.0'
