@@ -1,0 +1,12 @@
+<% for post in site_posts %>
+  <% raise post.inspect %>
+  <% if post.category == category %>
+<div class="post">
+<h3 class="title"><a href="<%= post.url %>"><%= post.title %></a></h3>
+<p>
+  <%=post.excerpt%>
+</p>
+<p class="meta">Date: <%= post.date | date_to_long_string %></p>
+</div>
+  <% end %>
+<% end %>

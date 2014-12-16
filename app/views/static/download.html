@@ -1,0 +1,75 @@
+---
+title: Download
+layout: notitle
+---
+
+<div typeof="dcat:Dataset" resource="http://openaddressesuk.org<%=request.path%>">
+
+    <h1 property="dct:title">Open Addresses Database Download</h1>
+
+    <p property="dct:description">
+        The Open Addresses database is available both live through <a href="/docs/#publishingapis">our publishing APIs</a> and for download on this page. 
+    </p>
+  
+    <p>
+        The data was generated from the address sources in our live database on 
+        <span property="dct:issued" resource="[*** REPLACE WITH GO-LIVE DATE ***]">[*** REPLACE WITH GO-LIVE DATE ***]</a>. We plan to publish updated versions for download every time one of the <a href="/docs/#sources">current sources of address data</a> changes. As soon as we will start processing end-user contributions in Beta, the data for download will be re-generated nightly.
+    </p>
+
+  <p property="dct:license" resource="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/">
+    The Open Addresses dataset is licensed as Open Data under the
+    <a href="https://creativecommons.org/licenses/by/4.0/">
+      <span property="dct:title">Creative Commons Attribution 4.0 International (CC BY 4.0) licence</span>
+    </a>. Because of its <a href="/docs/#sources">current sources of address data</a> the database contains data that, in its original form, was previously licensed under the UK Open Government Licence or the Ordnance Survey Open Data Licence, subject to Crown copyright and Crown database rights. 
+  </p>
+
+  <p property="dct:publisher" resource="http://openaddressesuk.org">
+    Published by 
+    <a href="http://openaddressesuk.org" about="http://openaddressesuk.org" property="foaf:homepage">
+      <span property="foaf:name">Open Addresses Ltd.</span>
+    </a>
+  </p>
+  
+  <p>
+    You will need a bittorrent client in order to download the data. We recommend:
+    <ul>
+      <li>Windows: <a href='http://www.utorrent.com/downloads/win'>&#181;Torrent</a></li>
+      <li>OSX / Linux: <a href='https://www.transmissionbt.com'>Transmission</a></li>
+    </ul>
+  </p>
+
+  <div property='dcat:distribution' typeof='dcat:Distribution'>
+      <h3 property="dct:title">Open Addresses Database (downloadable, addresses-only)</h3>
+      <p property="dct:description">
+        This is the addresses-only version of the Open Addresses database, which just includes the complete list of addresses available at the moment of publishing, without provenance information. It is distributed as a single ZIP file, containing one ZIP file per postcode initial letter, containing one CSV file per <a href="http://en.wikipedia.org/wiki/Postcodes_in_the_United_Kingdom#Postcode_area">postcode area</a>.
+      </p>
+      <ul>
+        <li>Format: <span content='http://purl.org/NET/mediatypes/application/zip' property='dcat:mediaType'>zip</span></li>
+      </ul>
+      <p>
+
+        <a class='btn btn-primary' href='https://s3-eu-west-1.amazonaws.com/download.openaddressesuk.org/open_addresses_database/{YYYY}-{MM}-{DD}-openaddressesuk-addresses_only.torrent' property='dcat:accessURL'>
+          <i class='fa fa-cloud-download'></i>
+          Download
+        </a>
+      </p>
+  </div>  
+
+  <div property='dcat:distribution' typeof='dcat:Distribution'>
+      <h3 property="dct:title">Open Addresses Database (downloadable, full)</h3>
+      <p property="dct:description">
+        As above, but including provenance information.
+      </p>
+      <ul>
+        <li>Format: <span content='http://purl.org/NET/mediatypes/application/zip' property='dcat:mediaType'>zip</span></li>
+      </ul>
+      <p>
+        <a class='btn btn-primary' href='https://s3-eu-west-1.amazonaws.com/download.openaddressesuk.org/open_addresses_database/{YYYY}-{MM}-{DD}-openaddressesuk-full.torrent' property='dcat:accessURL'>
+          <i class='fa fa-cloud-download'></i>
+          Download
+        </a>
+      </p>
+  </div>  
+
+  
+</div>

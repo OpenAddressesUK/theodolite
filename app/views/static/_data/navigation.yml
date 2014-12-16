@@ -1,0 +1,37 @@
+- title: About
+  path: /about
+  children:
+    - title: Vision
+      path: /about/data
+    - title: Team
+      path: /about/team
+    - title: FAQ
+      path: /about/data/faq
+#    - title: Jobs
+#      path: /about/jobs
+#    - title: Funders
+#      path: /about/funders
+
+#- title: The Data
+#  path: /about/data
+#  children:
+#    - title: Code
+#      path: /about/data/code
+
+- title: Download
+  path: /download
+
+- title: Documentation
+  path: /docs
+
+- title: Get Involved
+  path: /about/get-involved
+
+- title: News and blog
+  children:
+    - title: Blog
+      path: /about/blog
+    - title: News
+      path: /about/news
+    - title: Useful links
+      path: /about/links
