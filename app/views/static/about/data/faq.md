@@ -40,7 +40,7 @@ At this stage, please [email us](mailto:info@openaddressesuk.org) describing the
 
 #### I have some address data which I want to donate. What do I do next?
 
-We’d love to receive it! We need to ensure that you follow the rules and provenance guidelines for submissions to ensure that there is no unlicensed third-party IP in the file. At this stage, please [get in touch](mailto:info@openaddressesuk.org) with details about the data that you'd like to donate.
+We’d love to receive it! We need to ensure that you follow the rules and provenance guidelines for submissions to ensure that there is no unlicensed third-party IP in the file. Go [here](/about/addingdata) to find out more.
 
 ### Quality
 
@@ -50,7 +50,15 @@ Our aim is to provide a definitive list of all addresses but we are realistic. W
 
 #### How do you plan to filter out bad addresses?
 
-The platform will compare submitted addresses to other open data sources - for example street names and town names - to give a level of confidence to each address. We will publish and fine-tune the rules for this validation during the Alpha and Beta phases.
+The platform will compare submitted addresses to other open data sources - for example street names and town names - to give a level of confidence to each address. We will publish and fine-tune the rules for this validation during the Beta phase.
+
+#### I've spotted some bad addresses. How do I tell you?
+
+Thanks! Could you head over to our [forums](https://github.com/OpenAddressesUK/forum/blob/master/README.md) and leave us a message? We'll work out what we need to do and get it done.
+
+#### How do you plan to maintain the data?
+
+We want to build a community of organisations and people that maintain the data whilst using it. For example just as there is an API to read the data published by the platform we can also receive feedback through the API to add or correct addresses. These feedback loops will help maintain quality and keep the data fresh. We will publish more about this during the Beta phase.
 
 ### Future
 
