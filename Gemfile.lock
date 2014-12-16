@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/OpenAddressesUK/jekylly.git
+  revision: da45bd215f8ccd60c5a97769773cac5790ee7502
+  specs:
+    jekylly (0.0.1)
+      kramdown
+      rails (~> 4.1.7)
+
+GIT
   remote: git://github.com/openaddressesuk/mongoid_address_models.git
   revision: 3fdf5622be683d3519dd7cedade909c334efb5cc
   specs:
@@ -93,6 +101,7 @@ GEM
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
     kgio (2.9.2)
+    kramdown (1.5.0)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     method_source (0.8.2)
@@ -224,6 +233,7 @@ DEPENDENCIES
   factory_girl_rails
   httparty
   jbuilder (~> 2.0)
+  jekylly!
   jquery-rails
   json_spec
   kaminari

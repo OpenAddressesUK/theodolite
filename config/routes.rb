@@ -11,4 +11,6 @@ Rails.application.routes.draw do
 
   get '/postcode/:postcode' => 'addresses#index'
 
+  mount Jekylly::Engine, at: "/"
+
 end

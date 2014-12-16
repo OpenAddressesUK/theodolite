@@ -55,6 +55,8 @@ gem 'uk_postcode'
 gem 'mongoid_address_models', github: 'openaddressesuk/mongoid_address_models'
 gem 'alternate_rails', github: 'theodi/alternate-rails'
 
+gem 'jekylly', github: 'OpenAddressesUK/jekylly'
+
 group :test do
   gem 'rspec-rails', '~> 3.0.0'
   gem 'factory_girl_rails'
