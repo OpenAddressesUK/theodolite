@@ -8,4 +8,4 @@ Addresses are a vital part of the UK’s National Information Infrastructure. Op
 
 You can help build and maintain this address list through the platform. Why not submit your address now?
 
-Want to know more? Just drop us an email to (info@openaddressesuk.org)[mailto:info@openaddressesuk.org]
+Want to know more? Just drop us an email to [info@openaddressesuk.org](mailto:info@openaddressesuk.org)
