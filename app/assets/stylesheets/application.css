@@ -10,18 +10,7 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
+ *= require bootstrap
+ *= require custom
  *= require_self
  */
-
-#search {
-  width: 100%;
-}
-
-#search .form-group {
-  width: 24%;
-}
-
-#search input {
-  width: 100%;
-}
