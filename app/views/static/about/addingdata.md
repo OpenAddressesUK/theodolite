@@ -14,7 +14,7 @@ layout: default
 
 This page contains guidelines for providing datasets to the Open Addresses platform. The guidelines will evolve over time.
 
-We’d love to hear your views on how this guide can be improved. Either make a comment in-line (commenting is open to anyone) or send your suggestion directly to [mailto:info@openaddressesuk.org](info@openaddressesuk.org).
+We’d love to hear your views on how this guide can be improved. Either make a comment in-line (commenting is open to anyone) or send your suggestion directly to [info@openaddressesuk.org](mailto:info@openaddressesuk.org).
 
 <a name='addaddress'>Adding an individual address</a>
 
@@ -65,10 +65,10 @@ If the dataset was not produced by a public sector body then it will require dis
 
 <a name='#submitting'>Submitting data</a>
 
-We will be opening up ways for people to submitting data to the platform during the Beta phase. In the meantime simply add the details to the relevant Trello card or mail us directly at [mailto:info@openaddressesuk.org](info@openaddressesuk.org).
+We will be opening up ways for people to submitting data to the platform during the Beta phase. In the meantime simply add the details to the relevant Trello card or mail us directly at [info@openaddressesuk.org](mailto:info@openaddressesuk.org).
 
 <a href='#infringmenet'>What to do if you believe your IP is being infringed</a>
 
 If we do receive any complaints regarding third-party IP then we will follow our takedown process. It is important to retain any information produced during when sourcing and checking datasets in a public place so that it be used during this process. This allows for a clean and open process.
 
-If you believe your IP is being infringed then at this stage simply email us at [mailto:info@openaddressesuk.org](info@openaddressesuk.org) describing the problem and the data that you believe is affected.
+If you believe your IP is being infringed then at this stage simply email us at [info@openaddressesuk.org](mailto:info@openaddressesuk.org) describing the problem and the data that you believe is affected.
