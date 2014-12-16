@@ -13,7 +13,7 @@
   path: /addresses
 
 - title: Get the data
-  path: /about/getdata
+  path: /data
 
 - title: How it works
   children:
