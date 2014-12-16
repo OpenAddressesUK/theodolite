@@ -5,22 +5,22 @@ layout: default
 
 ##Table of Contents
 
-- <a href='#addaddress'>Adding an individual address</a>
-- <a href='#sourcingdata'>I want to help source a large dataset</a>
-- <a href='#largedatasets'>What large datasets are useful?</a>
-- <a href='#thirdpartyIP'>Checking licencing and third party IP</a>
-- <a href='#submittingdata'>Submitting data</a>
-- <a href='#infringmenet'>What to do if you believe your IP is being infringed</a>
+- <a href='#adding-an-individual-address'>Adding an individual address</a>
+- <a href='#i-want-to-help-source-a-large-dataset'>I want to help source a large dataset</a>
+- <a href='#what-large-datasets-are-useful'>What large datasets are useful?</a>
+- <a href='#checking-licencing-and-third-party-ip'>Checking licencing and third party IP</a>
+- <a href='#submitting-data'>Submitting data</a>
+- <a href='#what-to-do-if-you-believe-your-ip-is-being-infringed'>What to do if you believe your IP is being infringed</a>
 
 This page contains guidelines for providing datasets to the Open Addresses platform. The guidelines will evolve over time.
 
 We’d love to hear your views on how this guide can be improved. Either make a comment in-line (commenting is open to anyone) or send your suggestion directly to [info@openaddressesuk.org](mailto:info@openaddressesuk.org).
 
-<a name='addaddress'>Adding an individual address</a>
+## Adding an individual address
 
-#To be written
+*To be written*
 
-<a name='sourcingdata'>I want to help source a large dataset</a>
+## I want to help source a large dataset
 
 Great!
 
@@ -32,7 +32,7 @@ The board contains a set of Read Me guidelines to help people along. These will 
 
 You can choose to participate at different parts of the process based on your skillsets of preference: for example adding ideas, submitting Freedom of Information (FOI) requests or verifying Intellectual Property (IP) rights.
 
-<a name='largedatasets'>What large datasets are useful?</a>
+## What large datasets are useful?
 
 The ideal datasets contain large volumes of UK addresses, are published as open data and are explicitly licenced for reuse.
 
@@ -42,7 +42,7 @@ In many cases even if a dataset is published as open data it may not be clear if
 
 Third-party IP cannot be removed from a dataset by the publishing or licensing process. We can only use the data if the IP in the data (including the addresses) is explicitly licensed for reuse - this should occur before the data set is provided to Open Addresses.  Please be sure not to violate others' intellectual property with your submission.
 
-<a name='#thirdpartyIP'>Checking licencing and third party IP</a>
+## Checking licencing and third party IP
 
 
 Checking licencing and third party IP can be difficult but it is essential. Some of the law in this area has been untested in court, the Open Government Licence (OGL) and open data publishing process does not guarantee that third-party IP is not present in the dataset.
@@ -63,11 +63,11 @@ These FOIs provide some language that others can easily reuse. We would love to 
 
 If the dataset was not produced by a public sector body then it will require discussion with those organisations to determine how the dataset was produced and to gain confidence that no third-party IP is present.
 
-<a name='#submitting'>Submitting data</a>
+## Submitting data
 
 We will be opening up ways for people to submitting data to the platform during the Beta phase. In the meantime simply add the details to the relevant Trello card or mail us directly at [info@openaddressesuk.org](mailto:info@openaddressesuk.org).
 
-<a href='#infringmenet'>What to do if you believe your IP is being infringed</a>
+## What to do if you believe your IP is being infringed
 
 If we do receive any complaints regarding third-party IP then we will follow our takedown process. It is important to retain any information produced during when sourcing and checking datasets in a public place so that it be used during this process. This allows for a clean and open process.
 
