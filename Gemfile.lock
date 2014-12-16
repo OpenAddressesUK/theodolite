@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/OpenAddressesUK/jekylly.git
-  revision: ea97e2b7a39eefdd30af5babfaacb163aa88202f
+  revision: 7d303509c29834eaf353cd9c548d06eb12cbcc2c
   specs:
     jekylly (0.0.1)
       kramdown
