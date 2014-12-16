@@ -46,7 +46,7 @@ end
 gem 'mongoid'
 gem 'bson_ext'
 gem 'httparty'
-gem 'dotenv'
+gem 'dotenv-rails'
 gem 'stringex'
 gem 'kaminari'
 gem 'thin'
