@@ -13,7 +13,7 @@
 
   <div class='page-header'>
   	<div class='container'>
-  		<a href='/'><img src='http://openaddressesuk.org/assets/logo.png' /></a>
+  		<a href='/'><%= image_tag 'logo.png' %></a>
   	</div>
   </div>
 
@@ -57,14 +57,14 @@
 
       <div class='col-md-8'>
 
-        <img src='http://openaddressesuk.org/assets/logo_white.png' alt='Open Addresses' class='logo'/>
+        <%= image_tag 'logo_white.png', alt:'Open Addresses', class:'logo' %>
 
         <address>
           Open Addressess Limited c/o BPE Solicitors LLP, St James' House, St James Square, Cheltenham, GL50 3PR
           <br>
           Company No. 09172118
           <br>
-          <a href='http://openaddressesuk.org/about/data/privacy/'>Privacy Policy</a>
+          <a href='/about/data/privacy/'>Privacy Policy</a>
         </address>
 
       </div>
