@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Open Addresses UK - Alpha <%= (@metadata ? ": #{@metadata['title']}" : nil) %></title>
-  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= stylesheet_link_tag 'https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css', media: 'all', 'data-turbolinks-track' => true %>
-  <%= stylesheet_link_tag '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' %>
-  <%= favicon_link_tag '/favicon.ico' %>
-  <%= csrf_meta_tags %>
-  <%= alternate_auto_discovery_link_tags %>
-</head>
+  <%= render partial: 'shared/head' %>
 <body>
 
   <div class='page-header'>
@@ -17,70 +9,15 @@
   	</div>
   </div>
 
-  <nav class="navbar navbar-default navbar-static-fixed" role="navigation">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <div class="container">
-          <ul class="nav navbar-nav">
-            <!--<li class="navbar-brand"><a href="/"><img src="/assets/logo_white.png" alt="open addresses"></a></li>-->
-            <li>
-              <a href="/addresses">Search Addresses</a>
-            </li>
-          </ul>
-        </div>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-
-  <div class="container">
-
-    <%= content_for?(:content) ? yield(:content) : yield %>
-
-  </div>
-
-  <div class='footer'>
+  <%= render partial: 'shared/navigation' %>
 
   <div class='container'>
-
-    <div class='row'>
-
-      <div class='col-md-8'>
-
-        <%= image_tag 'logo_white.png', alt:'Open Addresses', class:'logo' %>
-
-        <address>
-          Open Addressess Limited c/o BPE Solicitors LLP, St James' House, St James Square, Cheltenham, GL50 3PR
-          <br>
-          Company No. 09172118
-          <br>
-          <a href='/about/data/privacy/'>Privacy Policy</a>
-        </address>
-
-      </div>
-
-      <div class='col-md-4'>
-        <a href='https://twitter.com/OpenAddressesUK'>@OpenAddressesUK</a>
-        <br>
-        <a href='mailto:team@openaddressesuk.org'>team@openaddressesuk.org</a>
-      </div>
-
-    </div>
-
+    <%= content_for?(:content) ? yield(:content) : yield %>
   </div>
 
-</div>
-<%= javascript_include_tag 'https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js', 'data-turbolinks-track' => true %>
-<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= render partial: 'shared/footer' %>
+  
+  <%= render partial: 'shared/footer_scripts' %>
+  
 </body>
 </html>
