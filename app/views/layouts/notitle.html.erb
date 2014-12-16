@@ -1,0 +1,7 @@
+<% content_for :content do %>
+<div class="container">
+  <%= yield %>
+  <%= include 'breadcrumb' %>
+</div>
+<% end %>
+<%= render template: "layouts/application" %>

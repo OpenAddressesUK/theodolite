@@ -1,0 +1,8 @@
+<% content_for :content do %>
+  <div class="container">
+    <h1><%= @metadata['title'] %></h1>
+    <%= yield %>
+    <%= include 'breadcrumb' %>
+  </div>
+<% end %>
+<%= render template: "layouts/application" %>
