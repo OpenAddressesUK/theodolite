@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-  root to: 'addresses#index'
-
   resources :addresses
 
   get '/streets/:id' => "address_parts#street", as: "street"
@@ -10,5 +8,8 @@ Rails.application.routes.draw do
   get '/postcodes/:id' => "address_parts#postcode", as: "postcode"
 
   get '/postcode/:postcode' => 'addresses#index'
+
+  root to: 'jekylly/static#show', defaults: { path: 'main' }
+  mount Jekylly::Engine, at: "/"
 
 end

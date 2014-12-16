@@ -10,10 +10,8 @@
 
 <form action="/addresses" class="well form-inline" role="form" id="search" onSubmit="filterSearch(); return true" >
 	<div class="form-group">
-		<div class="input-group">
-			<label class="sr-only" for="street">Street</label>
-			<input type="text" class="form-control" id="street" name="street" placeholder="Street" value="<%= params[:street]%>">
-		</div>
+		<label class="sr-only" for="street">Street</label>
+		<input type="text" class="form-control" id="street" name="street" placeholder="Street" value="<%= params[:street]%>">
 	</div>
 	<div class="form-group">
 		<label class="sr-only" for="town">Town</label>
@@ -34,7 +32,11 @@
     <div class="alert alert-warning" role="alert">
       <p>Sorry, there were no results for your query.</p>
     </div>
+
+    <%= render 'addresses/address_submit' %>
   <% else %>
+
+    <%= render 'addresses/address_submit' %>
 
     <h1>Results:</h1>
 

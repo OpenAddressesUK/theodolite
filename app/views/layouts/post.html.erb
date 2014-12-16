@@ -1,0 +1,12 @@
+<% content_for :content do %>
+  <div class="container">
+    <%=content%>
+    
+    <p><% if page.author %> By <%=page.author%> on <% end %> <%= page.date | date_to_long_string %></p>
+    
+    <div>
+      <%= include 'comments' %>
+    </div>
+  </div>
+<% end %>
+<%= render template: "layouts/application" %>

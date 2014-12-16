@@ -1,0 +1,34 @@
+<% if request.path != '/' %>
+
+  <ol class="breadcrumb">
+    <li><a href="/">Home</a></li>
+
+    <% for item in site_data('navigation') %>
+
+      <% if item['path'] == request.path %>
+        <li><%=item['title']%></li>
+      <% elsif item['children'] %>
+        <% for child in item['children'] %>
+          <% if child['path'] == request.path %>
+            <% if item['path'] %>
+              <li><a href="<%=item['path']%>"><%=item['title']%></a></li>
+            <% end %>
+            <li><%=child['title']%></li>
+          <% end %>
+        <% end %>
+      <% end %>
+
+    <% end %>
+
+    <% if @metadata['category'] %>
+      <li>
+        <a href="/about/<%=@metadata['category']%>"><%=@metadata['category'].capitalize%></a>
+      </li>
+      <li>
+        <%=@metadata['title']%>
+      </li>
+    <% end %>
+
+  </ol>
+
+<% end %>

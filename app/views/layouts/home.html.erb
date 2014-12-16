@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <%= render partial: 'shared/head' %>
+<body>
+
+  <div class="home">
+    <%= render partial: 'shared/alpha' %>
+    <img src="/assets/photos/flats-banner.jpg" alt="open addresses">
+
+    <%= render partial: 'shared/navigation' %>
+
+    <div class="container">
+
+      <%= content_for?(:content) ? yield(:content) : yield %>
+
+      <p class="pull-right">
+        <small>Photo credit: <a href="https://www.flickr.com/photos/lydiashiningbrightly/5215606790">Regency House, Leamington Spa, by Lydia</a>
+      </p>
+    </div>
+  </div>
+
+  <%= render partial: 'shared/footer' %>
+  <%= render partial: 'shared/footer_scripts' %>
+
+</body>
+</html>

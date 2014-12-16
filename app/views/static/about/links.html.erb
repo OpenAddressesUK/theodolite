@@ -1,0 +1,9 @@
+---
+title: Links
+---
+<dl>
+  <% site_data(:links).each do |link| %>
+  <dt><%= link_to link['title'], link['url'] %></dt>
+  <dd><%= link['description'].html_safe %></dd>
+  <% end %>
+</dl>
