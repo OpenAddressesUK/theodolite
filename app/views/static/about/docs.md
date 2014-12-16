@@ -28,11 +28,11 @@ Open Addresses uses two types of data:
 - **reference data**, such as list of valid post towns or postcodes, and
 - **addresses**.
 
-All of the data that we use is either free of third-party Intellectual Property (IP) or is fully openly licenced. All provenance is tracked.
+All of the data that we use is either free of third-party Intellectual Property (IP) or is fully openly licensed. All provenance is tracked.
 
 ###Reference data
 
-For the Alpha phase We used four reference datasets. All are open data released by the public sector:
+For the Alpha phase we used four reference datasets:
 
 - [Ordnance Survey's "OS Locator"](http://www.ordnancesurvey.co.uk/business-and-government/products/os-locator.html), from which we source our reference table of **road names**.
 - [Ordnance Survey's "Strategi"](http://www.ordnancesurvey.co.uk/business-and-government/products/strategi.html), from which we source our reference table of **settlements (localities)**.
@@ -40,7 +40,7 @@ For the Alpha phase We used four reference datasets. All are open data released 
 - The [Office for National Statistics' "ONS Postcode Directory (ONSPD)"](http://www.ons.gov.uk/ons/guide-method/geography/products/postcode-directories/-nspp-/index.html), from which we source our reference table of **postcodes**. Note that Northern Ireland's postcodes are dropped from the reference data as ["a separate licence for commercial use is required, direct from the Irish Land and Property Services"](http://www.ons.gov.uk/ons/guide-method/geography/beginner-s-guide/licences/index.html).
 
 ###Address data
-The current platform uses a single address dataset [Companies House's "Free Company Data Product"](http://download.companieshouse.gov.uk/en_output.html).
+The current platform uses a single address dataset as its source: [Companies House's "Free Company Data Product"](http://download.companieshouse.gov.uk/en_output.html).
 
 Companies House's Free Company Data Product [does not include third party IP](https://www.whatdotheyknow.com/request/free_company_data_third_party_in).
 
@@ -56,7 +56,7 @@ It is important to note that, for Open Addresses' Alpha stage, we also decided t
 <h2 id='etls'>The ETL software modules</h2>
 
 ###The Common ETL
-The reference data created from its sources described above by the software component we call *common ETL* (ETL as in "Extract, Transform, Load"). We consider the data highly reliable, hence it goes through minimal processing before being published by the platform..
+The reference data created from its sources described above by the software component we call *common ETL* (ETL as in "Extract, Transform, Load"). We consider the data highly reliable, hence it goes through minimal processing before being published by the platform.
 
 You are welcome to review or contribute to the current version of the Distiller on GitHub [here](https://github.com/OpenAddressesUK/common-ETL).
 
@@ -81,9 +81,9 @@ You are welcome to review or contribute to the current version of the Ingester o
 <h2 id='distiller'>The Distiller software module</h2>
 The Distiller module 'distills' the raw database into the best possible consistent set of addresses we can produce at the moment of execution.
 
-For Alpha, this mainly means identifying duplicates. For example data from Companies House can include more than one company are registered at the same addresses.
+For Alpha, this mainly means identifying duplicates. For example data from Companies House can include more than one company registered at the same addresses.
 
-In Beta the Distiller's role will become much more substantial. It will detect misspellings and alternative spellings; manage contradicting sources for the same addresses; calculate rigorous statistical confidence in each address; define the provenance record for the derived address data accordingly; and possibly even do cross-ETL inference. For example, can we infer the existence of an address from the presumed existence of other addresses submitted by different ETL modules and what level of confidence should be placed on it?
+In Beta the Distiller's role will become much more substantial. It will detect misspellings and alternative spellings; manage contradicting sources for the same addresses; calculate rigorous statistical confidence in each address; define the provenance record for the derived address data accordingly; and possibly even do cross-ETL inference. For example, can we infer the existence of an address from the existence of other addresses submitted by different ETL modules and what level of confidence should be placed on it?
 
 The Distiller is also responsible for creating unique identifiers for each unique component of all known addresses so that they can be referenced in a linked data fashion and published accordingly.
 
@@ -94,11 +94,42 @@ Open Addresses offers several APIs (Application Programming Interfaces) to integ
 
 - We publish each address component (street, locality, post town and postcode) and each address as URIs (unique resource identifiers) so that they can be easily referenced from third party applications. The URIs have the following format:
 
-		http://openaddressesuk.org/{addresses|streets|localities|towns|postcodes}/{identifier}
+		http://openaddressesuk.org/{addresses|streets|localities|towns|postcodes}.json/{identifier}
 
-- You can search the Open Addresses database by querying:
+Open Addresses' own address for example is [http://alpha.openaddressesuk.org/addresses/ODK23N.json](http://alpha.openaddressesuk.org/addresses/ODK23N.json). If you browse this URL you will get its full JSON representation, including the references to its components (e.g. [http://alpha.openaddressesuk.org/postcodes/KmY4vG](http://alpha.openaddressesuk.org/postcodes/KmY4vG) for the postcode) and its provenance.
 
-		http://openaddressesuk.org/addresses?town={town}&street={street}&postcode={postcode}
+```		
+	{"address":{
+	    "url":"http://alpha.openaddressesuk.org/addresses/ODK23N",
+	    "sao":null,
+	    "pao":"ST JAMES'S HOUSE BPE SOLICITORS",
+	    "street":{
+	        "name":{"en":["ST JAMES' SQUARE"],"cy":[]},
+	        "url":"http://alpha.openaddressesuk.org/streets/77NwRC"
+	    },
+	    "locality":{
+	        "name":{"en":[null],"cy":[]},
+	        "url":null
+	    },
+	    "town":{
+	        "name":{"en":["CHELTENHAM"],"cy":[]},
+	        "url":"http://alpha.openaddressesuk.org/towns/pHQiLb"
+	    },
+	    "postcode":{
+	        "name":"GL50 3PR",
+	        "url":"http://alpha.openaddressesuk.org/postcodes/KmY4vG"
+	    },
+	    "provenance":{
+	        (...)
+	    }
+	}}
+```
+
+- You can search the Open Addresses database by querying with an HTTP GET:
+
+		http://openaddressesuk.org/addresses.json?town={town}&street={street}&postcode={postcode}
+
+The parameters must be expressed in the query string and encoded accordingly, e.g. as in [http://alpha.openaddressesuk.org/addresses.json?street=st+james%27+square&town=Cheltenham](http://alpha.openaddressesuk.org/addresses.json?street=st+james%27+square&town=Cheltenham). For Alpha the match must be exact; in Beta we will introduce partial matching and the management of alternative spellings. 
 
 Browsing any of these URIs using a conventional Web browser will offer you a human-readable Web page of the data describing that address or address component. You can also request the data in JSON format, either by adding `.json` to the URI, or passing an `Accept: application/json` header in your request.
 
@@ -114,33 +145,22 @@ Given the sensitiveness of the intellectual property matters surrounding address
 
 [All of our source code is published on GitHub](https://github.com/openaddressesuk) and the data we publish is available for distribution in formats that include sufficient provenance information to fully assess its origin. It is our ambition to give anybody the means to reproduce all of our work.
 
-The typical provenance information associated to each address can be seen in the JSON code below [****NOT FINAL FORMAT****]. It references the exact source code that was run and the data sources that were used, and when the data processing and the download took place. Whenever technically and legally feasible [we also store unmodified copies of the source data for reference and due diligence](http://download.openaddressesuk.org.s3-website-eu-west-1.amazonaws.com/?prefix=sources_archive/), e.g. the five files listed in the example.
+The typical provenance information associated to each address can be seen in the JSON code below, that is the provenance of Open Addresses' own address [http://alpha.openaddressesuk.org/addresses/ODK23N.json](http://alpha.openaddressesuk.org/addresses/ODK23N.json). It references the exact source code that was run and the data sources that were used, and when the data processing and the download took place.
 
-<pre><code><font size="-2">{
-	(...)
-	"provenance": {
+```
+	"provenance":{
 		"activity":{
-			"processing_scripts":"[LINK TO THE DISTILLER REPOSITORY **TREE** used for distillation]",
-			"executed_at":"2014-11-19T09:53:14.000Z",
-			"derived_from": [
-				{
-					"type":"Source",
-					"description_url":"http://download.companieshouse.gov.uk/en_output.html",
-					"url":[
-						"http://download.companieshouse.gov.uk/BasicCompanyData-2014-11-01-part1_5.zip",
-						"http://download.companieshouse.gov.uk/BasicCompanyData-2014-11-01-part2_5.zip",
-						"http://download.companieshouse.gov.uk/BasicCompanyData-2014-11-01-part3_5.zip",
-						"http://download.companieshouse.gov.uk/BasicCompanyData-2014-11-01-part4_5.zip",
-						"http://download.companieshouse.gov.uk/BasicCompanyData-2014-11-01-part5_5.zip"
-					],
-					"name":"Companies House's \"Free Company Data Product\"",
-					"downloaded_at":"2014-11-21T12:21:49.859Z",
-					"processing_scripts":"https://github.com/OpenAddressesUK/common-ETL/tree/efcd9970fc63c12b2f1aef410f87c2dcb4849aa3"
-				},
-				(...)
-			]
+			"executed_at":"2014-12-01T15:49:55.563Z",
+			"processing_scripts":"https://github.com/OpenAddressesUK/distiller",
+			"derived_from":[
+				{"type":"Source","urls":["http://ernest.openaddressesuk.org/addresses/814421"],"downloaded_at":"2014-12-01T15:49:55.563Z","processing_script":"https://github.com/OpenAddressesUK/distiller/tree/3de740587c878a18da85b1e95c957c575cde088a/lib/distil.rb"},
+				{"type":"Source","urls":["http://alpha.openaddressesuk.org/postcodes/KmY4vG"],"downloaded_at":"2014-12-01T15:49:55.563Z","processing_script":"https://github.com/OpenAddressesUK/distiller/tree/3de740587c878a18da85b1e95c957c575cde088a/lib/distil.rb"},
+				{"type":"Source","urls":["http://alpha.openaddressesuk.org/streets/77NwRC"],"downloaded_at":"2014-12-01T15:49:55.563Z","processing_script":"https://github.com/OpenAddressesUK/distiller/tree/3de740587c878a18da85b1e95c957c575cde088a/lib/distil.rb"},
+				{"type":"Source","urls":["http://alpha.openaddressesuk.org/towns/pHQiLb"],"downloaded_at":"2014-12-01T15:49:55.563Z","processing_script":"https://github.com/OpenAddressesUK/distiller/tree/3de740587c878a18da85b1e95c957c575cde088a/lib/distil.rb"}]
 		}
 	}
-}</font></code></pre>
+```
+
+Whenever technically and legally feasible [we also store unmodified copies of the source data for reference and due diligence](http://download.openaddressesuk.org.s3-website-eu-west-1.amazonaws.com/?prefix=sources_archive/), e.g. the four files listed in the example.
 
 We are evaluating adopting a recognised standard for documenting provenance in Beta, such as W3C's [PROV](http://www.w3.org/TR/prov-dm/).
