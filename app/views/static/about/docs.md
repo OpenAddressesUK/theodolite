@@ -92,8 +92,15 @@ You are welcome to review or contribute to the current version of the Distiller 
 <h2 id='publishingapis'>The publishing APIs</h2>
 Open Addresses offers several APIs (Application Programming Interfaces) to integrate our live data into your applications. During Alpha cover the following functionality:
 
-- We publish each address component (street, locality, post town and postcode) and each address as URIs (unique resource identifiers) so that they can be easily referenced from third party applications. The URIs have the format *http://alpha.openaddressesuk.org/[***TO BE COMPLETED***]*. Browsing any of these URIs using a conventional Web browser will offer you a human-readable Web page of the data describing that address or address component.
-- You can search the Open Addresses database by querying *http://alpha.openaddressesuk.org/[***TO BE COMPLETED***]*.
+- We publish each address component (street, locality, post town and postcode) and each address as URIs (unique resource identifiers) so that they can be easily referenced from third party applications. The URIs have the following format:
+
+		http://openaddressesuk.org/{addresses|streets|localities|towns|postcodes}/{identifier}
+
+- You can search the Open Addresses database by querying:
+
+		http://openaddressesuk.org/addresses?town={town}&street={street}&postcode={postcode}
+
+Browsing any of these URIs using a conventional Web browser will offer you a human-readable Web page of the data describing that address or address component. You can also request the data in JSON format, either by adding `.json` to the URI, or passing an `Accept: application/json` header in your request.
 
 <h2 id='downloadable'>The downloadable Open Addresses database</h2>
 Downloadable versions of the Open Addresses database are available, too. See the [download page](/data) for more detail.
