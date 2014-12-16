@@ -96,7 +96,7 @@ Open Addresses offers several APIs (Application Programming Interfaces) to integ
 - You can search the Open Addresses database by querying *http://alpha.openaddressesuk.org/[***TO BE COMPLETED***]*.
 
 #<a name='downloadable'>The downloadable Open Addresses database</a>
-Downloadable versions of the Open Addresses database are available, too. See the [download page](/download) for more detail. 
+Downloadable versions of the Open Addresses database are available, too. See the [download page](/about/getdata) for more detail. 
 
 The software module responsible for producing the downloadable versions has been named "Hippodamus" after [Hippodamus of Miletus](https://en.wikipedia.org/wiki/Hippodamus_of_Miletus): an ancient Greek architect, urban planner, physician, mathematician, meteorologist and philosopher commonly considered to be the 'father of urban planning'. 
 
