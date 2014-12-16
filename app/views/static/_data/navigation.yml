@@ -7,16 +7,9 @@
       path: /about/team
     - title: FAQ
       path: /about/data/faq
-#    - title: Jobs
-#      path: /about/jobs
-#    - title: Funders
-#      path: /about/funders
 
-#- title: The Data
-#  path: /about/data
-#  children:
-#    - title: Code
-#      path: /about/data/code
+- title: Search
+  path: /addresses
 
 - title: Download
   path: /download
