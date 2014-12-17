@@ -6,7 +6,7 @@ layout: notitle
              foaf: http://xmlns.com/foaf/0.1/
              rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
              dct: http://purl.org/dc/terms/">
-             
+
   <div typeof="dcat:Catalog" resource="http://openaddressesuk.org<%=request.path%>">
 
       <h1 property="dct:title">Open Addresses Data</h1>
@@ -17,7 +17,7 @@ layout: notitle
 
       <p>
           The downloadable data was generated from the live platform on
-          <span property="dct:issued" resource="2014/12/10"><b>10 December 2014</b></a>.
+          <span property="dct:issued" content='2014-12-10' datatype='xsd:date'><b>10 December 2014</b></a>.
       </p>
       <p>
           We plan to publish updated versions for download every time any of the <a href="/about/docs#sources">current sources of address data</a> change. When we start processing end-user contributions in Beta, the data for download will be re-generated nightly.
