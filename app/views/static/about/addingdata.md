@@ -18,7 +18,7 @@ We’d love to hear your views on how this guide can be improved. Either make a 
 
 ## Adding an individual address
 
-*To be written*
+Simple! Just go to our homepage at [http://openaddressesuk.org](http://openaddressesuk.org) and write it in the form. Don't worry about the address format: our software will take care of it. Remember to read the submission guidelines.
 
 ## I want to help source a large dataset
 
