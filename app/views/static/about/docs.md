@@ -94,7 +94,7 @@ Open Addresses offers several APIs (Application Programming Interfaces) to integ
 
 - We publish each address component (street, locality, post town and postcode) and each address as URIs (unique resource identifiers) so that they can be easily referenced from third party applications. The URIs have the following format:
 
-		http://openaddressesuk.org/{addresses|streets|localities|towns|postcodes}.json/{identifier}
+		http://alpha.openaddressesuk.org/{addresses|streets|localities|towns|postcodes}.json/{identifier}
 
 Open Addresses' own address for example is [http://alpha.openaddressesuk.org/addresses/ODK23N.json](http://alpha.openaddressesuk.org/addresses/ODK23N.json). If you browse this URL you will get its full JSON representation, including the references to its components (e.g. [http://alpha.openaddressesuk.org/postcodes/KmY4vG](http://alpha.openaddressesuk.org/postcodes/KmY4vG) for the postcode) and its provenance.
 
@@ -127,7 +127,7 @@ Open Addresses' own address for example is [http://alpha.openaddressesuk.org/add
 
 - You can search the Open Addresses database by querying with an HTTP GET:
 
-		http://openaddressesuk.org/addresses.json?town={town}&street={street}&postcode={postcode}
+		http://alpha.openaddressesuk.org/addresses.json?town={town}&street={street}&postcode={postcode}
 
 The parameters must be expressed in the query string and encoded accordingly, e.g. as in [http://alpha.openaddressesuk.org/addresses.json?street=st+james%27+square&town=Cheltenham](http://alpha.openaddressesuk.org/addresses.json?street=st+james%27+square&town=Cheltenham). For Alpha the match must be exact; in Beta we will introduce partial matching and the management of alternative spellings. 
 
