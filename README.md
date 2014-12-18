@@ -3,7 +3,7 @@ Theodolite
 
  ![](https://upload.wikimedia.org/wikipedia/commons/3/30/SovietTheodolite.jpg)
 
-This repository is about Open Addresses' publishing APIs software component. It is named "theodolite", after [the precision instrument for measuring angles in the horizontal and vertical planes, used mainly for surveying applications](http://en.wikipedia.org/wiki/Theodolite). Theodolite is part of the solution Open Addresses deployed for the Alpha stage of our services. Read about Theodolite [here](http://openaddressesuk.org/docs) or learn about Open Addresses in general [here](http://openaddressesuk.org).
+This repository is about Open Addresses' publishing APIs software component. It is named "theodolite", after [the precision instrument for measuring angles in the horizontal and vertical planes, used mainly for surveying applications](http://en.wikipedia.org/wiki/Theodolite). Theodolite is part of the solution Open Addresses deployed for the Alpha stage of our services. Read about Theodolite [here](http://alpha.openaddressesuk.org/docs) or learn about Open Addresses in general [here](http://alpha.openaddressesuk.org).
 
 ## Dependencies
 

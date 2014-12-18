@@ -7,7 +7,7 @@ layout: notitle
              rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
              dct: http://purl.org/dc/terms/">
 
-  <div typeof="dcat:Catalog" resource="http://openaddressesuk.org<%=request.path%>">
+<div typeof="dcat:Catalog" resource="http://alpha.openaddressesuk.org<%=request.path%>">
 
       <h1 property="dct:title">Open Addresses Data</h1>
 
@@ -47,7 +47,7 @@ layout: notitle
       </ul>
     </p>
 
-    <div property="dcat:dataset" typeof="dcat:Dataset" resource="http://openaddressesuk.org<%=request.path%>#address-only">
+    <div property="dcat:dataset" typeof="dcat:Dataset" resource="http://alpha.openaddressesuk.org<%=request.path%>#address-only">
       <h3 property="dct:title">Open Addresses dataset (downloadable, addresses-only)</h3>
       <p property="dct:description">
         This is the addresses-only version of the Open Addresses dataset. It includes the current list of addresses without provenance information. It is distributed as a single ZIP file, containing one ZIP file per postcode initial, containing one CSV file per <a href="http://en.wikipedia.org/wiki/Postcodes_in_the_United_Kingdom#Postcode_area">postcode area</a>. Each row in the CSV file is one address.
@@ -76,7 +76,7 @@ layout: notitle
       </p>
     </div>
 
-    <div property="dcat:dataset" typeof="dcat:Dataset" resource="http://openaddressesuk.org<%=request.path%>#full">
+    <div property="dcat:dataset" typeof="dcat:Dataset" resource="http://alpha.openaddressesuk.org<%=request.path%>#full">
         <h3 property="dct:title">Open Addresses dataset (downloadable, full)</h3>
         <p property="dct:description">
           As above, but including:
