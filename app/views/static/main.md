@@ -15,4 +15,4 @@ Addresses are a vital part of the UK’s National Information Infrastructure. Op
 
 You can help build and maintain an address list for everyone through this platform.
 
-Want to know more? Check out the [Vision](about/data/), the list of [Frequently Asked Questions](about/data/faq/), [register for the mailist](/about/get-involved/) or drop us an [email](mailto:info@openaddressesuk.org).
+Want to know more? Check out the [Vision](about/vision/), the list of [Frequently Asked Questions](about/data/faq/), [register for the mailist](/about/get-involved/) or drop us an [email](mailto:info@openaddressesuk.org).
