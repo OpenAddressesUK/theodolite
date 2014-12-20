@@ -98,7 +98,6 @@ Open Addresses offers several APIs (Application Programming Interfaces) to integ
 
 Open Addresses' own address for example is [http://alpha.openaddressesuk.org/addresses/ODK23N.json](http://alpha.openaddressesuk.org/addresses/ODK23N.json). If you browse this URL you will get its full JSON representation, including the references to its components (e.g. [http://alpha.openaddressesuk.org/postcodes/KmY4vG](http://alpha.openaddressesuk.org/postcodes/KmY4vG) for the postcode) and its provenance.
 
-```		
 	{"address":{
 	    "url":"http://alpha.openaddressesuk.org/addresses/ODK23N",
 	    "sao":null,
@@ -123,7 +122,6 @@ Open Addresses' own address for example is [http://alpha.openaddressesuk.org/add
 	        (...)
 	    }
 	}}
-```
 
 - You can search the Open Addresses database by querying with an HTTP GET:
 
@@ -147,7 +145,6 @@ Given the sensitiveness of the intellectual property matters surrounding address
 
 The typical provenance information associated to each address can be seen in the JSON code below, that is the provenance of Open Addresses' own address [http://alpha.openaddressesuk.org/addresses/ODK23N.json](http://alpha.openaddressesuk.org/addresses/ODK23N.json). It references the exact source code that was run and the data sources that were used, and when the data processing and the download took place.
 
-```
 	"provenance":{
 		"activity":{
 			"executed_at":"2014-12-01T15:49:55.563Z",
@@ -159,7 +156,6 @@ The typical provenance information associated to each address can be seen in the
 				{"type":"Source","urls":["http://alpha.openaddressesuk.org/towns/pHQiLb"],"downloaded_at":"2014-12-01T15:49:55.563Z","processing_script":"https://github.com/OpenAddressesUK/distiller/tree/3de740587c878a18da85b1e95c957c575cde088a/lib/distil.rb"}]
 		}
 	}
-```
 
 Whenever technically and legally feasible [we also store unmodified copies of the source data for reference and due diligence](http://download.openaddressesuk.org.s3-website-eu-west-1.amazonaws.com/?prefix=sources_archive/), e.g. the four files listed in the example.
 
