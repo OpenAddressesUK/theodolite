@@ -1,7 +1,7 @@
 ---
 author: Peter Wells
+title: An Open Addresses Alpha
 ---
-### An Open Addresses Alpha
 
 We are delighted that the Open Addresses Alpha release is now open for people to look at and provide comments on. We're proud of what we've achieved but we also want to hear what you think as we start on the next phase of Open Addresses.
 
