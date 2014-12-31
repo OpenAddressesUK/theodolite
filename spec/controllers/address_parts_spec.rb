@@ -150,7 +150,7 @@ RSpec.describe AddressPartsController, :type => :controller do
       expect(response).to have_http_status(200)
     end
 
-    it 'shows the correct JSON for a locality' do
+    it 'shows the correct JSON for a postcode' do
       get :postcode, id: @postcode.token,
                      format: :json
 
@@ -160,6 +160,8 @@ RSpec.describe AddressPartsController, :type => :controller do
       expect(response).to have_http_status(200)
       expect(response.headers['Content-Type']).to match /application\/json/
       expect(json['postcode']['name']).to eq(@postcode.name)
+      expect(json['postcode']['geo']['latitude']).to eq(@postcode.lat_lng.y)
+      expect(json['postcode']['geo']['longitude']).to eq(@postcode.lat_lng.x)
     end
 
     it 'shows the correct JSON for containing addresses' do

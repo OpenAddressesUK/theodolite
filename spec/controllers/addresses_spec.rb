@@ -126,6 +126,8 @@ RSpec.describe AddressesController, :type => :controller do
       expect(json['address']['town']['name']['en']).to eq([@address.town.name])
       expect(json['address']['town']['url']).to eq("http://test.host/towns/#{@address.town.token}")
       expect(json['address']['postcode']['name']).to eq(@address.postcode.name)
+      expect(json['address']['postcode']['geo']['latitude']).to eq(@address.postcode.lat_lng.y)
+      expect(json['address']['postcode']['geo']['longitude']).to eq(@address.postcode.lat_lng.x)
       expect(json['address']['postcode']['url']).to eq("http://test.host/postcodes/#{@address.postcode.token}")
 
     end

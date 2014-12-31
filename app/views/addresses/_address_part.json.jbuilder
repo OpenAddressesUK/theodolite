@@ -1,7 +1,10 @@
 json.set! type do
   if type == "postcode"
     json.name part.try(:name)
-    json.lat_lng part.try(:lat_lng)
+    json.geo do
+      json.latitude part.try(:lat_lng).try(:y)
+      json.longitude part.try(:lat_lng).try(:x)
+    end
   else
     json.name do
       json.en [
