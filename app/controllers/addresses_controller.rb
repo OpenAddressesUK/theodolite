@@ -7,6 +7,7 @@ class AddressesController < ApplicationController
 
   def show
     @address = Address.find(params[:id])
+    respond_to :json, :html
   end
 
   def index
@@ -47,16 +48,8 @@ class AddressesController < ApplicationController
       if @addresses.count == 1
         redirect_to polymorphic_url(@addresses.first, format: params[:format]), status: 307
       else
-        respond_to do |format|
-          format.json do
-            paginate @addresses
-            render "addresses/index"
-          end
-          format.html do
-            paginate @addresses
-            render "addresses/index"
-          end
-        end
+        paginate @addresses
+        respond_to :json, :html
       end
     end
 end
