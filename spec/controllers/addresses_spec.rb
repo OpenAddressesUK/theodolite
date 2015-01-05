@@ -75,6 +75,10 @@ RSpec.describe AddressesController, :type => :controller do
 
       expect(response.body).to match(/Sorry, there were no results for your query/)
     end
+
+    it 'returns an error if content type is not supported' do
+      expect {   get :index, format: :xml, town: "Gotham" }.to raise_error(ActionController::UnknownFormat)
+    end
   end
 
   describe 'GET #show' do
@@ -128,6 +132,10 @@ RSpec.describe AddressesController, :type => :controller do
       expect(json['address']['postcode']['name']).to eq(@address.postcode.name)
       expect(json['address']['postcode']['url']).to eq("http://test.host/postcodes/#{@address.postcode.token}")
 
+    end
+
+    it 'returns a error if content type is not supported' do
+      expect { get :show, id: @address.id, format: :xml }.to raise_error(ActionController::UnknownFormat)
     end
 
   end
