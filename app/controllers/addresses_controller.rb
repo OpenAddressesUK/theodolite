@@ -7,6 +7,7 @@ class AddressesController < ApplicationController
 
   def show
     @address = Address.find(params[:id])
+    respond_to :json, :html
   end
 
   def index
