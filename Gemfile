@@ -57,6 +57,7 @@ gem 'alternate_rails', github: 'theodi/alternate-rails'
 
 gem 'jekylly', github: 'OpenAddressesUK/jekylly'
 gem 'bugherd'
+gem 'rack-tracker'
 
 group :test do
   gem 'rspec-rails', '~> 3.0.0'

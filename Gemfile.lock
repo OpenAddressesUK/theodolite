@@ -137,6 +137,10 @@ GEM
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
+    rack-tracker (0.3.0)
+      activesupport (>= 3.0)
+      rack (>= 1.4.0)
+      tilt (~> 1.4.1)
     rails (4.1.7)
       actionmailer (= 4.1.7)
       actionpack (= 4.1.7)
@@ -245,6 +249,7 @@ DEPENDENCIES
   mongoid
   mongoid_address_models!
   pry
+  rack-tracker
   rails (= 4.1.7)
   rails_12factor
   rspec-rails (~> 3.0.0)
