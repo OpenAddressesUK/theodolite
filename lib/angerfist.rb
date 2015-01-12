@@ -15,7 +15,7 @@ class AngerFist
     @headers = HeaderHash.new(headers)
 
     if content_type_matches? || path_matches?
-      @gabba.page_view(env['PATH_INFO'], env['PATH_INFO'])
+      @gabba.page_view(full_path, full_path)
     end
 
     [status, headers, response]
@@ -27,6 +27,10 @@ class AngerFist
 
   def path_matches?
     @paths.any? { |p| @env['PATH_INFO'].include?(p) }
+  end
+
+  def full_path
+    (@env['PATH_INFO'] + "?" + @env['QUERY_STRING']).chomp("?")
   end
 
 end
