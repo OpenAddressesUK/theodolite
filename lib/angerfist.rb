@@ -1,9 +1,11 @@
 class AngerFist
   include Rack::Utils
 
-  def initialize(app, tracker_id, domain)
+  def initialize(app, config)
     @app = app
-    @gabba = Gabba::Gabba.new(tracker_id, domain)
+    @gabba = Gabba::Gabba.new(config[:tracker_id], config[:domain])
+    @paths = config[:paths] || []
+    @content_types = config[:content_types] || []
   end
 
   def call(env)
@@ -20,11 +22,11 @@ class AngerFist
   end
 
   def content_type_matches?
-    @headers.key?('Content-Type') && @headers['Content-Type'].include?('application/json')
+    @headers.key?('Content-Type') && @content_types.any? { |c| @headers['Content-Type'].include?(c) }
   end
 
   def path_matches?
-    @env['PATH_INFO'] == '/torrent'
+    @paths.any? { |p| @env['PATH_INFO'].include?(p) }
   end
 
 end
