@@ -2,7 +2,7 @@ require 'angerfist'
 
 config = {
   tracker_id: ENV['GA_TRACKER_ID'],
-  ga_domain: ENV['GA_DOMAIN'],
+  domain: ENV['GA_DOMAIN'],
   content_types: ["application/json"],
   paths: ["/torrent"]
 }
