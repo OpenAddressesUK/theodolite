@@ -7,15 +7,24 @@ class AngerFist
   end
 
   def call(env)
-    status, headers, response = @app.call(env)
+    @env = env
+    status, headers, response = @app.call(@env)
 
-    headers = HeaderHash.new(headers)
+    @headers = HeaderHash.new(headers)
 
-    if headers.key?('Content-Type') && headers['Content-Type'].include?('application/json')
+    if content_type_matches? || path_matches?
       @gabba.page_view(env['PATH_INFO'], env['PATH_INFO'])
     end
 
     [status, headers, response]
+  end
+
+  def content_type_matches?
+    @headers.key?('Content-Type') && @headers['Content-Type'].include?('application/json')
+  end
+
+  def path_matches?
+    @env['PATH_INFO'] == '/torrent'
   end
 
 end
