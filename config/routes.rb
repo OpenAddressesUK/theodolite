@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get '/postcode/:postcode' => 'addresses#index'
 
   get '/download', to: redirect('/data')
+  get '/torrent' => "application#get_torrent"
 
   root to: 'jekylly/static#show', defaults: { path: 'main' }
   mount Jekylly::Engine, at: "/"
