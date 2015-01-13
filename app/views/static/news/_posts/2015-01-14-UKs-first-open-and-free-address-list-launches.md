@@ -28,4 +28,4 @@ Open Addresses UK Director Jeni Tennison said:  “Addresses are an essential pa
 
 To promote the new database and encourage people to donate addresses for inclusion, Open Addresses UK is launching a photography competition, highlighting the rich diversity of locations across the UK. People are being asked to submit original photographs of addresses that will then be used to illustrate the work of Open Addresses UK and will be promoted across digital and social media channels. The competition will be judged by a panel including renowned photographer [Paul Clarke](http://paulclarke.com/photography/).
 
-It is open to anyone and more information is available on the [Open Addresses UK website](blog/2015/01/14/picture-an-address).
+It is open to anyone and more information is available on the [Open Addresses UK website](/blog/2015/01/14/picture-an-address).

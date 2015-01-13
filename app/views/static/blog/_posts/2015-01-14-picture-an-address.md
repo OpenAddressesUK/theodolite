@@ -9,7 +9,7 @@ WE NEED YOU!
 
 Open Addresses UK is a  first, and we’re sure like us, you love to be involved with projects that push the innovation boundaries. That’s exactly what we’re inviting you to do as part of Picture an Address - a FREE photography competition we are running to mark the launch of this exciting new project with a £500 vouchers for photography equipment up for grabs for the winning entry! 
 
-What is Open Addresses UK you might ask? Well, it’s the UK’s first open address list and it’s important for us all - you can read more about it at [www.openaddressesuk.org](www.openadresssesuk.org) and even take part by uploading your own address at the same time.  
+What is Open Addresses UK you might ask? Well, it’s the UK’s first open address list and it’s important for us all - you can read more about it at [openaddressesuk.org](http://www.openadresssesuk.org) and even take part by uploading your own address at the same time.  
 
 The potential for this project knows no bounds, anything is possible. And just like an address can open up so many different doors (no pun intended) we want to open up as many photographic possibilities as we can with this competition. 
 
