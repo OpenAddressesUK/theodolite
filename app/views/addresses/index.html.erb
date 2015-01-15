@@ -6,6 +6,12 @@
         this.disabled = !($(this).val());
     });
   }
+
+  // Make sure form elements are enabled (needed for Firefox)
+  form = jQuery("#search");
+  form.find(':input', this).each(function() {
+    this.disabled = false;
+  });
 </script>
 
 <form action="/addresses" class="well form-inline" role="form" id="search" onSubmit="filterSearch(); return true" >
