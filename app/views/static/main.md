@@ -9,7 +9,7 @@ Do you want to enter our [photography competition](blog/2015/01/14/picture-an-ad
 
 Or do you want to get involved by submitting an address?
 
-It’s as simple as entering it below.
+It’s as simple as entering it below, in any format.
 
 <%= include 'submission_form' %>
 
