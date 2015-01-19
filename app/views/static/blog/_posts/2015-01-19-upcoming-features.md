@@ -28,6 +28,8 @@ In the fortnight starting today we plan to focus on the following (the numbers i
 + Start publishing our plans and technical framework for providing confidence in the published data (3, 27)
 + Starting to publish our plans and technical framework for performing statistical inference algorithms to infer new address data based on known data (29, 32)
 
+To put it even more simply these features will open a full loop for the automated publishing of addresses added through either our own or other organisation's websites.
+
 In the fortnight starting 2 February our candidate features are the following (the numbers in brackets are for those who want to dive into the detailed features on the [roadmap](https://huboard.com/OpenAddressesUK/roadmap/#/)):
 
 + Updating the current loaders with the capabilities developed in the previous sprint (18)
