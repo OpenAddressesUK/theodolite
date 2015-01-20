@@ -31,7 +31,7 @@ RSpec.describe AddressesController, :type => :controller do
         FactoryGirl.create(:address, pao: i, town: FactoryGirl.create(:town, name: "GOTHAM CITY"))
       end
 
-      get :index, format: :json, town: "GOTHAM"
+      get :index, format: :json, town: "gotham"
 
       json = JSON.parse(response.body)
 
