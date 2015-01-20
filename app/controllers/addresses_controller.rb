@@ -35,7 +35,7 @@ class AddressesController < ApplicationController
         :locality,
         :street
       ].each do |name|
-        @queries[:"#{name}.name"] = params[name].upcase if params[name] && params[name] != ''
+        @queries[:"#{name}.name"] = Regexp.new("^#{params[name]}", true) if params[name] && params[name] != ''
       end
 
       if !params[:postcode].blank?
