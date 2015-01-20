@@ -26,18 +26,6 @@ RSpec.describe AddressesController, :type => :controller do
       expect(json['addresses'].count).to eq(25)
     end
 
-    it 'accepts substrings' do
-      25.times do |i|
-        FactoryGirl.create(:address, pao: i, town: FactoryGirl.create(:town, name: "GOTHAM CITY"))
-      end
-
-      get :index, format: :json, town: "gotham"
-
-      json = JSON.parse(response.body)
-
-      expect(json['addresses'].count).to eq(25)
-    end
-
     it 'shows the correct pagination information' do
       30.times do |i|
         FactoryGirl.create(:address, pao: i, town: FactoryGirl.create(:town, name: "GOTHAM CITY"))
