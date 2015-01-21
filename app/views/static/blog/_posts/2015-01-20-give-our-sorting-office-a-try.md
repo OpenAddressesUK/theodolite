@@ -25,10 +25,53 @@ You'd get the following response in JSON format:
       "street": "Downing Street",
       "locality": null,
       "town": "London",
-      "postcode": "SW1A 2AA"
-    }
+      "postcode": "SW1A 2AA",
+      "provenance": {
+        "activity": {
+          "executed_at": "2015-01-21T16:18:32+00:00",
+          "processing_scripts": "https://github.com/OpenAddressesUK/sorting_office",
+          "derived_from": [
+          {
+            "type": "userInput",
+            "input": "10 Downing Street, London, SW1A 2AA",
+            "inputted_at": "2015-01-21T16:18:32+00:00",
+            "processing_script": "https://github.com/OpenAddressesUK/sorting_office/tree/7dd23cb19709680646a20dddfeb18b53ea4346e2/lib/sorting_office/address.rb"
+            },
+            {
+              "type": "Source",
+              "urls": [
+              "http://alpha.openaddressesuk.org/postcodes/Uxm2vc"
+              ],
+              "downloaded_at": "2015-01-21T16:18:32+00:00",
+              "processing_script": "https://github.com/OpenAddressesUK/sorting_office/tree/7dd23cb19709680646a20dddfeb18b53ea4346e2/lib/models/postcode.rb"
+              },
+              {
+                "type": "Source",
+                "urls": [
+                "http://alpha.openaddressesuk.org/towns/qyHZe2"
+                ],
+                "downloaded_at": "2015-01-21T16:18:32+00:00",
+                "processing_script": "https://github.com/OpenAddressesUK/sorting_office/tree/7dd23cb19709680646a20dddfeb18b53ea4346e2/lib/models/town.rb"
+                },
+                {
+                  "type": "Source",
+                  "urls": [
+                  "http://alpha.openaddressesuk.org/streets/Gq5142"
+                  ],
+                  "downloaded_at": "2015-01-21T16:18:32+00:00",
+                  "processing_script": "https://github.com/OpenAddressesUK/sorting_office/tree/7dd23cb19709680646a20dddfeb18b53ea4346e2/lib/models/street.rb"
+                }
+                ]
+              }
+            }
+          }
 
-When a request is made, we work through the address, first extracting the postcode (which is probably the easiest part), then working backwards through the address, using [Elasticsearch](http://elasticsearch.org), and some extra parsing magic to work out the locality and town, finding streets that are close to the postcode and doing some matching to get the street, and then some logic at the end to work out the PAON  and the SAON.
+
+When a request is made, we work through the address, first extracting the postcode (which is probably the easiest part), then working backwards through the address, using [Elasticsearch](http://elasticsearch.org), and some extra parsing magic to work out the locality and town, finding streets that are close to the postcode and doing some matching to get the street, and then some logic at the end to work out the PAON and the SAON.
+
+As with everything we do, we also add a provenance trail to the response, detailing exactly what code ran, what input was given, and what elements were used, as well as timestamps, allowing you (or anyone else) to trace through the provenance trail so we can prove that only open data was used in the creation of the split address. If you'd rather not see this, you can add `noprov=true` to your request, like so:
+
+    curl --data "address=10 Downing Street, London, SW1A 2AA&noprov=true" https://sorting-office.openaddressesuk.org/address
 
 If you're interested in exactly how we do this, then the [source code is open](https://github.com/OpenAddressesUK/sorting_office) for you to look at. We know it's not 100% perfect, so we would, of course be open to any pull requests. Have a look at the [Readme](https://github.com/OpenAddressesUK/sorting_office/blob/master/README.md) for more information on how to get it running locally, and some of the things we might need help with.
 
