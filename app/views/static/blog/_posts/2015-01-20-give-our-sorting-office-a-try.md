@@ -3,7 +3,7 @@ author: Stuart Harrison
 title: Give our sorting office a try!
 ---
 
-Addresses are hard. Really hard. Especially if you're a programmer. We've been applying addresses to buildings since before the explosion in computing technology, and it shows.
+Addresses are hard. Really hard. Especially if you're a programmer. We've been [applying addresses to buildings since before the explosion in computing technology](http://www.huffingtonpost.co.uk/jeni-tennison/a-brief-history-of-open-a_b_6485628.html), and it shows.
 
 Addresses are full of strange exceptions and things that programmers might miss when taking user input and trying to apply machine-like logic to it. (There's a [blog post called 'Falsehoods programmers believe about addresses'](https://www.mjt.me.uk/posts/falsehoods-programmers-believe-about-addresses/) which highlights some of the most well-known problems, if you want to read all the gory details.)
 
