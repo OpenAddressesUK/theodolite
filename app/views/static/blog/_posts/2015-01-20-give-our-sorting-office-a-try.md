@@ -11,9 +11,9 @@ As the name of our particular game is addresses, this has been an issue we've ha
 
 For part of the past two weeks, we've tried to try and ease some of that pain for those who would come after us, and, using some of the logic which [Fusion Data Science](http://www.fusiondatascience.com/) used for importing addresses from Companies House, we have built [a web service that tries to take a single address and break it down into its constituent parts](https://github.com/OpenAddressesUK/sorting_office).
 
-The application (which we've called [Sorting Office](https://sorting-office.openaddressesuk.org)) accepts an address as a `POST` request, and gives you back an address split up into a saon (Secondary Addressable Object - usually something like a flat number), a paon (Primary Addressable Object - usually a building name or number), a street, a locality, a town and a postcode.
+The service (which we've called [Sorting Office](https://sorting-office.openaddressesuk.org)) accepts an address as a `POST` request, and gives you back an address split up into a saon (Secondary Addressable Object - usually something like a flat number), a paon (Primary Addressable Object - usually a building name or number), a street, a locality, a town and a postcode.
 
-For example, if you were to post the following to the application like so:
+For example, if you were to post the following to the web service like so:
 
     curl --data "address=10 Downing Street, London, SW1A 2AA" https://sorting-office.openaddressesuk.org/address
 
