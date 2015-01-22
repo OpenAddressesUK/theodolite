@@ -10,7 +10,8 @@ Open Addresses UK is a startup that is bringing together data about the places w
 
 Our [vision](https://alpha.openaddressesuk.org/about/vision) is to create and publish an open data dataset of all UK addresses, one that everyone can use. This will make it easy for people to find, link and combine address data with other data. They might use it for any purpose: analysis and research; building public services or creating new businesses; from making existing products more efficient to building new, innovative ideas.
 
-Our addresses come from four main sources: 
+Our addresses come from four main sources:
+
 + address data that is published under an open licence; 
 + address data that organisations contribute to us through our APIs;
 + address data that members of the public contribute through our website; and
@@ -19,6 +20,7 @@ Our addresses come from four main sources:
 We are building a platform which imports this data, tracks provenance, performs inference, determines statistical confidence and publishes the resulting dataset as open data.
 
 Each address in the dataset will be published with supporting information including:
+
 + provenance - e.g. “derived from Companies House data using the software component at [URL]”; “inferred from address X and Y using the software component at [URL]”; “contributed through the website”; “all of the above”
 + confidence - e.g. Green, Amber, Red or a percentage, to indicate how confident we are that the address record is accurate; and
 + attribution - e.g. “contribution by anonymous member of the public”
@@ -37,6 +39,7 @@ If your service idea is focussed on collecting new addresses then it should enco
 But, fundamentally, this service needs to encourage large numbers of people to add value (as measured by number of addresses, or confidence in existing addresses) to the data published by the platform. That will be how we and our chosen partner measure success.
 
 The new service will hook into our [APIs](https://github.com/OpenAddressesUK/theodolite) and contribute to the collection of addresses alongside our other sources. We operate in an agile fashion with fortnightly sprints, by the time this new service is designed and developed our [aim](https://huboard.com/OpenAddressesUK/roadmap/#/) is to have developed these APIs to support the following capabilities:
+
 + search for an address
 + add an address
 + report that an address is good
@@ -53,6 +56,7 @@ More than [20 million people in the UK play mobile games every month](http://www
 
 We have reserved £40,000 of our budget for this challenge.
 In your proposal to build this service we would like to see:
+
 + A vision for your new service including how it would be promoted to the public
 + Estimated take up rates for the service (volume of users, volume of new/changed addresses)
 + High-level timescales for implementation
