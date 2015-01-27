@@ -1,6 +1,24 @@
-<script type="text/javascript">
-var submitted=false;
-</script>
+<% content_for :extra_js do %>
+  var submitted=false;
+
+  $('#submit').click(function(e) {
+    submission = { address: $('#address').val(), contribute: true }
+    $('#spinner').removeClass('hidden');
+
+    $.post("https://sorting-office.openaddressesuk.org/address", submission)
+      .done(function(data) {
+        $('#addressproblem').addClass('hidden');
+        window.location.replace("https://alpha.openaddressesuk.org/submit/thanks");
+      })
+      .error(function() {
+        $('#spinner').addClass('hidden');
+        $('#addressproblem').removeClass('hidden');
+      })
+
+    e.preventDefault();
+  })
+<% end %>
+
 <div class="jumbotron">
 <form id="contribute" action="http://powerful-depths-1407.herokuapp.com/" method="post" class="form-horizontal submission-form" role="form">
 
@@ -16,19 +34,27 @@ var submitted=false;
   </div>
 
   <div class="form-group" style="display: none">
-    <!-- Honeypot to catch spam -->
-    <label for="agree_to_terms" class="col-sm-2 control-label">Leave this blank</label>
-    <div class="col-sm-10">
-      <input name="agree_to_terms" id="agree_to_terms" class="form-control" type="text"></input>
-    </div>
+      <!-- Honeypot to catch spam -->
+      <label for="agree_to_terms" class="col-sm-2 control-label">Leave this blank</label>
+      <div class="col-sm-10">
+        <input name="agree_to_terms" id="agree_to_terms" class="form-control" type="text"></input>
+      </div>
   </div>
 
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" class="btn btn-primary">Submit this address</button>
+      <button class="btn btn-primary" id="submit"><i id="spinner" class="fa fa-circle-o-notch fa-spin hidden"></i> Submit this address</button>
       <a data-toggle="collapse" href="#submission-guidelines"><small>Read the submission guidelines</small></a>
     </div>
   </div>
+
+  <div class="form-group hidden" id="addressproblem">
+    <div class="alert alert-danger" role="alert">
+      <p><strong>Sorry!</strong> There seems to be a problem with the address you entered.</p>
+      <p>Please note that we currently do not support addresses without postcodes, although this will be addressed in <a href="https://github.com/OpenAddressesUK/roadmap/issues/65">future releases</a>.</p>
+    </div>
+  </div>
+
   <div id="submission-guidelines" class="form-group collapse">
     <label class="col-sm-2 control-label">Guidelines</label>
     <div class="col-sm-10 smallprint">
