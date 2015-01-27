@@ -3,7 +3,8 @@
 <div class="post">
 <h3 class="title"><a href="/<%= post.url %>"><%= post.title %></a></h3>
 <p>
-  <%= truncate post.content, length: 300, separator: "\n" %>
+  <% content = strip_tags(markdown(post.content)) %>
+  <%= truncate content, length: 512, separator: "\n" %>
 </p>
 <p class="meta">Date: <%= post.date.to_s(:long_ordinal) %></p>
 </div>

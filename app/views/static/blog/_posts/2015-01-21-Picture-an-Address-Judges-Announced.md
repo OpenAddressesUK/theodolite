@@ -2,6 +2,7 @@
 author: Peter Wells
 title: Picture an Address - Judges Announced
 ---
+
 The final line-up of judges for the [Picture an Address](http://alpha.openaddressesuk.org/blog/2015/01/14/picture-an-address) photography competition is announced today (Tuesday 20th January 2015). The competition coincides with the launch of what will become the country’s first address list to be published as open data, available for everyone to use without restriction. [Open Addresses UK](http://openaddressesuk.org/) contains information provided directly by people about addresses they know and from open data sources. Individuals and organisations are being asked to get involved by submitting data via the [Open Addresses UK website](http://alpha.openaddressesuk.org/).
 
 Open Addresses UK depends on inspiring as many people and organisations as possible to take part.  A photography competition is now underway, inviting anyone, anywhere in the United Kingdom to enter. Participants are being challenged to *sum up, in a photograph, what an address means to them*. Whilst this could involve depicting their own homes, or a row of properties, people are being asked to think creatively and come up with more unusual and abstract ideas.

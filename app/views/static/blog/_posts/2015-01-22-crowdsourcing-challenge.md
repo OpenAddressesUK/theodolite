@@ -2,7 +2,6 @@
 author: Peter Wells
 title: Crowdsourcing Challenge
 ---
-#### Context
 
 Addresses are [woven into the fabric of our national infrastructure](http://www.huffingtonpost.co.uk/jeni-tennison/a-brief-history-of-open-a_b_6485628.html). They connect us to the wider world and help us to access a huge network of services.
 
