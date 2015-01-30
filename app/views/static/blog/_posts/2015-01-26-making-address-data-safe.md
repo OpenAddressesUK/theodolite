@@ -74,3 +74,6 @@ Over time we hope that those projects, and the public sector open data teams, wi
 We strongly believe that our approach to publishing open data is the right choice for UK address data. We think it makes the address data that Open Addresses UK publishes safe to use by anyone for any purpose.
 
 We hope that you do too.
+
+
+Author: Peter Wells
