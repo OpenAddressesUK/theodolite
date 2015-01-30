@@ -23,9 +23,9 @@ Total number of infringement notices received to date - 0
 
 If you think that some of your or your organisation’s Intellectual Property has been published through the Open Addresses UK platform without authorization then you can submit an infringement notice. These requests should only be submitted by, or with the authority of, the owner of that intellectual property right, someone (such as an exclusive licensee) with a right to enforce that right.
 
-If you choose to request removal of content by submitting an infringement notification, please do not make false claims. Misuse of this process damages ourselves, our users and copyright owners that are looking to protect their rights. Knowingly making a false claim may amount to fraud.
+If you choose to request removal of content by submitting an infringement notice, please do not make false claims. Misuse of this process damages ourselves, our users and copyright owners that are looking to protect their rights. Knowingly making a false claim may amount to fraud.
 
-To submit a request please send an email to [notices@openaddressesuk.org](mailto:notices@openaddressesuk.org?subject=Infringement%20notice)  with “Infringement notice” in the title or write to us at Open Addresses Limited c/o BPE Solicitors LLP, St James' House, St James Square, Cheltenham, GL50 3PR with the following information:
+To submit a request please send an email to [notices@openaddressesuk.org](mailto:notices@openaddressesuk.org?subject=Infringement%20notice)  with “Infringement notice” in the subject line or write to us at Open Addresses Limited c/o BPE Solicitors LLP, St James' House, St James Square, Cheltenham, GL50 3PR with the following information:
 
 + contact information (name, organisation - if applicable, phone number, email address, physical address)
 + a complete description of  the work that you believe has been infringed
