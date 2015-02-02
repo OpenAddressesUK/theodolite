@@ -34,7 +34,8 @@ It is vitally important to us that the open data we are publishing is reusable w
 
 #### I think that some of my or my organisation's Intellectual Property has been published through the Open Address Platform. How can I remove it?
 
-At this stage, please [email us](mailto:info@openaddressesuk.org) describing the data which you believe is affected.
+If you think that some of your or your organisation’s Intellectual Property has been published through the Open Addresses Platform please [report the infringement](/about/reportaninfringement).
+
 
 ### Donations
 

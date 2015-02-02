@@ -71,4 +71,4 @@ We will be opening up ways for people to submitting data to the platform during 
 
 If we do receive any complaints regarding third-party IP then we will follow our takedown process. It is important to retain any information produced during when sourcing and checking datasets in a public place so that it be used during this process. This allows for a clean and open process.
 
-If you believe your IP is being infringed then at this stage simply email us at [info@openaddressesuk.org](mailto:info@openaddressesuk.org) describing the problem and the data that you believe is affected.
+If you believe your IP is being infringed then at please [report the infringement](/about/reportaninfringement).
