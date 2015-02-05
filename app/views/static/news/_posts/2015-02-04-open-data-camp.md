@@ -1,6 +1,6 @@
 ---
 author: Peter Wells
-title: UK’s first open and free address list launches
+title: Open Addresses UK to sponsor Open Data Camp
 ---
 
 [Open Addresses UK](https://openaddressesuk.org) has announced that it will be sponsoring [Open Data Camp 2015](http://odcamp.org.uk/) on February 21st and 22nd in Winchester. The event coincides with [International Open Data Day](http://opendataday.org/), a global series of events where people get together to 'write applications, liberate data, create visualizations and publish analyses using open public data to show support for and encourage the adoption open data policies by the world's local, regional and national governments.'
