@@ -54,7 +54,7 @@ He couldn’t even order a pizza:
 
 <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/dominos">@dominos</a> Please update your <a href="https://twitter.com/RoyalMail">@RoyalMail</a> PAF address file, it is now 3 months out of date. You are unable to deliver to me :(</p>&mdash; Christopher Royles (@royles) <a href="https://twitter.com/royles/status/514491838405701632">September 23, 2014</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-We don’t know about you, but we think that one of the things that many people do on their first day in a new house is eat some takeaway food whilst looking at a pile of unopened boxes full of kitchen equipment. Yet here Chris was 3 months later...
+We don’t know about you, but we think that one of the things that many people do on their first day in a new house is eat some takeaway food whilst looking at a pile of unopened boxes full of kitchen equipment. Yet here Chris was 3 months later....
 
 To some extent Chris was lucky. He knew the organisations to contact and he knew the secret password ("*PAF*") to tell people that he thought the problem was with the address file.
 
