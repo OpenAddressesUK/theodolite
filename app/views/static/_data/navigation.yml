@@ -21,6 +21,8 @@
       path: /about/docs
     - title: Adding data
       path: /about/addingdata
+    - title: Report an Infringment
+      path: /about/reportaninfringement
     - title: Business Model
       path: /about/business
 
