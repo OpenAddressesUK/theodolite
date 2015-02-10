@@ -37,7 +37,7 @@ In August, the most concerning problem arose: he reported the problem to Governm
 
 <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/GOVUK">@GOVUK</a> please update your <a href="https://twitter.com/RoyalMail">@RoyalMail</a> PAF file - I am unable to register to vote.</p>&mdash; Christopher Royles (@royles) <a href="https://twitter.com/royles/status/497320441087016961">August 7, 2014</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-On 11 September there was good news. The Prime Minister proudly announced that the postcode Chris lived in, and had lived in for 3 months, was in the top 10 hotspots forfor use of the government’s Help to Buy Scheme:
+On 11 September there was good news. The Prime Minister proudly announced that the postcode Chris lived in, and had lived in for 3 months, was in the top 10 hotspots for use of the government’s Help to Buy Scheme:
 
 <blockquote class="twitter-tweet" lang="en"><p>We’ve published postcode data for <a href="https://twitter.com/hashtag/HelptoBuy?src=hash">#HelptoBuy</a>, showing the top ten hotspots across the country: <a href="http://t.co/NgFNiGMclb">http://t.co/NgFNiGMclb</a></p>&mdash; UK Prime Minister (@Number10gov) <a href="https://twitter.com/Number10gov/status/510046727886606337">September 11, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -72,7 +72,7 @@ Open Addresses UK want to publish an authoritative and definitive address list. 
 
 With our approach the timescale for learning of new addresses and making them available for people and organisations to use shrinks from months to days or even hours.
 
-If we are successful then Chris could have ordered his pizza, ordered furniture for his new house, paid his water bill and registered to vote. He would have saved himself the time and effort of having to chase these organisations to get his details into the computer, to get all of the computers to say “yes”.
+If we are successful then Chris could have easily ordered his pizza, ordered furniture for his new house, paid his water bill and registered to vote. He would have saved himself the time and effort of having to chase these organisations to get his details into the computer, to get all of the computers to say “yes”.
 
 #### How can you help?
 
