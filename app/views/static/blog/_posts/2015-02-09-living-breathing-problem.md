@@ -7,7 +7,7 @@ title: The Living, Breathing Problem
 
 As an open data startup, we have come across hurdles when explaining what we are doing and why we are doing it to those who work outside of the open data community. 
 
-The dataset that Open Addresses UK are building transcends this single sector; it is being created for everybody. Addresses are important to all of us and the benefits that will be derived from them being openly and freely available stretch way beyond the open data community and into society at large.
+The dataset that Open Addresses UK are building transcends this single sector. Addresses are important to all of us and the benefits that will be derived from them being openly and freely available stretch way beyond the open data community and into society at large.
 
 We want to be able to explain the benefits to people of people who don’t necessarily speak the languages ‘[Ruby](https://www.ruby-lang.org/en/)’  and ‘[Perl](https://www.perl.org/)' or know the difference between [XML](http://www.w3.org/XML/) and [JSON](http://json.org/). So how can Open Address data benefit everyone in society?
 
