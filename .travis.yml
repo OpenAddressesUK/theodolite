@@ -4,7 +4,7 @@ sudo: false
 services:
 - mongodb
 rvm:
-- 2.1.3
+- 2.1.4
 notifications:
   irc:
     channels:
