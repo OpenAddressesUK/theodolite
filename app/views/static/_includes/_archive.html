@@ -1,4 +1,4 @@
-<% for post in site_posts.reverse %>
+<% for post in site_posts.sort_by { |p| p.date }.reverse  %>
   <% if post.category == category %>
 <div class="post">
 <h3 class="title"><a href="/<%= post.url %>"><%= post.title %></a></h3>
