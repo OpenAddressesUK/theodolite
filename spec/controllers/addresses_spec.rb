@@ -8,6 +8,8 @@ RSpec.describe AddressesController, :type => :controller do
       25.times do |i|
         FactoryGirl.create(:address, pao: i, town: FactoryGirl.create(:town, name: "GOTHAM CITY"))
       end
+      sleep(1)
+
       get :index, format: :json, town: Address.last.town.name
 
       expect(response).to be_success
@@ -18,7 +20,7 @@ RSpec.describe AddressesController, :type => :controller do
       25.times do |i|
         FactoryGirl.create(:address, pao: i, town: FactoryGirl.create(:town, name: "GOTHAM CITY"))
       end
-
+      sleep(1)
       get :index, format: :json, town: Address.last.town.name
 
       json = JSON.parse(response.body)
@@ -30,6 +32,7 @@ RSpec.describe AddressesController, :type => :controller do
       30.times do |i|
         FactoryGirl.create(:address, pao: i, town: FactoryGirl.create(:town, name: "GOTHAM CITY"))
       end
+      sleep(1)
 
       get :index, format: :json, town: Address.last.town.name
 
@@ -41,6 +44,7 @@ RSpec.describe AddressesController, :type => :controller do
       30.times do |i|
         FactoryGirl.create(:address, pao: i, town: FactoryGirl.create(:town, name: "GOTHAM CITY"))
       end
+      sleep(1)
 
       get :index, page: 2, format: :json, town: Address.last.town.name
 
@@ -54,6 +58,7 @@ RSpec.describe AddressesController, :type => :controller do
       30.times do |i|
         FactoryGirl.create(:address, pao: i, town: FactoryGirl.create(:town, name: "GOTHAM CITY"))
       end
+      sleep(1)
 
       get :index, page: 2, per_page: 4, format: :json, town: Address.last.town.name
       expect(response.header["Link"]).to eq("<http://test.host/addresses.json?page=1&per_page=4&town=GOTHAM+CITY>; rel=\"first\", <http://test.host/addresses.json?page=1&per_page=4&town=GOTHAM+CITY>; rel=\"prev\", <http://test.host/addresses.json?page=8&per_page=4&town=GOTHAM+CITY>; rel=\"last\", <http://test.host/addresses.json?page=3&per_page=4&town=GOTHAM+CITY>; rel=\"next\"")
@@ -62,6 +67,7 @@ RSpec.describe AddressesController, :type => :controller do
     it 'shows the url for addresses' do
       FactoryGirl.create(:address, town: FactoryGirl.create(:town, name: "GOTHAM CITY"))
       FactoryGirl.create(:address, pao: "456", town: FactoryGirl.create(:town, name: "GOTHAM CITY"))
+      sleep(1)
 
       get :index, format: :json, town: Address.last.town.name
 
@@ -154,6 +160,7 @@ RSpec.describe AddressesController, :type => :controller do
       @sao = "THE BATCAVE"
 
       @address = FactoryGirl.create(:address, sao: @sao, pao: @pao, street: @street, locality: @locality, town: @town, postcode: @postcode)
+      sleep(1)
     end
 
     it 'redirects successfully' do

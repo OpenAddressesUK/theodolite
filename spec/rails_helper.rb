@@ -7,6 +7,8 @@ require 'webmock/rspec'
 
 Dotenv.load
 
+ENV["MONGOID_ENVIRONMENT"] = "test"
+
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
 # run as spec files by default. This means that files in spec/support that end
@@ -19,6 +21,10 @@ Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 # Checks for pending migrations before tests are run.
 # If you are not using ActiveRecord, you can remove this line.
 #ActiveRecord::Migration.maintain_test_schema!
+
+# Disable net connection apart from localhost
+WebMock.disable_net_connect!(:allow_localhost => true)
+
 
 RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
@@ -49,13 +55,24 @@ RSpec.configure do |config|
   config.before(:suite) do
     DatabaseCleaner[:mongoid].strategy = :truncation
     DatabaseCleaner[:mongoid].clean_with(:truncation)
+    Town.es.index.reset
+    Locality.es.index.reset
   end
 
   config.before(:each) do
     DatabaseCleaner.start
+    Address.create_indexes
+    Street.create_indexes
+    Postcode.create_indexes
+    Locality.create_indexes
+    Town.create_indexes
+    Town.es.index.reset
+    Locality.es.index.reset
   end
 
   config.after(:each) do
     DatabaseCleaner.clean
+    Town.es.index.reset
+    Locality.es.index.reset
   end
 end

@@ -8,10 +8,11 @@ GIT
 
 GIT
   remote: git://github.com/openaddressesuk/mongoid_address_models.git
-  revision: 3fdf5622be683d3519dd7cedade909c334efb5cc
+  revision: 98380822a7d3f9e0d39ca97801d16da401a95bd1
   specs:
     mongoid_address_models (0.0.1)
       mongoid
+      mongoid-elasticsearch
       mongoid_geospatial
       mongoid_token
       rails (~> 4.1.7)
@@ -78,6 +79,14 @@ GEM
     dotenv (1.0.2)
     dotenv-rails (1.0.2)
       dotenv (= 1.0.2)
+    elasticsearch (1.0.6)
+      elasticsearch-api (= 1.0.6)
+      elasticsearch-transport (= 1.0.6)
+    elasticsearch-api (1.0.6)
+      multi_json
+    elasticsearch-transport (1.0.6)
+      faraday
+      multi_json
     erubis (2.7.0)
     eventmachine (1.0.4)
     execjs (2.2.2)
@@ -86,6 +95,8 @@ GEM
     factory_girl_rails (4.5.0)
       factory_girl (~> 4.5.0)
       railties (>= 3.0.0)
+    faraday (0.9.1)
+      multipart-post (>= 1.2, < 3)
     gabba (1.0.1)
     hike (1.2.3)
     httparty (0.13.3)
@@ -117,6 +128,10 @@ GEM
       moped (~> 2.0.0)
       origin (~> 2.1)
       tzinfo (>= 0.3.37)
+    mongoid-elasticsearch (0.8.3)
+      elasticsearch (~> 1.0.1)
+      mongoid (>= 3.0, < 4.1)
+      ruby-progressbar
     mongoid_geospatial (3.1.0)
       activemodel (>= 3.2)
       activesupport (>= 3.2)
@@ -129,6 +144,7 @@ GEM
       optionable (~> 0.2.0)
     multi_json (1.10.1)
     multi_xml (0.5.5)
+    multipart-post (2.0.0)
     optionable (0.2.0)
     origin (2.1.1)
     pry (0.10.1)
@@ -186,6 +202,7 @@ GEM
       rspec-mocks (~> 3.0.0)
       rspec-support (~> 3.0.0)
     rspec-support (3.0.4)
+    ruby-progressbar (1.7.1)
     safe_yaml (1.0.4)
     sass (3.2.19)
     sass-rails (4.0.5)

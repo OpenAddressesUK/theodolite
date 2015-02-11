@@ -12,7 +12,16 @@ class AddressesController < ApplicationController
 
   def index
     if !@queries.empty?
-      @addresses = Address.where(@queries).page(@page).per(@per_page)
+      @addresses = Address.all
+      @queries.each_pair do |key, value|
+        case value.class.name
+        when "String"
+          @addresses = @addresses.where(key => value)
+        when "Array"
+          @addresses = @addresses.any_in(key => value)
+        end
+      end
+      @addresses = @addresses.page(@page).per(@per_page)
       render_paginated_addresses
     else
       render "addresses/index"
@@ -35,7 +44,11 @@ class AddressesController < ApplicationController
         :locality,
         :street
       ].each do |name|
-        @queries[:"#{name}.name"] = params[name].upcase if params[name] && params[name] != ''
+        if params[name] && params[name] != ''
+          klass = Kernel.const_get(name.to_s.capitalize)
+          names = klass.name_prefix_search(params[name])
+          @queries[:"#{name}.name"] = names
+        end
       end
 
       if !params[:postcode].blank?
