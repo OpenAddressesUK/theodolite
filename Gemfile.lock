@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: git://github.com/openaddressesuk/mongoid_address_models.git
-  revision: 98380822a7d3f9e0d39ca97801d16da401a95bd1
+  revision: b09f30205a93bc7531c781087c35a0a8b645875e
   specs:
     mongoid_address_models (0.0.1)
       mongoid
