@@ -3,6 +3,7 @@ cache: bundler
 sudo: false
 services:
 - mongodb
+- elasticsearch
 rvm:
 - 2.1.4
 notifications:
