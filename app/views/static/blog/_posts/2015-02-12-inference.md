@@ -3,9 +3,9 @@ author: Gianfranco Cecconi
 title: Multiplying addresses
 ---
 
-<%= image_tag("blog/2015-01-28-inference_view_fae_shona_and_peters_by_peter_mackinnon.jpg", alt: "'view fae shona and peters', (C) Peter MacKinnon, https://www.flickr.com/photos/petemackinnon/7127622199") %>
-
 Postcode area 'ZE' is the *black sheep* of the launch edition of the Open Addresses UK dataset. It was generated (or “[distilled](https://openaddressesuk.org/about/docs)”) from our source data on 10th December 2014, and we knew only 117 addresses belonging to it at the time. (Actually, postcode area 'BT' - that describes Northern Ireland - is even worse. Its zone is empty for the time being, as we can't cover it because of data licensing restrictions, but bear with me.)
+
+<%= image_tag("blog/2015-01-28-inference_view_fae_shona_and_peters_by_peter_mackinnon.jpg", alt: "'view fae shona and peters', (C) Peter MacKinnon, https://www.flickr.com/photos/petemackinnon/7127622199") %>
 
 We can be forgiving with *ZE*. After all, it describes the Shetlands, islands off the north coast of Scotland, whose area is less than 600 square miles, covered by rugged, beautiful nature.
 
