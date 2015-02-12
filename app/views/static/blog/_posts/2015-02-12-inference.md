@@ -27,4 +27,6 @@ In future blog posts we will describe how this more complex inference works, and
 
 Open Addresses UK is not just about the team working at OA HQ: [we're looking for partners](https://openaddressesuk.org/blog/2015/01/22/crowdsourcing-challenge) and [contributors](https://openaddressesuk.org/about/addingdata), [our source code is open](https://github.com/openaddressesuk), [our planning is in the open](https://huboard.com/OpenAddressesUK/roadmap/). Perhaps you could write the next inference algorithm, or develop a surveying tool that volunteers can use to tell us if those inferred addresses actually exist or not. Follow us on Twitter at [@OpenAddressesUK](https://twitter.com/openaddressesuk) and keep in touch!
 
+Author: Gianfranco Cecconi
+
 <sub><sup>The picture is ["view fae shona and peters"](https://www.flickr.com/photos/petemackinnon/7127622199), (C) Peter MacKinnon, licensed under CC-BY 2.0. </sup></sub>
