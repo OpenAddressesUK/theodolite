@@ -1,14 +1,14 @@
 ---
 author: Peter Wells
-title: Crowdsourcing Challenge: Delay and Answers
+title: Crowdsourcing Challenge - Delay and Answers
 --- 
 
 When we launched our [crowdsourcing challenge](https://alpha.openaddressesuk.org/blog/2015/01/22/crowdsourcing-challenge) we invited potential bidders to ask us questions. You will find a table below summarising the ones that we were asked and the answers that we gave.
 
 Two things were clear from the questions:
 
-A number of potential bidders were confused about the copyright and licensing issue. Don’t worry so are many people, that’s why one of our aims is to [making UK addresses safe to use](https://openaddressesuk.org/blog/2015/01/26/making-address-data-safe).
-We may not have been clear enough with our language on inference and confidence. We published a blog on [inference](https://openaddressesuk.org/blog/2015/02/12/inference) last week and will shortly be publishing a blog on confidence
+1. A number of potential bidders were confused about the copyright and licensing issue. Don’t worry so are many people, that’s why one of our aims is to [making UK addresses safe to use](https://openaddressesuk.org/blog/2015/01/26/making-address-data-safe).
+2. We may not have been clear enough with our language on inference and confidence. We published a blog on [inference](https://openaddressesuk.org/blog/2015/02/12/inference) last week and will shortly be publishing a blog on confidence
 
 In addition we also realised that [Open Data Camp](http://odcamp.org.uk/) would be a great place to collaborate with the community but a slight distraction from assessing responses...
 
