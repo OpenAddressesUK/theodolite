@@ -1,6 +1,6 @@
 ---
 author: Peter Wells
-title: Crowdsourcing Challenge - Delay and Answers
+title: Crowdsourcing Challenge Update
 --- 
 
 When we launched our [crowdsourcing challenge](https://alpha.openaddressesuk.org/blog/2015/01/22/crowdsourcing-challenge) we invited potential bidders to ask us questions. You will find a table below summarising the ones that we were asked and the answers that we gave.
