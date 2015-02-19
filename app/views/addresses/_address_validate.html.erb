@@ -1,0 +1,51 @@
+<div class="col-md-7">
+  <hr/>
+  <div id='validate-container'>
+    <div>
+      <p>
+        <strong>Help us improve the UK's address data!</strong>
+        <br/>
+        <a data-toggle="collapse" data-target="#validate-form">Tell us what you know</a> about this address.
+      </p>
+    </div>
+
+    <div class="collapse" id="validate-form">
+
+      <%= javascript_include_tag 'validate_address.js' %>
+
+      <script>
+        function onValidateComplete(success) {
+          $('#validate-container').slideUp();
+          $('#validate-success').slideDown();
+        }
+        function onValidate(exists, buttonId) {
+          // Display spinner
+          $('#'+buttonId+' i.fa').addClass("fa-cog fa-spin");
+          // Run validation
+          validateAddress(document.URL, // The human URL of the address being validated
+                          exists, // Does the address exist?
+                          "Validation through the Open Addresses UK website.", // Attribution
+                          null, // Reason behind the validation
+                          onValidateComplete); // Callback on success or failure
+          // Stop link click
+          return false;
+        }
+      </script>
+
+      <a id='validateYes' class='btn btn-success' href='#' onclick='return onValidate(true, "validateYes");'>
+        <i class='fa fa-check'></i> This address is right
+      </a>
+
+      <a id='validateNo' class='btn btn-danger' href='#' onclick='return onValidate(false, "validateNo");'>
+        <i class='fa fa-times'></i> This address is wrong
+      </a>
+
+    </div>
+
+  </div>
+
+  <div class='alert alert-success' role='alert' id='validate-success' style="display: none">
+    Thank you for improving the UK's address data!
+  </div>
+  <hr/>
+</div>
