@@ -1,7 +1,7 @@
 ---
 author: Peter Wells
 title: Crowdsourcing Challenge Update
---- 
+---
 
 When we launched our [crowdsourcing challenge](https://alpha.openaddressesuk.org/blog/2015/01/22/crowdsourcing-challenge) we invited potential bidders to ask us questions. You will find a table below summarising the ones that we were asked and the answers that we gave.
 
@@ -36,3 +36,4 @@ Peter Wells
 |Is there a chance that no bidder wins?|Yes, our initial funding comes from the Government which ultimately means it comes from all of us. We do like to be careful with it.|
 |If you are funded by Government does that mean I need to do a lengthy, detailed, proposal?|No! We follow the ODI procurement rules; recognise the challenges of juggling priorities/opportunities in small organisations; and like to keep things simple and flexible. Just answer the points in our first post on the challenge.|
 |We are concerned that our first idea might not take off. Can we propose a framework which would allow multiple ideas to be trialled?|Absolutely!|
+{: .table .table-striped}
