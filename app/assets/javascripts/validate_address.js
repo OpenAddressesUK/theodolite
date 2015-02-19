@@ -5,7 +5,7 @@ function validateAddress(url, exists, attribution, reason, callback) {
       for (derived in derivations) {
           url = derivations[derived]['urls'][0]          
           if (url.indexOf("ernest") > 0) {
-              validation_url = url + "/validations";
+              validation_url = url.replace("http:", "https:") + "/validations";
               data = {
                   exists: exists,
                   attribution: attribution,
