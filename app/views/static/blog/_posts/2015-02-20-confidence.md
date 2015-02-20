@@ -3,7 +3,7 @@ author: Gianfranco Cecconi
 title: Trusting addresses
 ---
 
-This is Open Addresses UK's registered office address:
+This is Open Addresses UK's registered office [address](https://openaddressesuk.org/addresses/437djT):
 
 <table cellpadding="5" cellspacing="5" border="1"><tr><td>
 St James' House<br>
@@ -89,7 +89,7 @@ So Open Addresses UK recognises and embraces the uncertainty that exists in all 
 
 There is value in being able to measure the trust we can put in an address, and there are opportunities enabled by it.
 
-The best example comes from logistics. Think of shipping companies that already today carefully plan their drivers' journeys to optimise time and travel, minimise the traffic they find, optimise fuel consumption and environmental footprint.
+The best example comes from logistics. Think of shipping companies that already today [carefully plan their drivers' journeys](https://www.youtube.com/watch?v=HV_bJxkdNDE) to optimise time and travel, minimise the traffic they find, optimise fuel consumption and environmental footprint.
 
 Confidence scoring will enable these organisations to also calculate how likely the addresses they have as the driver's destinations for the day are safe or may become a problem. This information will allow them to give better answers to questions such as:
 
