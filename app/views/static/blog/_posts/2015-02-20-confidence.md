@@ -18,7 +18,9 @@ But how do we know if an address is _real_? It definitely _looks_ real, but what
 
 Human error lies around every corner, particularly as so much address information was and still is captured and processed on paper, and possibly not validated for consistency when input to software. It doesn't take much to make an error when writing a postcode, as in "GL5O 3PR"... can you see it? There's an "O" as in "Oscar" in place of the zero. Think if you had that in my handwriting, would you actually tell a zero from an "o"?
 
+<table cellpadding="5" cellspacing="5" border="1"><tr><td>
 <%= image_tag("blog/2015-02-20-confidence_1.png", alt: "Hand-written GL5O 3PR") %>
+</td></tr></table>
 
 Intuitively, it's likely you will think that this problem can't be that much of a headache. Surely, there must be good open data lists of what towns exist, what streets exist and what streets exist in which town etc. How hard can it be for Open Addresses UK to verify that GL50 3PR is a Cheltenham postcode and that St James Square belongs to that postcode?...
 
