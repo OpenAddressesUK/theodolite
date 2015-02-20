@@ -5,7 +5,7 @@ title: Trusting addresses
 
 This is Open Addresses UK's registered office address:
 
-<table border="1"><tr><td>
+<table cellpadding="5" cellspacing="5" border="1"><tr><td>
 St James' House<br>
 St James Square<br>
 Cheltenham<br>
@@ -39,7 +39,7 @@ As the address data we have grows in volume, though, we have another valuable re
 
 In other words, we may not have much trust in a single occurrence of our address:
 
-<table border="1"><tr><td>
+<table cellpadding="5" cellspacing="5" border="1"><tr><td>
 St James' House<br>
 St James Square<br>
 Cheltenham<br>
@@ -48,7 +48,7 @@ GL50 3PR
 
 But the moment we see another similar address being added to our data, even an incomplete one such as:
 
-<table border="1"><tr><td>
+<table cellpadding="5" cellspacing="5" border="1"><tr><td>
 St James North 1<br>
 St James Square<br>
 Cheltenham
