@@ -11,7 +11,7 @@ St James Square<br>
 Cheltenham<br>
 GL50 3PR
 </td></tr></table>
-<p>&nbsp></p>
+<p>&nbsp;</p>
 
 Humans will immediately recognise this as an address and spot most of its components: postcode (GL50 3PR), town (Cheltenham) and so on. Computers perform relatively well at that, too, as we outlined [in a previous blog post](https://openaddressesuk.org/blog/2015/01/23/give-our-sorting-office-a-try) describing our "Sorting Office".
 
@@ -48,7 +48,7 @@ St James Square<br>
 Cheltenham<br>
 GL50 3PR
 </td></tr></table>
-<p>&nbsp></p>
+<p>&nbsp;</p>
 
 But the moment we see another similar address being added to our data, even an incomplete one such as:
 
@@ -57,7 +57,7 @@ St James North 1<br>
 St James Square<br>
 Cheltenham
 </td></tr></table>
-<p>&nbsp></p>
+<p>&nbsp;</p>
 
 ... then we have **one more hint that there's a St James Square in Cheltenham**. Multiply that by the dozens, and our _statistical confidence_ in the fact that there is a St James Square in Cheltenham improves.
 
