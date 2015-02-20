@@ -3,7 +3,7 @@ author: Gianfranco Cecconi
 title: Trusting addresses
 ---
 
-This is Open Addresses UK's registered office address:
+This is Open Addresses UK's registered office [address](https://openaddressesuk.org/addresses/437djT):
 
 <table cellpadding="5" cellspacing="5" border="1"><tr><td>
 St James' House<br>
