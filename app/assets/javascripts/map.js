@@ -1,23 +1,50 @@
 $(document).ready(function () {
 
-	L.mapbox.accessToken = 'pk.eyJ1Ijoib3BlbmFkZHJlc3NlcyIsImEiOiJ6NG5zdy1jIn0.3geJ_DPjwkm0iTLlV0CA3g';
-	var map = L.mapbox.map('map', 'openaddresses.k75i6o4d');
-	var oaIcon = L.icon({
-    	iconUrl: '/images/mapicon.png',
-    	iconSize: [35, 35],
-    	iconAnchor: [33, 35],
-    	popupAnchor: [0, 35]
-	});
+		var map, 
+			OSHQ = {
+				WGS84: [50.938128, -1.4703602],
+				OSGB: [437311, 115543]
+			};
+	
+		var popup = L.popup(),
+			openspaceLayer;
 
-	var locations = [];
+		/* L.Map with OS options */
+		map = new L.Map('map', {
+			crs: L.OSOpenSpace.getCRS(),
+			continuousWorld: true,
+			worldCopyJump: false,
+			minZoom: 0,
+			maxZoom: L.OSOpenSpace.RESOLUTIONS.length - 1,
+		});
 
-	$('*[data-latlng]').each(function () {
-		var latlng = $(this).attr('data-latlng').split(",");
-		var lat = latlng[0];
-		var long = latlng[1];
-		var marker = L.marker([lat, long], { icon: oaIcon, riseOnHover: true }).addTo(map);
-		locations.push([lat, long]);
-		map.fitBounds(L.latLngBounds(locations));
-	});
+		/* New L.TileLayer.OSOpenSpace with API Key */
+		openspaceLayer = L.tileLayer.osopenspace("<%= ENV['OPENSPACE_API_KEY']%>", {debug: true}); 
+
+		map.addLayer(openspaceLayer);
+		map.setView(OSHQ.WGS84, 1);
+
+		/* add some ui elems to the map */
+
+		var oaIcon = L.icon({
+	    	iconUrl: '/images/mapicon.png',
+	    	iconSize: [35, 35],
+	    	iconAnchor: [33, 35],
+	    	popupAnchor: [0, 35]
+		});
+	
+		var locations = [];
+	
+		$('*[data-latlng]').each(function () {
+			var latlng = $(this).attr('data-latlng').split(",");
+			console.log($(this).attr('data-latlng'));
+			var lat = latlng[0];
+			var long = latlng[1];
+			console.log(lat);
+			console.log(long);
+			var marker = L.marker([lat, long], { icon: oaIcon, riseOnHover: true }).addTo(map);
+			locations.push([lat, long]);
+			map.fitBounds(L.latLngBounds(locations));
+		});
 
 });
