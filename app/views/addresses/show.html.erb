@@ -1,13 +1,16 @@
 <%= render 'addresses/address_submit' %>
 
-<div id="map"></div>
+<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+<%= javascript_include_tag 'proj4-compressed.js' %>
+<%= javascript_include_tag 'proj4leaflet.js' %>
+<%= javascript_include_tag 'openspace-leaflet.js' %>
+
+<div id="map" style="width: 600px; height: 475px; border: 1px solid black;"></div>
 
 <h1 data-latlng="<%= @address.postcode.lat_lng.to_a.join(",") %>">
 	<% @address.full_address_lines.each do |line| %>
 		<%= line %><br>
 	<% end %>
-
-
 </h1>
 
 <%= render 'addresses/address_validate' %>
