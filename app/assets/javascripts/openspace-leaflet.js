@@ -90,7 +90,7 @@ L.TileLayer.OSOpenSpace = L.TileLayer.WMS.extend({
         continuousWorld: true,
         worldCopyJump: false,
         tms: true,
-        attribution: " OS.OpenSpace",
+        attribution: " &copy; Crown copyright and database rights 2015 Ordnance Survey | <a href='/about/data/terms/'>Terms</a> <img src='/assets/openspace.png' style='vertical-align: bottom'/>",
     },
 
     /**
