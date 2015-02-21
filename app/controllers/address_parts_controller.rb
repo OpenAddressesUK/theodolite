@@ -1,11 +1,27 @@
 class AddressPartsController < ApplicationController
   before_filter :pagination
 
+  def streets
+    if params[:q]
+      @streets = Street.any_in(:name => Street.name_prefix_search(params[:q]))
+    else
+      @streets = []
+    end
+  end
+
   def street
     @street = Street.find(params[:id])
     @addresses = get_addresses("street", params[:id])
 
     render_paginated_addresses
+  end
+
+  def localities
+    if params[:q]
+      @localities = Locality.any_in(:name => Locality.name_prefix_search(params[:q]))
+    else
+      @localities = []
+    end
   end
 
   def locality
@@ -15,11 +31,27 @@ class AddressPartsController < ApplicationController
     render_paginated_addresses
   end
 
+  def towns
+    if params[:q]
+      @towns = Town.any_in(:name => Town.name_prefix_search(params[:q]))
+    else
+      @towns = []
+    end
+  end
+
   def town
     @town = Town.find(params[:id])
     @addresses = get_addresses("town", params[:id])
 
     render_paginated_addresses
+  end
+
+  def postcodes
+    if params[:q]
+      @postcodes = Postcode.any_in(:name => Postcode.name_prefix_search(params[:q]))
+    else
+      @postcodes = []
+    end
   end
 
   def postcode
