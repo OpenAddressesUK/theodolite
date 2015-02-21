@@ -55,7 +55,7 @@ Both sources have been assessed not to include third party IP or to be appropria
 Our contributors can submit addresses interactively using our [website](https://openaddressesuk.org) or using the [Sorting Office](https://sorting-office.openaddressesuk.org/) APIs and website.
 
 ###Validation data
-Validation data is collected from our contributors interactively using our website or through APIs. Anybody can state if one of the address we publish exists or not. This information is then used to calculate the confidence score we associate to each addreess or building blocks.
+Validation data is collected from our contributors interactively using our website or through APIs. Anybody can state if one of the address we publish exists or not. This information is then used to calculate the confidence score we associate to each address or building blocks. Full documentation on the validation API is in the [Ernest application documentation](https://ernest.openaddressesuk.org).
 
 ###Updating the data
 Apart from Spend Network's data, that was a one-off contribution, each of the sources described above are currently maintained and updated regularly by their respective publishers. It can happen, though, that they do not account for recent changes, such as new streets. During Beta we will be updating the reference data and bulk source data every time they are changed.
@@ -74,6 +74,8 @@ All ELTs but for the Common ETL described above run on a shared submission manag
 
 For the time being, Open Addresses uses a fork of the original Turbot; it is our ambition to merge our effort with Open Corporates' later in time.
 
+If you want to write a component that imports data into Open Addresses, take a look at the [Turbot quickstart guide](http://turbot.openaddressesuk.org/docs/quickstart).
+
 You are welcome to review or contribute to the our version of Turbot on GitHub [here](https://github.com/OpenAddressesUK/turbot-client) for the command line client and [here](https://github.com/OpenAddressesUK/turbot-runner) for the "runner" component.
 
 ###The Companies House ETL
@@ -85,7 +87,7 @@ You are welcome to review a past version of the Companies House ETL on GitHub [h
 Some ETLs can be dedicated to "inferrring" addresses rather than ingesting it from one source or another. [Inference is the process by which we infer the existence of addresses from data we have about _other_ addresses](https://openaddressesuk.org/blog/2015/02/12/inference). Open Addresses' own inference engine will soon implement a basic algorithm described [here](https://github.com/theodi/shared/issues/504#issuecomment-72818881) and potentially many inference implementations could be run in parallel as long as they are complementary to each other.
 
 <h2 id='sortingoffice'>Sorting Office</h2>
-Sorting Office is an independent software component we developed to provide address normalisation services internally to other Open Addresses software components but also externally, as an API. Users of Sorting Office can use it also to submit addresses as they normalise them.
+Sorting Office is an independent software component we developed to provide address normalisation services internally to other Open Addresses software components but also externally, as [an API](http://sorting-office.openaddressesuk.org). Users of Sorting Office can use it also to submit addresses as they normalise them.
 
 <h2 id='ingester'>The Ingester software module</h2>
 The Open Addresses solution is designed to support a distributed set of ETL modules in the future, many of which may not necessarily be owned directly by Open Addresses but contributed and operated by other individuals or organisations.
@@ -167,6 +169,8 @@ You are welcome to review or contribute to the current version of the Hippodamus
 
 <h2 id='validationapis'>The validation APIs</h2>
 The validation APIs allow users to produce the validation data described above. At the moment of writing the APIs are unconstrained and can be used from any third party application without the need for registration, e.g. by using this [sample code](https://openaddressesuk.org/assets/validate_address.js).
+
+Full documentation on the validation API is in the [Ernest application documentation](https://ernest.openaddressesuk.org).
 
 <h2 id='provenance'>How provenance is documented</h2>
 Given the sensitiveness of the intellectual property matters surrounding address data in the UK, it is critical for Open Addresses to work fully in the open and to document in detail how our data is created or derived from its sources.
