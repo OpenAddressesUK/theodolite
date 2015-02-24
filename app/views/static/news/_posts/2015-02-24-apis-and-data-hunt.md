@@ -5,7 +5,7 @@ title: Open Addresses launches APIs and hunts for new data at Open Data Camp
 
 [Open Addresses UK](https://openaddressesuk.org/) sponsored [Open Data Camp 2015](http://odcamp.org.uk/) this weekend (February 21st and 22nd) in Winchester. The event coincided with [International Open Data Day](http://opendataday.org/), a global series of events and hackathons. 
 
-At the event, our team unveiled [an initial set of Open Addresses APIs](link to be added) and discussed the sorts of tools and services that the platform enables. These include  improvements to existing services; new tools to help users maintain the platform; or new services built using the data and APIs that Open Addresses publishes. We also started building a few new APIs during the event so keep an eye out for an announcement about our exciting “building block APIs” that are comming soon...
+At the event, our team unveiled [an initial set of Open Addresses APIs](/about/apidocu) and discussed the sorts of tools and services that the platform enables. These include  improvements to existing services; new tools to help users maintain the platform; or new services built using the data and APIs that Open Addresses publishes. We also started building a few new APIs during the event so keep an eye out for an announcement about our exciting “building block APIs” that are comming soon...
 
 <%= image_tag("blog/2015-02-24-open-data-camp-dwarnalism.jpg", alt: "'image by Drawnalism' http://drawnalism.com/") %>
 
