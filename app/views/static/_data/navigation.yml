@@ -18,9 +18,9 @@
       path: /data
     - title: APIs 
       path: /about/apidocu
-    - title: Technology overview
+    - title: Technology Overview
       path: /about/docs
-    - title: Adding data
+    - title: Adding Data
       path: /about/addingdata
     - title: Report an Infringement
       path: /about/reportaninfringement
