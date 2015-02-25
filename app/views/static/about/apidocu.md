@@ -5,21 +5,21 @@ layout: default
 
 The Open Addresses platform exposes APIs to allow people and organisations to retrieve data from the platform, to build their own services, and to collaboratively maintain the data that the platform publishes.
 
-The APIs are still in development and are currently available to be freely used by anyone.
+The APIs are still in development but currently available to be freely used by anyone. We'd love your feedback so give them a try.
 
 What do you want to do?
 
-* Search for an address(es) that match certain criteria?
-* Format an address that?
-* Submit a single address?
-* Submit a large quantity of addresses?
-* Validate an address?
+* <a href='#search'>Search for an address(es) that match(es) certain criteria</a>?
+* <a href='#sortingoffice'>Format an address</a>?
+* <a href='#submitone'>Submit a single address?</a>?
+* <a href='#submitmany'>Submit a large quantity of addresses</a>?
+* <a href='#validate'>Validate an address?</a>
 
 Do remember that we are still in development so be gentle with us and the APIs. If you do find a bug then we are very sorry but [let us know](https://github.com/OpenAddressesUK/forum) and we will get it sorted.
 
 We will be launching more APIs and features over the coming weeks but if you didn’t find a feature that you need then do [let us know](https://github.com/OpenAddressesUK/forum) and we will see what we can do.
 
-#### Search for address(es)
+<h2 id='search'>Search for address(es)</h2>
 
 Our search API is at [https://alpha.openaddressesuk.org/addresses.json](https://alpha.openaddressesuk.org/addresses.json)
 
@@ -35,7 +35,7 @@ The response will provide you with all of the data matching your search terms in
 
 If you don’t fancy playing around with JSON but want to see how this API works but then simply visit our [search page](https://alpha.openaddressesuk.org/addresses), it uses the same API.
 
-#### Format an address
+<h2 id='sortingoffice'>Format an address</h2>
 
 We have named our formatting API, the Sorting Office.
 
@@ -45,7 +45,7 @@ Sorting Office takes a free-format text string and returns the address in a stan
 
 Detailed documentation for this API can be found at [https://github.com/OpenAddressesUK/sorting_office](https://github.com/OpenAddressesUK/sorting_office) whilst the API itself can be found at [https://sorting-office.openaddressesuk.org/](https://sorting-office.openaddressesuk.org/).
 
-#### Submit an address
+<h2 id='submitone'>Submit an address</h2>
 
 If you want to submit a single, or a small quantity of addresses, then the Sorting Office API will handle this for you.
 
@@ -55,7 +55,7 @@ By submitting addresses you, or your organisation contributes to the platform an
 
 If you do choose to submit an address then please read and adhere to the [Submission Guidelines](https://github.com/OpenAddressesUK/sorting_office#subguidelines).
 
-#### Submit a large quantity of addresses
+<h2 id='submitmany'>Submit a large quantity of addresses</h2>
 
 For large quantities of addresses we use an instance of an open-source tool called Turbot. Turbot was originally conceived by the great team at [OpenCorporates](http://opencorporates.com/).
 
@@ -63,7 +63,7 @@ Our version of Turbot and all of the necessary documentation and instructions ca
 
 If you do choose to submit an address then please read and adhere to our [Submission Guidelines](https://github.com/OpenAddressesUK/sorting_office#subguidelines).
 
-#### Validate an address
+<h2 id='validate'>Validate an address</h2>
 
 The address validation API is part of our Ernest module.
 
