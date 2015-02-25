@@ -25,9 +25,9 @@ Our search API is at [https://alpha.openaddressesuk.org/addresses.json](https://
 
 Simply specify the street, town and postcode arguments on the querystring. 
 
-[https://alpha.openaddressesuk.org/addresses.json?street=camberwell](https://alpha.openaddressesuk.org/addresses.json?street=camberwell)
-[https://alpha.openaddressesuk.org/addresses.json?town=cheltenham](https://alpha.openaddressesuk.org/addresses.json?town=cheltenham)
-[https://alpha.openaddressesuk.org/addresses.json?postcode=se58qz](https://alpha.openaddressesuk.org/addresses.json?postcode=se58qz)
+* [https://alpha.openaddressesuk.org/addresses.json?street=camberwell](https://alpha.openaddressesuk.org/addresses.json?street=camberwell)
+* [https://alpha.openaddressesuk.org/addresses.json?town=cheltenham](https://alpha.openaddressesuk.org/addresses.json?town=cheltenham)
+* [https://alpha.openaddressesuk.org/addresses.json?postcode=se58qz](https://alpha.openaddressesuk.org/addresses.json?postcode=se58qz)
 
 Partial searches and multiple arguments are supported.
 
@@ -71,4 +71,4 @@ Validation is an important part of the Open Addresses model for collaborative ma
 
 You can see how we have implemented the validation API on our own website by looking at a single address, for example take the "tell us what you know about this address" hyperlink on this page: [https://alpha.openaddressesuk.org/addresses/ODK23N](https://alpha.openaddressesuk.org/addresses/ODK23N).
 
-Alternatively read the detailed documentation at [https://github.com/OpenAddressesUK/ernest/blob/master/spec/api/validation_spec.rb](https://github.com/OpenAddressesUK/ernest/blob/master/spec/api/validation_spec.rb).
+Alternatively read the detailed documentation at [https://ernest.openaddressesuk.org/](https://ernest.openaddressesuk.org/).
