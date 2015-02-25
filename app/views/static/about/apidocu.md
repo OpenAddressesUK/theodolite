@@ -11,9 +11,9 @@ What do you want to do?
 
 * <a href='#search'>Search for an address(es) that match(es) certain criteria</a>?
 * <a href='#sortingoffice'>Format an address</a>?
-* <a href='#submitone'>Submit a single address?</a>?
+* <a href='#submitone'>Submit a single address</a>?
 * <a href='#submitmany'>Submit a large quantity of addresses</a>?
-* <a href='#validate'>Validate an address?</a>
+* <a href='#validate'>Validate an address</a>?
 
 Do remember that we are still in development so be gentle with us and the APIs. If you do find a bug then we are very sorry but [let us know](https://github.com/OpenAddressesUK/forum) and we will get it sorted.
 
