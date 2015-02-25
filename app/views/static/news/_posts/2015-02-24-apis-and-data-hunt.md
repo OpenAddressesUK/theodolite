@@ -7,7 +7,7 @@ title: Open Addresses launches APIs and hunts for new data at Open Data Camp
 
 At the event, our team unveiled [an initial set of Open Addresses APIs](/about/apidocu) and discussed the sorts of tools and services that the platform enables. These include  improvements to existing services; new tools to help users maintain the platform; or new services built using the data and APIs that Open Addresses publishes. We also started building a few new APIs during the event so keep an eye out for an announcement about our exciting “building block APIs” that are comming soon...
 
-<%= image_tag("blog/2015-02-24-open-data-camp-drawnalism.jpg", alt: "'image by Drawnalism' http://drawnalism.com/") %>
+<%= image_tag("blog/2015-02-24-open-data-camp-drawnalism.jpg", alt: "'image by Drawnalism' http://drawnalism.com/", class: "pull-right")%>
 
 The team called on delegates at the ‘unconference’ to provide feedback on the current release of our services. Amongst other items those attending were encouraged to review and suggest improvements to the new [inference algorithm](https://github.com/theodi/shared/issues/504#issuecomment-72818881) that will enable the discovery of new addresses from current, incomplete information, and is predicted to boost the number of addresses on the database by 350%. The team also sought feedback on a new [confidence feature](https://alpha.openaddressesuk.org/blog/2015/02/20/confidence) that will measure trust in our address data.
 
