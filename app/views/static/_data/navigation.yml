@@ -12,16 +12,17 @@
 - title: Search the data
   path: /addresses
 
-- title: Get the data
-  path: /data
-
-- title: How it works
+- title: Documentation
   children:
-    - title: Technology
+    - title: Download 
+      path: /data
+    - title: APIs 
+      path: /about/apidocu
+    - title: Technology Overview
       path: /about/docs
-    - title: Adding data
+    - title: Adding Data
       path: /about/addingdata
-    - title: Report an Infringment
+    - title: Report an Infringement
       path: /about/reportaninfringement
     - title: Business Model
       path: /about/business
