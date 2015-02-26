@@ -10,7 +10,7 @@ The APIs are still in development but currently available to be freely used by a
 What do you want to do?
 
 * <a href='#search'>Search for an address(es) that match(es) certain criteria</a>
-* <a href='#sortingoffice'>Parse an address in its constituent <i>building blocks</i></a>
+* <a href='#sortingoffice'>Parse an address</a>
 * <a href='#submitone'>Submit a single address</a>
 * <a href='#submitmany'>Submit a large quantity of addresses</a>
 * <a href='#validate'>Validate an address</a>
@@ -31,17 +31,17 @@ Simply specify the street, town and postcode arguments on the querystring.
 
 Partial search strings and multiple arguments are supported.
 
-The response will provide you with all of the data matching your search terms including a persistent URL for each address, the addresses themselves in a format similar to the [British Standards Institute BS7666 standard](http://www.bsigroup.co.uk/en-GB/about-bsi/media-centre/press-releases/2006/7/Standardize-the-referencing-and-addressing-of-geographical-objects/#.VOxowLDkfp4). Postcodes will also be described by their geographic centre's latitude and longitude (also known as its 'centroid').
+The response will provide you with all of the data matching your search terms including a persistent URL for each address, the addresses themselves in a format similar to the [British Standards Institute BS7666 standard](http://www.bsigroup.co.uk/en-GB/about-bsi/media-centre/press-releases/2006/7/Standardize-the-referencing-and-addressing-of-geographical-objects/#.VOxowLDkfp4), and the geographic centre of each address's postcode in latitude and longitude.
 
 If you don’t fancy playing around with JSON but want to see how this API works then simply visit our [search page](https://openaddressesuk.org/addresses). Our website is built on our APIs.
 
-<h2 id='sortingoffice'>Parse an address in its building blocks</h2>
+<h2 id='sortingoffice'>Parse an address</h2>
 
 We have named our address parsing API the 'Sorting Office'.
 
 We use this API in the address submission box on the front-page of the website. It removes the need for a user to know how their address is structured, instead we do the hard work for them. Why not build it into your own user journeys?
 
-Sorting Office takes a free-format text string and returns the address decomposed in its building blocks (street name, locality, town, postcode...), along with any other information that we already hold about the address.
+Sorting Office takes a free-format text string and returns the address decomposed intobuilding blocks (street name, locality, town, postcode...), along with any other information that we already hold about the address.
 
 Detailed documentation for this API can be found at [https://github.com/OpenAddressesUK/sorting_office](https://github.com/OpenAddressesUK/sorting_office) whilst the API itself can be found at [https://sorting-office.openaddressesuk.org/](https://sorting-office.openaddressesuk.org/).
 
