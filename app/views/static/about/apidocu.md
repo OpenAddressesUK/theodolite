@@ -41,7 +41,7 @@ We have named our address parsing API the 'Sorting Office'.
 
 We use this API in the address submission box on the front-page of the website. It removes the need for a user to know how their address is structured, instead we do the hard work for them. Why not build it into your own user journeys?
 
-Sorting Office takes a free-format text string and returns the address decomposed intobuilding blocks (street name, locality, town, postcode...), along with any other information that we already hold about the address.
+Sorting Office takes a free-format text string and returns the address decomposed into building blocks (street name, locality, town, postcode...), along with any other information that we already hold about the address.
 
 Detailed documentation for this API can be found at [https://github.com/OpenAddressesUK/sorting_office](https://github.com/OpenAddressesUK/sorting_office) whilst the API itself can be found at [https://sorting-office.openaddressesuk.org/](https://sorting-office.openaddressesuk.org/).
 
@@ -49,7 +49,7 @@ Detailed documentation for this API can be found at [https://github.com/OpenAddr
 
 If you want to submit a single, or a small quantity of addresses, then the Sorting Office API can also do this for you.
 
-Simply set the 'Contribute' API argument described in the documentation: [https://github.com/OpenAddressesUK/sorting_office#how-to-use](https://github.com/OpenAddressesUK/sorting_office#how-to-use).
+Simply set the 'Contribute' argument described in the documentation: [https://github.com/OpenAddressesUK/sorting_office#how-to-use](https://github.com/OpenAddressesUK/sorting_office#how-to-use).
 
 By submitting addresses you, or your organisation contributes to the platform and every user can benefit. If you choose to build Sorting Office into your user journey to help simplify your own work then why not contribute back to the community by submitting the resulting addresses to the platform?
 
