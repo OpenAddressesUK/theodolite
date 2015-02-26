@@ -15,9 +15,9 @@ What do you want to do?
 * <a href='#submitmany'>Submit a large quantity of addresses</a>
 * <a href='#validate'>Validate an address</a>
 
-Do remember that we are still in development so be gentle with us and the APIs. If you do find a bug then we are very sorry. [Let us know](https://github.com/OpenAddressesUK/forum/labels/development) and we will get it sorted.
+Do remember that we are still in development so be gentle with us and the APIs. If you do find a bug then we are very sorry. [Let us know](https://github.com/OpenAddressesUK/forum) and we will get it sorted.
 
-We will be launching more APIs and features over the coming weeks so if you didn’t find a feature that you need then do [let us know](https://github.com/OpenAddressesUK/forum/issues?q=is%3Aopen+label%3Adevelopment+label%3A%22feature+requests%22) and we will see what we can do.
+We will be launching more APIs and features over the coming weeks so if you didn’t find a feature that you need then do [let us know](https://github.com/OpenAddressesUK/forum) and we will see what we can do.
 
 <h2 id='search'>Search for address(es)</h2>
 
