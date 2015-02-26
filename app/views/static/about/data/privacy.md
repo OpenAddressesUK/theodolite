@@ -34,6 +34,6 @@ Any changes we may make to our privacy policy in the future will be posted on th
 
 Questions, comments and requests regarding this privacy policy are welcomed and should be sent to [placeholder](mailto:info@openaddressesuk.org).
 
-For the purpose of the Data Protection Act 1998 (the Act), the data controller is Open Addresses Limited c/o BPE Solicitors LLP, St James' House, St James Square, Cheltenham, GL50 3PR . Our nominated representative for the purpose of the Act is Placeholder.
+For the purpose of the Data Protection Act 1998 (the Act), the data controller is Open Addresses Limited c/o BPE Solicitors LLP, St James' House, St James Square, Cheltenham, GL50 3PR . Our nominated representative for the purpose of the Act is Jeni Tennison.
 
 
