@@ -1,17 +1,15 @@
 ---
 author: Patrice John-Baptise
-title: An Open Addresses Alpha
+title: Picture an Address - nominees and winner announced this week
 ---
-
-Picture an Address - nominees and winner announced this week
 
 Last month, we launched our [Picture An Address photography competition](https://openaddressesuk.org/blog/2015/01/14/picture-an-address). We asked you to creatively capture, in one photograph, “what an address means to you”, offering the winning photographer £500 of photography vouchers.
 
-It’s been an adventurous journey for our three [judges](https://openaddressesuk.org/blog/2015/01/21/Picture-an-Address-Judges-Announced), photographer Paul Clarke, Director of External Affairs at the Science Museum Group, Roger Highfield, and Director at Open Addresses UK Jeni Tennison. The trio have sifted through a spellbinding pile of photography submissions that creatively depict representations of addresses across the UK and have made their decision. The Open Addresses UK photography competition winner will be crowned this week along with a selection of nominees that impressed the judges most - how exciting!
+It’s been an adventurous journey for our three [judges](https://openaddressesuk.org/blog/2015/01/21/Picture-an-Address-Judges-Announced), photographer [Paul Clarke](http://paulclarke.com/), Director of External Affairs at the Science Museum Group, [Roger Highfield](http://www.rogerhighfield.com/), and Director at Open Addresses UK [Jeni Tennison](http://alpha.openaddressesuk.org/about/team). The trio have sifted through a spellbinding pile of photography submissions that creatively depict representations of addresses across the UK and have made their decision. The Open Addresses UK photography competition winner will be crowned this week along with a selection of nominees that impressed the judges most - how exciting!
 
 Keep your eyes peeled as we announce a set of nominees from Tuesday in the lead up to the winner announcement on Friday. Each nominee will be announced alongside a selection of similar submissions with a common theme. The central themes had no influence on the selection process but tell compelling stories about what makes us value an address.
 
-#### Announcing the shortlist themes
+#### Announcing the shortlist
 
 * We will announce the five finalists and winner on Twitter at [@OpenAddressesUK](https://twitter.com/openaddressesuk) and the [website](https://openaddressesuk.org/blog/) this week
 * Our first shortlist announcement for the themes, “Natural Escapes” and “Architectural Diversity” will be published at Tuesday lunchtime
