@@ -1,6 +1,6 @@
 ---
 author: Patrice John-Baptiste
-title: Photo Competition - Natural Escapes
+title: Picture an Address - Natural Escapes Shortlist
 ---
 
 We’re excited to announce our first shortlist and first finalist from our ‘Picture an Address’ photography competition. This shortlist celebrates the theme of ‘Natural Escapes’ as we picture addresses in rural areas of the UK.
@@ -21,7 +21,7 @@ We would like to say a special thank you to  our shortlist nominees, Ellis O'Con
 
 Jamie Fawcett for his dramatic ‘House in Wales’ photograph, capturing the beautiful sparsity and surroundings of Wales’ famous countryside.
 
-<iframe src="https://www.flickr.com/photos/129754713@N03/16083798493/player/" width="75" height="75" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+<iframe src="https://www.flickr.com/photos/129754713@N03/16083798493/player/" width="640" height="455" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
 Jamie will be in the running for the final prize of £500 photography vouchers, to be announced on Friday 6th March! Good luck!
 
