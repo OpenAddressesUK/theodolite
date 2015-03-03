@@ -23,4 +23,5 @@ and a round of applause to the finalist...
 
 Susannah Wheeler, for her boldly juxtaposition of a concrete tower block reflected in a modern, mirror tower block. Susannah’s photograph will be in the running for £500 photography vouchers, to be announced on Friday. We wish her the best of luck!
 
-(single image link)
+
+Author: Patrice John-Baptiste
