@@ -85,6 +85,28 @@ RSpec.describe AddressesController, :type => :controller do
     it 'returns an error if content type is not supported' do
       expect {   get :index, format: :xml, town: "Gotham" }.to raise_error(ActionController::UnknownFormat)
     end
+
+    it 'returns the results update since TIME' do
+      FactoryGirl.create(
+        :address,
+        pao: 1,
+        town: FactoryGirl.create(:town, name: "GOTHAM CITY")
+      )
+
+      FactoryGirl.create(
+        :address,
+        pao: 1,
+        town: FactoryGirl.create(:town, name: "METROPOLIS"),
+        created_at: 1.day.ago,
+        updated_at: 1.day.ago
+      )
+
+      sleep(1)
+
+      get :index, format: :json, updated_since: 1.hour.ago
+      json = JSON.parse(response.body)
+      expect(json['addresses'].count).to eq 1
+    end
   end
 
   describe 'GET #show' do
@@ -171,10 +193,23 @@ RSpec.describe AddressesController, :type => :controller do
           street: @street.name.downcase,
           pao: @pao.downcase,
           sao: @sao.downcase,
-          format: :json
+          format: :html
 
       expect(response).to be_redirect
       expect(response).to have_http_status(307)
+    end
+
+    it "doesn't redirect when JSON" do
+      get :index,
+          town: @town.name.downcase,
+          locality: @locality.name.downcase,
+          postcode: @postcode.name.downcase,
+          street: @street.name.downcase,
+          pao: @pao.downcase,
+          sao: @sao.downcase,
+          format: :json
+
+      expect(response).to have_http_status(200)
     end
 
     it 'assigns correctly' do
@@ -198,9 +233,9 @@ RSpec.describe AddressesController, :type => :controller do
           street: @street.name,
           pao: @pao,
           sao: @sao,
-          format: :json
+          format: :html
 
-      expect(response.header["Location"]).to match /\.json/
+      expect(response.header["Location"]).to match /\.html/
     end
 
     it 'returns empty list if no addresses are found' do
@@ -225,9 +260,9 @@ RSpec.describe AddressesController, :type => :controller do
           street: @street.name,
           pao: @pao,
           sao: @sao,
-          format: :json
+          format: :html
 
-      expect(response).to redirect_to("/addresses/#{@address.token}.json")
+      expect(response).to redirect_to("/addresses/#{@address.token}.html")
     end
 
     it 'works when a postcode has no space' do
@@ -265,17 +300,18 @@ RSpec.describe AddressesController, :type => :controller do
 
     end
 
-    it 'redirects on non-URL-encoded strings' do
-      get :index,
-          town: @town.name,
-          locality: @locality.name,
-          postcode: @postcode.name,
-          street: @street.name,
-          pao: @pao,
-          sao: @sao,
-          format: :json
-
-      expect(response).to redirect_to("/addresses/#{@address.token}.json")
-    end
+# I don't think this makes any sense, Stu?
+#    it 'redirects on non-URL-encoded strings' do
+#      get :index,
+#          town: @town.name,
+#          locality: @locality.name,
+#          postcode: @postcode.name,
+#          street: @street.name,
+#          pao: @pao,
+#          sao: @sao,
+#          format: :html
+#
+#      expect(response).to redirect_to("/addresses/#{@address.token}.html")
+#    end
   end
 end
