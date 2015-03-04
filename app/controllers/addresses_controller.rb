@@ -19,6 +19,8 @@ class AddressesController < ApplicationController
           @addresses = @addresses.where(key => value)
         when "Array"
           @addresses = @addresses.any_in(key => value)
+        when "Time"
+          @addresses = @addresses.gt(key => value)
         end
       end
       @addresses = @addresses.page(@page).per(@per_page)
@@ -51,6 +53,10 @@ class AddressesController < ApplicationController
         end
       end
 
+      if params[:updated_since]
+        @queries[:updated_at] = params[:updated_since]
+      end
+
       if !params[:postcode].blank?
         postcode = UKPostcode.new(params[:postcode]).normalize
         @queries[:"postcode.name"] = postcode
@@ -58,7 +64,7 @@ class AddressesController < ApplicationController
     end
 
     def render_paginated_addresses
-      if @addresses.count == 1
+      if @addresses.count == 1 && params[:format] != 'json'
         redirect_to polymorphic_url(@addresses.first, format: params[:format]), status: 307
       else
         paginate @addresses
