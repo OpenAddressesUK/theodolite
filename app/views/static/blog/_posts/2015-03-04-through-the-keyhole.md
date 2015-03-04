@@ -17,6 +17,8 @@ A special thank you to talented photographers Jacquetta, Helena Fawcett, Jenny S
 
 #### Congratulations to finalist…
 
+<iframe src="https://www.flickr.com/photos/129754713@N03/16507111917/player/" width="640" height="463" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
 Edward Woodcock, for his "Cat 'caught red-pawed' through letterbox" photograph, a playful perspective of space, openness and narrative. Edward will be in the running for the grand £500 photography voucher prize. Best of luck for Friday!
 
 #### Register your address
