@@ -11,23 +11,21 @@ Rural Britain is home to 9.9% of [the population](http://www.tradingeconomics.co
 
 Interestingly, 74.1% of households in rural locations are occupied in contrast to 61.2% in urban areas, and the average age of those residents are 8 years older (at 45) than our urban counterparts (at 37). So as some leave for the city, they may one day return to settle down later in life. [Read more](http://www.ons.gov.uk/ons/dcp171776_337939.pdf) about the different demographics in rural and urban areas at the [Office for National Statistics](http://www.ons.gov.uk/ons/index.html).
 
-Our photography entrants vividly capture the charm of the countryside and what an address in rural Britain means to them. From tranquil meadows, to willow trees and a rustic barn, the addresses captured sits in harmony with its quiet surroundings, representing an address that extends beyond a building of habitation. 
+Our photography entrants vividly capture the charm of the countryside and what an address in rural Britain means to them. From tranquil meadows, to willow trees and a rustic barn, the addresses captured sits in harmony with its quiet surroundings, representing an address that extends beyond a building of habitation.
 
 **The nominees are...**
+
+<iframe src="https://www.flickr.com/photos/129754713@N03/16516349020/in/set-72157651135740181/player/" width="640" height="455" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
 We would like to say a special thank you to  our shortlist nominees, Ellis O'Connor, Isobelle Whitley, Alison Soye, Catherine Green and Chris Hathway for their imaginative photography offering a unique insight into addresses that celebrate our natural surroundings.
 
 **and congratulations to the finalist...**
 
+<%= image_tag("blog/2015-03-03-natural-escapes-picture-1.jpg", alt: "(C) Jamie Fawcett") %>
+
 Jamie Fawcett for his dramatic ‘House in Wales’ photograph, capturing the beautiful sparsity and surroundings of Wales’ famous countryside.
 
-<iframe src="https://www.flickr.com/photos/129754713@N03/16083798493/player/" width="640" height="455" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-
 Jamie will be in the running for the final prize of £500 photography vouchers, to be announced on Friday 6th March! Good luck!
-
-**Shortlisted photos**
-
-<iframe src="https://www.flickr.com/photos/129754713@N03/16516349020/in/set-72157651135740181/player/" width="640" height="455" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
 **Submit an address**
 
