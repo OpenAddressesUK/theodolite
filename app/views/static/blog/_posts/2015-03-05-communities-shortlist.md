@@ -18,15 +18,17 @@ When an address is accurately identified within a community it can begin to prov
 
 #### Thank you to our shortlist...
 
-Heikki Vesanto, Penny Andrews, Fiona Skinner for their original characterisation of addresses in situ.
+<iframe src="https://www.flickr.com/photos/129754713@N03/16537626429/in/set-72157650772049558/player/" width="640" height="516" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
-<iframe src="https://www.flickr.com/photos/129754713@N03/16526978480/in/set-72157650745805979/player/" width="640" height="516" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+Heikki Vesanto, Penny Andrews, Fiona Skinner for their original characterisation of addresses in situ.
 
 #### We have two finalists!
 
-A huge congratulations to both Charlie Southwell and Mareve Heath. Their photos conveyed the vibrancy and scale of addresses within communities in the UK. Tomorrow we’ll be announcing the winner of £500 photography vouchers. Fingers crossed Charlie and Mareve!
+<%= image_tag("blog/2015-03-05-communities-shortlist-1.jpg", alt: "(C) Charlie Southwell") %>
 
-(directly add finalist photos - access here and here)
+<%= image_tag("blog/2015-03-05-communities-shortlist-2.jpg", alt: "(C) Mareve Heath") %>
+
+A huge congratulations to both Charlie Southwell and Mareve Heath. Their photos conveyed the vibrancy and scale of addresses within communities in the UK. Tomorrow we’ll be announcing the winner of £500 photography vouchers. Fingers crossed Charlie and Mareve!
 
 #### Register an address
 
