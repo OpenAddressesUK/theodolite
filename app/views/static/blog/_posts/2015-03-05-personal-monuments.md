@@ -13,17 +13,17 @@ With this in mind, we’ve showcased the photos that represent personal or unoff
 
 #### The shortlist for this theme is…
 
-<iframe src="https://www.flickr.com/photos/129754713@N03/16688476446/in/photostream/player/" width="640" height="516" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+<iframe src="https://www.flickr.com/photos/129754713@N03/16723858445/in/set-72157648848004124/player/" width="640" height="498" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
 Thank you to William Tandy, Andrew Gerrard, Stuart Witts and Sharon Cooper for their imaginative renditions that capture an address enjoyed most whilst visiting.
 
 #### Congratulations to the finalist…
 
-<%= image_tag("blog/2015-03-04-through-the-keyhole-picture-1.jpg", alt: "(C) Edward Woodcock") %>
+<%= image_tag("blog/2015-03-05-personal-monuments-1.jpg", alt: "(C) Drew Mackie") %>
 
 Drew Mackie, for his creative framing technique, offsetting the location of a property into an open space. Drew, we’ll see you at the final! Good luck.
 
-Remember we’re announcing the winner of £500 photography vouchers tomorrow! Keep an eye on our Twitter @OpenAddressesUK to be the first to find out who our judges crowned.
+Remember we’re announcing the winner of £500 photography vouchers tomorrow! Keep an eye on our Twitter [@OpenAddressesUK](https://twitter.com/openaddressesuk) to be the first to find out who our judges crowned.
 
 #### Register an address
 
