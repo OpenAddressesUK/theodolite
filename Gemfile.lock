@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: git://github.com/openaddressesuk/mongoid_address_models.git
-  revision: b09f30205a93bc7531c781087c35a0a8b645875e
+  revision: 0d8ff459de52438853239b3bca88ab1b90856bd9
   specs:
     mongoid_address_models (0.0.1)
       mongoid
@@ -79,12 +79,12 @@ GEM
     dotenv (1.0.2)
     dotenv-rails (1.0.2)
       dotenv (= 1.0.2)
-    elasticsearch (1.0.6)
-      elasticsearch-api (= 1.0.6)
-      elasticsearch-transport (= 1.0.6)
-    elasticsearch-api (1.0.6)
+    elasticsearch (1.0.8)
+      elasticsearch-api (= 1.0.7)
+      elasticsearch-transport (= 1.0.7)
+    elasticsearch-api (1.0.7)
       multi_json
-    elasticsearch-transport (1.0.6)
+    elasticsearch-transport (1.0.7)
       faraday
       multi_json
     erubis (2.7.0)
