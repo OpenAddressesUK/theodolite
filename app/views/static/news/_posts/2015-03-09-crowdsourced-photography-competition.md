@@ -1,11 +1,17 @@
 ---
 author: Patrice John-Baptiste
-title: Open Adddesses UK Announces Photography Competition Winner - Suzannah Wheeler
+title: Open Adddesses UK Announces Photography Competition Winner - Susannah Wheeler
 ---
 
 The UK’s first open and accessible address list, Open Addresses UK, today unveils the results of its photography competition, conveying personal interpretations of an address in one image.
 
-The winning photograph is by Susannah Wheeler, who wins a £500 prize for her photographic interpretation of the diverse and complex address landscape of Britain. The photograph captures the rich heritage of Britain’s addresses, exhibiting two juxtaposed pieces of architecture observed through a reflection. Wheeler’s photograph will now be used to help communicate open addresses to a wider community, in support of Open Addresses UK’s wider agenda. It takes pride of place as the main homepage image on opendaddressesuk.org from today.
+The winning photograph is by Susannah Wheeler, who wins a £500 prize for her photographic interpretation of the diverse and complex address landscape of Britain. The photograph captures the rich heritage of Britain’s addresses, exhibiting two juxtaposed pieces of architecture observed through a reflection. Susannah’s photograph will now be used to help communicate open addresses to a wider community, in support of Open Addresses UK’s wider agenda. It takes pride of place as the main homepage image on opendaddressesuk.org from today.
+
+Susannah Wheeler, photography competition winner, said:
+
+"As soon as I saw the tweet about the competition I knew that was the photo I wanted to enter.  I think it sums up our diverse way of living in the 21st Century. Offices, homes and apartments are all so close together, sharing addresses in a way that we haven’t seen before.
+
+Each time I look at it, I see something different; the light, the reflections and the many stories each window would tell if it could. My love and enthusiasm for photography grows each day and I am absolutely thrilled to have won the competition."
 
 ###Creating awareness
 
