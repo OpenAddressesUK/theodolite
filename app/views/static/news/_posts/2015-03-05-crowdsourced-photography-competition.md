@@ -5,7 +5,7 @@ title: Open Adddesses UK Announces Photography Competition Winner - Susannah Whe
 
 The UK’s first open and accessible address list, Open Addresses UK, today unveils the results of its photography competition, conveying personal interpretations of an address in one image.
 
-The winning photograph is by Susannah Wheeler, who wins a £500 prize for her photographic interpretation of the diverse and complex address landscape of Britain. The photograph captures the rich heritage of Britain’s addresses, exhibiting two juxtaposed pieces of architecture observed through a reflection. Wheeler’s photograph will now be used to help communicate open addresses to a wider community, in support of Open Addresses UK’s wider agenda. It takes pride of place as the main homepage image on opendaddressesuk.org from today.
+The winning photograph is by Susannah Wheeler, who wins a £500 prize for her photographic interpretation of the diverse and complex address landscape of Britain. The photograph captures the rich heritage of Britain’s addresses, exhibiting two juxtaposed pieces of architecture observed through a reflection. Susannah’s photograph will now be used to help communicate open addresses to a wider community, in support of Open Addresses UK’s wider agenda. It takes pride of place as the main homepage image on opendaddressesuk.org from today.
 
 ###Creating awareness
 
