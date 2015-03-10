@@ -1,6 +1,6 @@
 ---
 author: Patrice John-Baptiste
-title: Open Adddesses UK Announces Photography Competition Winner - Susannah Wheeler
+title: Open Addresses UK Announces Photography Competition Winner - Susannah Wheeler
 ---
 
 The UK’s first open and accessible address list, Open Addresses UK, today unveils the results of its photography competition, conveying personal interpretations of an address in one image.
