@@ -22,6 +22,6 @@ deploy:
   strategy: api
   api_key:
     secure: CJrk6UhdbltH1eFJzlBTftZmnnYRGfYEhQOy/g5ORcoUwk8mUpU1YgCqa2e9qbPUHszM9ASYM4x16EEHlhM6bTfgTm+Rmbwe4d0Tbvtc/+kn6uFXjr98LQVxKWFoidqEfjihqnbDKpElDaT0gJqVUrua7XVTCgjPxJgy0S/4RIw=
-  app: pacific-beyond-9370
+  app: oa-theodolite
   on:
     repo: OpenAddressesUK/theodolite
