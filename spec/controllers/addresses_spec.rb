@@ -103,9 +103,14 @@ RSpec.describe AddressesController, :type => :controller do
 
       sleep(1)
 
-      get :index, format: :json, updated_since: 1.hour.ago
+      get :index, format: :json, updated_since: 1.hour.ago.xmlschema
       json = JSON.parse(response.body)
       expect(json['addresses'].count).to eq 1
+
+      get :index, format: :json, updated_since: 2.years.ago.xmlschema
+      json = JSON.parse(response.body)
+      expect(json['addresses'].count).to eq 2
+
     end
   end
 

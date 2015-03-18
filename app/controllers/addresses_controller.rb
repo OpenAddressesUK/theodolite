@@ -19,7 +19,7 @@ class AddressesController < ApplicationController
           @addresses = @addresses.where(key => value)
         when "Array"
           @addresses = @addresses.any_in(key => value)
-        when "Time"
+        when "DateTime"
           @addresses = @addresses.gt(key => value)
         end
       end
@@ -54,7 +54,7 @@ class AddressesController < ApplicationController
       end
 
       if params[:updated_since]
-        @queries[:updated_at] = params[:updated_since]
+        @queries[:updated_at] = DateTime.parse(params[:updated_since])
       end
 
       if !params[:postcode].blank?
