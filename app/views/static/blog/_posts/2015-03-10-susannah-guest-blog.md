@@ -2,13 +2,13 @@
 author: Susannah Wheeler
 title: Susannah Wheeler shares the inspiration behind her winning photograph
 ---
-<%= image_tag("blog/2015-03-06-competition-winner.jpg", alt: "(C) Susannah Wheeler") %>
-
-*Winning photograph to Picture and Address photography competition, by Susannah Wheeler*
 
 I’ve always loved photography, actually seeing something that catches my eye and capturing that moment in time.  More recently I’ve become more adept with some of the skills necessary to manipulate and enhance an image when I’ve got home, not to change the content, just to make it how I saw it.  I’m not in the habit of entering competitions, but when I saw the tweet about the launch of Open Addresses UK and the request for a photograph to represent what that meant to me, that image came to mind immediately and I sent it off – keeping an eye on my Twitter feed but not expecting to win it.
  
 The brief for the competition was so broad and open that I had no idea what sort of image the judges would be looking for.  I’ve taken thousands of photographs, many of houses, rooftops and homes, but this one summed it up for me. To me, ‘open’ means accessible and ‘address’ is where we live. My address is where my home is, it doesn’t matter if it’s an apartment or a big house, it’s where my life and children are - it’s where my ‘stuff’ is.
+
+<%= image_tag("blog/2015-03-06-competition-winner.jpg", alt: "(C) Susannah Wheeler") %>
+*Winning photograph to Picture and Address photography competition, by Susannah Wheeler*
 
 I think the photograph I submitted sums up our diverse way of living in the 21st Century. This photo is actually an office block, with the vast windows reflecting the apartments opposite.  Many of those homes will also double up as offices.  As long as we have access to the internet which gives us the ability to communicate with other people so easily, it really doesn’t matter where we base ourselves for work nowadays.  It can be at home just as easily as a desk in a purpose built office building.
  
