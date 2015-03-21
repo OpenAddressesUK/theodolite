@@ -9,8 +9,8 @@ The APIs are still in development but currently available to be freely used by a
 
 What do you want to do?
 
-* <a href='#search'>Search for an address(es) that match(es) certain criteria</a>
 * <a href='#sortingoffice'>Parse an address</a>
+* <a href='#search'>Search for an address(es) that match(es) certain criteria</a>
 * <a href='#submitone'>Submit a single address</a>
 * <a href='#submitmany'>Submit a large quantity of addresses</a>
 * <a href='#validate'>Validate an address</a>
@@ -18,6 +18,16 @@ What do you want to do?
 Do remember that we are still in development so be gentle with us and the APIs. If you do find a bug then we are very sorry. [Let us know](https://github.com/OpenAddressesUK/forum) and we will get it sorted.
 
 We will be launching more APIs and features over the coming weeks so if you didn’t find a feature that you need then do [let us know](https://github.com/OpenAddressesUK/forum) and we will see what we can do.
+
+<h2 id='sortingoffice'>Parse an address</h2>
+
+We have named our address parsing API the 'Sorting Office'.
+
+We use this API in the address submission box on the front-page of the website. It removes the need for a user to know how their address is structured, instead we do the hard work for them. Why not build it into your own user journeys?
+
+Sorting Office takes a free-format text string and returns the address decomposed into building blocks (street name, locality, town, postcode...), along with any other information that we already hold about the address.
+
+Detailed documentation for this API can be found at [https://github.com/OpenAddressesUK/sorting_office](https://github.com/OpenAddressesUK/sorting_office) whilst the API itself can be found at [https://sorting-office.openaddressesuk.org/](https://sorting-office.openaddressesuk.org/).
 
 <h2 id='search'>Search for address(es)</h2>
 
@@ -34,16 +44,6 @@ Partial search strings and multiple arguments are supported.
 The response will provide you with all of the data matching your search terms including a persistent URL for each address, the addresses themselves in a format similar to the [British Standards Institute BS7666 standard](http://www.bsigroup.co.uk/en-GB/about-bsi/media-centre/press-releases/2006/7/Standardize-the-referencing-and-addressing-of-geographical-objects/#.VOxowLDkfp4), and the geographic centre of each address's postcode in latitude and longitude.
 
 If you don’t fancy playing around with JSON but want to see how this API works then simply visit our [search page](https://openaddressesuk.org/addresses). Our website is built on our APIs.
-
-<h2 id='sortingoffice'>Parse an address</h2>
-
-We have named our address parsing API the 'Sorting Office'.
-
-We use this API in the address submission box on the front-page of the website. It removes the need for a user to know how their address is structured, instead we do the hard work for them. Why not build it into your own user journeys?
-
-Sorting Office takes a free-format text string and returns the address decomposed into building blocks (street name, locality, town, postcode...), along with any other information that we already hold about the address.
-
-Detailed documentation for this API can be found at [https://github.com/OpenAddressesUK/sorting_office](https://github.com/OpenAddressesUK/sorting_office) whilst the API itself can be found at [https://sorting-office.openaddressesuk.org/](https://sorting-office.openaddressesuk.org/).
 
 <h2 id='submitone'>Submit an address</h2>
 
