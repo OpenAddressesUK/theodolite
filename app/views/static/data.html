@@ -42,7 +42,10 @@ layout: notitle
     <script src='https://certificates.theodi.org/datasets/22687/certificate/badge.js'></script>
 
     <p>
-      You will need a BitTorrent client in order to download the data. Each download type is available as one large file, or split by postcode sector
+        Each download type is available as one large file, or split by postcode sector.
+    </p>
+    <p>
+        For each version of the dataset you have the option to either download the file directly or through BitTorrent. By using BitTorrent you help Open Addresses saving on the cost of distributing the data to our users. <a href="http://www.bittorrent.com/">You will need a Bittorrent client</a> in order to download the data using BitTorrent.
     </p>
 
     <div property="dcat:dataset" typeof="dcat:Dataset" resource="http://alpha.openaddressesuk.org<%=request.path%>#address-only">
@@ -51,11 +54,53 @@ layout: notitle
         This is the addresses-only version of the Open Addresses dataset. It includes the current list of addresses without provenance information. It is distributed as a single ZIP file, containing one ZIP file per postcode initial, containing one CSV file per <a href="http://en.wikipedia.org/wiki/Postcodes_in_the_United_Kingdom#Postcode_area">postcode area</a>. Each row in the CSV file is one address.
       </p>
 
-      <h4>As a single file</h4>
-
+          <h4>As a single file (direct download)</h4>
+            <p>
+              <span property='dcat:distribution' typeof='dcat:Distribution'>
+                <a class='btn btn-primary' href='http://download.openaddressesuk.org.s3-website-eu-west-1.amazonaws.com/open_addresses_database%2F2014-12-10-openaddressesuk-addresses-only.csv.zip' property='dcat:accessURL'>
+                  <i class='fa fa-cloud-download'></i>
+                  <span property="dct:type" content="indirect-access">Download</span>
+                  <span property="dct:format" typeof="dct:IMT">
+                    <span content="text/csv" property="rdf:value">CSV</span>
+                  </span>
+                </a>
+              </span>
+              <span property='dcat:distribution' typeof='dcat:Distribution'>
+                <a class='btn btn-primary' href='http://download.openaddressesuk.org.s3-website-eu-west-1.amazonaws.com/open_addresses_database%2F2014-12-10-openaddressesuk-addresses-only.json.zip' property='dcat:accessURL'>
+                  <i class='fa fa-cloud-download'></i>
+                  <span property="dct:type" content="indirect-access">Download</span>
+                  <span property="dct:format" typeof="dct:IMT">
+                    <span content="application/json" property="rdf:value">JSON</span>
+                  </span>
+                </a>
+              </span>
+            </p>
+        </td>
+        <h4>As a single file (torrent)</h4>
+          <p>
+            <span property='dcat:distribution' typeof='dcat:Distribution'>
+              <a class='btn btn-primary' href='/torrent?file=2014-12-10-openaddressesuk-addresses-only.csv.zip.torrent' property='dcat:accessURL'>
+                <i class='fa fa-cloud-download'></i>
+                <span property="dct:type" content="indirect-access">Download</span>
+                <span property="dct:format" typeof="dct:IMT">
+                  <span content="text/csv" property="rdf:value">CSV</span>
+                </span>
+              </a>
+            </span>
+            <span property='dcat:distribution' typeof='dcat:Distribution'>
+              <a class='btn btn-primary' href='/torrent?file=2014-12-10-openaddressesuk-addresses-only.json.zip.torrent' property='dcat:accessURL'>
+                <i class='fa fa-cloud-download'></i>
+                <span property="dct:type" content="indirect-access">Download</span>
+                <span property="dct:format" typeof="dct:IMT">
+                  <span content="application/json" property="rdf:value">JSON</span>
+                </span>
+              </a>
+            </span>
+          </p>
+      <h4>Split by postcode sector (direct download)</h4>
         <p>
           <span property='dcat:distribution' typeof='dcat:Distribution'>
-            <a class='btn btn-primary' href='/torrent?file=2014-12-10-openaddressesuk-addresses-only.csv.zip.torrent' property='dcat:accessURL'>
+            <a class='btn btn-primary' href='http://download.openaddressesuk.org.s3-website-eu-west-1.amazonaws.com/open_addresses_database%2F2014-12-10-openaddressesuk-addresses-only-split.csv.zip' property='dcat:accessURL'>
               <i class='fa fa-cloud-download'></i>
               <span property="dct:type" content="indirect-access">Download</span>
               <span property="dct:format" typeof="dct:IMT">
@@ -63,9 +108,8 @@ layout: notitle
               </span>
             </a>
           </span>
-
           <span property='dcat:distribution' typeof='dcat:Distribution'>
-            <a class='btn btn-primary' href='/torrent?file=2014-12-10-openaddressesuk-addresses-only.json.zip.torrent' property='dcat:accessURL'>
+            <a class='btn btn-primary' href='http://download.openaddressesuk.org.s3-website-eu-west-1.amazonaws.com/open_addresses_database%2F2014-12-10-openaddressesuk-addresses-only-split.json.zip' property='dcat:accessURL'>
               <i class='fa fa-cloud-download'></i>
               <span property="dct:type" content="indirect-access">Download</span>
               <span property="dct:format" typeof="dct:IMT">
@@ -74,30 +118,27 @@ layout: notitle
             </a>
           </span>
         </p>
-
-      <h4>Split by postcode sector</h4>
-
-        <p>
-          <span property='dcat:distribution' typeof='dcat:Distribution'>
-            <a class='btn btn-primary' href='/torrent?file=2014-12-10-openaddressesuk-addresses-only-split.csv.zip.torrent' property='dcat:accessURL'>
-              <i class='fa fa-cloud-download'></i>
-              <span property="dct:type" content="indirect-access">Download</span>
-              <span property="dct:format" typeof="dct:IMT">
-                <span content="text/csv" property="rdf:value">CSV</span>
-              </span>
-            </a>
-          </span>
-
-          <span property='dcat:distribution' typeof='dcat:Distribution'>
-            <a class='btn btn-primary' href='/torrent?file=2014-12-10-openaddressesuk-addresses-only-split.json.zip.torrent' property='dcat:accessURL'>
-              <i class='fa fa-cloud-download'></i>
-              <span property="dct:type" content="indirect-access">Download</span>
-              <span property="dct:format" typeof="dct:IMT">
-                <span content="application/json" property="rdf:value">JSON</span>
-              </span>
-            </a>
-          </span>
-        </p>
+        <h4>Split by postcode sector (torrent)</h4>
+          <p>
+            <span property='dcat:distribution' typeof='dcat:Distribution'>
+              <a class='btn btn-primary' href='/torrent?file=2014-12-10-openaddressesuk-addresses-only-split.csv.zip.torrent' property='dcat:accessURL'>
+                <i class='fa fa-cloud-download'></i>
+                <span property="dct:type" content="indirect-access">Download</span>
+                <span property="dct:format" typeof="dct:IMT">
+                  <span content="text/csv" property="rdf:value">CSV</span>
+                </span>
+              </a>
+            </span>
+            <span property='dcat:distribution' typeof='dcat:Distribution'>
+              <a class='btn btn-primary' href='/torrent?file=2014-12-10-openaddressesuk-addresses-only-split.json.zip.torrent' property='dcat:accessURL'>
+                <i class='fa fa-cloud-download'></i>
+                <span property="dct:type" content="indirect-access">Download</span>
+                <span property="dct:format" typeof="dct:IMT">
+                  <span content="application/json" property="rdf:value">JSON</span>
+                </span>
+              </a>
+            </span>
+          </p>
     </div>
 
     <div property="dcat:dataset" typeof="dcat:Dataset" resource="http://alpha.openaddressesuk.org<%=request.path%>#full">
@@ -111,53 +152,92 @@ layout: notitle
           The CSV files in this distribution do not have one line per address, but one line <b>for each provenance element being described</b>. The actual address is repeated for every row. Rows referring to the same addresses can be identified as they have the same address URI (the 'url' column).
         </p>
 
-        <h4>As a single file</h4>
-
-        <p>
-          <span property='dcat:distribution' typeof='dcat:Distribution'>
-            <a class='btn btn-primary' href='/torrent?file=2014-12-10-openaddressesuk-full.csv.zip.torrent' property='dcat:accessURL'>
-              <i class='fa fa-cloud-download'></i>
-              <span property="dct:type" content="indirect-access">Download</span>
-              <span property="dct:format" typeof="dct:IMT">
-                <span content="text/csv" property="rdf:value">CSV</span>
+        <h4>As a single file (direct download)</h4>
+            <p>
+              <span property='dcat:distribution' typeof='dcat:Distribution'>
+                <a class='btn btn-primary' href='http://download.openaddressesuk.org.s3-website-eu-west-1.amazonaws.com/open_addresses_database%2F2014-12-10-openaddressesuk-full.csv.zip' property='dcat:accessURL'>
+                  <i class='fa fa-cloud-download'></i>
+                  <span property="dct:type" content="indirect-access">Download</span>
+                  <span property="dct:format" typeof="dct:IMT">
+                    <span content="text/csv" property="rdf:value">CSV</span>
+                  </span>
+                </a>
               </span>
-            </a>
-          </span>
-
-          <span property='dcat:distribution' typeof='dcat:Distribution'>
-            <a class='btn btn-primary' href='/torrent?file=2014-12-10-openaddressesuk-full.json.zip.torrent' property='dcat:accessURL'>
-              <i class='fa fa-cloud-download'></i>
-              <span property="dct:type" content="indirect-access">Download</span>
-              <span property="dct:format" typeof="dct:IMT">
-                <span content="application/json" property="rdf:value">JSON</span>
+              <span property='dcat:distribution' typeof='dcat:Distribution'>
+                <a class='btn btn-primary' href='http://download.openaddressesuk.org.s3-website-eu-west-1.amazonaws.com/open_addresses_database%2F2014-12-10-openaddressesuk-full.json.zip' property='dcat:accessURL'>
+                  <i class='fa fa-cloud-download'></i>
+                  <span property="dct:type" content="indirect-access">Download</span>
+                  <span property="dct:format" typeof="dct:IMT">
+                    <span content="application/json" property="rdf:value">JSON</span>
+                  </span>
+                </a>
               </span>
-            </a>
-          </span>
-        </p>
-
-        <h4>Split by postcode sector</h4>
-
-        <p>
-          <span property='dcat:distribution' typeof='dcat:Distribution'>
-            <a class='btn btn-primary' href='/torrent?file=2014-12-10-openaddressesuk-full-split.csv.zip.torrent' property='dcat:accessURL'>
-              <i class='fa fa-cloud-download'></i>
-              <span property="dct:type" content="indirect-access">Download</span>
-              <span property="dct:format" typeof="dct:IMT">
-                <span content="text/csv" property="rdf:value">CSV</span>
+            </p>
+        <h4>As a single file (torrent)</h4>
+            <p>
+              <span property='dcat:distribution' typeof='dcat:Distribution'>
+                <a class='btn btn-primary' href='/torrent?file=2014-12-10-openaddressesuk-full.csv.zip.torrent' property='dcat:accessURL'>
+                  <i class='fa fa-cloud-download'></i>
+                  <span property="dct:type" content="indirect-access">Download</span>
+                  <span property="dct:format" typeof="dct:IMT">
+                    <span content="text/csv" property="rdf:value">CSV</span>
+                  </span>
+                </a>
               </span>
-            </a>
-          </span>
-
-          <span property='dcat:distribution' typeof='dcat:Distribution'>
-            <a class='btn btn-primary' href='/torrent?file=2014-12-10-openaddressesuk-full-split.json.zip.torrent' property='dcat:accessURL'>
-              <i class='fa fa-cloud-download'></i>
-              <span property="dct:type" content="indirect-access">Download</span>
-              <span property="dct:format" typeof="dct:IMT">
-                <span content="application/json" property="rdf:value">JSON</span>
+              <span property='dcat:distribution' typeof='dcat:Distribution'>
+                <a class='btn btn-primary' href='/torrent?file=2014-12-10-openaddressesuk-full.json.zip.torrent' property='dcat:accessURL'>
+                  <i class='fa fa-cloud-download'></i>
+                  <span property="dct:type" content="indirect-access">Download</span>
+                  <span property="dct:format" typeof="dct:IMT">
+                    <span content="application/json" property="rdf:value">JSON</span>
+                  </span>
+                </a>
               </span>
-            </a>
-          </span>
-        </p>
+            </p>
+
+        <h4>Split by postcode sector (direct download)</h4>
+            <p>
+              <span property='dcat:distribution' typeof='dcat:Distribution'>
+                <a class='btn btn-primary' href='http://download.openaddressesuk.org.s3-website-eu-west-1.amazonaws.com/open_addresses_database%2F2014-12-10-openaddressesuk-full-split.csv.zip' property='dcat:accessURL'>
+                  <i class='fa fa-cloud-download'></i>
+                  <span property="dct:type" content="indirect-access">Download</span>
+                  <span property="dct:format" typeof="dct:IMT">
+                    <span content="text/csv" property="rdf:value">CSV</span>
+                  </span>
+                </a>
+              </span>
+              <span property='dcat:distribution' typeof='dcat:Distribution'>
+                <a class='btn btn-primary' href='http://download.openaddressesuk.org.s3-website-eu-west-1.amazonaws.com/open_addresses_database%2F2014-12-10-openaddressesuk-full-split.json.zip' property='dcat:accessURL'>
+                  <i class='fa fa-cloud-download'></i>
+                  <span property="dct:type" content="indirect-access">Download</span>
+                  <span property="dct:format" typeof="dct:IMT">
+                    <span content="application/json" property="rdf:value">JSON</span>
+                  </span>
+                </a>
+              </span>
+            </p>
+        <h4>Split by postcode sector (torrent)</h4>
+            <p>
+              <span property='dcat:distribution' typeof='dcat:Distribution'>
+                <a class='btn btn-primary' href='/torrent?file=2014-12-10-openaddressesuk-full-split.csv.zip.torrent' property='dcat:accessURL'>
+                  <i class='fa fa-cloud-download'></i>
+                  <span property="dct:type" content="indirect-access">Download</span>
+                  <span property="dct:format" typeof="dct:IMT">
+                    <span content="text/csv" property="rdf:value">CSV</span>
+                  </span>
+                </a>
+              </span>
+              <span property='dcat:distribution' typeof='dcat:Distribution'>
+                <a class='btn btn-primary' href='/torrent?file=2014-12-10-openaddressesuk-full-split.json.zip.torrent' property='dcat:accessURL'>
+                  <i class='fa fa-cloud-download'></i>
+                  <span property="dct:type" content="indirect-access">Download</span>
+                  <span property="dct:format" typeof="dct:IMT">
+                    <span content="application/json" property="rdf:value">JSON</span>
+                  </span>
+                </a>
+              </span>
+            </p>
+
     </div>
 
 
