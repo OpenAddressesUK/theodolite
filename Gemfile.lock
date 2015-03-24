@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: git://github.com/openaddressesuk/mongoid_address_models.git
-  revision: 0d8ff459de52438853239b3bca88ab1b90856bd9
+  revision: 6f97821f85f652c8f6759e5d2d9d2e756ba912a2
   specs:
     mongoid_address_models (0.0.1)
       mongoid
@@ -202,7 +202,7 @@ GEM
       rspec-mocks (~> 3.0.0)
       rspec-support (~> 3.0.0)
     rspec-support (3.0.4)
-    ruby-progressbar (1.7.1)
+    ruby-progressbar (1.7.4)
     safe_yaml (1.0.4)
     sass (3.2.19)
     sass-rails (4.0.5)
