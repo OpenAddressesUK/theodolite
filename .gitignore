@@ -5,3 +5,8 @@
 /tmp
 .env
 .DS_Store
+
+# Error Capistrano
+#Capfile
+#config/deploy.rb
+#config/deploy

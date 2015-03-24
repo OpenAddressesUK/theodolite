@@ -1,0 +1,3 @@
+[submodule "config/capistrano_recipes"]
+	path = config/capistrano_recipes
+	url = ssh://git@bitbucket.org/errorstudio/capistrano_recipes
