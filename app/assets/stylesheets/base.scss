@@ -26,6 +26,7 @@ html {
 body {
 	font-family: 'Open Sans', sans-serif;
 	color:#383838;
+	margin: 0;
 }
 
 hr {
@@ -65,8 +66,9 @@ textarea {
 
 .container {
 	width:1170px;
-	padding:15px;
+	padding: 0 15px;
 	margin:0 auto;
+	@extend %clearfix;
 }
 
 

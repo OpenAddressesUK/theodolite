@@ -16,47 +16,49 @@
       <%# content_for?(:content) ? yield(:content) : yield %>
     </div>
 
+
+    <div class="home-hero">
+      <h2>A free address database for everyone</h2>
+      <p>Addresses are part of our everyday lives. But it's not easy - or cheap - to use them to analyse data, deliver goods or provide services to customers. We're here to change that.</p>
+      <a href="#">Learn more</a>
+      <%= image_tag 'home-gfx.png', :class => "home-gfx" %>
+    </div>
+
+    <!-- <div class="wrapper wrapper-light-gray"> -->
     <div class="container">
-      <div class="home-hero">
-        <h2>A free address database for everyone</h2>
-        <p>Addresses are part of our everyday lives. But it's not easy - or cheap - to use them to analyse data, deliver goods or provide services to customers. We're here to change that.</p>
-        <a href="#">Learn more</a>
-      </div>
-    </div>
-
-    <div class="wrapper wrapper-light-gray">
-      <div class="container">
-        <div class="home-ctas">
-          <div class="home-cta">
-            <h2>Open Addresses in your apps</h2>
-            <p>Developers! We’re looking for exciting and interesting ways open addresses can be used in your app or service. Get started with our API.</p>
-            <div class="home-cta-data-indicator">64% data quality at present</div>
-          </div>
-          <div class="home-cta">
-            <h2>Donate your address data</h2>
-            <p>Open Addresses future depends on us all getting involved and donating our data. Collaborate with us and help develop and maintain a sustainable address database.</p>
-            <div class="home-cta-data-indicator">1.5m out of 40m addresses</div>  
-          </div>
-          <div class="home-cta">
-            <h2>Partnering with Open Addresses</h2>
-            <p>There should be no barriers to accessing data that is by its very nature, open. Try Open Addresses within your organisation and begin the journey of moving away from costly datasets.</p>
-          </div>
+      <div class="home-ctas">
+        <div class="home-cta">
+          <h2>Open Addresses in your apps</h2>
+          <p>Developers! We’re looking for exciting and interesting ways open addresses can be used in your app or service. Get started with our API.</p>
+          <div class="home-cta-data-indicator"><span>64<em>%</em></span> data quality at present</div>
+        </div>
+        <div class="home-cta">
+          <h2>Donate your address data</h2>
+          <p>Open Addresses future depends on us all getting involved and donating our data. Collaborate with us and help develop and maintain a sustainable address database.</p>
+          <div class="home-cta-data-indicator"><span>1.5<em>m</em></span> out of 40m addresses</div>  
+        </div>
+        <div class="home-cta">
+          <h2>Partnering with Open Addresses</h2>
+          <p>There should be no barriers to accessing data that is by its very nature, open. Try Open Addresses within your organisation and begin the journey of moving away from costly datasets.</p>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="wrapper wrapper-orange">
-      <div class="container">
-        <div class="case-study">
-          <span class="subtitle">Case study</span>
-          <h2>Something New</h2>
-          <p>Something New are a political party who face a challenge faced by many organisations: hundreds of emails from multiple people each interested in different issues. Some issues were national, some issues were local - for example an issue with the nearby hospital, some were hyperlocal - for example concerns over a local park.</p>
-          <p>To help them process this flood of information they used Open Address’s services to automatically capture, structure and locate the address in the incoming emails. Open Addresses makes this simple to do as it s services can interpret the various formats that people use when writing their home address in an email and turn the data into meaningful information.</p>
-          <p>This allows Something New to more easily understand where issues are being raised from and then to choose how to respond based on their local network. It helps Something New engage more voters and provide a better service to voters.</p>
-        </div>
+  <div class="wrapper wrapper-orange">
+    <div class="container">
+      <div class="case-study">
+        <div class="case-study-gfx"><%= image_tag 'case-study-something-new-gfx.png' %></a></div>
+        <span class="subtitle">Case study</span>
+        <h2>Addressing political issues</h2>
+        <p><strong>Something New are a political party who face a challenge faced by many organisations: hundreds of emails from multiple people each interested in different issues. Some issues were national, some issues were local - for example an issue with the nearby hospital, some were hyperlocal - for example concerns over a local park.</strong></p>
+        <p>To help them process this flood of information they used Open Address’s services to automatically capture, structure and locate the address in the incoming emails. Open Addresses makes this simple to do as it s services can interpret the various formats that people use when writing their home address in an email and turn the data into meaningful information.</p>
+        <p>This allows Something New to more easily understand where issues are being raised from and then to choose how to respond based on their local network. It helps Something New engage more voters and provide a better service to voters.</p>
       </div>
     </div>
+  </div>
 
+  <div class="wrapper wrapper-corner-gfx-1">
     <div class="container">
       <div class="home-services">
         <h2>API Services</h2>
@@ -92,36 +94,40 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="wrapper wrapper-light-gray">
-      <div class="container">
-        <div class="discussion">
-          <h2>Discussion</h2>
-          <div class="discussion-blocks">
-            <div>
-              <h3><a href="#">Open Addresses UK to sponsor Open Data Camp</a></h3>
-              <p>Open Addresses UK has announced that it will be sponsoring Open Data Camp 2015 on February 21st and 22nd in Winchester.</p>
-            </div>
-            <div>
-              <h3><a href="#">Multiplying addresses</a></h3>
-              <p>Postcode area ‘ZE’ is the black sheep of the launch edition of the Open Addresses UK dataset. It was generated (or “distilled”) from our source data on 10th December 2014, and we knew only 117 addresses belonging to it at the time.</p>
-            </div>
-            <div>
-              <h3>Join the discussion</h3>
-              <ul>
-                <li><a href="#">Be part of the GitHub forum</a></li>
-                <li><a href="#">Chat to us on Twitter</a></li>
-              </ul>
-            </div>
+  <div class="wrapper wrapper-light-gray">
+    <div class="container">
+      <div class="discussion">
+        <h2>Updates</h2>
+        <div class="discussion-blocks">
+          <div>
+          <span class="subtitle">Latest blog post</span>
+            <h3><a href="#">Open Addresses UK to sponsor Open Data Camp</a></h3>
+            <p>Open Addresses UK has announced that it will be sponsoring Open Data Camp 2015 on February 21st and 22nd in Winchester.</p>
+          </div>
+          <div>
+            <span class="subtitle">Latest news</span>
+            <h3><a href="#">Multiplying addresses</a></h3>
+            <p>Postcode area ‘ZE’ is the black sheep of the launch edition of the Open Addresses UK dataset. It was generated (or “distilled”) from our source data on 10th December 2014, and we knew only 117 addresses belonging to it at the time.</p>
+          </div>
+          <div>
+            <span class="subtitle">Latest forum post</span>
+            <h3>Join the discussion</h3>
+            <ul>
+              <li><a href="#">Be part of the GitHub forum</a></li>
+              <li><a href="#">Chat to us on Twitter</a></li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-
   </div>
 
-  <%= render partial: 'shared/footer' %>
-  <%= render partial: 'shared/footer_scripts' %>
+</div>
+
+<%= render partial: 'shared/footer' %>
+<%= render partial: 'shared/footer_scripts' %>
 
 </body>
 </html>

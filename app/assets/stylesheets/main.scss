@@ -13,9 +13,9 @@
 @import "modules/content";
 
 .footer {
-  padding: 14px 0;
-  font-size:14px;
-  @extend %clearfix;
+	padding: 34px 0;
+	font-size:14px;
+	@extend %clearfix;
 }
 
 .footer > * {
@@ -41,4 +41,13 @@
 	margin:0;
 	list-style:none;
 	padding:0;
+}
+
+.wrapper-corner-gfx-1 {
+	background:url(corner-gfx-1.png) bottom right no-repeat;
+}
+
+.page-header {
+  padding-top: 24px;
+	@extend %clearfix;
 }

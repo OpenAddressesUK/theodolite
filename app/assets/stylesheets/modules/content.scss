@@ -20,6 +20,7 @@
 	font-weight: 300;
 	font-size: 40px;
 	color: #8c005b;
+  line-height: 1.4;
 }
 
 .content pre {
@@ -84,3 +85,35 @@
   color: #fff;
 }
 
+
+.post-list-item {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 15px;
+  margin-bottom: 37px;
+}
+
+.post-list-item:last-child {
+  border-bottom: 0;
+  padding-bottom: 40px;
+}
+
+.post-list-item-title {
+  font-weight: 300;
+  font-size: 36px;
+}
+
+.post-list-item-meta {
+  opacity: .5;
+  margin-bottom: 26px;
+  margin-top: -30px;
+}
+
+.content h1.article-list-title {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 30px;
+  opacity: .8;
+  margin-top: 47px;
+  margin-bottom: 50px;
+  color:#383838;
+}

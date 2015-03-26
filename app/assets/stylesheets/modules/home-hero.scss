@@ -2,17 +2,42 @@
 /* Home Hero */
 
 .home-hero {
-	padding-top:100px;
-	padding-bottom:100px;
+	padding-top:8px;
+	padding-bottom:0;
 	text-align:center;
+	position:relative;
+	overflow:hidden;
+	width:100%;
+}
+
+.home-hero:after {
+	content:"";
+	height:330px;
+	background:#faf3d7;
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	z-index:-1;
 }
 
 .home-hero h2 {
 	font-weight:300;
-	font-size:40px;
-	color:#8c005b;
+	font-size:56px;
+	color:black;
+	margin-bottom: 20px;
 }
 
 .home-hero p {
 	padding:0 25%;
+}
+
+.home-hero a {
+	border:1px solid lighten($orange, 30%);
+	padding: 4px 10px 6px;
+}
+
+.home-gfx {
+	display: block;
+	margin:0 auto;
 }

@@ -4,6 +4,7 @@
 .discussion {
 	clear:both;
 	padding-bottom:70px;
+	padding-top: 1px;
 	@extend %clearfix;
 }
 
@@ -14,32 +15,18 @@
 	font-size: 30px;
 	opacity: .8;
 	margin-top: 47px;
-	margin-bottom:50px;
+	margin-bottom: 19px;
 }
 
 .discussion-blocks > div {
-	//width:33.333333%;
-	width: 31.533333%;
+	width: 34.133333%;
 	float:left;
 	background:white;
-	padding:20px 20px 10px 20px;
+	padding: 27px 27px 14px 27px;
 	border-radius: 3px;
-	margin-right:20px;
+	margin: 0 -5px;
 	font-size:14px;
 	position:relative;
-}
-
-
-
-.discussion-blocks > div:before {
-	content:"";
-	position:absolute;
-	top:100%;
-	left:50%;
-	width: 0;
-	height: 0;
-	border-top: 20px solid $orange;
-	border-left: 20px solid transparent;
 }
 
 .discussion-blocks > div h3 {
@@ -49,41 +36,37 @@
 	line-height: 1.2;
 }
 
+.discussion-blocks > div h3 a {
+	@include background-underline($orange, 0.6);
+}
+
 .discussion-blocks > div ul {
 	list-style: none;
 	padding:0;
 }
 
-/* .discussion-blocks > div:first-child {
-	background:orange;
-}
-*/
-
 .discussion-blocks > div:nth-child(1) {
-	background:$orange;
-	color:white;
-	margin-top: 15px;
-}
 
+}
 
 .discussion-blocks > div:nth-child(1) h3 a {
-	color:$purple;
+
 }
 
 .discussion-blocks > div:nth-child(2) {
 	background:$purple;
 	color:white;
-}
-
-.discussion-blocks > div:nth-child(2):before {
-	border-top: 20px solid $purple;
+	margin-top: 42px;
+	z-index: 1;
 }
 
 .discussion-blocks > div:nth-child(3) {
 	background:white;
-	margin-top: 48px;
+
 }
 
-.discussion-blocks > div:nth-child(3):before {
-	border-top: 20px solid white;
+.discussion-blocks .subtitle {
+	font-weight: 600;
+	padding-bottom: 6px;
+	display: inline-block;
 }
