@@ -1,0 +1,115 @@
+
+/* Mixins */
+
+
+/* Media queries */
+
+@mixin mq($point) {
+    @if $point==wide {
+        @media (min-width: 1250px) {
+            @content;
+        }
+    }
+    @else if $point==smartphone {
+        @media (max-width: 480px) {
+            @content;
+        }
+    }
+    @else if $point==above-smartphone {
+        @media (min-width: 481px) {
+            @content;
+        }
+    }
+    @else if $point==medium {
+        @media (min-width: 481px) and (max-width:920px) {
+            @content;
+        }
+    }
+    @else if $point==above-medium {
+        @media (min-width:921px) {
+            @content;
+        }
+    }
+}
+
+@mixin resetListStyles() {
+    li {
+        padding-left: 0;
+    }
+
+    li:before {
+        content: none;
+    	margin-left: 0;
+    	position: relative;
+    }
+}
+
+
+/* Font size */
+
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+
+
+/* Bootstrapesque columns */
+
+@mixin is-row($padding: 15px) {
+    margin-right: $padding * -1;
+    margin-left: $padding * -1;
+}
+
+@mixin is-col($cols: 3, $padding: 15px) {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: $padding;
+    padding-right: $padding;
+    width: 100% / $cols;
+    @media screen and (max-width: 767px) {
+        float: none;
+        width: auto;
+        margin-bottom: 2em;
+    }
+}
+
+/* CF */
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+}
+
+/* CSS3 stuff */
+
+@mixin transition($arguments...) {
+    -webkit-transition: $arguments;
+    -moz-transition: $arguments;
+    -ms-transition: $arguments;
+    -o-transition: $arguments;
+    transition: $arguments;
+}
+
+@mixin transform($string) {
+    -webkit-transform: $string;
+    -moz-transform: $string;
+    -ms-transform: $string;
+    -o-transform: $string;
+    transform: $string;
+}
+
+@mixin translate3d ($x,$y: 0, $z: 0) {
+    -webkit-transform: translate3d($x, $y, $z);
+    -moz-transform: translate3d($x, $y, $z);
+    -ms-transform: translate3d($x, $y, $z);
+    -o-transform: translate3d($x, $y, $z);
+    transform: translate3d($x, $y, $z);
+}

@@ -1,3 +1,20 @@
+- title: News and blog
+  children:
+    - title: Blog
+      path: /about/blog
+    - title: News
+      path: /about/news
+    - title: Useful links
+      path: /about/links
+
+- title: Developers
+  path: /developers
+  children:
+    - title: Documents and Guides
+      path: /developers/docs
+    - title: APIs and Data Download
+      path: /developers/apis-and-data
+
 - title: About
   path: /about
   children:
@@ -30,14 +47,7 @@
 - title: Get involved
   path: /about/involved
 
-- title: News and blog
-  children:
-    - title: Blog
-      path: /about/blog
-    - title: News
-      path: /about/news
-    - title: Useful links
-      path: /about/links
+
 
 
 

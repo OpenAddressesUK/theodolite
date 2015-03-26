@@ -1,0 +1,8 @@
+<% content_for :content do %>
+	<h1><%= @metadata['title'] %></h1>
+	<div class="post-list">
+		<%= yield %>
+	</div>
+<% end %>
+
+<%= render template: "layouts/application" %>

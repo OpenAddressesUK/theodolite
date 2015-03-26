@@ -1,0 +1,44 @@
+
+@import "mixins";
+@import "colors";
+@import "type";
+@import "base";
+
+@import "modules/navigation";
+@import "modules/home-ctas";
+@import "modules/case-study";
+@import "modules/home-services";
+@import "modules/discussion";
+@import "modules/home-hero";
+@import "modules/content";
+
+.footer {
+  padding: 14px 0;
+  font-size:14px;
+  @extend %clearfix;
+}
+
+.footer > * {
+	float:left;
+	width:25%;
+}
+
+.footer-logo img {
+	width:200px;
+}
+
+.footer-social-links {
+	list-style:none;
+	margin:0;
+}
+
+.footer > address {
+	color:#ccc;
+	font-style: normal;
+}
+
+.footer-nav {
+	margin:0;
+	list-style:none;
+	padding:0;
+}

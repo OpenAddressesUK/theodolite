@@ -1,0 +1,59 @@
+
+/* Home services */
+
+.home-services {
+	clear:both;
+	padding-bottom:70px;
+}
+
+.home-services h2 {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 30px;
+	opacity: .8;
+	margin-top: 47px;
+}
+
+.home-services-list {
+	margin-left:-15px;
+	margin-right:-15px;
+	text-align: center;
+	vertical-align: top;
+}
+
+.home-services .service {
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 23%;
+	display: inline-block;
+	vertical-align: top;
+	padding-top:50px;
+	margin-top: 54px;
+}
+
+.home-services .service:after {
+	content: "";
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:52px;
+	background:url(building-block-purple.png) center top no-repeat;
+}
+
+.home-services .service h3 {
+	font-size:18px;
+	color:#8c005b;
+	margin-bottom: 0;
+}
+
+.home-services .service h3 a {
+	color:#8c005b;
+}
+
+.home-services .service p {
+	font-size:14px;
+}

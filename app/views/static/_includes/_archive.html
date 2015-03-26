@@ -1,12 +1,12 @@
 <% for post in site_posts.sort_by { |p| p.date }.reverse  %>
   <% if post.category == category %>
-<div class="post">
-<h3 class="title"><a href="/<%= post.url %>"><%= post.title %></a></h3>
-<p>
-  <% content = strip_tags(markdown(post.content)) %>
-  <%= truncate content, length: 512, separator: "\n" %>
-</p>
-<p class="meta">Date: <%= post.date.to_s(:long_ordinal) %></p>
-</div>
+  <div class="post-list-item">
+  	<h3 class="post-list-item-title"><a href="/<%= post.url %>">d<%= post.title %></a></h3>
+  	<p class="post-list-item-meta">Date: <%= post.date.to_s(:long_ordinal) %></p>
+  	<p>
+  		<% content = strip_tags(markdown(post.content)) %>
+  		<%= truncate content, length: 512, separator: "\n" %>
+  	</p>
+  </div>
   <% end %>
 <% end %>
