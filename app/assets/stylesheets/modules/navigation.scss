@@ -35,7 +35,7 @@
 	position:absolute;
 	top:100%;
 	left:0;
-	padding: 14px;
+	padding: 10px;
 	width: 220px;
 	margin-top: 10px;
 	margin-left: -13px;
@@ -43,11 +43,25 @@
 	list-style:none;
 }
 
+.nav-desktop > li > ul:after {
+	content:"";
+	
+}
+
 .nav-desktop > li > ul > li {
-	padding:0;
 	margin:0;
-	margin-bottom: 8px;
+	margin-bottom: 6px;
 	font-size: 14px;
+	background:#d9d3d3;
+	padding: 3px 7px 5px;
+}
+
+.nav-desktop > li > ul > li:last-child {
+	margin-bottom: 0;
+}
+
+.nav-desktop > li > ul > li > a {
+	color:#333;
 }
 
 .hamburger {
