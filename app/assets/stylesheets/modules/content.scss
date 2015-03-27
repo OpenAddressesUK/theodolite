@@ -7,20 +7,61 @@
 	font-size: 18px;
 	line-height: 1.5;
 	margin:0 auto;
-	padding-top:100px;
+  padding-top: 50px;
+  padding-bottom: 22px;
 }
 
-.content > img:first-child,
-.content > p:first-child > img:first-child {
+.content img {
+  max-width:100%;
+}
+
+.content img[title="feature-image"] {
   width: 900px;
   margin-left: -100px;
+  margin-bottom: 1.6em;
+  max-width:none;
+}
+
+.content img[title="image-center"] {
+  display:block;
+  margin:0 auto;
+  margin-bottom:20px;
+}
+
+.content img[title="image-left"] {
+  width: 50%;
+  float:left;
+  margin-right:20px;
+  margin-bottom:20px;
+}
+
+.content img[title="image-right"] {
+  width: 50%;
+  float:right;
+  margin-left:20px;
+  margin-bottom:20px;
 }
 
 .content h1 {
-	font-weight: 300;
-	font-size: 40px;
-	color: #8c005b;
-  line-height: 1.4;
+ font-weight: 300;
+ font-size: 40px;
+ color: #8c005b;
+ line-height: 1.4;
+ margin-bottom: 7px;
+}
+
+.content h2 {
+  margin-top: 1.4em;
+}
+
+.content h3 {
+  color: #8c005b;
+  margin-bottom: 0.8em;
+  margin-top: 1.6em;
+}
+
+.content h3 + p {
+  margin-top: 0;
 }
 
 .content pre {
@@ -39,13 +80,26 @@
 .content blockquote {
   color:$orange;
   font-size: 30px;
+  font-weight: 300;
+  line-height: 1.4;
+  margin-top: 1.4em;
+  margin-bottom: 1.4em;
+  clear:both;
 }
 
-.post-list-item-meta,
-.content-meta {
+.post-list-item-meta {
   opacity: .5;
-  margin-top: -29px;
-  margin-bottom: 26px;
+  margin-top: -33px;
+  margin-bottom: 46px;
+}
+
+.content-meta {
+  border-top: 2px solid #ddd;
+  display: inline-block;
+  opacity: .5;
+  /* margin-top: -43px; */
+  padding-top: 10px;
+  margin-bottom: 28px;
 }
 
 .post-list-item-meta {
@@ -56,8 +110,12 @@
 .share-links {
   list-style:none;
   padding:0;
-  border-top:2px solid #eee;
+  border-top:2px solid #ddd;
   padding-top:40px;
+  margin-top: 41px;
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom:50px;
 }
 
 .share-links li {
@@ -77,7 +135,7 @@
   font-size: 1.6em;
   font-family: "Soho W01 Medium";
   text-align: center;
-  padding-top: 7px;
+  padding-top: 11px;
 
 }
 
@@ -98,6 +156,7 @@
 }
 
 .post-list-item-title {
+  line-height: 1.4;
   font-weight: 300;
   font-size: 36px;
 }
@@ -108,7 +167,8 @@
   margin-top: -30px;
 }
 
-.content h1.article-list-title {
+.content h1.article-list-title,
+.content h1.team-title {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 30px;
@@ -116,4 +176,71 @@
   margin-top: 47px;
   margin-bottom: 50px;
   color:#383838;
+}
+
+
+.content > p:nth-of-type(1) {
+  font-weight: 600;
+}
+
+.content-below-scenario > p:nth-of-type(1) {
+  font-weight: 500;
+}
+
+
+.content strong {
+  font-weight: 600;
+}
+
+
+.content li {
+  margin-bottom: 0.4em;
+}
+
+.content {
+  ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+  }
+
+  ul li { 
+    padding-left: 1em; 
+    text-indent: -.7em;
+  }
+
+  ul li:before {
+    content: "•";
+    color: #ff6700;
+    padding-right: 0.3em;
+    font-size: 1.8em;
+    line-height: 0;
+    position: relative;
+    top: 6px;
+  }
+}
+
+.content .team-member {
+  margin-bottom: 4em;
+}
+
+
+.content .team-member h2 {
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.content .team-member .thumbnail {
+  max-width: 290px;
+  float: left;
+  margin-left: -100px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.content .team-member .thumbnail img {
+  min-width:290px;
+  max-width: 100%;
 }

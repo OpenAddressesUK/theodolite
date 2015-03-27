@@ -3,6 +3,8 @@ author: Susannah Wheeler
 title: Susannah Wheeler shares the inspiration behind her winning photograph
 ---
 
+<div class="content-meta">Article by Peter Wells, on 14th March '14</div>
+
 I’ve always loved photography, actually seeing something that catches my eye and capturing that moment in time.  More recently I’ve become more adept with some of the skills necessary to manipulate and enhance an image when I’ve got home, not to change the content, just to make it how I saw it.  I’m not in the habit of entering competitions, but when I saw the tweet about the launch of Open Addresses UK and the request for a photograph to represent what that meant to me, that image came to mind immediately and I sent it off – keeping an eye on my Twitter feed but not expecting to win it.
  
 The brief for the competition was so broad and open that I had no idea what sort of image the judges would be looking for.  I’ve taken thousands of photographs, many of houses, rooftops and homes, but this one summed it up for me. To me, ‘open’ means accessible and ‘address’ is where we live. My address is where my home is, it doesn’t matter if it’s an apartment or a big house, it’s where my life and children are - it’s where my ‘stuff’ is.

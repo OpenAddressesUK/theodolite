@@ -3,10 +3,6 @@ title: Open Addresses
 layout: home
 ---
 
-<div class="croknk">
-Funge Wazard.
-
-</div>
 At Open Addresses, we are bringing together information about the places where we live, work and go about our daily lives. By gathering information provided to us by people about their own addresses, and from open sources on the web, we are creating an open address list for the UK, available to everyone. 
 
 Do you want to get involved by submitting an address?

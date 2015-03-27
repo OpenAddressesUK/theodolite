@@ -1,13 +1,14 @@
-- title: News and blog
-  children:
-    - title: Blog
-      path: /blog
-    - title: News
-      path: /news
+- title: News
+  path: /news
+
+- title: Blog
+  path: /blog
 
 - title: Developers
   path: /developers
   children:
+    - title: Demo content
+      path: /developers/demo-content
     - title: Documents & guides
       path: /developers/docs
     - title: APIs & data download

@@ -12,10 +12,8 @@
       </div>
     </div>
 
-    <div class='container'>
-      <div class='content'>
+    <div class='container container-content'>
         <%= content_for?(:content) ? yield(:content) : yield %>
-      </div>
     </div>
 
     <%= render partial: 'shared/footer' %>

@@ -1,0 +1,26 @@
+
+/* Scenario */
+
+.scenario {
+	clear:both;
+	color:white;
+	padding-top:80px;
+	padding-bottom:80px;
+	background:$purple;
+}
+
+.scenario h2 {
+	font-size: 44px;
+	font-weight: 200;
+	margin-top: 8px;
+	color:$orange;
+}
+
+.scenario p {
+	font-size:14px;
+	width:50%;
+}
+
+.scenario .scenario-gfx {
+	float:right;
+}

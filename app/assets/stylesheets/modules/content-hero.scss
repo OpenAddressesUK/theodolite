@@ -1,0 +1,39 @@
+
+/* Content Hero */
+
+.content-hero {
+	margin-top:50px;
+	clear:both;
+	color:white;
+	padding-top: 47px;
+	padding-bottom: 24px;
+	background:#f0e0d9;
+	position: relative;
+}
+
+.content-hero h1 {
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 30px;
+	opacity: .8;
+	color: #383838;
+	margin: 0;
+}
+
+.content-hero p {
+	font-size: 44px;
+	font-weight: 200;
+	margin-top: 8px;
+	color:$purple;
+}
+
+.content-hero .content-hero-gfx {
+	position: absolute;
+	right: 62%;
+	top: -32px;
+}
+
+.content-hero-content {
+	width: 60%;
+	margin-left: 40%;
+}
