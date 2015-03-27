@@ -9,6 +9,11 @@
 	margin:0 auto;
   padding-top: 50px;
   padding-bottom: 22px;
+  @include mq(smartphone) {
+    padding-top:40px;
+    font-size:14px;
+    width:auto;
+  }
 }
 
 .content img {
@@ -44,10 +49,10 @@
 
 .content h1 {
  font-weight: 300;
- font-size: 40px;
+ font-size: 2.2em;
  color: #8c005b;
  line-height: 1.4;
- margin-bottom: 7px;
+ margin-bottom: 0.35em;
 }
 
 .content h2 {
@@ -68,18 +73,21 @@
   display: block;
   padding: 20px;
   margin: 0 -20px 10px -20px;
-  font-size: 14px;
+  font-size: 0.7em;
   color: #333;
   word-break: break-all;
   word-wrap: break-word;
   background-color: #f5f5f5;
   border: 1px solid #ccc;
   border-radius: 4px;
+  @include mq(smartphone) {
+    margin: 0 0 10px 0;
+  }
 }
 
 .content blockquote {
   color:$orange;
-  font-size: 30px;
+  font-size: 1.5em;
   font-weight: 300;
   line-height: 1.4;
   margin-top: 1.4em;
@@ -87,25 +95,16 @@
   clear:both;
 }
 
-.post-list-item-meta {
-  opacity: .5;
-  margin-top: -33px;
-  margin-bottom: 46px;
-}
+
 
 .content-meta {
   border-top: 2px solid #ddd;
   display: inline-block;
   opacity: .5;
-  /* margin-top: -43px; */
-  padding-top: 10px;
-  margin-bottom: 28px;
+  padding-top: 0.5em;
+  margin-bottom: 1.4em
 }
 
-.post-list-item-meta {
-  margin-top: -10px;
-  margin-bottom: 26px;
-}
 
 .share-links {
   list-style:none;
@@ -116,6 +115,9 @@
   width: 700px;
   margin: 0 auto;
   margin-bottom:50px;
+  @include mq(smartphone) {
+    width:auto;
+  }
 }
 
 .share-links li {
@@ -158,14 +160,15 @@
 .post-list-item-title {
   line-height: 1.4;
   font-weight: 300;
-  font-size: 36px;
+  font-size: 1.8em;
 }
 
 .post-list-item-meta {
   opacity: .5;
-  margin-bottom: 26px;
-  margin-top: -30px;
+  margin-top: -0.5em;
+  margin-bottom: 1.3em;
 }
+
 
 .content h1.article-list-title,
 .content h1.team-title {

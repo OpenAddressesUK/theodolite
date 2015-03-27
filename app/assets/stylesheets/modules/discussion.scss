@@ -3,9 +3,13 @@
 
 .discussion {
 	clear:both;
+	padding-top:50px;
 	padding-bottom:70px;
-	padding-top: 1px;
 	@extend %clearfix;
+	@include mq(smartphone) {
+		padding-top:40px;
+		padding-bottom:40px;
+	}
 }
 
 .discussion h2 {
@@ -14,7 +18,7 @@
 	font-weight: 300;
 	font-size: 30px;
 	opacity: .8;
-	margin-top: 47px;
+	margin-top: 0;
 	margin-bottom: 19px;
 }
 
@@ -27,6 +31,11 @@
 	margin: 0 -5px;
 	font-size:14px;
 	position:relative;
+	@include mq(smartphone) {
+		width:auto;
+		float:none;
+		margin:0 0 20px 0;
+	}
 }
 
 .discussion-blocks > div h3 {
@@ -45,19 +54,14 @@
 	padding:0;
 }
 
-.discussion-blocks > div:nth-child(1) {
-
-}
-
-.discussion-blocks > div:nth-child(1) h3 a {
-
-}
-
 .discussion-blocks > div:nth-child(2) {
 	background:$purple;
 	color:white;
 	margin-top: 42px;
 	z-index: 1;
+	@include mq(smartphone) {
+		margin-top: 0;
+	}
 }
 
 .discussion-blocks > div:nth-child(3) {

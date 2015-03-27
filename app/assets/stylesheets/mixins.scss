@@ -6,30 +6,30 @@
 
 @mixin mq($point) {
     @if $point==wide {
-        @media (min-width: 1250px) {
+        @media (min-width: 1200px) {
             @content;
         }
     }
     @else if $point==smartphone {
-        @media (max-width: 480px) {
+        @media (max-width: 767px) {
             @content;
         }
     }
     @else if $point==above-smartphone {
-        @media (min-width: 481px) {
+        @media (min-width: 768px) {
             @content;
         }
     }
-    @else if $point==medium {
-        @media (min-width: 481px) and (max-width:920px) {
+   @else if $point==medium {
+        @media (min-width: 768px) and (max-width:1199px) {
             @content;
         }
-    }
+    }/*  
     @else if $point==above-medium {
         @media (min-width:921px) {
             @content;
         }
-    }
+    } */
 }
 
 @mixin resetListStyles() {

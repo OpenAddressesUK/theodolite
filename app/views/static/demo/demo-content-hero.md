@@ -24,8 +24,6 @@ Armentorum armigerumque cruore crudelis meosque ignoscat abit cuspide. Quid hic
 dexterior et corpora auctorem [example link](http://example.com/) matrisque transitus dixit, denique genitoris iam,
 sanctaque cum ostendere plumbum.
 
-
-
 	At videt mihi aura, idem grata peregrinum piget, tonitrus? Utque Hypsea peteret,
 	leti armorum roganti me lumina iniqui et. Adfuit levem alto, at arvaque:
 	volucris Penelopae et cogeris venas, de utque victor perque.

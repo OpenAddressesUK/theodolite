@@ -19,6 +19,9 @@
 	left:0;
 	width:100%;
 	z-index:-1;
+	@include mq(smartphone) {
+		height: 162px;
+	}
 }
 
 .home-hero h2 {
@@ -26,10 +29,21 @@
 	font-size:56px;
 	color:black;
 	margin-bottom: 20px;
+	@include mq(medium) {
+		font-size: 50px;
+	}
+	@include mq(smartphone) {
+		line-height: 1.2;
+		font-size: 36px;
+	}
 }
 
 .home-hero p {
 	padding:0 25%;
+	@include mq(smartphone) {
+		font-size:14px;
+		padding:0 15px;
+	}
 }
 
 .home-hero a {
@@ -40,4 +54,15 @@
 .home-gfx {
 	display: block;
 	margin:0 auto;
+	@include mq(smartphone) {
+		display:none;
+	}
+}
+
+.home-gfx-mobile {
+	display: none;
+	margin-top: 17px;
+	@include mq(smartphone) {
+		display: block;
+	}
 }

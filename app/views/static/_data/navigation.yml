@@ -7,8 +7,6 @@
 - title: Developers
   path: /developers
   children:
-    - title: Demo content
-      path: /developers/demo-content
     - title: Documents & guides
       path: /developers/docs
     - title: APIs & data download

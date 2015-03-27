@@ -1,0 +1,29 @@
+
+/* Post list */
+
+.post-list-item {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 15px;
+  margin-bottom: 37px;
+}
+
+.post-list-item h3 {
+	margin-top:0;
+}
+
+.post-list-item:last-child {
+  border-bottom: 0;
+  padding-bottom: 40px;
+}
+
+.post-list-item-title {
+  line-height: 1.4;
+  font-weight: 300;
+  font-size: 1.8em;
+}
+
+.post-list-item-meta {
+  opacity: .5;
+  margin-top: -0.5em;
+  margin-bottom: 1.3em;
+}

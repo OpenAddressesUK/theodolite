@@ -13,43 +13,5 @@
 @import "modules/content";
 @import "modules/scenario";
 @import "modules/content-hero";
-
-.footer {
-	padding: 34px 0;
-	font-size:14px;
-	@extend %clearfix;
-}
-
-.footer > * {
-	float:left;
-	width:25%;
-}
-
-.footer-logo img {
-	width:200px;
-}
-
-.footer-social-links {
-	list-style:none;
-	margin:0;
-}
-
-.footer > address {
-	color:#ccc;
-	font-style: normal;
-}
-
-.footer-nav {
-	margin:0;
-	list-style:none;
-	padding:0;
-}
-
-.wrapper-corner-gfx-1 {
-	background:url(corner-gfx-1.png) bottom right no-repeat;
-}
-
-.page-header {
-  padding-top: 24px;
-	@extend %clearfix;
-}
+@import "modules/post-list";
+@import "modules/footer";

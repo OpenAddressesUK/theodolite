@@ -1,11 +1,34 @@
 <nav class="navigation" role="navigation">
 
-  <ul class="nav navbar-nav">
+  <div class="hamburger"><i class="fa fa-bars"></i></div>
+
+  <ul class="nav nav-mobile navbar-nav">
     <% for item in Jekylly::Engine.site_data('navigation') %>
     <% if item['children'] %>
-    <li class="dropdown">
-      <a href="<%=item['path']%>" class="dropdown-toggle" data-toggle="dropdown"><%=item['title']%> <span class="caret"></span></a>
-      <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="<%=item['path']%>"><%=item['title']%></a>
+      <ul>
+        <% for child in item['children'] %>
+        <li>
+          <a href="<%=child['path']%>"><%=child['title']%></a>
+        </li>
+        <% end %>
+      </ul>
+    </li>
+    <% else %>
+    <li>
+      <a href="<%=item['path']%>"><%=item['title']%></a>
+    </li>
+    <% end %>
+    <% end %>
+  </ul>
+
+  <ul class="nav nav-desktop navbar-nav">
+    <% for item in Jekylly::Engine.site_data('navigation') %>
+    <% if item['children'] %>
+    <li>
+      <a href="<%=item['path']%>"><%=item['title']%> <i class="fa fa-sort-desc"></i></a>
+      <ul>
         <% for child in item['children'] %>
         <li>
           <a href="<%=child['path']%>"><%=child['title']%></a>

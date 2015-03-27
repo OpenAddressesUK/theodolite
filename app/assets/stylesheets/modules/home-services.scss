@@ -3,7 +3,8 @@
 
 .home-services {
 	clear:both;
-  padding-bottom: 43px;
+	padding-top:50px;
+	padding-bottom: 43px;
 	@extend %clearfix;
 }
 
@@ -13,7 +14,7 @@
 	font-weight: 300;
 	font-size: 30px;
 	opacity: .8;
-	margin-top: 47px;
+	margin-top: 0;
 }
 
 .home-services-list {
@@ -29,8 +30,16 @@
 	width: 33.333333%;
 	float: left;
 	vertical-align: top;
-	/* padding-top: 50px; */
-	/* margin-top: 54px; */
+	@include mq(medium) {
+		padding-right: 41px;
+	}
+	@include mq(smartphone) {
+		float:none;
+		width:auto;
+		padding-right:0;
+		min-height: 0;
+		margin-bottom:20px;
+	}
 }
 
 /* .home-services .service:after {

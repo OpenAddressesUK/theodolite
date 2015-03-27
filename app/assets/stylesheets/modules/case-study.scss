@@ -6,6 +6,10 @@
 	color:white;
 	padding-top:80px;
 	padding-bottom:80px;
+	@include mq(smartphone) {
+		padding-top:40px;
+		padding-bottom:40px;
+	}
 }
 
 .case-study h2 {
@@ -13,13 +17,29 @@
 	font-weight: 200;
 	margin-top: 8px;
 	color:$purple;
+	@include mq(smartphone) {
+		font-size: 34px;
+	}
 }
 
 .case-study p {
 	font-size:14px;
-	width:50%;
 }
 
 .case-study .case-study-gfx {
-	float:right;
+	float: right;
+	max-width: 50%;
+	padding-left: 20px;
+	@include mq(smartphone) {
+		float:none;
+		max-width:none;
+		padding-bottom:40px;
+	}
+}
+
+.case-study-content {
+	width:50%;
+	@include mq(smartphone) {
+		width:auto;
+	}
 }

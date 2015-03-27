@@ -57,6 +57,10 @@ textarea {
 	resize: vertical;
 }
 
+img {
+	max-width:100%;
+}
+
 .browserupgrade {
 	margin: 0.2em 0;
 	background: #ccc;
@@ -64,17 +68,36 @@ textarea {
 	padding: 0.2em 0;
 }
 
+body {
+	min-width:962px;
+	@include mq(smartphone) {
+		min-width:0;
+	}
+}
+
 .container {
-	width:1170px;
+	width:942px;
 	padding: 0 15px;
 	margin:0 auto;
 	@extend %clearfix;
+	@include mq(wide) {
+		width:1170px;
+	}
+	@include mq(smartphone) {
+		width:auto;
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+	}
 }
-
 
 .logo {
 	float:left;
 	width:200px;
+	@include mq(smartphone) {
+		width: 120px;
+	}
 }
 
 a {
@@ -99,9 +122,23 @@ a {
 	background:$black;
 }
 
+.wrapper-corner-gfx-1 {
+	background:url(corner-gfx-1.png) bottom right no-repeat;
+	@include mq(smartphone) {
+		padding-bottom: 90px;
+		background: url(corner-gfx-1.png) bottom left no-repeat;
+		background-size: 110%;	
+	}
+}
+
 .subtitle {
 	text-transform: uppercase;
 	font-size: 13px;
 	font-weight: 700;
 }
 
+
+.page-header {
+	padding-top: 24px;
+	@extend %clearfix;
+}

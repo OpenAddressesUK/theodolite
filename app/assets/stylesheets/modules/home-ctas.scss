@@ -1,6 +1,16 @@
 
 /* Home CTAs */
 
+.home-ctas {
+	padding-top:70px;
+	padding-bottom:70px;
+	@extend %clearfix;
+	@include mq(smartphone) {
+		padding-top:40px;
+		padding-bottom:40px;
+	}
+}
+
 .home-cta {
 	position: relative;
 	min-height: 1px;
@@ -9,8 +19,17 @@
 	float:left;
 	width:33.333333%;
 	text-align:center;
-	padding-top:70px;
-	padding-bottom:70px;
+	@include mq(medium) {
+		padding-right: 10px;
+		padding-left: 10px;	
+	}
+	@include mq(smartphone) {
+		float:none;
+		width:auto;
+		margin-bottom:20px;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
 }
 
 .home-cta h2 {
@@ -45,7 +64,7 @@
 	font-size: 45px;
 	font-weight:700;
 	color: rgb(163, 53, 124);
-	  margin-right: 4px;
+	margin-right: 4px;
 }
 
 .home-cta-data-indicator span em {

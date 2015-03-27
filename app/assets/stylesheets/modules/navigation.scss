@@ -1,25 +1,35 @@
 
 /* Main navigation */
 
-.navigation {
+.nav-desktop {
 	float:right;
+	@include mq(smartphone) {
+		display:none;
+	}
 }
 
-.navigation ul {
+.nav-desktop {
 	list-style:none;
 	padding:0;
 }
 
-.navigation > ul > li {
+.nav-desktop .fa-sort-desc {
+	position: relative;
+	bottom: 3px;
+	margin-left: 2px;
+	opacity:.5;
+}
+
+.nav-desktop > li {
 	display:inline-block;
 	margin-left:20px;
 }
 
-.navigation > ul > li {
+.nav-desktop > li {
 	position:relative
 }
 
-.navigation > ul > li > ul {
+.nav-desktop > li > ul {
 	display:none;
 	background:#eee;
 	position:absolute;
@@ -30,11 +40,100 @@
 	margin-top: 10px;
 	margin-left: -13px;
 	z-index:100;
+	list-style:none;
 }
 
-.navigation > ul > li > ul > li {
+.nav-desktop > li > ul > li {
 	padding:0;
 	margin:0;
 	margin-bottom: 8px;
 	font-size: 14px;
 }
+
+.hamburger {
+	position: fixed;
+	top: 15px;
+	font-size: 21px;
+	right: 7px;
+	margin-left: -50px;
+	z-index: 300;
+	display:none;
+	padding: 10px;	
+	@include mq(smartphone) {
+		display:block;
+	}
+}
+
+body.has-mobile-menu-open .hamburger {
+	/* right:32px; */
+}
+
+.nav-mobile {
+	background:transparentize($orange, 0.1);
+	float:right;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:200;
+	list-style:none;
+	padding:0;
+	padding-top:30px;
+	margin:0;
+	overflow:auto;
+	max-height:100%;
+	width:100%;
+
+	@include transition(all .2s);
+	@include transform(translate3d(0,-100%,0));
+}
+
+.nav-mobile.is-visible {
+	display:block;
+	@include transform(translate3d(0,0,0));
+}
+
+.nav-mobile a {
+	color:white;
+	padding:10px 20px;
+	border-bottom:1px solid transparentize(white, 0.8);
+	display:block;
+}
+
+body.has-mobile-menu-open {
+	/* padding-right:14px; */
+	overflow:hidden;
+}
+
+.nav-mobile li {
+
+}
+
+.nav-mobile > li > ul {
+	display:none;
+	padding:0;
+}
+
+.nav-mobile > li > ul > li > a {
+	background:transparentize(black, 0.8);
+	padding-left:40px;
+}
+
+.sub-menu-action {
+	float:right;
+	font-size:20px;
+}
+
+.sub-menu-action-close {
+	display:none;
+}
+
+.is-showing-children .sub-menu-action-close {
+	display:block;
+}
+
+.is-showing-children .sub-menu-action-open {
+	display:none;
+}
+
+
+
