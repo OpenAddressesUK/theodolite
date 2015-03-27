@@ -1,53 +1,60 @@
 - title: News and blog
   children:
     - title: Blog
-      path: /about/blog
+      path: /blog
     - title: News
-      path: /about/news
-    - title: Useful links
-      path: /about/links
+      path: /news
 
 - title: Developers
   path: /developers
   children:
-    - title: Documents and Guides
+    - title: Documents & guides
       path: /developers/docs
-    - title: APIs and Data Download
+    - title: APIs & data download
       path: /developers/apis-and-data
+    - title: Search the data
+      path: /addresses
+
+- title: Mission
+  path: /mission
 
 - title: About
   path: /about
   children:
-    - title: Vision
-      path: /about/vision
-    - title: Team
+    - title: Meet the team
       path: /about/team
-    - title: FAQ
-      path: /about/data/faq
+    - title: Privacy policy
+      path: /about/privacy
 
-
-- title: Search the data
-  path: /addresses
-
-- title: Documentation
+- title: Services
+  path: /services
   children:
-    - title: Download 
-      path: /data
-    - title: APIs 
-      path: /about/apidocu
-    - title: Technology Overview
-      path: /about/docs
-    - title: Adding Data
-      path: /about/addingdata
-    - title: Report an Infringement
-      path: /about/reportaninfringement
-    - title: Business Model
-      path: /about/business
+    - title: Free-Format Address Input
+      path: /services/free-format-address-input
+    - title: Data Sorting Office
+      path: /services/data-sorting-office
+    - title: Address Location
+      path: /services/address-location
+    - title: Data Enrichment
+      path: /services/data-enrichment
+    - title: New Service Creation
+      path: /services/new-service-creation
+    - title: Business Intelligence Analytics
+      path: /services/business-intelligence-analytics
+    - title: Data Consolidation
+      path: /services/data-consolidation
 
 - title: Get involved
   path: /about/involved
-
-
+  children:
+    - title: Submit an address 
+      path: /get-involved/submit-an-address
+    - title: Trialists 
+      path: /get-involved/trialists
+    - title: Sponsors
+      path: /get-involved/sponsors
+    - title: Contact us
+      path: /get-involved/contact-us
 
 
 
