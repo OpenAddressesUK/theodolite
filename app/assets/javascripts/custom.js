@@ -67,8 +67,11 @@ $(function() {
 var homeGFX = $('.home-gfx')[0];
 if (homeGFX) {
 	window.onscroll = function(e) {
-		homeGFX.style.transform = 'translate3d(0px,' + Math.round(window.scrollY/6) + 'px, 0px)';
-		homeGFX.style.webkitTransform = 'translate3d(0px,' + Math.round(window.scrollY/6) + 'px, 0px)';
+        var offsetY = (window.scrollY ? window.scrollY : window.pageYOffset)/6;
+		homeGFX.style.transform = 'translate3d(0px,' + Math.round(offsetY) + 'px, 0px)';
+		homeGFX.style.webkitTransform = 'translate3d(0px,' + Math.round(offsetY) + 'px, 0px)';
+        homeGFX.style.mozTransform = 'translate3d(0px,' + Math.round(offsetY) + 'px, 0px)';
+        homeGFX.style.msTransform  = 'translate3d(0px,' + Math.round(offsetY) + 'px, 0px)';
 	}
 }
 
