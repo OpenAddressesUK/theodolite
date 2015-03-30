@@ -155,7 +155,12 @@ a:hover {
 	display:none;
 }
 
+button {
+	cursor:pointer;
+}
+
 /* Sticky footer */
+
 @include mq(above-smartphone) {
 
 	html {

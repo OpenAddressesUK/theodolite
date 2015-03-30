@@ -27,6 +27,9 @@
 		width: 28.5%;
 	}
 	@include mq(smartphone) {
+		width:100%;
+		margin-bottom: 12px;
+		display:block;
 	}
 }
 
@@ -41,6 +44,11 @@
 	color:white;
 	border-radius:10px;
 	font-weight:600;
+	@include mq(smartphone) {
+		float:right;
+		width:auto;
+		margin-bottom: 12px;
+	}
 }
 
 .address-search-address-submit-form {
@@ -58,12 +66,18 @@
 
 .address-search-results-map {
 	float: right;
+	@include mq(smartphone) {
+		float:none;
+	}
 }
 
 .address-search-results-list {
 	list-style:none;
 	padding:0;
 	padding-right: 475px;
+	@include mq(smartphone) {
+		padding:0;
+	}
 }
 
 .address-search-results-list li {
@@ -99,6 +113,7 @@
 .address-search-address-submit-cta {
 	background:#f0e0d9;
 	padding:20px;
+	margin-bottom:15px;
 }
 
 .address-search-address-submit-cta a {
@@ -119,6 +134,9 @@
 .address-submission-form {
 	padding:20px;
 	background:#F4EEEB;
+	@include mq(smartphone) {
+		margin-bottom:15px;
+	}
 }
 
 .address-submission-form label {
@@ -135,9 +153,16 @@
 	width: 81%;
 	margin-right: 10px;
 	min-height: 170px;
+	@include mq(smartphone) {
+		width:100%;
+	}
 }
+
 .address-search-address-submit-form .address-submission-form textarea {
 	width: 50%;
+	@include mq(smartphone) {
+		width: 100%;
+	}
 }
 
 .address-submission-form button {
@@ -152,11 +177,23 @@
 	color: white;
 	border-radius: 10px;
 	font-weight: 600;
+	cursor:pointer;
+	@include mq(smartphone) {
+		float: right;
+		margin-top: 33px;
+	}
 }
 
 #submission-guidelines {
 	width:auto;
+	@include mq(smartphone) {
+		margin-top: 70px;	
+	}
 }
 .address-search-address-submit-form #submission-guidelines {
 	width: 50%;
+	@include mq(smartphone) {
+		width:auto;
+		margin-top: 70px;
+	}
 }
