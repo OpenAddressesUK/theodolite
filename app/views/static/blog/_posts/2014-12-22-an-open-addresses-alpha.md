@@ -3,6 +3,8 @@ author: Peter Wells
 title: An Open Addresses Alpha
 ---
 
+<div class="content-meta">Article by Peter Wells, on 22nd December '15</div>
+
 We are delighted that the Open Addresses Alpha release is now open for people to look at and provide comments on. We're proud of what we've achieved but we also want to hear what you think as we start on the next phase of Open Addresses.
 
 So, have a look and give us your feedback. There are a few ways to do this:

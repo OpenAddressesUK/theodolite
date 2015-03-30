@@ -3,6 +3,8 @@ author: Peter Wells
 title: Crowdsourcing Challenge
 ---
 
+<div class="content-meta">Article by Peter Wells, on 22nd January '15</div>
+
 Addresses are [woven into the fabric of our national infrastructure](http://www.huffingtonpost.co.uk/jeni-tennison/a-brief-history-of-open-a_b_6485628.html). They connect us to the wider world and help us to access a huge network of services.
 
 Open Addresses UK is a startup that is bringing together data about the places we live, work and visit and making it available for everyone. Our initial [funding is provided by the Cabinet Office’s Release of Data Fund](http://theodi.org/news/383k-government-grant-released-to-create-uk-open-address-list). 

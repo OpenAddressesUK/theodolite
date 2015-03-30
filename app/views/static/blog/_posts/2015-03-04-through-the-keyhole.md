@@ -3,6 +3,8 @@ author: Patrice John-Baptiste
 title: Picture An Address - Through the Keyhole Shortlist
 ---
 
+<div class="content-meta">Article by Patrice John-Baptiste, on 4th March '15</div>
+
 Today marks the second round of our [Picture an Address photography competition](https://openaddressesuk.org/blog/2015/01/14/picture-an-address) shortlist announcements, and the next selection of photographs reveal addresses ‘Through the keyhole’.
 
 As UK citizens we’re renowned for our reticent and polite culture. We conscientiously respect an individual’s personal space in social engagements, the working environment and down-time at home. However, our inquisitive nature sparks intrigue into what life is like inside of an address. This shortlist attempts to familiarise the addresses we long to explore.
@@ -24,6 +26,3 @@ Edward Woodcock, for his "Cat 'caught red-pawed' through letterbox" photograph, 
 #### Register an address
 
 [Open Addresses UK](https://openaddressesuk.org/) contains addresses directly provided from individuals and sourced from open data sources. Individuals and organisations are being asked to get involved by submitting data via the Open Addresses UK website. Help us to build the nation’s first free and accessible address list, available for everyone to use by submitting your address [here](https://openaddressesuk.org/).
-
-
-Author: Patrice John-Baptiste

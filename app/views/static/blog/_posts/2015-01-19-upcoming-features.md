@@ -3,6 +3,8 @@ author: Peter Wells
 title: Upcoming Features
 ---
 
+<div class="content-meta">Article by Peter Wells, on 19th January '15</div>
+
 So, Open Addresses UK has [launched](http://alpha.openaddressesuk.org/news/2015/01/14/UKs-first-open-and-free-address-list-launches), and now you can start to see what we have been building over the last couple of months. We hope you like it.
 
 But this is only the start. We know, and we are sure that you can see as well, that there is a lot of work left to do together to build an open address list; one that is efficient and fit for the times we live in, but also one that is fundamentally open and built collaboratively.

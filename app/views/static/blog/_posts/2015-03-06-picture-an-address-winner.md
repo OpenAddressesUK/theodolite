@@ -3,6 +3,8 @@ author: Patrice John-Baptiste
 title: Picture an Address - and the winner is…
 ---
 
+<div class="content-meta">Article by Patrice John-Baptiste, on 6th March '15</div>
+
 We can’t believe we’re finally here!
 
 We launched the ‘Picture an Address’ photography competition to support our vision in creating an up to date and free to use open data address list. The entries have been amazing, and the judges were really impressed with the creativity and skill used to show what an address means to you.

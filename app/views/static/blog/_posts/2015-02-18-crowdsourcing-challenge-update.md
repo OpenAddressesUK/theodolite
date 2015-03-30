@@ -3,6 +3,8 @@ author: Peter Wells
 title: Crowdsourcing Challenge Update
 ---
 
+<div class="content-meta">Article by Peter Wells, on 18th February '15</div>
+
 When we launched our [crowdsourcing challenge](https://alpha.openaddressesuk.org/blog/2015/01/22/crowdsourcing-challenge) we invited potential bidders to ask us questions. You will find a table below summarising the ones that we were asked and the answers that we gave.
 
 Two things were clear from the questions:
@@ -15,8 +17,6 @@ In addition we also realised that [Open Data Camp](http://odcamp.org.uk/) would 
 Given this we have decided to extend the deadline for proposals by one week to Thursday 25 February.
 
 This doesn’t mean that we are asking people to do extra work in their proposals, simply that you have a little more time to understand the challenge. UK address data is a complex challenge, that is why we want to work with people like yourselves to make it simple enough that we can mobilise a crowd to help us fix it.
-
-Peter Wells
 
 
 #### Answers to questions
