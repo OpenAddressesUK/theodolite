@@ -46,8 +46,8 @@
 - title: Get involved
   path: /about/involved
   children:
-    - title: Submit an address 
-      path: /get-involved/submit-an-address
+    - title: Add an address 
+      path: /get-involved/add-an-address
     - title: Trialists 
       path: /get-involved/trialists
     - title: Sponsors
