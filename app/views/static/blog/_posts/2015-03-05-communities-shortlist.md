@@ -3,6 +3,8 @@ author: Patrice John-Baptiste
 title: Picture an Address - Communities shortlist
 ---
 
+<div class="content-meta">Article by Patrice John-Baptiste, on 5th March '15</div>
+
 We’re delighted to announce the fourth shortlist of our [Picture an Address photography competition](https://openaddressesuk.org/blog/2015/01/14/picture-an-address). The previous theme, 'Through the keyhole', takes a close look inside of an address. Our latest theme, 'Communities' takes a broader approach, acknowledging the communities addresses are situated in.
 
 Analysing the benefits addresses may have on a community is of particular interest to us at Open Addresses UK. An address rarely sits in isolation, and is most often connected to a wider network of 'addresses', much like the people connected within a local community. Merging the digital and physical world of addresses can play a significant part in community cohesion and local services.

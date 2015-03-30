@@ -3,6 +3,8 @@ author: Patrice John-Baptiste
 title: Picture an Address - Diverse Architecture Shortlist
 ---
 
+<div class="content-meta">Article by Patrice John-Baptiste, on 3rd March '15</div>
+
 We’re pleased to announce the second shortlist of our [Picture an Address photography competition](https://openaddressesuk.org/blog/2015/01/14/picture-an-address). This time the theme of focus is ‘Diverse Architecture’. What is diverse architecture you ask? Take a look around you, how many different building styles can you see? You are witnessing diverse architecture.
 
 Methods to record addresses have evolved over time and so have the buildings that give them a physical form. The emergence of new building materials, techniques and architectural trends are prevalent in architectural design around the world, however the most significant influence of this aesthetic architectural variety (or diverse architecture) is the effect of post-war regeneration in Britain.
@@ -22,6 +24,3 @@ And a round of applause to the finalist...
 <%= image_tag("blog/2015-03-03-diverse-architecture-picture-1.jpg", alt: "(C) Susannah Wheeler") %>
 
 Susannah Wheeler, for her boldly juxtaposition of a concrete tower block reflected in a modern, mirror tower block. Susannah’s photograph will be in the running for £500 photography vouchers, to be announced on Friday. We wish her the best of luck!
-
-
-Author: Patrice John-Baptiste

@@ -3,6 +3,8 @@ author: Gianfranco Cecconi
 title: Trusting addresses
 ---
 
+<div class="content-meta">Article by Gianfranco Cecconi, on 20th February '15</div>
+
 This is Open Addresses UK's registered office [address](https://openaddressesuk.org/addresses/437djT):
 
 <table cellpadding="5" cellspacing="5" border="1"><tr><td>
@@ -110,4 +112,3 @@ There's [an entire paper](https://docs.google.com/a/openaddress.es/document/d/19
 
 The Open Addresses UK team is at ODCamp in Hampshire this weekend, as part of International Open Data Day. We would love to see you there and have your help in creating the first fully open address list for the UK.
 
-Author: Gianfranco Cecconi

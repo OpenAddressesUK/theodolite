@@ -3,6 +3,8 @@ author: Patrice John-Baptiste
 title: Picture an Address - Natural Escapes Shortlist
 ---
 
+<div class="content-meta">Article by Patrice John-Baptiste, on 3rd March '15</div>
+
 We’re excited to announce our first shortlist and first finalist from our ‘Picture an Address’ photography competition. This shortlist celebrates the theme of ‘Natural Escapes’ as we picture addresses in rural areas of the UK.
 
 The UK's countryside is a national treasure, home to an abundance of wildlife, 15 national parks and often inspired by famous authors behind the works of classical children’s storybooks and period novels.
@@ -31,5 +33,3 @@ Jamie will be in the running for the final prize of £500 photography vouchers, 
 
 Open Addresses UK contains addresses directly provided from individuals and sourced from open data sources. Individuals and organisations are being asked to get involved by submitting data via the [Open Addresses UK website](http://openaddressesuk.org/). Help us to build the nation’s first free and accessible address list, available for everyone to use by submitting addresses [here](http://openaddressesuk.org/).
 
-
-Author: Patrice John-Baptiste

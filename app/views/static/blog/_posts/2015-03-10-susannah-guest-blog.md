@@ -3,7 +3,7 @@ author: Susannah Wheeler
 title: Susannah Wheeler shares the inspiration behind her winning photograph
 ---
 
-<div class="content-meta">Article by Peter Wells, on 14th March '14</div>
+<div class="content-meta">Article by Susannah Wheeler, on 14th March '15</div>
 
 I’ve always loved photography, actually seeing something that catches my eye and capturing that moment in time.  More recently I’ve become more adept with some of the skills necessary to manipulate and enhance an image when I’ve got home, not to change the content, just to make it how I saw it.  I’m not in the habit of entering competitions, but when I saw the tweet about the launch of Open Addresses UK and the request for a photograph to represent what that meant to me, that image came to mind immediately and I sent it off – keeping an eye on my Twitter feed but not expecting to win it.
  
@@ -27,5 +27,3 @@ Want to see more of Susannah’s work? Take a look at her photography portfolio:
 **Register an address**
 
 [Open Addresses UK](https://openaddressesuk.org) contains addresses directly provided from individuals and sourced from open data sources. Individuals and organisations are being asked to get involved by submitting data via the [Open Addresses UK website](https://openaddressesuk.org). Help us to build the nation’s first free and accessible address list, available for everyone to use by submitting your address [here](https://openaddressesuk.org).
-
-author: Susannah Wheeler

@@ -3,6 +3,8 @@ author: Ruby Reding
 title: The Living, Breathing Problem
 ---
 
+<div class="content-meta">Article by Ruby Reding, on 9th February '15</div>
+
 *“But what difference will Open Addresses UK really make to MY life?”*
 
 As an open data startup, we have come across hurdles when explaining what we are doing and why we are doing it to those who work outside of the open data community. 
@@ -79,11 +81,6 @@ If we are successful then Chris could have easily ordered his pizza, ordered fur
 We think these are pretty compelling benefits but why not drop us a mail or tweet to let us know what other ones you can think of?
 
 In the meantime do you want to help us make these benefits available to everyone? Why not [get involved](https://alpha.openaddressesuk.org/about/involved) and help us make it happen.
-
-
-
-
-
 
 
 

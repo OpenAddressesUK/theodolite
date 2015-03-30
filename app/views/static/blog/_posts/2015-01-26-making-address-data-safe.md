@@ -3,6 +3,8 @@ author: Peter Wells
 title: Making Address Data Safe to Use
 ---
 
+<div class="content-meta">Article by Peter Wells, on 26th January '15</div>
+
 I spoke at an [event for geographic services recently](http://geomobldn.org/post/102358677210/first-geomob-of-2015-13th-january-back-at-ucl), it was great fun but one of the presentations reminded me of one of our greatest challenges. It is one that the Open Addresses UK team are spending significant time thinking about and working on; we need to tackle it to make our service [available for everyone](https://alpha.openaddressesuk.org/about/vision).
 
 The event had fantastic presentations on some of the themes that are close to our heart: location-based services, geography and accessibility but it wasn't those that captured my attention.
@@ -75,5 +77,3 @@ We strongly believe that our approach to publishing open data is the right choic
 
 We hope that you do too.
 
-
-Author: Peter Wells
