@@ -146,7 +146,7 @@ L.TileLayer.OSOpenSpace = L.TileLayer.WMS.extend({
 
         var authParams = {
                 "KEY": apiKey,
-                "URL": "https://openaddressesuk.org"
+                "URL": "<%= ENV['OPENSPACE_HOST'] || 'https://openaddressesuk.org' %>"
             };
                
         this.options.tileSize = 200;
