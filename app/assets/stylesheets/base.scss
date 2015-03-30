@@ -143,9 +143,31 @@ a {
 	@extend %clearfix;
 }
 .page-header a > img {
-  border: 0;
+	border: 0;
 }
 
 .hidden.hidden.hidden.hidden {
 	display:none;
+}
+
+/* Sticky footer */
+@include mq(above-smartphone) {
+
+	html {
+		position: relative;
+		min-height: 100%;
+	}
+
+	body {
+		margin: 0 0 201px; /* bottom = footer height */
+	}
+
+	.wrapper-footer {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 201px;
+		width: 100%;
+	}
+	
 }
