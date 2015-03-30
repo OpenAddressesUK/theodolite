@@ -19,59 +19,31 @@
   })
 <% end %>
 
-<div class="jumbotron">
-<form id="contribute" action="http://oa-address-capture.herokuapp.com/" method="post" class="form-horizontal submission-form" role="form">
+<form id="contribute" action="http://oa-address-capture.herokuapp.com/" method="post" class="address-submission-form" role="form">
 
-  <div class="form-group">
-    <label for="address" class="col-sm-2 control-label">Address</label>
-    <div class="col-sm-10">
-      <textarea name="address"
-                id="address"
-                rows="6"
-                class="form-control"
-                required=""></textarea>
-    </div>
+  <label for="address" class="control-label">Add an address to Open Addresses</label>
+  <textarea name="address" id="address" rows="6" class="form-control" required=""></textarea>
+
+  <div style="display: none">
+    <!-- Honeypot to catch spam -->
+    <label for="agree_to_terms" class="control-label">Leave this blank</label>
+    <input name="agree_to_terms" id="agree_to_terms" class="form-control" type="text"></input>
   </div>
 
-  <div class="form-group" style="display: none">
-      <!-- Honeypot to catch spam -->
-      <label for="agree_to_terms" class="col-sm-2 control-label">Leave this blank</label>
-      <div class="col-sm-10">
-        <input name="agree_to_terms" id="agree_to_terms" class="form-control" type="text"></input>
-      </div>
+  <button class="btn btn-primary" id="submit"><i id="spinner" class="fa fa-circle-o-notch fa-spin hidden"></i> Submit</button>
+
+  <div class="address-error hidden" id="addressproblem">
+    <p><strong>Sorry!</strong> There seems to be a problem with the address you entered.</p>
+    <p>Please note that we currently do not support addresses without postcodes, although this will be addressed in <a href="https://github.com/OpenAddressesUK/roadmap/issues/65">future releases</a>.</p>
   </div>
 
-  <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-      <button class="btn btn-primary" id="submit"><i id="spinner" class="fa fa-circle-o-notch fa-spin hidden"></i> Submit this address</button>
-      <a data-toggle="collapse" href="#submission-guidelines"><small>Read the submission guidelines</small></a>
-    </div>
+  <div id="submission-guidelines">
+    <h3>Guidelines</h3>
+    <p>We do not want to receive any names in the submission, other than any company name that may form part of the address. The Open Addresses data that we publish will be about locations, not about people.</p>
+    <p> Do not worry about the format of the address. The platform is designed and built to support many different formats.</p>
+    <p>Please be sure not to violate others' intellectual property or privacy rights with your submission. If you think your Intellectual Property rights are being infringed then please <a href="/about/reportaninfringement">report the infringement</a>.</p>
+    <p>By submitting an address you are saying that Open Addresses Limited can re-use the address and publish it under an open data licence. You are saying that the publication of the address by Open Addresses Limited or third parties does not and will not infringe any of your legal rights or those of any third party.</p>
   </div>
 
-  <div class="form-group hidden" id="addressproblem">
-    <div class="alert alert-danger" role="alert">
-      <p><strong>Sorry!</strong> There seems to be a problem with the address you entered.</p>
-      <p>Please note that we currently do not support addresses without postcodes, although this will be addressed in <a href="https://github.com/OpenAddressesUK/roadmap/issues/65">future releases</a>.</p>
-    </div>
-  </div>
+</form>
 
-  <div id="submission-guidelines" class="form-group collapse">
-    <label class="col-sm-2 control-label">Guidelines</label>
-    <div class="col-sm-10 smallprint">
-      <p>
-        We do not want to receive any names in the submission, other than any company name that may form part of the address. The Open Addresses data that we publish will be about locations, not about people.
-      </p>
-      <p>
-        Do not worry about the format of the address. The platform is designed and built to support many different formats.
-      </p>
-      <p>
-        Please be sure not to violate others' intellectual property or privacy rights with your submission. If you think your Intellectual Property rights are being infringed then please <a href="/about/reportaninfringement">report the infringement</a>.
-      </p>
-      <p>
-        By submitting an address you are saying that Open Addresses Limited can re-use the address and publish it under an open data licence. You are saying that the publication of the address by Open Addresses Limited or third parties does not and will not infringe any of your legal rights or those of any third party.
-      </p>
-    </div>
-  </div>
-
-  </form>
-</div>
