@@ -1,0 +1,64 @@
+
+/* Content Hero */
+
+.content-hero {
+	margin-top:50px;
+	clear:both;
+	color:white;
+	padding-top: 47px;
+	padding-bottom: 24px;
+	background:#f0e0d9;
+	position: relative;
+	min-height: 400px;
+	@include mq(smartphone) {
+		min-height: 0;
+	}
+}
+
+.content-hero h1 {
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 30px;
+	opacity: .8;
+	color: #383838;
+	margin: 0;
+	@include mq(smartphone) {
+		font-size: 20px;
+	}
+}
+
+.content-hero p {
+	font-size: 2.2em;
+	font-weight: 200;
+	margin-top: 8px;
+	color:$purple;
+	@include mq(smartphone) {
+		font-size: 1.5em;	
+	}
+}
+
+.content-hero .content-hero-gfx {
+	position: absolute;
+	right: 62%;
+	top: -32px;
+	@include mq(smartphone) {
+		position:static;
+	}
+}
+
+.content-hero .content-hero-gfx img {
+	max-width:none;
+	@include mq(smartphone) {
+		max-width:100%;
+		margin-bottom:1em;
+	}
+}
+
+.content-hero-content {
+	width: 60%;
+	margin-left: 40%;
+	@include mq(smartphone) {
+		width:auto;
+		margin:0;
+	}
+}

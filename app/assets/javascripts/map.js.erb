@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+/*
 		var map, 
 			OSHQ = {
 				WGS84: [50.938128, -1.4703602],
@@ -9,7 +9,7 @@ $(document).ready(function () {
 		var popup = L.popup(),
 			openspaceLayer;
 
-		/* L.Map with OS options */
+		// L.Map with OS options 
 		map = new L.Map('map', {
 			crs: L.OSOpenSpace.getCRS(),
 			continuousWorld: true,
@@ -18,13 +18,13 @@ $(document).ready(function () {
 			maxZoom: L.OSOpenSpace.RESOLUTIONS.length - 1,
 		});
 
-		/* New L.TileLayer.OSOpenSpace with API Key */
+		// New L.TileLayer.OSOpenSpace with API Key 
 		openspaceLayer = L.tileLayer.osopenspace("<%= ENV['OPENSPACE_API_KEY']%>", {debug: true}); 
 
 		map.addLayer(openspaceLayer);
 		map.setView(OSHQ.WGS84, 1);
 
-		/* add some ui elems to the map */
+		 add some ui elems to the map 
 
 		var oaIcon = L.icon({
 	    	iconUrl: '/images/mapicon.png',
@@ -45,6 +45,6 @@ $(document).ready(function () {
 			var marker = L.marker([lat, long], { icon: oaIcon, riseOnHover: true }).addTo(map);
 			locations.push([lat, long]);
 			map.fitBounds(L.latLngBounds(locations));
-		});
+		});*/
 
 });
