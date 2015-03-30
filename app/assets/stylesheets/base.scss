@@ -142,6 +142,9 @@ a {
 	padding-top: 24px;
 	@extend %clearfix;
 }
+.page-header a > img {
+  border: 0;
+}
 
 .hidden.hidden.hidden.hidden {
 	display:none;

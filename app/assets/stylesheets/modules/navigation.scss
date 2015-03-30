@@ -99,11 +99,15 @@ body.has-mobile-menu-open .hamburger {
 
 	@include transition(all .2s);
 	@include transform(translate3d(0,-100%,0));
+
+    -ms-transform: translate(0, -100%); /* ie9 */
 }
 
 .nav-mobile.is-visible {
 	display:block;
 	@include transform(translate3d(0,0,0));
+
+  -ms-transform: translate(0, 0); /* ie9 */
 }
 
 .nav-mobile a {
