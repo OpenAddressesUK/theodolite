@@ -64,11 +64,11 @@ $(function() {
 
 */
 
-var homeGFX = $('.home-gfx')[0];;
+var homeGFX = $('.home-gfx')[0];
 if (homeGFX) {
 	window.onscroll = function(e) {
 		homeGFX.style.transform = 'translate3d(0px,' + Math.round(window.scrollY/6) + 'px, 0px)';
-		homeGFX.style.style.webkitTransform = 'translate3d(0px,' + Math.round(window.scrollY/6) + 'px, 0px)';
+		homeGFX.style.webkitTransform = 'translate3d(0px,' + Math.round(window.scrollY/6) + 'px, 0px)';
 	}
 }
 
