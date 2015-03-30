@@ -103,6 +103,11 @@ body {
 a {
 	text-decoration:none;
 	color:$orange;
+	@include transition(color .2s);
+}
+
+a:hover {
+	color:$purple;
 }
 
 .wrapper {
@@ -169,5 +174,5 @@ a {
 		height: 201px;
 		width: 100%;
 	}
-	
+
 }

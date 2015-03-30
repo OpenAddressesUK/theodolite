@@ -23,10 +23,11 @@
 .nav-desktop > li {
 	display:inline-block;
 	margin-left:20px;
+	position:relative
 }
 
-.nav-desktop > li {
-	position:relative
+.nav-desktop > li > a:hover {
+
 }
 
 .nav-desktop > li > ul {
@@ -34,26 +35,44 @@
 	background:#eee;
 	position:absolute;
 	top:100%;
-	right:0;
+	left:50%;
 	padding: 10px;
 	width: 220px;
-	margin-top: 10px;
-	margin-left: -13px;
+	margin-top: 20px;
+	margin-left: -110px;
 	z-index:100;
 	list-style:none;
 }
 
+.nav-desktop > li:last-child > ul {
+	right:auto;
+	left:auto;
+	right:0;
+}
+
 .nav-desktop > li > ul:after {
 	content:"";
-	
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #eee;
+	position:absolute;
+	bottom:100%;
+	left:50%;
+	margin-left:-10px;
 }
+
+.nav-desktop > li:last-child > ul:after {
+	left: 73%;
+}
+
 
 .nav-desktop > li > ul > li {
 	margin:0;
 	margin-bottom: 6px;
 	font-size: 14px;
-	background:#d9d3d3;
-	padding: 3px 7px 5px;
+
 }
 
 .nav-desktop > li > ul > li:last-child {
@@ -62,6 +81,15 @@
 
 .nav-desktop > li > ul > li > a {
 	color:#333;
+	background:#d9d3d3;
+	padding: 3px 7px 5px;
+	display: block;
+	@include transition(all .2s);
+}
+
+.nav-desktop > li > ul > li > a:hover {
+	color:$purple;
+	background:white;
 }
 
 .hamburger {
@@ -100,14 +128,14 @@ body.has-mobile-menu-open .hamburger {
 	@include transition(all .2s);
 	@include transform(translate3d(0,-100%,0));
 
-    -ms-transform: translate(0, -100%); /* ie9 */
+	-ms-transform: translate(0, -100%); /* ie9 */
 }
 
 .nav-mobile.is-visible {
 	display:block;
 	@include transform(translate3d(0,0,0));
 
-  -ms-transform: translate(0, 0); /* ie9 */
+	-ms-transform: translate(0, 0); /* ie9 */
 }
 
 .nav-mobile a {
