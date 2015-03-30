@@ -24,6 +24,8 @@
       path: /about/team
     - title: Privacy policy
       path: /about/privacy
+    - title: Report an infringment
+      path: /about/reportaninfringement
 
 - title: Services
   path: /services
