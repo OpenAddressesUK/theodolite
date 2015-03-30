@@ -208,18 +208,22 @@
   }
 
   ul li { 
-    padding-left: 1em; 
-    text-indent: -.7em;
+    padding-left: 1.4em;
+    @include mq(smartphone) {
+      padding-left: 1em;
+    }
   }
 
   ul li:before {
     content: "•";
     color: #ff6700;
-    padding-right: 0.3em;
     font-size: 1.8em;
-    line-height: 0;
-    position: relative;
-    top: 6px;
+    line-height: 0.8;
+    margin-left: -21px;
+    float: left;
+    @include mq(smartphone) {
+      margin-left: -14px;
+    }
   }
 }
 
