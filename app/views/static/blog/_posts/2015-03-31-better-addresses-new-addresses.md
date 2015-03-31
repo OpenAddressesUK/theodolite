@@ -15,7 +15,7 @@ This is the first of a blog series focussing on how Open Addresses can help the 
 
 #### Making new addresses available faster
 
-We’ve already written a blogpost on the [human impact](https://alpha.openaddressesuk.org/blog/2015/02/09/living-breathing-problem) caused by the current legacy approach to creating and publishing new addresses. These issues are caused for every new house and every new office block.
+We have already written a blogpost on the [human impact](https://alpha.openaddressesuk.org/blog/2015/02/09/living-breathing-problem) caused by the current legacy approach to creating and publishing new addresses. These issues are caused for every new house and every new office block.
 
 Over the last few weeks we have learnt more about how much these issues are costing people, businesses and local authorities.
 
@@ -29,7 +29,7 @@ At the simplest level if a property is being built and requires a new address th
 
 Sometime the property developer will request a specific address (possibly including a postcode) and in other cases the local authority will suggest an address. The new address request is negotiated between the property developer and local authority staff.
 
-Once both parties are happy then the local authority staff will pass the data to other organisations, such as Geoplace and Royal Mail, for further negotiation and processing. Those organisations may claim rights over the address after they process it and  may object to an address record that they have processed being released as open data by a local authority. That is the right of those organisations but it creates a legal risk when trying to solve the problems that affect the people that live and work at those addresses.
+Once both parties are happy then the local authority staff will pass the data to other organisations, such as Geoplace and Royal Mail, for further negotiation and processing. Those organisations may claim rights over the address and may object to an address record that they have processed being released as open data by a local authority. That is the right of those organisations but it creates a legal risk when trying to solve the problems that affect the people that live and work at those addresses.
 
 #### New addresses are open data
 
@@ -45,15 +45,17 @@ As we receive the data we will apply a confidence factor to give clarity on how 
 
 If you need help with loading new addresses, or simply want people to know that new addresses in your area are now being published as open data, then let us know on our [forums](https://github.com/OpenAddressesUK/forum).
 
+Our platform will  publish the address within days, rather than the months that the legacy processes can take.
+
 The new addresses will be published through our linked data (URLs), through our web services ([APIs](https://alpha.openaddressesuk.org/about/apidocu)), or from the bulk [download](https://alpha.openaddressesuk.org/data).
 
-Our platform will  publish the address within days, rather than the months that the legacy processes take. Anyone can use the data to discover new addresses and provide them with the services that the people who live and work there want and need.
+Anyone can use the data to discover new addresses and provide them with the services that the people who live and work there want and need.
 
 #### “It’s what our residents need”
 
 Finally, this blogpost is titled “it’s what our residents need”.
 
-This is  simply part of a quote from an address management department we spoke to at a local authority. We think it’s worth putting the quote in full:
+This is  simply part of a quote from an address management department at a local authority we spoke to. We think it’s worth putting the quote in full:
 
 > “The more people and services that know addresses faster the better. It’s what our residents need. Can you let us know when we can start sending you our addresses?”
 
