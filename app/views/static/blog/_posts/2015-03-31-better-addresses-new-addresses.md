@@ -1,6 +1,6 @@
 ---
 author: Peter Wells
-title: Better addresses: “It’s what our residents need”
+title: Better addresses - "It’s what our residents need"
 ---
 
 Over the last few months we have been talking to various public sector organisations, both central government and local authorities, around the country.
