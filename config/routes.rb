@@ -16,6 +16,8 @@ Rails.application.routes.draw do
   get '/download', to: redirect('/data')
   get '/torrent' => "application#get_torrent"
 
+  get '/addresses/download' => "addresses#download"
+
   root to: 'jekylly/static#show', defaults: { path: 'main' }
   mount Jekylly::Engine, at: "/"
 

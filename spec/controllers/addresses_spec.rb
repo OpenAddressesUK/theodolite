@@ -319,4 +319,171 @@ RSpec.describe AddressesController, :type => :controller do
 #      expect(response).to redirect_to("/addresses/#{@address.token}.html")
 #    end
   end
+
+  describe 'GET #download' do
+
+    [
+      {
+        options: {
+          format: "csv",
+          split: "false",
+          provenance: "false"
+        },
+        name: "Addresses only as a single CSV file (direct download)",
+        result: "2014-03-31-openaddressesuk-addresses-only.csv.zip"
+      },
+      {
+        options: {
+          format: "json",
+          split: "false",
+          provenance: "false"
+        },
+        name: "Addresses only as a single JSON file (direct download)",
+        result: "2014-03-31-openaddressesuk-addresses-only.json.zip"
+      },
+      {
+        options: {
+          format: "csv",
+          split: "false",
+          provenance: "false",
+          torrent: "true"
+        },
+        name: "Addresses only as a single CSV file (torrent)",
+        result: "2014-03-31-openaddressesuk-addresses-only.csv.zip?torrent"
+      },
+      {
+        options: {
+          format: "json",
+          split: "false",
+          provenance: "false",
+          torrent: "true"
+        },
+        name: "Addresses only as a single JSON file (torrent)",
+        result: "2014-03-31-openaddressesuk-addresses-only.json.zip?torrent"
+      },
+      {
+        options: {
+          format: "csv",
+          split: "true",
+          provenance: "false",
+        },
+        name: "Addresses only split by postcode sector as a single CSV file (direct download)",
+        result: "2014-03-31-openaddressesuk-addresses-only-split.csv.zip"
+      },
+      {
+        options: {
+          format: "json",
+          split: "true",
+          provenance: "false",
+        },
+        name: "Addresses only split by postcode sector as a single JSON file (direct download)",
+        result: "2014-03-31-openaddressesuk-addresses-only-split.json.zip"
+      },
+      {
+        options: {
+          format: "csv",
+          split: "true",
+          provenance: "false",
+          torrent: "true"
+        },
+        name: "Addresses only split by postcode sector as a single CSV file (torrent)",
+        result: "2014-03-31-openaddressesuk-addresses-only-split.csv.zip?torrent"
+      },
+      {
+        options: {
+          format: "json",
+          split: "true",
+          provenance: "false",
+          torrent: "true"
+        },
+        name: "Addresses only split by postcode sector as a single JSON file (torrent)",
+        result: "2014-03-31-openaddressesuk-addresses-only-split.json.zip?torrent"
+      },
+      {
+        options: {
+          format: "csv",
+          split: "false",
+          provenance: "true"
+        },
+        name: "Addresses with provenance as a single CSV file (direct download)",
+        result: "2014-03-31-openaddressesuk-full.csv.zip"
+      },
+      {
+        options: {
+          format: "json",
+          split: "false",
+          provenance: "true"
+        },
+        name: "Addresses with provenance as a single JSON file (direct download)",
+        result: "2014-03-31-openaddressesuk-full.json.zip"
+      },
+      {
+        options: {
+          format: "csv",
+          split: "false",
+          provenance: "true",
+          torrent: "true"
+        },
+        name: "Addresses with provenance as a single CSV file (torrent)",
+        result: "2014-03-31-openaddressesuk-full.csv.zip?torrent"
+      },
+      {
+        options: {
+          format: "json",
+          split: "false",
+          provenance: "true",
+          torrent: "true"
+        },
+        name: "Addresses with provenance as a single JSON file (torrent)",
+        result: "2014-03-31-openaddressesuk-full.json.zip?torrent"
+      },
+      {
+        options: {
+          format: "csv",
+          split: "true",
+          provenance: "true",
+        },
+        name: "Addresses with provenance split by postcode sector as a single CSV file (direct download)",
+        result: "2014-03-31-openaddressesuk-full-split.csv.zip"
+      },
+      {
+        options: {
+          format: "json",
+          split: "true",
+          provenance: "true",
+        },
+        name: "Addresses with provenance split by postcode sector as a single JSON file (direct download)",
+        result: "2014-03-31-openaddressesuk-full-split.json.zip"
+      },
+      {
+        options: {
+          format: "csv",
+          split: "true",
+          provenance: "true",
+          torrent: "true"
+        },
+        name: "Addresses with provenance split by postcode sector as a single CSV file (torrent)",
+        result: "2014-03-31-openaddressesuk-full-split.csv.zip?torrent"
+      },
+      {
+        options: {
+          format: "json",
+          split: "true",
+          provenance: "true",
+          torrent: "true"
+        },
+        name: "Addresses with provenance split by postcode sector as a single JSON file (torrent)",
+        result: "2014-03-31-openaddressesuk-full-split.json.zip?torrent"
+      }
+    ].each do |example|
+      it "redirects to #{example[:name]}" do
+        VCR.use_cassette(example[:name]) do
+          get :download, example[:options]
+
+          expect(response).to redirect_to("https://s3-eu-west-1.amazonaws.com/test.openaddressesuk.org/open_addresses_database/#{example[:result]}")
+        end
+      end
+    end
+
+  end
 end
