@@ -59,6 +59,7 @@ gem 'jekylly', github: 'OpenAddressesUK/jekylly'
 gem 'bugherd'
 gem 'rack-tracker'
 gem 'gabba'
+gem 'jiffybag', github: 'theodi/jiffybag'
 
 group :test do
   gem 'rspec-rails', '~> 3.0.0'

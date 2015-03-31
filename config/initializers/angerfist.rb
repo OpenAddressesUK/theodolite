@@ -1,8 +1,8 @@
 require 'angerfist'
 
 config = {
-  tracker_id: ENV['GA_TRACKER_ID'],
-  domain: ENV['GA_DOMAIN'],
+  tracker_id: JiffyBag['GA_TRACKER_ID'],
+  domain: JiffyBag['GA_DOMAIN'],
   content_types: ["application/json"],
   paths: ["/torrent"]
 }

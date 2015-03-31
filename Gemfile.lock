@@ -25,6 +25,13 @@ GIT
     alternate_rails (0.0.2)
       rails (>= 3.2.13)
 
+GIT
+  remote: git://github.com/theodi/jiffybag.git
+  revision: 664e9f96335acfcc1240d8f3f4c41e3e33ab56c1
+  specs:
+    jiffybag (1.0.0)
+      dotenv (~> 1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -262,6 +269,7 @@ DEPENDENCIES
   httparty
   jbuilder (~> 2.0)
   jekylly!
+  jiffybag!
   jquery-rails
   json_spec
   kaminari
