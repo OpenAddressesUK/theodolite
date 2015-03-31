@@ -31,13 +31,13 @@ Sometimes the property developer will request a specific address (possibly inclu
 
 The local authority staff will then pass the data (typically this includes a suggested postcode) to Geoplace and Royal Mail for further processing.
 
-After this point Geoplace or Royal Mail may have a legal right over the address data and may object to it being released as open data by a local authority. That is the right of those organisations, but it creates a legal obstacle when trying to solve the problems that will affect the people that live and work there.
+After this point Geoplace or Royal Mail may have a legal right over the address data and may object to it being released as open data by a local authority. That is the right of those organisations, but it creates a legal obstacle when trying to release address data as open data.
 
-#### New addresses are open data
+#### Making new addresses open data
 
 Our recommendation is that local authorities simply release the data before it is passed to Geoplace and Royal Mail. The property developer and the people who will live and work there would clearly want the address to be as widely published as possible.
 
-So, for a local authority to help solve [the problems that people experience](https://alpha.openaddressesuk.org/blog/2015/02/09/living-breathing-problem) in new addresses they, or their  suppliers, simply need to automate a process to send Open Addresses a copy of a new address either before or at the same time as they pass it to Geoplace and Royal Mail.
+So, for a local authority to help solve [the problems that people experience](https://alpha.openaddressesuk.org/blog/2015/02/09/living-breathing-problem) in new addresses they, or their  suppliers, simply need to automate a process to send Open Addresses a copy of a new address at this point.
 
 #### How to publish new addresses
 
@@ -45,13 +45,15 @@ If a local authority wants to publish new addresses singly our [Sorting Office A
 
 If a local authority wants help with either of those tools, or simply wants people to know that new addresses in their area are now being published as open data, then let us know on our [forums](https://github.com/OpenAddressesUK/forum).
 
-As we receive the data we will apply a confidence factor to give clarity on how much people can [trust the address](https://alpha.openaddressesuk.org/blog/2015/02/20/confidence). This step is necessary as there is always a chance that the address may change between being passed to Open Addresses and the property build completing. If this occurs then our collaborative maintenance model will pick up the change as the address is used in our services.
+The address may change between being passed to Open Addresses and the property build completing. Don't worry too much about this - it may also change after it is completed! As we receive the data we will apply a confidence factor to give clarity on how much people can [trust the address](https://alpha.openaddressesuk.org/blog/2015/02/20/confidence). Our collaborative maintenance model will then pick up any change in the address as it is used in our services.
+
+#### How to use new addresses
 
 Our platform will publish the address within days, rather than the months that the legacy processes can take.
 
 The new addresses will be published through our linked data (URLs), through our web services ([APIs](https://alpha.openaddressesuk.org/about/apidocu)), or from the bulk [download](https://alpha.openaddressesuk.org/data).
 
-Anyone will then be able to use the data to discover new addresses and to provide the services that the people who live and work there want and need.
+Anyone can use the data to discover new addresses and to provide the services that the people who live and work there want and need.
 
 #### “It’s what our residents need”
 
