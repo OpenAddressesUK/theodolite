@@ -20,6 +20,10 @@ env:
     - AWS_ACCESS_KEY=asdasdasdasd
     - AWS_SECRET_ACCESS_KEY=sfsdfdsfsdfdsfsdfsfsd
     - AWS_BUCKET=test.openaddressesuk.org
+    - GA_TRACKER_ID=dsfsdfsd
+    - GA_DOMAIN=dsdsfsfs
+    - BUGHERD_PROJECT_KEY=dsfdsfsdsdf
+    - OPENSPACE_API_KEY=dsfsdfdsfs
 deploy:
   provider: heroku
   strategy: api
