@@ -53,6 +53,7 @@ gem 'thin'
 gem 'api-pagination'
 gem 'uk_postcode'
 gem 'mongoid_address_models', github: 'openaddressesuk/mongoid_address_models'
+#gem 'mongoid_address_models', path: '../mongoid_address_models'
 gem 'alternate_rails', github: 'theodi/alternate-rails'
 
 gem 'jekylly', github: 'OpenAddressesUK/jekylly'
