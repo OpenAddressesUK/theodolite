@@ -11,28 +11,46 @@ layout: mission-hero
 	</div>
 </div>
 
-Addresses are part of our everyday lives. But it’s not simple to locate addresses, to enter addresses on websites, or even to get access to an accurate list. We’re here to change that.
+Addresses are part of our everyday lives.They are where we live, work and visit, connecting us to local communities and services we rely on There is a hidden complexity in the process of locating addresses, entering addresses online, and even accessing an accurate address list. We’re here to change this, to make things simpler and better.
 
-We are building services to meet the needs of service providers, community groups, the public sector and, most importantly, the people who live and work at those addresses.
+Together with a growing network of contributors we’re building the nation’s first free and open address list, available for anyone to use and share as open data.
 
-Open Addresses is wholly owned by the not-for-profit [Open Data Institute](https://theodi.org/).
+We’re creating accessible services that meet the needs of the public sector, organisations and most importantly, meet the needs of the people and communities who live and work at UK addresses. Since launching our Alpha services in January 2015 we have begun to unlock the full potential of an open address list. We have seen heightened demand amongst local authorities, organisations and people; we have shaped our services as a response to their valuable feedback.
 
-We have to create revenues to sustain our operations and will use these revenues to always make the bulk download available in full, for free as open data.
+Address services available today can be expensive to use, many organisations simply can’t afford them. Meanwhile the quality is inconsistent, it can even take months to make new addresses visible leaving that people live or work there unable to get the services they need (https://alpha.openaddressesuk.org/blog/2015/02/09/living-breathing-problem).
 
-The current services have quality issues, for example it can take [months before new addresses are published and widely available for use](/blog/2015/02/09/living-breathing-problem ) whilst they are also expensive meaning that there are many organisations and community groups that cannot afford to use them to build and deliver services. We are fixing these problems.
+Open Addresses will provide high quality data that is both affordable and sustainable. It will make UK address data better for everyone.
 
-We determine and publish the [confidence that we have in each address](/blog/2015/02/20/confidence) whilst our platform tracks the provenance of all of the data that it publishes. Address data in the UK is part of a complex legal and copyright puzzle so we need to publish [address data that is safe to use](/blog/2015/01/26/making-address-data-safe).
+#### Building an open and collaborative culture
 
-We believe that we are the first open data project to go to these lengths, we believe it is the right thing to do for such a fundamental part of the [UK’s National Information Infrastructure](https://www.gov.uk/government/publications/national-information-infrastructure/national-information-infrastructure).
+Collaboration and openness is the core of everything we do. We are open by default. Our [source code](https://github.com/OpenAddressesUK) and [roadmap](https://github.com/OpenAddressesUK/roadmap/issues)  are open and we invite everyone to contribute, use and [share feedback](https://github.com/OpenAddressesUK/forum). 
 
-We gather and maintain data through a collaborative maintenance model that reduces costs whilst improving quality. Everyone who donates data or uses our services is helping to maintain and improve a [public good](http://www.slideshare.net/JeniT/bcs-address-day-open-addresses-jeni-tennison) from which we all benefit.
+With the help of this growing community we are building a collaborative model to maintain quality address data.
 
-In the future we will expand our collaborative maintenance model to capture Welsh language addresses, alternative addresses (for example 'Rose Cottage, Acacia Avenue'), the latitude and longitude of individual addresses, the altitude (or z-axis) of an address and many other pieces of address information that are suitable to be collaboratively maintained and openly shared.
+#### Raising confidence in address data 
 
-We would encourage you all to join us and help build a network of individuals and service providers working together with a common goal of making UK address data better for everyone.
+We understand the importance of having accurate addresses and track where our address data comes from. We openly publish a calculated [level of confidence for each address](https://alpha.openaddressesuk.org/blog/2015/02/20/confidence) so others can make informed decisions about the addresses they choose to use.
 
-There is a [rich history](http://www.huffingtonpost.co.uk/jeni-tennison/a-brief-history-of-open-a_b_6485628.html?) of addresses in the UK. It’s time to start writing the next chapter.
+We believe that we are the first open data organisation to start by tracking provenance and publishing confidence. We know that UK address data is part of a complex legal and copyright puzzle so need to publish [address data that is safe to use](https://alpha.openaddressesuk.org/blog/2015/01/26/making-address-data-safe).
 
-INFOGRAPHIC TO GO HERE
+#### Maintaining a public good
+
+We believe addreses are a fundamental part of the [UK’s National Information Infrastructure](https://www.gov.uk/government/publications/national-information-infrastructure/national-information-infrastructure ) and should be open for all to benefit from and contribute to.
+
+Everyone who uses Open Addresses’ services, or who uses services that are built on top of the Open Addresses platform, becomes part of this community. When people and service providers use the services it allows the platform to learn about bad data, to learn how much to [trust addresses](https://alpha.openaddressesuk.org/blog/2015/02/20/confidence) or to discover new addresses.  This approach reduces costs and improves data quality. It helps turn what was an expensively maintained asset into a [public good](http://www.slideshare.net/JeniT/bcs-address-day-open-addresses-jeni-tennison) that is maintained using collaboration, cross-subsidy and voluntary effort.
+
+#### Overcoming new challenges 
+
+There’s still much to do.
+
+We need to develop our services into things that we are happy to call Beta and eventually Live, increase our address list, add more trialists, develop additional services, grow our community and find more sponsorship so that we are ready to take on new challenges.
+
+Open Addresses is wholly owned by the not-for-profit [Open Data Institute](https://theodi.org/). We have to create revenues and sponsorship to sustain our operations but will always make the bulk address data available to download in full, for free as open data.
+
+#### Let’s make history
+
+There is a [rich history](http://www.huffingtonpost.co.uk/jeni-tennison/a-brief-history-of-open-a_b_6485628.html?) of addresses in the UK. Together lets write the next chapter.
+
+<<<<< Infographic here https://docs.google.com/a/openaddress.es/file/d/0BzdD3NC5YSzOSl9hb2NGVmRMRTA/edit>>>>>>
 
 Want to know more? Just drop us an email to [info@openaddressesuk.org](mailto:info@openaddressesuk.org)
