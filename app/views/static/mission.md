@@ -11,7 +11,7 @@ layout: mission-hero
 	</div>
 </div>
 
-Addresses are part of our everyday lives.They are where we live, work and visit, connecting us to local communities and services we rely on There is a hidden complexity in the process of locating addresses, entering addresses online, and even accessing an accurate address list. We’re here to change this, to make things simpler and better.
+Addresses are part of our everyday lives. They are where we live, work and visit, connecting us to local communities and services we rely on. There is a hidden complexity and cost in the process of locating addresses, entering addresses online, and  accessing an accurate address list. We’re here to change this, to make things simpler and better.
 
 Together with a growing network of contributors we’re building the nation’s first free and open address list, available for anyone to use and share as open data.
 

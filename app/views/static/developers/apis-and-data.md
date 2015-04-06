@@ -13,6 +13,7 @@ What do you want to do?
 * <a href='#search'>Search for an address(es) that match(es) certain criteria</a>
 * <a href='#submitone'>Submit a single address</a>
 * <a href='#submitmany'>Submit a large quantity of addresses</a>
+* <a href='#confidence'>Learn how confident we are in an address</a>
 * <a href='#validate'>Validate an address</a>
 
 Do remember that we are still in development so be gentle with us and the APIs. If you do find a bug then we are very sorry. [Let us know](https://github.com/OpenAddressesUK/forum) and we will get it sorted.
@@ -27,7 +28,13 @@ We use this API in the address submission box on the front-page of the website. 
 
 Sorting Office takes a free-format text string and returns the address decomposed into building blocks (street name, locality, town, postcode...), along with any other information that we already hold about the address.
 
-Detailed documentation for this API can be found at [https://github.com/OpenAddressesUK/sorting_office](https://github.com/OpenAddressesUK/sorting_office) whilst the API itself can be found at [https://sorting-office.openaddressesuk.org/](https://sorting-office.openaddressesuk.org/).
+Sorting Office can simultaneously submit addresses to the platform by setting the 'Contribute' argument described in the documentation: [https://github.com/OpenAddressesUK/sorting_office#how-to-use](https://github.com/OpenAddressesUK/sorting_office#how-to-use).
+
+By submitting addresses you, or your organisation become part of our collaborative model from which every user benefts. 
+
+If you do choose to submit addresses in this way then please read and adhere to the [Submission Guidelines](https://github.com/OpenAddressesUK/sorting_office#subguidelines) and ensure that your site's terms and conditions provide appropriate information to your users.
+
+Detailed documentation for this API can be found at [https://github.com/OpenAddressesUK/sorting_office](https://github.com/OpenAddressesUK/sorting_office) whilst the API itself can be tested at [https://sorting-office.openaddressesuk.org/](https://sorting-office.openaddressesuk.org/).
 
 <h2 id='search'>Search for address(es)</h2>
 
@@ -53,7 +60,7 @@ Simply set the 'Contribute' argument described in the documentation: [https://gi
 
 By submitting addresses you, or your organisation contributes to the platform and every user can benefit. If you choose to build Sorting Office into your user journey to help simplify your own work then why not contribute back to the community by submitting the resulting addresses to the platform?
 
-If you do choose to submit addresses in this way then please read and adhere to the [Submission Guidelines](https://github.com/OpenAddressesUK/sorting_office#subguidelines).
+If you do choose to submit addresses in this way then please read and adhere to the [Submission Guidelines](https://github.com/OpenAddressesUK/sorting_office#subguidelines) and ensure that your site's terms and conditions provide appropriate information to your users.
 
 <h2 id='submitmany'>Submit a large quantity of addresses</h2>
 
@@ -62,6 +69,22 @@ To ingest large quantities of addresses we use an open-source tool called Turbot
 Our version of Turbot and all of the necessary documentation and instructions can be found at [http://turbot.openaddressesuk.org/](http://turbot.openaddressesuk.org/).
 
 If you do choose to submit addresses in this way then please read and adhere to our [Submission Guidelines](https://github.com/OpenAddressesUK/sorting_office#subguidelines).
+
+<h2 id='confidence'>Learn how confident we are in an address</h2>
+
+There is uncertainty in all data. It is important to recognise this. With our collaborative model to build and maintain address data we believe it is essential for us to embrace it.
+
+Therefore we have built a way to determine how much we [trust address data](/blog/2015/02/20/confidence).
+
+Our confidence API is exposed from the canonical Open Addresses graph database, [Ernest](https://ernest.openaddressesuk.org).
+
+The address first needs to be structured into the BS7666 standard, for example by using the [Sorting Office API](/developers/apis-and-data#sortingoffice). 
+
+When the address is submitted to the confidence API Ernest will return a confidence score between 1 and 1000.
+
+It is not necessary for the address to exist in Ernest for the API to provide a confidence score.
+
+Detailed documentation and sample code can be found at [Ernest](https://ernest.openaddressesuk.org).
 
 <h2 id='validate'>Validate an address</h2>
 

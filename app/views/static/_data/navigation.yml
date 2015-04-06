@@ -7,12 +7,16 @@
 - title: Developers
   path: /developers
   children:
-    - title: Documents & guides
-      path: /developers/docs
-    - title: APIs & data download
-      path: /developers/apis-and-data
     - title: Search the data
       path: /addresses
+    - title: APIs & data download
+      path: /developers/apis-and-data
+    - title: Adding Data
+      path: /developers/addingdata
+    - title: Documents & guides
+      path: /developers/docs
+    - title: Forums
+      path: /developers/forums
 
 - title: Mission
   path: /mission
@@ -32,18 +36,18 @@
   children:
     - title: Free-Format Address Input
       path: /services/free-format-address-input
-    - title: Data Sorting Office
-      path: /services/data-sorting-office
-    - title: Address Location
-      path: /services/address-location
-    - title: Data Enrichment
-      path: /services/data-enrichment
+    - title: Type-ahead Address Input
+      path: /services/type-ahead-address-input
+    - title: Locate Addresses
+      path: /services/locate-addresses
+    - title: Address Parsing
+      path: /services/address-parsing
     - title: New Service Creation
       path: /services/new-service-creation
-    - title: Business Intelligence Analytics
-      path: /services/business-intelligence-analytics
-    - title: Data Consolidation
-      path: /services/data-consolidation
+    - title: Data Enrichment
+      path: /services/data-enrichment
+    - title: Something Missing
+      path: /services/something-missing
 
 - title: Get involved
   path: /about/involved
