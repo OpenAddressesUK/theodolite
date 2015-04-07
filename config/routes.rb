@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get '/addresses/download' => "addresses#download"
+
   resources :addresses
 
   get '/streets' => "address_parts#streets", as: "streets"
@@ -15,8 +17,6 @@ Rails.application.routes.draw do
 
   get '/download', to: redirect('/data')
   get '/torrent' => "application#get_torrent"
-
-  get '/addresses/download' => "addresses#download"
 
   root to: 'jekylly/static#show', defaults: { path: 'main' }
   mount Jekylly::Engine, at: "/"
