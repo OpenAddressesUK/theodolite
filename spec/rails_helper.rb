@@ -1,13 +1,15 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 ENV["RAILS_ENV"] ||= 'test'
+ENV["MONGOID_ENVIRONMENT"] = "test"
+
 require 'spec_helper'
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
 require 'webmock/rspec'
+require 'vcr'
+require 'jiffybag'
 
 Dotenv.load
-
-ENV["MONGOID_ENVIRONMENT"] = "test"
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
@@ -25,6 +27,17 @@ Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 # Disable net connection apart from localhost
 WebMock.disable_net_connect!(:allow_localhost => true)
 
+VCR.configure do |config|
+  config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
+  config.hook_into :webmock
+  config.ignore_localhost = true
+  config.default_cassette_options = {
+    record: :once
+  }
+  JiffyBag.variables.each do |key|
+    config.filter_sensitive_data("<#{key}>") { JiffyBag[key] }
+  end
+end
 
 RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures

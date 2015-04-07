@@ -1,11 +1,11 @@
 $(document).ready(function () {
 
-		var map, 
+		var map,
 			OSHQ = {
 				WGS84: [50.938128, -1.4703602],
 				OSGB: [437311, 115543]
 			};
-	
+
 		var popup = L.popup(),
 			openspaceLayer;
 
@@ -19,7 +19,7 @@ $(document).ready(function () {
 		});
 
 		/* New L.TileLayer.OSOpenSpace with API Key */
-		openspaceLayer = L.tileLayer.osopenspace("<%= ENV['OPENSPACE_API_KEY']%>", {debug: true}); 
+		openspaceLayer = L.tileLayer.osopenspace("<%= JiffyBag['OPENSPACE_API_KEY']%>", {debug: true}); 
 
 		map.addLayer(openspaceLayer);
 		map.setView(OSHQ.WGS84, 1);
@@ -32,9 +32,9 @@ $(document).ready(function () {
 	    	iconAnchor: [33, 35],
 	    	popupAnchor: [0, 35]
 		});
-	
+
 		var locations = [];
-	
+
 		$('*[data-latlng]').each(function () {
 			var latlng = $(this).attr('data-latlng').split(",");
 			console.log($(this).attr('data-latlng'));
