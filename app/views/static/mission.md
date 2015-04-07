@@ -35,15 +35,15 @@ We believe that we are the first open data organisation to start by tracking pro
 
 #### Maintaining a public good
 
-We believe addreses are a fundamental part of the [UK’s National Information Infrastructure](https://www.gov.uk/government/publications/national-information-infrastructure/national-information-infrastructure ) and should be open for all to benefit from and contribute to.
+We believe addreses are a fundamental part of the [UK’s National Information Infrastructure](https://www.gov.uk/government/publications/national-information-infrastructure/national-information-infrastructure) and should be open for all to benefit from and contribute to.
 
-Everyone who uses Open Addresses’ services, or who uses services that are built on top of the Open Addresses platform, becomes part of this community. When people and service providers use the services it allows the platform to learn about bad data, to learn how much to [trust addresses](https://alpha.openaddressesuk.org/blog/2015/02/20/confidence) or to discover new addresses.  This approach reduces costs and improves data quality. It helps turn what was an expensively maintained asset into a [public good](http://www.slideshare.net/JeniT/bcs-address-day-open-addresses-jeni-tennison) that is maintained using collaboration, cross-subsidy and voluntary effort.
+Everyone who uses Open Addresses’ services, or who uses services that are built on top of the Open Addresses platform, becomes part of this community. When people and service providers use the services it allows the platform to learn about bad data, to learn how much to [trust addresses](https://alpha.openaddressesuk.org/blog/2015/02/20/confidence) or to discover new addresses. This approach reduces costs and improves data quality. It helps turn what was an expensively maintained asset into a [public good](http://www.slideshare.net/JeniT/bcs-address-day-open-addresses-jeni-tennison) that is maintained using collaboration, cross-subsidy and voluntary effort.
 
 #### Overcoming new challenges 
 
 There’s still much to do.
 
-We'd like to expand our current services and develop new ones, increase our address list, sign up new trialists, grow our community and secure further sponsorship to bring our services into Beta.
+We'd like to expand our current services and develop new ones, increase our address list, sign up new [trialists](/get-involved/trialists), grow our community and secure further [sponsorship](/get-involved/sponsors) to bring our services into Beta.
 
 Open Addresses is wholly owned by the not-for-profit [Open Data Institute](https://theodi.org/). We have to create revenues and sponsorship to sustain our operations but will always make the bulk address data available to download in full, for free as open data.
 

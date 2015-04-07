@@ -3,22 +3,31 @@ title: APIs and Data Download
 layout: default
 ---
 
-The Open Addresses platform exposes APIs to allow people and organisations to retrieve data from the platform, to build their own services, and to collaboratively maintain the data that the platform publishes.
+The Open Addresses platform exposes many small APIs, or [micro-services](http://microservices.io), to allow people and organisations to retrieve data from the platform, to build their own services, and to collaboratively maintain the data that the platform publishes.
+
+All of our own services are built on top of these micro-services. All of our [code is open-source](https://github.com/OpenAddressesUK).
 
 The APIs are still in development but currently available to be freely used by anyone. We'd love your feedback so give them a try.
 
 What do you want to do?
 
+* <a href='#download'>Simply download the dataset</a>
 * <a href='#sortingoffice'>Parse an address</a>
 * <a href='#search'>Search for an address(es) that match(es) certain criteria</a>
 * <a href='#submitone'>Submit a single address</a>
 * <a href='#submitmany'>Submit a large quantity of addresses</a>
 * <a href='#confidence'>Learn how confident we are in an address</a>
+* <a href='#inference'>Attempt to infer the existence of addresses</a>
 * <a href='#validate'>Validate an address</a>
 
-Do remember that we are still in development so be gentle with us and the APIs. If you do find a bug then we are very sorry. [Let us know](https://github.com/OpenAddressesUK/forum) and we will get it sorted.
+If you didn’t find a feature or micro-service that you need then do let us know either on the [forums](https://github.com/OpenAddressesUK/forum) or on the [roadmap](https://huboard.com/OpenAddressesUK/roadmap/#/) and we will see what we can do.
 
-We will be launching more APIs and features over the coming weeks so if you didn’t find a feature that you need then do [let us know](https://github.com/OpenAddressesUK/forum) and we will see what we can do.
+If you want to assist us by contributing to a roadmap issue then we regularly [tag issues that the community can help us with](https://github.com/OpenAddressesUK/roadmap/labels/can%20be%20done%20by%20community).
+
+Do remember that we are still in development so be gentle with us and the APIs. If you do find a bug then we are very sorry.
+
+[Let us know](https://github.com/OpenAddressesUK/forum) or [suggest a fix via a pull request](https://github.com/OpenAddressesUK) and we will get it sorted as soon as we can.
+
 
 <h2 id='sortingoffice'>Parse an address</h2>
 
@@ -88,6 +97,22 @@ It is not necessary for the address to exist in Ernest for the API to provide a 
 
 Detailed documentation and sample code can be found at [Ernest](https://ernest.openaddressesuk.org).
 
+<h2 id='inference'>Attempt to infer the existence of addresses</h2>
+
+One of the techniques that we are using to build an address list without breaching copyright law is to infer the existence of addresses from other addresses. We have written a blog post discussing how this lets us [multiply addresses](/blog/2015/02/12/inference).
+
+Our inference API is called [Jess](http://jess.openaddressesuk.org/) it takes a single address as an argument and is typically used when new addresses are submitted to the platform.
+
+The address first needs to be structured into the BS7666 standard, for example by using the [Sorting Office API](/developers/apis-and-data#sortingoffice). 
+
+When the address is submitted to the inference API Jess will look at other addresses in the database and return a list of addresses that we would infer based on the addition of this new addresses.
+
+These addresses, plus your initial seed address, can then be added through our submissions APIs.
+
+It is not necessary for the address to exist in the database for Jess to be able to perform inference
+
+Detailed documentation and sample code can be found at [Jess](https://jess.openaddressesuk.org).
+
 <h2 id='validate'>Validate an address</h2>
 
 The address validation API is part of our [ingester module](https://openaddressesuk.org/about/docs#ingester) (or "Ernest").
@@ -98,6 +123,7 @@ You can see how we have implemented the validation API on our own website by loo
 
 Alternatively read the detailed documentation at [https://ernest.openaddressesuk.org/](https://ernest.openaddressesuk.org/).
 
+<h2 id='download'>Download the dataset</h2>
 
 <div prefix="dcat: http://www.w3.org/ns/dcat#
              foaf: http://xmlns.com/foaf/0.1/
