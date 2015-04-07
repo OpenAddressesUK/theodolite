@@ -480,7 +480,7 @@ RSpec.describe AddressesController, :type => :controller do
         VCR.use_cassette(example[:name]) do
           get :download, example[:options]
 
-          expect(response).to redirect_to("https://s3-eu-west-1.amazonaws.com/test.openaddressesuk.org/open_addresses_database/#{example[:result]}")
+          expect(response).to redirect_to("https://s3-eu-west-1.amazonaws.com/#{JiffyBag['AWS_BUCKET']}/open_addresses_database/#{example[:result]}")
         end
       end
     end
