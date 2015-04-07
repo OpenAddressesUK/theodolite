@@ -17,7 +17,7 @@ Together with a growing network of contributors we’re building the nation’s 
 
 We’re creating accessible services that meet the needs of the public sector, organisations and most importantly, meet the needs of the people and communities who live and work at UK addresses. Since launching our Alpha services in January 2015 we have begun to unlock the full potential of an open address list. We have seen heightened demand amongst local authorities, organisations and people; we have shaped our services as a response to their valuable feedback.
 
-Address services available today can be expensive to use, many organisations simply can’t afford them. Meanwhile the quality is inconsistent, it can even take months to make new addresses visible leaving that people live or work there unable to get the services they need (https://alpha.openaddressesuk.org/blog/2015/02/09/living-breathing-problem).
+Address services available today can be expensive to use, many organisations simply can’t afford them. Meanwhile the quality is inconsistent, it can take months to make new addresses visible leaving [the people who live or work there unable to get the services they need](https://alpha.openaddressesuk.org/blog/2015/02/09/living-breathing-problem).
 
 Open Addresses will provide high quality data that is both affordable and sustainable. It will make UK address data better for everyone.
 
@@ -43,7 +43,7 @@ Everyone who uses Open Addresses’ services, or who uses services that are buil
 
 There’s still much to do.
 
-We need to develop our services into things that we are happy to call Beta and eventually Live, increase our address list, add more trialists, develop additional services, grow our community and find more sponsorship so that we are ready to take on new challenges.
+We'd like to expand our current services and develop new ones, increase our address list, sign up new trialists, grow our community and secure further sponsorship to bring our services into Beta.
 
 Open Addresses is wholly owned by the not-for-profit [Open Data Institute](https://theodi.org/). We have to create revenues and sponsorship to sustain our operations but will always make the bulk address data available to download in full, for free as open data.
 

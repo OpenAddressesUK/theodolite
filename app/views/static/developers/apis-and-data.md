@@ -34,7 +34,9 @@ By submitting addresses you, or your organisation become part of our collaborati
 
 If you do choose to submit addresses in this way then please read and adhere to the [Submission Guidelines](https://github.com/OpenAddressesUK/sorting_office#subguidelines) and ensure that your site's terms and conditions provide appropriate information to your users.
 
-Detailed documentation for this API can be found at [https://github.com/OpenAddressesUK/sorting_office](https://github.com/OpenAddressesUK/sorting_office) whilst the API itself can be tested at [https://sorting-office.openaddressesuk.org/](https://sorting-office.openaddressesuk.org/).
+Detailed documentation for this API can be found at [https://github.com/OpenAddressesUK/sorting_office](https://github.com/OpenAddressesUK/sorting_office).
+
+A technical demonstration of the API can be found at [https://sorting-office.openaddressesuk.org/](https://sorting-office.openaddressesuk.org/).
 
 <h2 id='search'>Search for address(es)</h2>
 
