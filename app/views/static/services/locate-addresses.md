@@ -80,6 +80,6 @@ In the future we plan to expand this service to capture and publish the latitude
 
 ##### Implementation
 
-To implement this service you simply use our [search API](/developers/apis-and-data#search). The API returns the latitude and longitude for the centre of the postcode along with every known address.
+To implement this service you simply use our [search API](/developers/search). The API returns the latitude and longitude for the centre of the postcode along with every known address.
 
 If you want our help in implementing the service, want to share your ideas or want to ask the community a question then we would suggest either using the [forums](https://github.com/OpenAddressesUK/forum) or dropping us an email to [info@openaddressesuk.org](mailto:info@openaddressesuk.org).

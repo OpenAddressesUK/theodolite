@@ -18,8 +18,8 @@ The Open Addresses address parsing service can parse each of these formats into 
 
 ##### Implementation
 
-This service uses our [Sorting Office API](/developers/apis-and-data#sortingoffice) to parse data into a single, consistent format.
+This service uses our [Sorting Office API](/developers/sortingoffice) to parse data into a single, consistent format.
 
-Some use cases, such as address matching or data cleansing, may also benefit from our [confidence API](/developers/apis-and-data#confidence) to understand how confident we are that the parsed data is a real address.
+Some use cases, such as address matching or data cleansing, may also benefit from our [confidence API](/developers/confidence) to understand how confident we are that the parsed data is a real address.
 
 If you want our help in implementing the service, want to share your ideas or want to ask the community a question then we would suggest either using the [forums](https://github.com/OpenAddressesUK/forum) or dropping us an email to [info@openaddressesuk.org](mailto:info@openaddressesuk.org).
