@@ -142,10 +142,12 @@ layout: default
         <h3 property="dct:title">Open Addresses dataset (downloadable, full)</h3>
         <p property="dct:description">
           As above, but including:
+        </p>
           <ul>
-            <li>references to the live, persistent URIs of each component of the address and of the address itself, and
-            <li>provenance information.
+            <li>references to the live, persistent URIs of each component of the address and of the address itself, and</li>
+            <li>provenance information.</li>
           </ul>
+        <p>
           The CSV files in this distribution do not have one line per address, but one line <b>for each provenance element being described</b>. The actual address is repeated for every row. Rows referring to the same addresses can be identified as they have the same address URI (the 'url' column).
         </p>
 
