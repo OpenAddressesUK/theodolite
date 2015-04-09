@@ -13,13 +13,23 @@ layout: mission-hero
 
 Addresses are part of our everyday lives. They are where we live, work and visit, connecting us to local communities and services we rely on. There is a hidden complexity and cost in the process of locating addresses, entering addresses online, and  accessing an accurate address list. We’re here to change this, to make things simpler and better.
 
-Together with a growing network of contributors we’re building the nation’s first free and open address list, available for anyone to use and share as open data.
+#### What we are creating
 
-We’re creating accessible services that meet the needs of the public sector, organisations and most importantly, meet the needs of the people and communities who live and work at UK addresses. Since launching our Alpha services in January 2015 we have begun to unlock the full potential of an open address list. We have seen heightened demand amongst local authorities, organisations and people; we have shaped our services as a response to their valuable feedback.
+Together with a growing network of contributors we’re building the nation’s first free and open address list. A list that is available for anyone to use and share as open data and which is maintained collaboratively.
 
-Address services available today can be expensive to use, many organisations simply can’t afford them. Meanwhile the quality is inconsistent, it can take months to make new addresses visible leaving [the people who live or work there unable to get the services they need](https://alpha.openaddressesuk.org/blog/2015/02/09/living-breathing-problem).
+We’re creating services that will improve the way we use addresses. Services that meet the needs of service providers and most importantly, meet the needs of the people and communities who live and work at UK addresses.
 
-Open Addresses will provide high quality data that is both affordable and sustainable. It will make UK address data better for everyone.
+Since launching our Alpha services in January 2015 we have begun to unlock the full potential to improve addresses in the UK. We have seen wide interest amongst local authorities, organisations and people; we have shaped our services as a response to their valuable feedback.
+
+Open Addresses will provide high quality data and services that are both affordable and sustainable. It will make UK address data better for everyone.
+
+#### The problem we are solving and the benefits we create
+
+Address services available today can be expensive to use: many organisations, particularly smaller ones, simply can’t afford them.
+
+Meanwhile the quality is inconsistent, it can take months to make new addresses visible leaving [the people who live or work there unable to get the services they need](https://alpha.openaddressesuk.org/blog/2015/02/09/living-breathing-problem).
+
+Solving these problems will create [many benefits](/get-involved/sponsors#benefits) - for both now and the future. It's time to bring addresses into the digital age.
 
 #### Building an open and collaborative culture
 

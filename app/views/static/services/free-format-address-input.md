@@ -6,17 +6,13 @@ Make a website more accessible with our simple address entry service. Suitable f
 
 This service is in **Alpha**.
 
-#### Description
+*Demonstration coming soon. In the meantime you can see how we use it on our [own site](/get-involved/add-an-address).*
 
-The address entry service will ease website user journeys, make your website more accessible and increase order completion rates, particularly for users with low digital skills. The service removes the need for address drop-down boxes or multi-field entry that requires users to know how an address is structured within your database. Instead the computer does the hard work and your user's life is simpler.
+Free-format address input eases website user journeys. It makes your website more accessible and increases order completion rates. This service is particularly useful for sites or apps where the user base includes people with have low digital skills. The service removes the need for address drop-down boxes or multi-field entry that requires users to know how an address is structured within your database. Instead the computer does the hard work and your user's life is simpler.
 
 This is a straightforward service to implement, powered by APIs that structure addresses based on our knowledge of roads, towns, postcodes and how they relate to one another.
 
 The APIs do not rely on our full address list. In fact they allow users to enter new addresses and you can, if you choose, contribute those new addresses to the platform so that you and your users can help make UK address data better for everyone.
-
-##### Demonstration
-
-*Coming soon*
 
 ##### Implementation
 

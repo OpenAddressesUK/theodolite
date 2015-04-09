@@ -34,6 +34,8 @@
 - title: Services
   path: /services
   children:
+    - title: Overview
+      path: /services/services-overview
     - title: Free-Format Address Input
       path: /services/free-format-address-input
     - title: Type-ahead Address Input
@@ -46,8 +48,6 @@
       path: /services/new-service-creation
     - title: Data Enrichment
       path: /services/data-enrichment
-    - title: Something Missing
-      path: /services/something-missing
 
 - title: Get involved
   path: /about/involved

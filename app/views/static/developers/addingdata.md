@@ -5,15 +5,19 @@ layout: default
 
 This page contains guidelines for providing datasets to the Open Addresses platform. The guidelines will evolve over time.
 
-- <a href='#adding-an-individual-address'>Adding an individual address</a>
-- <a href='#adding-an-individual-address'>Adding multiple addresses</a>
-- <a href='#i-work-for-a-local-authority-that-wants-to-contribute-new-addresses'>I work for a local authority that wants to contribute new addresses</a>
-- <a href='#i-work-for-an-organisation-that-wants-to-contribute-addresses'>I work for an organisation that wants to contribute  addresses</a>
-- <a href='#i-work-for-an-organisation-that-wants-to-contribute-historic-addresses'>I work for an organisation that wants to contribute historic addresses</a>
-- <a href='#i-want-to-help-source-a-large-dataset'>I want to help source a large dataset</a>
-- <a href='#what-to-do-if-you-believe-your-ip-is-being-infringed'>What to do if you believe your IP is being infringed</a>
+We have set up a [Trello board](https://trello.com/b/UXqgc1wy/datasets) to allow people to debate ideas on sourcing datasets, share the workload, and to minimise duplication of effort. There's lots to get stuck into there so don't be shy!
 
-We’d love to hear your views on how this guide can be improved. Send your suggestion directly to [info@openaddressesuk.org](mailto:info@openaddressesuk.org).
+We’d love to hear your views on how this guide can be improved. Send your suggestion directly to [info@openaddressesuk.org](mailto:info@openaddressesuk.org) or submit a [pull request](https://github.com/OpenAddressesUK/theodolite/tree/master/app/views/static).
+
+What do you want to do?
+
+- <a href='#adding-an-individual-address'>Add an individual address</a>
+- <a href='#adding-an-individual-address'>Add multiple addresses</a>
+- <a href='#i-work-for-a-local-authority-that-wants-to-contribute-new-addresses'>find out how a local authority can contribute new addresses</a>
+- <a href='#i-work-for-an-organisation-that-wants-to-contribute-addresses'>find out how other service providers can contribute  addresses</a>
+- <a href='#i-work-for-an-organisation-that-wants-to-contribute-historic-addresses'>find out how organisations can contribute historic addresses</a>
+- <a href='#i-want-to-help-source-a-large-dataset'>find out how to help source a large dataset</a>
+- <a href='#what-to-do-if-you-believe-your-ip-is-being-infringed'>report that your IP is being infringed</a>
 
 ## Adding an individual address
 
@@ -23,7 +27,7 @@ Want to see how our API handles different addresses formats? Go to our technical
 
 ## Adding multiple addresses
 
-Our API page [describes](/developers/apis-and-data#submitmany) the services that can allow you to do this. Please remember to read the submission guidelines.
+Our API page [describes](/developers/submitmany) the services that can allow you to do this. Please remember to read the submission guidelines.
 
 ## I work for a local authority that wants to contribute new addresses
 
@@ -49,7 +53,7 @@ The legal situation is complex but according to the opinion that we have receive
 
 If your address data is produced using one of these activities then you may want to check with your legal department and contact any third parties who supply you with address services to determine if they will authorise you to release the data under an open data licence.
 
-Once you have determined that this check is unnecessary, or have received confirmation that you can publish the data, then if you wish to contribute bulk addresses follow the process described [here](/developers/apis-and-data#submitmany).
+Once you have determined that this check is unnecessary, or have received confirmation that you can publish the data, then if you wish to contribute bulk addresses follow the process described [here](/developers/submitmany).
 
 Alternatively if you wish to implement a more detailed level of integration then our services and APIs will allow to you to contribute addresses whilst benefitting from the services that the Open Addresses platform supports.
 
@@ -67,9 +71,9 @@ The legal situation is complex but according to the opinion that we have receive
 + Taking an existing list of addresses and correcting them based on information from a third-party owned dataset
 + Using a third-party owned dataset to add a field containing a linked identifier
 
-If you know that your historic addresses were produced using one of these activities then you may want to check with your  legal department and contact any third parties who supplied you with address services to determine if they will authorise you to release the data under an open data licence.
+If you know that your historic addresses were produced using one of these activities then you may want to check with your legal department and contact any third parties who supplied you with address services to determine if they will authorise you to release the data under an open data licence.
 
-If you determine that there are no third party rights or once you have received this confirmation then you can contribute historic bulk address data through the process described [here](/developers/apis-and-data#submitmany).
+If you determine that there are no third party rights, once you have received this confirmation of if your reasonable due diligence shows none of these activities occuring in the past then you can contribute historic bulk address data through the process described [here](/developers/submitmany).
 
 ## I want to help source data from organisations
 

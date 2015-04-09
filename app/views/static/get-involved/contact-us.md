@@ -4,8 +4,8 @@ title: Contact us
 
 The [team](/about/team) can be contacted on:
 
-+ [on the forum](https://github.com/OpenAddressesUK/forum)
-+ [on twitter](https://twitter.com/OpenAddressesUK)
++ [the forum](https://github.com/OpenAddressesUK/forum)
++ [Twitter](https://twitter.com/OpenAddressesUK)
 + [or by email](mailto:info@openaddressesuk.org)
 
 Any media enquiries should be directed to Emma Thwaites:
