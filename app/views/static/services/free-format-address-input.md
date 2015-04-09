@@ -12,13 +12,13 @@ Free-format address input eases website user journeys. It makes your website mor
 
 This is a straightforward service to implement, powered by APIs that structure addresses based on our knowledge of roads, towns, postcodes and how they relate to one another.
 
-The APIs do not rely on our full address list. In fact they allow users to enter new addresses and you can, if you choose, contribute those new addresses to the platform so that you and your users can help make UK address data better for everyone.
+The APIs do not rely on us having a full address list. In fact, they allow users to enter addresses of new properties and you can, if you choose, contribute those new addresses to the platform so that you and your users can help make UK address data better for everyone.
 
 ##### Implementation
 
 To implement a basic version of this service you can use our [Sorting Office API](/developers/apis-and-data#sortingoffice) to interpret the results of a simple text entry box.
 
-Some organisations may wish to also check how [confident](/developers/apis-and-data#sortingoffice) we are in the results to determine whether an address is unusual enough to require an extra confirmation step with the user.
+Some organisations may wish to also check how [confident](/developers/apis-and-data#confidence) we are in the results to determine whether an address is unusual enough to require an extra confirmation step with the user.
 
 That extra confidence step is likely to include presenting the interpreted address back to the user for confirmation or correction before the user journey proceeds.
 
