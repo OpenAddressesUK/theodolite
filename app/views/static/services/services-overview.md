@@ -1,8 +1,15 @@
 ---
 title: Service Overview
+layout: mission-hero
 ---
 
-What kind of service are you looking for?
+<div class="content-hero">
+  <div class="content-hero-gfx"><%= image_tag 'mission-hero-image.png' %></a></div>
+  <div class="content-hero-content">
+    <h1>Service Overview</h1>
+    <p>What kind of service are you looking for?</p>
+  </div>
+</div>
 
 We have services to improve how your website handles addresses:
 
