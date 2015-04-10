@@ -1,12 +1,12 @@
 ---
-title: Mission
+title: Vision
 layout: mission-hero
 ---
 
 <div class="content-hero">
 	<div class="content-hero-gfx"><%= image_tag 'mission-hero-image.png' %></a></div>
 	<div class="content-hero-content">
-		<h1>Our Mission</h1>
+		<h1>Our Vision</h1>
 		<p>Making UK address data better for everyone.</p>
 	</div>
 </div>

@@ -6,7 +6,7 @@ To carry out [our mission](/mission) and make UK addresses better for everyone w
  
 <h2 id='newsponsors'>New sponsors</h2>
  
-If you’re an organisation and wish to become a sponsor to help realise the [benefits](#benefits) that Open Addresses can bring to the UK then please [contact us](mailto:info@openaddressesuk.org).
+If you’re an organisation and wish to become a sponsor to help realise the [benefits](/mission/benefits) that Open Addresses can bring to the UK then please [contact us](mailto:info@openaddressesuk.org).
 
 <h2 id='individuals'>Individual Donations</h2>
  
@@ -21,20 +21,9 @@ Join us and our community as an individual supporter. There are a number of ways
  
 If you want to donate time and expertise then our [Developers section](/developers/apis-and-data) lists some ways that developers can assist whilst our page on [adding data](/developers/addingdata) lists a number of ways that anyone can help us to grow the address list.
 
-Alternatively why not contact your local authority or favourite service provider and explain to them that you want the [benefits](#benefits) that Open Addresses can bring?
+Alternatively why not contact your local authority or favourite service provider and explain to them that you want the [benefits](/mission/benefits) that Open Addresses can bring?
 
 <h2 id='currentsponsors'>Current Sponsors</h2>
 
 [Cabinet Office](http://theodi.org/news/383k-government-grant-released-to-create-uk-open-address-list) 
  
-<h2 id='benefits'>Benefits</h2>
- 
-**Social and economic value** - one other country, Denmark, has successfully managed to release their address data as open data. A [study]( http://www.epsiplatform.eu/content/value-danish-address-data#sthash.66jSkCtU.dpuf) in 2010 determined that this created yearly economic and social value of €14 million. If this figure scales in proportion to the population of the country then the UK can expect to see £110 million a year of social and economic value.
- 
-**More people can get access to address data** – many organisations, particularly small organisations serving local needs, cannot afford to use address data at the moment. In Denmark releasing addresses as open data led to a 1000% increase in the number of organisations using accurate address data.
- 
-**Higher speed and quality**  - over the last decade the UK has averaged 130,000 new homes every year. It can take months before those new addresses are published and visible so that the people who live or work there can [access the services they need](https://alpha.openaddressesuk.org/blog/2015/02/09/living-breathing-problem). By fixing this issue we will improve service delivery and improve people’s lives.
- 
-**New service creation** – our unique, persistent identifiers will easily allow new services to be created that authoritatively link to addresses. The easiest example of such a new service is a service to store delivery instructions and allows people to say where and how they like physical goods to be delivered (“drop parcels in the shed at the back”, “the house is at the end of the lane just past the farm”). A more future-looking example would be drone delivery (“to deliver to address [A] land at point {X, Y, Z} after following flight-path {D >E > F > G}”).
- 
-**Innovation and thought leadership** – We believe that we are the first open data organisation to track provenance and determine confidence in the data that we publish. Our approach to improving addresses and building a complete list through collaboration can be easily replicated worldwide and to other parts of the UK’s [National Information Infrastructure](https://www.gov.uk/government/publications/national-information-infrastructure/national-information-infrastructure).

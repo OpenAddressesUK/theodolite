@@ -4,9 +4,23 @@ title: Address Parsing
 
 Turn unstructured addresses into useful information to help you make faster, automated decisions such as address matching.
 
-This service is in **Alpha**.
+This service is in **Alpha**. It turns unstructured addresses like this: 
 
-A new demonstration of this service is coming soon but in the meantime why not play with our [technical demonstration](https://sorting-office.openaddressesuk.org) or read about how it is being used by a [political party](http://floppy.org.uk/blog/2015/03/16/provision-of-service-attack/)?
+<table cellpadding="5" cellspacing="5" border="1"><tr><td>St James' House, St James Square, Cheltenham, GL50 3PR <br>
+</td></tr></table>
+
+into structured data like this:
+
+<table cellpadding="5" cellspacing="5" border="1"><tr><td>
+SAON: <br>
+PAON: St James' House<br>
+Street: St James Square<br>
+Locality: Cheltenham<br>
+Town: <br>
+Postcode: GL50 3PR
+</td></tr></table>
+
+Why not play with our [technical demonstration](https://sorting-office.openaddressesuk.org) or read about how it is being used by a [political party](http://floppy.org.uk/blog/2015/03/16/provision-of-service-attack/)?
 
 Addresses are received and stored in many different formats such as multi-line free text in letters, data stored in historic databases and systems or new data received through web forms. It can be difficult to act on address data because of its complexity.
 

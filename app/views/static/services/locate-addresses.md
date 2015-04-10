@@ -6,73 +6,7 @@ Find out where addresses are located by looking up the latitude and longitude fo
 
 This service is in **Alpha**.
 
-##### Demonstration
-
-<script>
-  function filterSearch(){
-    // cribbed off stackoverflow like a boss: https://stackoverflow.com/questions/2417928/delete-empty-values-from-forms-params-before-submitting-it
-    form = jQuery("#search");
-    form.find(':input', this).each(function() {
-        this.disabled = !($(this).val());
-    });
-  }
-
-  // Make sure form elements are enabled (needed for Firefox)
-  form = jQuery("#search");
-  form.find(':input', this).each(function() {
-    this.disabled = false;
-  });
-</script>
-
-<form action="/addresses" class="address-search" role="form" id="search" onSubmit="filterSearch(); return true" >
-
-  <label class="sr-only" for="street">Street name</label>
-  <input type="text" class="form-control" id="street" name="street" placeholder="Street name" value="<%= params[:street]%>">
-
-  <label class="sr-only" for="town">Town or City</label>
-  <input type="text" class="form-control" id="town" name="town" placeholder="Town or City" value="<%= params[:town]%>">
-
-  <label class="sr-only" for="postcode">Postcode</label>
-  <input type="text" class="form-control" id="postcode" name="postcode" placeholder="Postcode" value="<%= params[:postcode]%>">
-
-  <button type="submit" class="btn btn-primary">Search</button>
-
-</form>
-
-<% if @addresses %>
-
-  <% if @addresses.count == 0 %>
-
-    <div class="alert alert-warning" role="alert">
-      <p>Sorry, there were no results for your query.</p>
-    </div>
-
-  <% else %>
-
-    <h2 class="address-search-results-title">Results</h2>
-    <%= alternate_link_buttons(class: 'address-search-alt-button') %>
-
-    <hr>
-
-    <div id="map" class="address-search-results-map"><%= image_tag 'fake-map.png' %></div><!-- FAKE MAP NEEDS REPLACING BEFORE LAUNCH -->
-
-    <ul class="address-search-results-list">
-    <% @addresses.each do |address| %>
-
-      <li data-latlng="<%= address.postcode.lat_lng.to_a.join(",") %>"><%= link_to address.full_address, address %></li>
-
-    <% end %>
-    </ul>
-
-    <%= paginate @addresses %>
-
-  <% end %>
-
-  <hr>
-
-  <%= render 'addresses/address_submit' %>
-
-<% end %>
+You can try out this service out using our [search page](/addresses).
 
 Locating an address may sound simple but it can be surprisingly hard. Open Addresses makes it easy. The location of an address can be used to plan delivery routes, determine geographic distance from physical services (“how many addresses are within 1000m of this pharmacy?”, “where is the nearest drug advice centre?”) or be displayed on maps to support data visualisations.
 

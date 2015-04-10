@@ -11,19 +11,19 @@ layout: mission-hero
   </div>
 </div>
 
-We have services to improve how your website handles addresses:
+We can provide services that help to improve online user experience:
 
 + [free-format address input](/services/free-format-address-input)
 + [type-ahead address input](/services/type-ahead-address-input)
 + [locate addresses](/services/locate-addresses)
 
-We have services that can improve how your back-end IT systems handle addresses:
+If your challenge is elsewhere then these services can help automate processing of addresses or enriching them with other data:
 
 + [parse addresses](/services/parse-addresses)
 + [locate addresses](/services/locate-addresses)
 + [data enrichment](/services/data-enrichment)
 
-All of the services in this section are built from our APIs, unique persistent identifiers or by downloading our full address list. Why not [build your own](/services/new-service-creation)?
+All services in this section are built from our APIs, unique persistent identifiers or by downloading our full address list. Why not [build your own](/services/new-service-creation)?
 
 #### Is Something Missing?
 

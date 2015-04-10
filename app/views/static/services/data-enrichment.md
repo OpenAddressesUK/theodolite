@@ -6,14 +6,16 @@ Download high-quality, well-structured address data in bulk to enrich other data
 
 This service is in **Alpha**.
 
-Bulk data can be [downloaded through the site](/developers/download).
+<%= image_tag("data-enrichment.png", alt: "Data enrichment") %>
+
+Bulk data can be [downloaded in the Developer section](/developers/download).
 
 The bulk data can be used for many purposes:
 
 + To discover how many addresses are in a town
-+ To determine the specific addresses within a given radius of a location
++ To determine  specific addresses within a radius of a location
 + To help plan where to locate a new shop, a community broadband project or a new community centre
-+ To link to other datasets to discover which local authority an address is in or the demographics of a given area
++ To link to other datasets to discover which local authority an address is in or determine the likely demographics of an address
 
 Why not let the [Open Addresses community](https://github.com/OpenAddressesUK/forum) know what you will use it for?
 

@@ -1,25 +1,11 @@
-- title: News
-  path: /news
-
-- title: Blog
-  path: /blog
-
-- title: Developers
-  path: /developers
-  children:
-    - title: Search the data
-      path: /addresses
-    - title: APIs & data download
-      path: /developers/apis-and-data
-    - title: Adding Data
-      path: /developers/addingdata
-    - title: Documents & guides
-      path: /developers/docs
-    - title: Forums
-      path: /developers/forums
 
 - title: Mission
   path: /mission
+  children:
+    - title: Vision
+      path: /mission/vision
+    - title: Benefits
+      path: /mission/benefits
 
 - title: About
   path: /about
@@ -44,10 +30,30 @@
       path: /services/locate-addresses
     - title: Address Parsing
       path: /services/address-parsing
-    - title: New Service Creation
-      path: /services/new-service-creation
     - title: Data Enrichment
       path: /services/data-enrichment
+    - title: New Service Creation
+      path: /services/new-service-creation
+
+- title: Developers
+  path: /developers
+  children:
+    - title: Search the data
+      path: /addresses
+    - title: APIs & data download
+      path: /developers/apis-and-data
+    - title: Adding Data
+      path: /developers/addingdata
+    - title: Documents & guides
+      path: /developers/docs
+    - title: Forums
+      path: /developers/forums
+
+- title: News
+  path: /news
+
+- title: Blog
+  path: /blog
 
 - title: Get involved
   path: /about/involved
