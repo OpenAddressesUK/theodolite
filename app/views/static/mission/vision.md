@@ -61,6 +61,4 @@ Open Addresses is wholly owned by the not-for-profit [Open Data Institute](https
 
 There is a [rich history](http://www.huffingtonpost.co.uk/jeni-tennison/a-brief-history-of-open-a_b_6485628.html?) of addresses in the UK. Let's write the next chapter together.
 
-<<<<< Infographic here https://docs.google.com/a/openaddress.es/file/d/0BzdD3NC5YSzOSl9hb2NGVmRMRTA/edit>>>>>>
-
 Want to know more? Just drop us an email to [info@openaddressesuk.org](mailto:info@openaddressesuk.org)
