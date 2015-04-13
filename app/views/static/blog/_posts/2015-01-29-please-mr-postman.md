@@ -3,6 +3,8 @@ author: Emma Thwaites
 title: Please Mr Postman, No More Junk!
 ---
 
+<div class="content-meta">Article by Emma Thwaites, on 29th January '15</div>
+
 In a recent discussion on [Slashdot](http://search.slashdot.org/story/15/01/15/1447259/first-crowdsourced-open-data-address-list-launches-in-the-uk), one contributor reflected on how delighted they would be if the volume of unsolicited post received at home were to increase: “by soaking shredded junk mail I can then use a cheap briquette press to give me free winter fuel” mused an Anonymous Coward with, we suspect, his or her tongue only partially in their cheek.
 
 It’s fair to say that this is a minority view and over the past couple of weeks, we’ve had more than a few folk tell us that they are concerned by the possibility that Open Addresses UK might provide “carte blanche” to direct marketers.
@@ -36,4 +38,3 @@ As for junk mail, the reality is that the most reliable way to prevent getting i
 
 In the interests of keeping warm this winter, we suspect that the Anonymous Coward is unlikely to be registering with the MPS anytime soon!
 
-Author: Emma Thwaites

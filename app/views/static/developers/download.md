@@ -1,7 +1,9 @@
 ---
-title: Get the data
-layout: notitle
+title: Data Download
+layout: default
 ---
+
+
 <div prefix="dcat: http://www.w3.org/ns/dcat#
              foaf: http://xmlns.com/foaf/0.1/
              rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
@@ -9,7 +11,7 @@ layout: notitle
 
 <div typeof="dcat:Catalog" resource="http://alpha.openaddressesuk.org<%=request.path%>">
 
-      <h1 property="dct:title">Open Addresses Data</h1>
+      <p property="dct:title">Open Addresses Data
 
       <p property="dct:description">
           The Open Addresses dataset is available through the <a href="/addresses">search function</a>; through <a href="/about/docs#publishingapis">the publishing APIs</a>; and for download on this page.
@@ -26,6 +28,9 @@ layout: notitle
         <span property="dct:title">Creative Commons Attribution 4.0 International (CC BY 4.0) licence</span>
       </a>. The database contains data that, in its original form, was previously licensed under the UK Open Government Licence or the Ordnance Survey Open Data Licence, subject to Crown copyright and Crown database rights. Read more about our sources <a href="/about/docs#sources">here</a>.
     </p>
+<p>
+             If you think that some of your or your organisation’s Intellectual Property has been published through the Open Addresses Platform please <a href="/about/reportaninfringement">report the infringement</a>.
+</p>
 
     <p property="dct:publisher" resource="http://openaddressesuk.org">
       Published by
@@ -140,10 +145,12 @@ layout: notitle
         <h3 property="dct:title">Open Addresses dataset (downloadable, full)</h3>
         <p property="dct:description">
           As above, but including:
+        </p>
           <ul>
-            <li>references to the live, persistent URIs of each component of the address and of the address itself, and
-            <li>provenance information.
+            <li>references to the live, persistent URIs of each component of the address and of the address itself, and</li>
+            <li>provenance information.</li>
           </ul>
+        <p>
           The CSV files in this distribution do not have one line per address, but one line <b>for each provenance element being described</b>. The actual address is repeated for every row. Rows referring to the same addresses can be identified as they have the same address URI (the 'url' column).
         </p>
 
@@ -238,3 +245,4 @@ layout: notitle
 
   </div>
 </div>
+

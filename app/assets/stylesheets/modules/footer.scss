@@ -1,0 +1,39 @@
+
+/* Footer */
+
+.footer {
+	padding: 34px 0;
+	font-size:14px;
+	@extend %clearfix;
+}
+
+.footer > * {
+	float:left;
+	width:25%;
+	@include mq(smartphone) {
+		float:none;
+		width:auto;
+		margin-bottom:20px;
+	}
+}
+
+.footer-logo img {
+	width:200px;
+}
+
+.footer-social-links {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+.footer > address {
+	color:#ccc;
+	font-style: normal;
+}
+
+.footer-nav {
+	margin-top:0;
+	list-style:none;
+	padding:0;
+}

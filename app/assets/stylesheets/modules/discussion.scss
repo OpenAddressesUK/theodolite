@@ -1,0 +1,76 @@
+
+/* Discussion */
+
+.discussion {
+	clear:both;
+	padding-top:50px;
+	padding-bottom:70px;
+	@extend %clearfix;
+	@include mq(smartphone) {
+		padding-top:40px;
+		padding-bottom:40px;
+	}
+}
+
+.discussion h2 {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 30px;
+	opacity: .8;
+	margin-top: 0;
+	margin-bottom: 19px;
+}
+
+.discussion-blocks > div {
+	width: 34.133333%;
+	float:left;
+	background:white;
+	padding: 27px 27px 14px 27px;
+	border-radius: 3px;
+	margin: 0 -5px;
+	font-size:14px;
+	position:relative;
+	@include mq(smartphone) {
+		width:auto;
+		float:none;
+		margin:0 0 20px 0;
+	}
+}
+
+.discussion-blocks > div h3 {
+	font-weight: 400;
+	margin:0;
+	font-size: 22px;
+	line-height: 1.2;
+}
+
+.discussion-blocks > div h3 a {
+	@include background-underline($orange, 0.6);
+}
+
+.discussion-blocks > div ul {
+	list-style: none;
+	padding:0;
+}
+
+.discussion-blocks > div:nth-child(2) {
+	background:$purple;
+	color:white;
+	margin-top: 42px;
+	z-index: 1;
+	@include mq(smartphone) {
+		margin-top: 0;
+	}
+}
+
+.discussion-blocks > div:nth-child(3) {
+	background:white;
+
+}
+
+.discussion-blocks .subtitle {
+	font-weight: 600;
+	padding-bottom: 6px;
+	display: inline-block;
+}

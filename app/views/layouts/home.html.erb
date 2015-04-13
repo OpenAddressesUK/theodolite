@@ -1,26 +1,132 @@
 <!DOCTYPE html>
 <html>
-  <%= render partial: 'shared/head' %>
+<%= render partial: 'shared/head' %>
 <body>
 
-  <div class="home">
-    <%= render partial: 'shared/alpha' %>
-    <%= image_tag "photos/competition-winner.jpg", alt: "open addresses" %>
+  <div class="page-home">
 
-    <%= render partial: 'shared/navigation' %>
+    <div class='container'>
+      <div class='page-header'>
+        <a href='/'><%= image_tag 'logo.png', :class => "logo" %></a>
+        <%= render partial: 'shared/navigation' %>
+      </div>
+    </div>
 
     <div class="container">
+      <%# content_for?(:content) ? yield(:content) : yield %>
+    </div>
 
-      <%= content_for?(:content) ? yield(:content) : yield %>
+    <div class="home-hero">
+      <h2>Making  UK address data better for everyone</h2>
+      <p>Addresses are part of our everyday lives. They pinpoint where we live, work and visit, connecting us to local communities and services we rely on. There is a hidden complexity and cost in the process of locating addresses, entering addresses online, and accessing an accurate address list. We’re here to change this, to make things simpler and better.</p>
+      <a href="/mission/vision">Learn more</a>
+       <%= image_tag 'home-gfx-mobile.png', :class => "home-gfx-mobile" %>
+      <%= image_tag 'home-gfx.png', :class => "home-gfx" %>
+    </div>
 
-      <p class="pull-right">
-        <small>Photo credit: <a href="https://www.flickr.com/photos/128455568@N03/">Susannah Wheeler</a>
-      </p>
+    <div class="container">
+      <div class="home-ctas">
+           <div class="home-cta">
+          <h2><a href="/get-involved/add-an-address">Donate Address Data</a></h2>
+          <p>Everyone who uses Open Addresses will benefit from every address donation. Collaborate with us and together we can create better address data that everyone can use.</p> 
+        </div>
+        <div class="home-cta">
+          <h2><a href="/developers/apis-and-data">Open Addresses For Your Apps</a></h2>
+          <p>Developers! We’re looking for exciting and interesting ways Open Addresses can be used in your app or service. Get started with our APIs.</p>
+        </div>
+        <div class="home-cta">
+          <h2><a href="/get-involved/trialists">Partnering with Open Addresses</a></h2>
+          <p>There should be no barriers to accessing vital national data such as the list of UK addresses. Try Open Addresses within your organisation and begin the journey of using and publishing open data.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper wrapper-orange">
+      <div class="container">
+        <div class="case-study">
+          <div class="case-study-gfx"><%= image_tag 'case-study-something-new-gfx.png' %></div>
+          <div class="case-study-content">
+            <span class="subtitle">Case study</span>
+            <h2>Addressing political issues</h2>
+            <p><strong>Something New is a political party who face a challenge faced by many organisations: hundreds of emails from a variety of people each interested in different issues. Some issues were national; some issues were local - for example an issue with the nearby hospital; some were hyperlocal - for example concerns over a local park.</strong></p>
+            <p>To help them process this flood of information, they used Open Addresses’ services to  automatically parse and locate addresses in incoming emails. Open Addresses makes this simple to do with services that can interpret the variety of formats that people use when writing their home address in an email and turn the data into meaningful information.</p>
+            <p>Open Addresses allows Something New to more easily understand where issues are being raised from and provide a tailored response. It helps Something New engage more voters and it helps the voters get their voices heard.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="wrapper wrapper-corner-gfx-1">
+    <div class="container">
+      <div class="home-services">
+        <h2>Services</h2>
+        <div class="home-services-list">
+          <div class="service">
+            <h3><a href="/services/free-format-address-input">Free-format address input</a></h3>
+            <p>Make a website more accessible with our simple address entry service that is suitable for all users, from those with high digital skills to those with less confidence.</p>
+          </div>
+          <div class="service">
+            <h3><a href="/services/type-ahead-address-input">Type-ahead address input</a></h3>
+            <p>Make user journeys faster and increase the order completion rate on websites targetted at more tech-savvy users.</p>
+          </div>
+          <div class="service">
+            <h3><a href="/services/locate-addresses">Locate Addresses</a></h3>
+            <p>Find out where addresses are located by looking up the latitude and longitude for a postcode.</p>
+          </div>
+          <div class="service">
+            <h3><a href="/services/address-parsing">Address Parsing</a></h3>
+            <p>Turn unstructured addresses into useful information to help you make faster, automated decisions such as address matching.</p>
+          </div>
+          <div class="service">
+            <h3><a href="/services/new-service-creation">New Service Creation</a></h3>
+            <p>Create innovative services with the use of our unique, persistent URLs for every town, postcode and address.</p>
+          </div>
+          <div class="service">
+            <h3><a href="/services/data-enrichment">Data Enrichment</a></h3>
+            <p>Download high-quality, well-structured address data in bulk to enrich other data sources.</p>
+          </div>
+          <div class="service">
+            <h3><a href="#">Is Something Missing?</a></h3>
+            <p>Our platform and APIs can support many needs. <a href="mailto:info@openaddressesuk.org">Get in touch</a> to discuss your particular address challenges and discover if we can help.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <%= render partial: 'shared/footer' %>
-  <%= render partial: 'shared/footer_scripts' %>
+  <div class="wrapper wrapper-light-gray">
+    <div class="container">
+      <div class="discussion">
+        <h2>Updates</h2>
+        <div class="discussion-blocks">
+          <div>
+          <span class="subtitle">Latest news</span>
+            <h3><a href="/news/2015/02/04/open-data-camp">Open Addresses UK to sponsor Open Data Camp</a></h3>
+            <p>Open Addresses UK has announced that it will be sponsoring Open Data Camp 2015 on February 21st and 22nd in Winchester.</p>
+          </div>
+          <div>
+            <span class="subtitle">Latest blog</span>
+            <h3><a href="/blog/2015/02/12/inference">Multiplying addresses</a></h3>
+            <p>Postcode area ‘ZE’ is the black sheep of the launch edition of the Open Addresses UK dataset. It was generated (or “distilled”) from our source data on 10th December 2014, and we knew only 117 addresses belonging to it at the time.</p>
+          </div>
+          <div>
+            <span class="subtitle">Get in touch</span>
+            <h3>If you didn’t find something that you were looking for then let us know</h3>
+            <ul>
+              <li><a href="https://github.com/OpenAddressesUK/forum">On the forum</a></li>
+              <li><a href="https://twitter.com/OpenAddressesUK">On Twitter</a></li>
+              <li><a href="mailto:info@openaddressesuk.org">By email</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<%= render partial: 'shared/footer' %>
+<%= render partial: 'shared/footer_scripts' %>
 
 </body>
 </html>

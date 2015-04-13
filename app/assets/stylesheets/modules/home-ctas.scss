@@ -1,0 +1,74 @@
+
+/* Home CTAs */
+
+.home-ctas {
+	padding-top:70px;
+	padding-bottom:70px;
+	@extend %clearfix;
+	@include mq(smartphone) {
+		padding-top:40px;
+		padding-bottom:40px;
+	}
+}
+
+.home-cta {
+	position: relative;
+	min-height: 1px;
+	padding-right: 30px;
+	padding-left: 30px;
+	float:left;
+	width:33.333333%;
+	text-align:center;
+	@include mq(medium) {
+		padding-right: 10px;
+		padding-left: 10px;	
+	}
+	@include mq(smartphone) {
+		float:none;
+		width:auto;
+		margin-bottom:20px;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+}
+
+.home-cta h2 {
+	font-size:22px;
+	color:$orange;
+	display:inline;
+	@include background-underline(#fa4d20, 0.6);
+	font-weight: 600;
+}
+
+.home-cta h2 span {
+}
+
+.home-cta p {
+	font-size:14px;
+}
+
+.home-cta-data-indicator {
+	text-transform: uppercase;
+	font-size: 14px;
+	color:#9f9f9f;
+}
+
+.home-cta-data-indicator span {
+	text-transform: none;
+	display:inline-block;
+	background: #FAF3D7;
+	border-radius:50px;
+	height:100px;
+	width:100px;
+	padding-top: 14px;
+	font-size: 45px;
+	font-weight:700;
+	color: rgb(163, 53, 124);
+	margin-right: 4px;
+}
+
+.home-cta-data-indicator span em {
+	font-size: 17px;
+	font-style: normal;
+	margin-left: 3px;
+}

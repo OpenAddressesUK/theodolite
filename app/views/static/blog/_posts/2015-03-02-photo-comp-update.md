@@ -3,6 +3,8 @@ author: Patrice John-Baptise
 title: Picture an Address - nominees and winner announced this week
 ---
 
+<div class="content-meta">Article by Patrice John-Baptiste, on 2nd March '15</div>
+
 Last month, we launched our [Picture An Address photography competition](https://openaddressesuk.org/blog/2015/01/14/picture-an-address). We asked you to creatively capture, in one photograph, “what an address means to you”, offering the winning photographer £500 of photography vouchers.
 
 It’s been an adventurous journey for our three [judges](https://openaddressesuk.org/blog/2015/01/21/Picture-an-Address-Judges-Announced), photographer [Paul Clarke](http://paulclarke.com/), Director of External Affairs at the Science Museum Group, [Roger Highfield](http://www.rogerhighfield.com/), and Director at Open Addresses UK [Jeni Tennison](http://alpha.openaddressesuk.org/about/team). The trio have sifted through a spellbinding pile of photography submissions that creatively depict representations of addresses across the UK and have made their decision. The Open Addresses UK photography competition winner will be crowned this week along with a selection of nominees that impressed the judges most - how exciting!
@@ -29,5 +31,3 @@ As a result of the photography competition we have had a selection of invaluable
 
 Wishing the best of luck to all entrants!
 
-
-Author: Patrice John-Baptise

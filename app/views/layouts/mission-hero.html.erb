@@ -1,0 +1,16 @@
+<% content_for :content do %>
+<div class='content'>
+	<!-- <h1><%= @metadata['title'] %></h1> -->
+	<%= yield %>
+	</div>
+	<ul class="share-links">
+		<li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+		<li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+		<li><a href="#" class="google"><i class="fa fa-google-plus"></i></a></li>
+		<li><a href="#" class="youtube"><i class="fa fa-youtube-play"></i></a></li>
+	</ul>
+	<%# include 'breadcrumb' %>
+<% end %>
+
+<%= render template: "layouts/application" %>
+

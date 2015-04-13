@@ -3,6 +3,8 @@ author: Patrice John-Baptiste
 title: Picture an Address - Personal monuments
 ---
 
+<div class="content-meta">Article by Patrice John-Baptiste, on 5th March '15</div>
+
 It’s almost crunch time! ‘Personal Monuments’ is the last of our [Picture an Address photography competition](https://openaddressesuk.org/blog/2015/01/14/picture-an-address) shortlist themes. We’re shifting our attention to entries that move away from the conventional building to other objects and monuments.
 
 Unfortunately, it’s difficult to accurately locate public monuments using the postcode system alone. Postcodes were initially designed to aid the postal service in delivering letters to addresses (that’s a location with a letterbox). Although [bridges might appear on postage stamps](http://www.bbc.co.uk/news/uk-england-31729166) we’re pretty sure that [very few of them](http://www.bbc.co.uk/news/uk-england-berkshire-24028902) have a letterbox for incoming mail, making it slightly harder to pinpoint monuments of interest to the public.
@@ -28,6 +30,3 @@ Remember we’re announcing the winner of £500 photography vouchers tomorrow! K
 #### Register an address
 
 [Open Addresses UK](https://openaddressesuk.org/) contains addresses directly provided from individuals and sourced from open data sources. Individuals and organisations are being asked to get involved by submitting data via the Open Addresses UK website. Help us to build the nation’s first free and accessible address list, available for everyone to use by submitting your address [here](https://openaddressesuk.org/).
-
-
-Author: Patrice John-Baptiste

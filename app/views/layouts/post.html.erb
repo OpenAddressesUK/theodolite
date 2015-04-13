@@ -1,8 +1,9 @@
 <% content_for :content do %>
   <div class="container">
-    <%=content%>
     
-    <p><% if page.author %> By <%=page.author%> on <% end %> <%= page.date | date_to_long_string %></p>
+    <p><% if post.author %> By <%=post.author%> on <% end %> <%= post.date | date_to_long_string %></p>
+
+    <%= yield %>
     
     <div>
       <%= include 'comments' %>

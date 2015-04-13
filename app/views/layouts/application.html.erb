@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <%= render partial: 'shared/head' %>
-<body>
+<%= render partial: 'shared/head' %>
+<body class="<%= yield(:body_class)%>">
 
-  <%= render partial: 'shared/alpha' %>
+  <div class="page-content">
 
-  <div class='page-header'>
-  	<div class='container'>
-  		<a href='/'><%= image_tag 'logo.png' %></a>
-  	</div>
+    <div class='container'>
+      <div class='page-header'>
+        <a href='/'><%= image_tag 'logo.png', :class => "logo" %></a>
+        <%= render partial: 'shared/navigation' %>
+      </div>
+    </div>
+
+    <div class='container container-content'>
+        <%= content_for?(:content) ? yield(:content) : yield %>
+    </div>
+
+    <%= render partial: 'shared/footer' %>
+    <%= render partial: 'shared/footer_scripts' %>
+
   </div>
-
-  <%= render partial: 'shared/navigation' %>
-
-  <div class='container'>
-    <%= content_for?(:content) ? yield(:content) : yield %>
-  </div>
-
-  <%= render partial: 'shared/footer' %>
-  
-  <%= render partial: 'shared/footer_scripts' %>
-  
 </body>
 </html>

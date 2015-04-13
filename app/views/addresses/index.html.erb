@@ -1,3 +1,6 @@
+
+<h1 class="address-search-title">Search for an address</h1> 
+
 <script>
   function filterSearch(){
     // cribbed off stackoverflow like a boss: https://stackoverflow.com/questions/2417928/delete-empty-values-from-forms-params-before-submitting-it
@@ -14,41 +17,39 @@
   });
 </script>
 
-<form action="/addresses" class="well form-inline" role="form" id="search" onSubmit="filterSearch(); return true" >
-	<div class="form-group">
-		<label class="sr-only" for="street">Street</label>
-		<input type="text" class="form-control" id="street" name="street" placeholder="Street" value="<%= params[:street]%>">
-	</div>
-	<div class="form-group">
-		<label class="sr-only" for="town">Town</label>
-		<input type="text" class="form-control" id="town" name="town" placeholder="Town or City" value="<%= params[:town]%>">
-	</div>
-	<div class="form-group">
-		<label class="sr-only" for="postcode">Postcode</label>
-		<input type="text" class="form-control" id="postcode" name="postcode" placeholder="Postcode" value="<%= params[:postcode]%>">
-	</div>
-  <div class="form-group">
-	   <button type="submit" class="btn btn-primary">Search for addresses</button>
-  </div>
+<form action="/addresses" class="address-search" role="form" id="search" onSubmit="filterSearch(); return true" >
+
+  <label class="sr-only" for="street">Street name</label>
+  <input type="text" class="form-control" id="street" name="street" placeholder="Street name" value="<%= params[:street]%>">
+
+  <label class="sr-only" for="town">Town or City</label>
+  <input type="text" class="form-control" id="town" name="town" placeholder="Town or City" value="<%= params[:town]%>">
+
+  <label class="sr-only" for="postcode">Postcode</label>
+  <input type="text" class="form-control" id="postcode" name="postcode" placeholder="Postcode" value="<%= params[:postcode]%>">
+
+  <button type="submit" class="btn btn-primary">Search</button>
+
 </form>
 
 <% if @addresses %>
 
   <% if @addresses.count == 0 %>
+
     <div class="alert alert-warning" role="alert">
       <p>Sorry, there were no results for your query.</p>
     </div>
 
-    <%= render 'addresses/address_submit' %>
   <% else %>
 
-    <%= render 'addresses/address_submit' %>
+    <h2 class="address-search-results-title">Results</h2>
+    <%= alternate_link_buttons(class: 'address-search-alt-button') %>
 
-    <h1>Results:</h1>
+    <hr>
 
-    <div id="map"></div>
+    <div id="map" class="address-search-results-map"></div>
 
-    <ul>
+    <ul class="address-search-results-list">
     <% @addresses.each do |address| %>
 
       <li data-latlng="<%= address.postcode.lat_lng.to_a.join(",") %>"><%= link_to address.full_address, address %></li>
@@ -58,8 +59,10 @@
 
     <%= paginate @addresses %>
 
-    <%= alternate_link_buttons(class: 'btn btn-sm btn-primary') %>
-
   <% end %>
+
+  <hr>
+
+  <%= render 'addresses/address_submit' %>
 
 <% end %>

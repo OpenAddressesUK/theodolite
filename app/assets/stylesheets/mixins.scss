@@ -1,0 +1,151 @@
+
+/* Mixins */
+
+
+/* Media queries */
+
+@mixin mq($point) {
+    @if $point==wide {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    }
+    @else if $point==smartphone {
+        @media (max-width: 767px) {
+            @content;
+        }
+    }
+    @else if $point==above-smartphone {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+   @else if $point==medium {
+        @media (min-width: 768px) and (max-width:1199px) {
+            @content;
+        }
+    }/*  
+    @else if $point==above-medium {
+        @media (min-width:921px) {
+            @content;
+        }
+    } */
+}
+
+@mixin resetListStyles() {
+    li {
+        padding-left: 0;
+    }
+
+    li:before {
+        content: none;
+    	margin-left: 0;
+    	position: relative;
+    }
+}
+
+
+/* Font size */
+
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+
+
+/* Bootstrapesque columns */
+
+@mixin is-row($padding: 15px) {
+    margin-right: $padding * -1;
+    margin-left: $padding * -1;
+}
+
+@mixin is-col($cols: 3, $padding: 15px) {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: $padding;
+    padding-right: $padding;
+    width: 100% / $cols;
+    @media screen and (max-width: 767px) {
+        float: none;
+        width: auto;
+        margin-bottom: 2em;
+    }
+}
+
+/* CF */
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+}
+
+/* CSS3 stuff */
+
+@mixin transition($arguments...) {
+    -webkit-transition: $arguments;
+    -moz-transition: $arguments;
+    -ms-transition: $arguments;
+    -o-transition: $arguments;
+    transition: $arguments;
+}
+
+@mixin transform($string) {
+    -webkit-transform: $string;
+    -moz-transform: $string;
+    -ms-transform: $string;
+    -o-transform: $string;
+    transform: $string;
+}
+
+@mixin translate3d ($x,$y: 0, $z: 0) {
+    -webkit-transform: translate3d($x, $y, $z);
+    -moz-transform: translate3d($x, $y, $z);
+    -ms-transform: translate3d($x, $y, $z);
+    -o-transform: translate3d($x, $y, $z);
+    transform: translate3d($x, $y, $z);
+}
+
+@mixin background-underline ($color, $fade) {
+  $gradcolor: transparentize($color, $fade);
+  background: -moz-linear-gradient(top, $gradcolor 0%, $gradcolor 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$gradcolor), color-stop(100%,$gradcolor)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, $gradcolor 0%,$gradcolor 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, $gradcolor 0%,$gradcolor 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, $gradcolor 0%,$gradcolor 100%); /* IE10+ */
+  background: linear-gradient(to bottom, $gradcolor 0%,$gradcolor 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color', endColorstr='$color',GradientType=0 ); /* IE6-9 */
+  background-size: 2px 0.13em;
+  background-position: 0 bottom;
+  background-repeat: repeat-x;
+
+  .is-ie9 & {
+    text-decoration:underline;
+  }
+
+  /*
+
+  I tried inline SVG as an alternative but it was a pain and actually didn't work at all in IE11 though I don't know why :(
+
+  $gradcolor: fade(@color, @fade);
+
+  // Non URL encoded inline SVG
+  //background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"><rect width="10" height="10" x="0" y="0" fill="@{gradcolor}"/></svg>');
+
+  // URL encoded inline SVG 
+  background-image: url('data:image/svg+xml;utf8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210px%22%20height%3D%2210px%22%3E%3Crect%20width%3D%2210%22%20height%3D%2210%22%20x%3D%220%22%20y%3D%220%22%20fill%3D%22@{gradcolor}%22%2F%3E%3C%2Fsvg%3E');
+  
+  background-size: 0.14em;
+  background-position: 0 0.9em;
+
+  */
+
+}

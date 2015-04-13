@@ -3,6 +3,8 @@ author: Peter Wells
 title: Picture an Address - a photography competition
 ---
 
+<div class="content-meta">Article by Peter Wells, on 14th January '15</div>
+
 Fancy yourself a dab hand with a camera, an outside the box thinker, or, quite simply, someone that loves a challenge? 
 
 WE NEED YOU!

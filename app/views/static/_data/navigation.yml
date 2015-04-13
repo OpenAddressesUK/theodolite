@@ -1,43 +1,71 @@
+
+- title: Mission
+  path: /mission
+  children:
+    - title: Vision
+      path: /mission/vision
+    - title: Benefits
+      path: /mission/benefits
+
 - title: About
   path: /about
   children:
-    - title: Vision
-      path: /about/vision
-    - title: Team
+    - title: Meet the team
       path: /about/team
-    - title: FAQ
-      path: /about/data/faq
-
-
-- title: Search the data
-  path: /addresses
-
-- title: Documentation
-  children:
-    - title: Download 
-      path: /data
-    - title: APIs 
-      path: /about/apidocu
-    - title: Technology Overview
-      path: /about/docs
-    - title: Adding Data
-      path: /about/addingdata
-    - title: Report an Infringement
+    - title: Privacy policy
+      path: /about/privacy
+    - title: Report an infringment
       path: /about/reportaninfringement
-    - title: Business Model
-      path: /about/business
+
+- title: Services
+  path: /services
+  children:
+    - title: Overview
+      path: /services/services-overview
+    - title: Free-Format Address Input
+      path: /services/free-format-address-input
+    - title: Type-ahead Address Input
+      path: /services/type-ahead-address-input
+    - title: Locate Addresses
+      path: /services/locate-addresses
+    - title: Address Parsing
+      path: /services/address-parsing
+    - title: Data Enrichment
+      path: /services/data-enrichment
+    - title: New Service Creation
+      path: /services/new-service-creation
+
+- title: Developers
+  path: /developers
+  children:
+    - title: Search the data
+      path: /addresses
+    - title: APIs & data download
+      path: /developers/apis-and-data
+    - title: Adding Data
+      path: /developers/addingdata
+    - title: Documents & guides
+      path: /developers/docs
+    - title: Forums
+      path: /developers/forums
+
+- title: News
+  path: /news
+
+- title: Blog
+  path: /blog
 
 - title: Get involved
   path: /about/involved
-
-- title: News and blog
   children:
-    - title: Blog
-      path: /about/blog
-    - title: News
-      path: /about/news
-    - title: Useful links
-      path: /about/links
+    - title: Add an address 
+      path: /get-involved/add-an-address
+    - title: Trialists 
+      path: /get-involved/trialists
+    - title: Sponsors
+      path: /get-involved/sponsors
+    - title: Contact us
+      path: /get-involved/contact-us
 
 
 

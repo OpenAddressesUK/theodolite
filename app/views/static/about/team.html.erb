@@ -1,36 +1,32 @@
 ---
 title: Team
+layout: team
 ---
 
 <% site_data(:team).each do |member| %>
-  <div class="media">
-    <div class="media-body">
-      <h3 class="media-heading"><%= member['name'] %></h3>
-      <h4 class="media-heading"><%= member['role'] %></h4>
-      <div class='row'>
-        <div class='col-sm-9'>
-          <% [member['bio']].flatten.each do |paragraph| %>
-            <p>
-              <%= markdown paragraph %>
-            </p>
-          <% end %>
-        </div>
-        <div class='col-sm-3'>
-          <div class='thumbnail'>
-            <% if member['image'] %>
-              <%= image_tag member['image'], alt: member['name'], class: "team-photo" %>
-            <% end %>
-            <div class="caption">
-              <% if member['twitter'] %>
-                <a href="http://twitter.com/<%=member['twitter']%>">
-                  <i class='fa fa-twitter'></i>
-                  @<%=member['twitter']%>
-                </a>
-              <% end %>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="team-member">
+
+    <div class='thumbnail'>
+      <% if member['image'] %>
+        <%= image_tag member['image'], alt: member['name'], class: "team-photo" %>
+      <% end %>
+    </div><!-- thumbnail -->
+
+    <h1 class="media-heading"><%= member['name'] %></h1>
+    <h2 class="media-heading"><%= member['role'] %></h2>
+
+     <% if member['twitter'] %>
+          <a href="http://twitter.com/<%=member['twitter']%>">
+            <i class='fa fa-twitter'></i>
+            @<%=member['twitter']%>
+          </a>
+        <% end %>
+    
+    <% [member['bio']].flatten.each do |paragraph| %>
+      <p>
+        <%= markdown paragraph %>
+      </p>
+    <% end %>
+    
   </div>
 <% end %>
