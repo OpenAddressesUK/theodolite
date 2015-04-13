@@ -16,8 +16,11 @@ layout: default
       <p property="dct:description">
           The Open Addresses dataset is available through the <a href="/addresses">search function</a>; through <a href="/about/docs#publishingapis">the publishing APIs</a>; and for download on this page.
       </p>
-       <p>
-          The downloadable data is generated on a weekly basis.</b></a>
+<p>
+             If you think that some of your or your organisation’s Intellectual Property has been published through the Open Addresses Platform please <a href="/about/reportaninfringement">report the infringement</a>.
+</p>
+      <p>
+          The downloadable data is generated on a weekly basis.</b></a>.
       </p>
     <p property="dct:license" resource="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/">
       The Open Addresses dataset is licensed as Open Data under the

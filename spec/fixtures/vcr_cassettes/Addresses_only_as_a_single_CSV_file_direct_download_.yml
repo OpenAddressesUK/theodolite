@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://s3-eu-west-1.amazonaws.com/<AWS_BUCKET>/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - fog/1.24.0
+      Date:
+      - Tue, 31 Mar 2015 14:54:51 +0000
+      Authorization:
+      - AWS <AWS_ACCESS_KEY>:/vFAfakMHh2l1fI8ICVLqBGR9LY=
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      X-Amz-Id-2:
+      - m6OwpOVwsyUMjQxa39VNAKkMgNadxH8hQEO3CMfHu+yRkjwhSQKB7gr8dy6+i2FiHeIrBTL4qgA=
+      X-Amz-Request-Id:
+      - 26DCF8228EC4F14C
+      Date:
+      - Tue, 31 Mar 2015 14:54:52 GMT
+      Content-Type:
+      - application/xml
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?>
+        <ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name><AWS_BUCKET></Name><Prefix></Prefix><Marker></Marker><MaxKeys>1000</MaxKeys><IsTruncated>false</IsTruncated><Contents><Key>2014-01-01-openaddressesuk-addresses-only-split.csv.zip</Key><LastModified>2015-03-31T14:39:08.000Z</LastModified><ETag>&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</ETag><Size>0</Size><Owner><ID>6ebddfb040c4de581424d5a5896f3df8cd8cc0678725054d612ebda6746cf958</ID><DisplayName>tech</DisplayName></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2014-01-01-openaddressesuk-addresses-only-split.json.zip</Key><LastModified>2015-03-31T14:39:10.000Z</LastModified><ETag>&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</ETag><Size>0</Size><Owner><ID>6ebddfb040c4de581424d5a5896f3df8cd8cc0678725054d612ebda6746cf958</ID><DisplayName>tech</DisplayName></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2014-01-01-openaddressesuk-addresses-only.csv.zip</Key><LastModified>2015-03-31T14:39:05.000Z</LastModified><ETag>&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</ETag><Size>0</Size><Owner><ID>6ebddfb040c4de581424d5a5896f3df8cd8cc0678725054d612ebda6746cf958</ID><DisplayName>tech</DisplayName></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2014-01-01-openaddressesuk-addresses-only.json.zip</Key><LastModified>2015-03-31T14:39:07.000Z</LastModified><ETag>&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</ETag><Size>0</Size><Owner><ID>6ebddfb040c4de581424d5a5896f3df8cd8cc0678725054d612ebda6746cf958</ID><DisplayName>tech</DisplayName></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2014-01-01-openaddressesuk-full-split.csv.zip</Key><LastModified>2015-03-31T14:39:18.000Z</LastModified><ETag>&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</ETag><Size>0</Size><Owner><ID>6ebddfb040c4de581424d5a5896f3df8cd8cc0678725054d612ebda6746cf958</ID><DisplayName>tech</DisplayName></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2014-01-01-openaddressesuk-full-split.json.zip</Key><LastModified>2015-03-31T14:39:20.000Z</LastModified><ETag>&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</ETag><Size>0</Size><Owner><ID>6ebddfb040c4de581424d5a5896f3df8cd8cc0678725054d612ebda6746cf958</ID><DisplayName>tech</DisplayName></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2014-01-01-openaddressesuk-full.csv.zip</Key><LastModified>2015-03-31T14:39:11.000Z</LastModified><ETag>&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</ETag><Size>0</Size><Owner><ID>6ebddfb040c4de581424d5a5896f3df8cd8cc0678725054d612ebda6746cf958</ID><DisplayName>tech</DisplayName></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2014-01-01-openaddressesuk-full.json.zip</Key><LastModified>2015-03-31T14:39:16.000Z</LastModified><ETag>&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</ETag><Size>0</Size><Owner><ID>6ebddfb040c4de581424d5a5896f3df8cd8cc0678725054d612ebda6746cf958</ID><DisplayName>tech</DisplayName></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>open_addresses_database/</Key><LastModified>2015-03-31T14:34:57.000Z</LastModified><ETag>&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</ETag><Size>0</Size><Owner><ID>6ebddfb040c4de581424d5a5896f3df8cd8cc0678725054d612ebda6746cf958</ID><DisplayName>tech</DisplayName></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>open_addresses_database/2014-01-01-openaddressesuk-addresses-only-split.csv.zip</Key><LastModified>2015-03-31T14:40:12.000Z</LastModified><ETag>&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</ETag><Size>0</Size><Owner><ID>6ebddfb040c4de581424d5a5896f3df8cd8cc0678725054d612ebda6746cf958</ID><DisplayName>tech</DisplayName></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>open_addresses_database/2014-01-01-openaddressesuk-addresses-only-split.json.zip</Key><LastModified>2015-03-31T14:40:13.000Z</LastModified><ETag>&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</ETag><Size>0</Size><Owner><ID>6ebddfb040c4de581424d5a5896f3df8cd8cc0678725054d612ebda6746cf958</ID><DisplayName>tech</DisplayName></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>open_addresses_database/2014-01-01-openaddressesuk-addresses-only.csv.zip</Key><LastModified>2015-03-31T14:40:08.000Z</LastModified><ETag>&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</ETag><Size>0</Size><Owner><ID>6ebddfb040c4de581424d5a5896f3df8cd8cc0678725054d612ebda6746cf958</ID><DisplayName>tech</DisplayName></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>open_addresses_database/2014-01-01-openaddressesuk-addresses-only.json.zip</Key><LastModified>2015-03-31T14:40:09.000Z</LastModified><ETag>&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</ETag><Size>0</Size><Owner><ID>6ebddfb040c4de581424d5a5896f3df8cd8cc0678725054d612ebda6746cf958</ID><DisplayName>tech</DisplayName></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>open_addresses_database/2014-01-01-openaddressesuk-full-split.csv.zip</Key><LastModified>2015-03-31T14:40:18.000Z</LastModified><ETag>&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</ETag><Size>0</Size><Owner><ID>6ebddfb040c4de581424d5a5896f3df8cd8cc0678725054d612ebda6746cf958</ID><DisplayName>tech</DisplayName></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>open_addresses_database/2014-01-01-openaddressesuk-full-split.json.zip</Key><LastModified>2015-03-31T14:40:19.000Z</LastModified><ETag>&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</ETag><Size>0</Size><Owner><ID>6ebddfb040c4de581424d5a5896f3df8cd8cc0678725054d612ebda6746cf958</ID><DisplayName>tech</DisplayName></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>open_addresses_database/2014-01-01-openaddressesuk-full.csv.zip</Key><LastModified>2015-03-31T14:40:14.000Z</LastModified><ETag>&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</ETag><Size>0</Size><Owner><ID>6ebddfb040c4de581424d5a5896f3df8cd8cc0678725054d612ebda6746cf958</ID><DisplayName>tech</DisplayName></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>open_addresses_database/2014-01-01-openaddressesuk-full.json.zip</Key><LastModified>2015-03-31T14:40:16.000Z</LastModified><ETag>&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</ETag><Size>0</Size><Owner><ID>6ebddfb040c4de581424d5a5896f3df8cd8cc0678725054d612ebda6746cf958</ID><DisplayName>tech</DisplayName></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>open_addresses_database/2014-03-31-openaddressesuk-addresses-only-split.csv.zip</Key><LastModified>2015-03-31T14:41:08.000Z</LastModified><ETag>&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</ETag><Size>0</Size><Owner><ID>6ebddfb040c4de581424d5a5896f3df8cd8cc0678725054d612ebda6746cf958</ID><DisplayName>tech</DisplayName></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>open_addresses_database/2014-03-31-openaddressesuk-addresses-only-split.json.zip</Key><LastModified>2015-03-31T14:41:10.000Z</LastModified><ETag>&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</ETag><Size>0</Size><Owner><ID>6ebddfb040c4de581424d5a5896f3df8cd8cc0678725054d612ebda6746cf958</ID><DisplayName>tech</DisplayName></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>open_addresses_database/2014-03-31-openaddressesuk-addresses-only.csv.zip</Key><LastModified>2015-03-31T14:41:03.000Z</LastModified><ETag>&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</ETag><Size>0</Size><Owner><ID>6ebddfb040c4de581424d5a5896f3df8cd8cc0678725054d612ebda6746cf958</ID><DisplayName>tech</DisplayName></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>open_addresses_database/2014-03-31-openaddressesuk-addresses-only.json.zip</Key><LastModified>2015-03-31T14:41:05.000Z</LastModified><ETag>&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</ETag><Size>0</Size><Owner><ID>6ebddfb040c4de581424d5a5896f3df8cd8cc0678725054d612ebda6746cf958</ID><DisplayName>tech</DisplayName></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>open_addresses_database/2014-03-31-openaddressesuk-full-split.csv.zip</Key><LastModified>2015-03-31T14:41:16.000Z</LastModified><ETag>&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</ETag><Size>0</Size><Owner><ID>6ebddfb040c4de581424d5a5896f3df8cd8cc0678725054d612ebda6746cf958</ID><DisplayName>tech</DisplayName></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>open_addresses_database/2014-03-31-openaddressesuk-full-split.json.zip</Key><LastModified>2015-03-31T14:41:17.000Z</LastModified><ETag>&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</ETag><Size>0</Size><Owner><ID>6ebddfb040c4de581424d5a5896f3df8cd8cc0678725054d612ebda6746cf958</ID><DisplayName>tech</DisplayName></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>open_addresses_database/2014-03-31-openaddressesuk-full.csv.zip</Key><LastModified>2015-03-31T14:41:12.000Z</LastModified><ETag>&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</ETag><Size>0</Size><Owner><ID>6ebddfb040c4de581424d5a5896f3df8cd8cc0678725054d612ebda6746cf958</ID><DisplayName>tech</DisplayName></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>open_addresses_database/2014-03-31-openaddressesuk-full.json.zip</Key><LastModified>2015-03-31T14:41:13.000Z</LastModified><ETag>&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</ETag><Size>0</Size><Owner><ID>6ebddfb040c4de581424d5a5896f3df8cd8cc0678725054d612ebda6746cf958</ID><DisplayName>tech</DisplayName></Owner><StorageClass>STANDARD</StorageClass></Contents></ListBucketResult>
+    http_version: 
+  recorded_at: Tue, 31 Mar 2015 14:54:52 GMT
+- request:
+    method: get
+    uri: https://s3-eu-west-1.amazonaws.com/<AWS_BUCKET>/open_addresses_database/2014-03-31-openaddressesuk-addresses-only.csv.zip?acl
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - fog/1.24.0
+      Date:
+      - Tue, 31 Mar 2015 14:54:52 +0000
+      Authorization:
+      - AWS <AWS_ACCESS_KEY>:QLCj+tkCO7hfi7yUW1hawirxC3A=
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      X-Amz-Id-2:
+      - iyUEcB/DSQNxPSqFXFz80hVwPD5+5SlxlXJS0hOu+rtfOMapvSgsN3rQi9mND/qgUGNwzpZmc+k=
+      X-Amz-Request-Id:
+      - E03EA0AF9A4D5AAD
+      Date:
+      - Tue, 31 Mar 2015 14:54:53 GMT
+      Content-Type:
+      - application/xml
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?>
+        <AccessControlPolicy xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Owner><ID>6ebddfb040c4de581424d5a5896f3df8cd8cc0678725054d612ebda6746cf958</ID><DisplayName>tech</DisplayName></Owner><AccessControlList><Grant><Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CanonicalUser"><ID>6ebddfb040c4de581424d5a5896f3df8cd8cc0678725054d612ebda6746cf958</ID><DisplayName>tech</DisplayName></Grantee><Permission>FULL_CONTROL</Permission></Grant><Grant><Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Group"><URI>http://acs.amazonaws.com/groups/global/AllUsers</URI></Grantee><Permission>READ</Permission></Grant></AccessControlList></AccessControlPolicy>
+    http_version: 
+  recorded_at: Tue, 31 Mar 2015 14:54:52 GMT
+recorded_with: VCR 2.9.3

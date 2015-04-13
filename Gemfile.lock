@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: git://github.com/openaddressesuk/mongoid_address_models.git
-  revision: 0d8ff459de52438853239b3bca88ab1b90856bd9
+  revision: 92d4965cded6a302d6c00d2d47b08aa3f9dc218c
   specs:
     mongoid_address_models (0.0.1)
       mongoid
@@ -24,6 +24,13 @@ GIT
   specs:
     alternate_rails (0.0.2)
       rails (>= 3.2.13)
+
+GIT
+  remote: git://github.com/theodi/jiffybag.git
+  revision: 664e9f96335acfcc1240d8f3f4c41e3e33ab56c1
+  specs:
+    jiffybag (1.0.0)
+      dotenv (~> 1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -89,6 +96,7 @@ GEM
       multi_json
     erubis (2.7.0)
     eventmachine (1.0.4)
+    excon (0.44.4)
     execjs (2.2.2)
     factory_girl (4.5.0)
       activesupport (>= 3.0.0)
@@ -97,12 +105,50 @@ GEM
       railties (>= 3.0.0)
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
+    fog (1.24.0)
+      fog-brightbox
+      fog-core (~> 1.23)
+      fog-json
+      fog-radosgw (>= 0.0.2)
+      fog-sakuracloud (>= 0.0.4)
+      fog-softlayer
+      ipaddress (~> 0.5)
+      nokogiri (~> 1.5, >= 1.5.11)
+    fog-brightbox (0.6.1)
+      fog-core (~> 1.22)
+      fog-json
+      inflecto
+    fog-core (1.24.0)
+      builder
+      excon (~> 0.38)
+      formatador (~> 0.2)
+      mime-types
+      net-scp (~> 1.1)
+      net-ssh (>= 2.1.3)
+    fog-json (1.0.0)
+      multi_json (~> 1.0)
+    fog-radosgw (0.0.3)
+      fog-core (>= 1.21.0)
+      fog-json
+      fog-xml (>= 0.0.1)
+    fog-sakuracloud (0.1.1)
+      fog-core
+      fog-json
+    fog-softlayer (0.3.23)
+      fog-core
+      fog-json
+    fog-xml (0.1.1)
+      fog-core
+      nokogiri (~> 1.5, >= 1.5.11)
+    formatador (0.2.5)
     gabba (1.0.1)
     hike (1.2.3)
     httparty (0.13.3)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
     i18n (0.7.0)
+    inflecto (0.0.2)
+    ipaddress (0.8.0)
     jbuilder (2.2.6)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
@@ -122,6 +168,7 @@ GEM
       mime-types (>= 1.16, < 3)
     method_source (0.8.2)
     mime-types (2.4.3)
+    mini_portile (0.6.2)
     minitest (5.5.0)
     mongoid (4.0.0)
       activemodel (~> 4.0)
@@ -145,6 +192,11 @@ GEM
     multi_json (1.10.1)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
+    net-scp (1.2.1)
+      net-ssh (>= 2.6.5)
+    net-ssh (2.9.1)
+    nokogiri (1.6.6.2)
+      mini_portile (~> 0.6.0)
     optionable (0.2.0)
     origin (2.1.1)
     pry (0.10.1)
@@ -202,7 +254,7 @@ GEM
       rspec-mocks (~> 3.0.0)
       rspec-support (~> 3.0.0)
     rspec-support (3.0.4)
-    ruby-progressbar (1.7.1)
+    ruby-progressbar (1.7.5)
     safe_yaml (1.0.4)
     sass (3.2.19)
     sass-rails (4.0.5)
@@ -242,6 +294,7 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
+    vcr (2.9.3)
     webmock (1.20.4)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
@@ -258,10 +311,12 @@ DEPENDENCIES
   database_cleaner
   dotenv-rails
   factory_girl_rails
+  fog
   gabba
   httparty
   jbuilder (~> 2.0)
   jekylly!
+  jiffybag!
   jquery-rails
   json_spec
   kaminari
@@ -280,4 +335,5 @@ DEPENDENCIES
   uglifier (>= 1.3.0)
   uk_postcode
   unicorn
+  vcr
   webmock

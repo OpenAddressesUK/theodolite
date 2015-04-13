@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get '/addresses/download' => "addresses#download"
+
   resources :addresses
 
   get '/streets' => "address_parts#streets", as: "streets"

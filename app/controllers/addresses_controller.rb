@@ -4,6 +4,7 @@ class AddressesController < ApplicationController
   before_filter :build_query, only: :index
   before_filter :pagination, only: :index
   before_filter(:only => [:index, :show]) { alternate_formats [:json] }
+  before_filter :build_regex, only: :download
 
   def show
     @address = Address.find(params[:id])
@@ -28,6 +29,16 @@ class AddressesController < ApplicationController
     else
       render "addresses/index"
     end
+  end
+
+  def download
+    directory = FOG_CONNECTION.directories.get(JiffyBag['AWS_BUCKET'])
+    files = directory.files.to_a.select { |f| @regex =~ f.key }
+    file = files.sort_by { |f| f.last_modified }.last
+
+    torrent = params[:torrent] == "true" ? "?torrent" : ""
+
+    redirect_to "#{file.public_url}#{torrent}"
   end
 
   private
@@ -70,5 +81,11 @@ class AddressesController < ApplicationController
         paginate @addresses
         respond_to :json, :html
       end
+    end
+
+    def build_regex
+      split = params[:split] == "true" ? "\-split" : ""
+      type = params[:provenance] == "true" ? "full" : "addresses\-only"
+      @regex = /openaddressesuk\-#{type}#{split}\.#{params[:format]}\.zip$/
     end
 end
