@@ -7,8 +7,7 @@ layout: mission-hero
 	<div class="content-hero-gfx"><%= image_tag 'mission-hero-image.png' %></a></div>
 	<div class="content-hero-content">
 		<h1>Benefits</h1>
-		<p>>Benefits</h1>
-		<p>Ranging from an estimated £110million a year of social and economic value to higher quality data and new services.</p>
+		<p>Ranging from an estimated £110million a year of social and economic value to higher quality data and enabling new services.</p>
 	</div>
 </div>
 
