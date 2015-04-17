@@ -114,6 +114,7 @@
 	background:#f0e0d9;
 	padding:20px;
 	margin-bottom:15px;
+	clear: both;
 }
 
 .address-search-address-submit-cta a {
@@ -187,7 +188,7 @@
 #submission-guidelines {
 	width:auto;
 	@include mq(smartphone) {
-		margin-top: 70px;	
+		margin-top: 70px;
 	}
 }
 .address-search-address-submit-form #submission-guidelines {
@@ -196,4 +197,18 @@
 		width:auto;
 		margin-top: 70px;
 	}
+}
+
+.address-view {
+	@include is-row();
+	.address, .map {
+		@include is-col(2);
+	}
+	.map {
+		padding: 25px;
+	}
+}
+
+.submit-wrapper {
+	@include is-row();
 }

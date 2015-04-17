@@ -1,18 +1,23 @@
-<%= render 'addresses/address_submit' %>
-
 <script src="//cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
 <%= javascript_include_tag 'proj4-compressed.js' %>
 <%= javascript_include_tag 'proj4leaflet.js' %>
 <%= javascript_include_tag 'openspace-leaflet.js' %>
 
-<div id="map" style="width: 600px; height: 475px; border: 1px solid black;"></div>
+<div class="address-view">
+	<div class="address">
+		<h1 data-latlng="<%= @address.postcode.lat_lng.to_a.join(",") %>">
+			<% @address.full_address_lines.each do |line| %>
+				<%= line %><br>
+			<% end %>
+		</h1>
 
-<h1 data-latlng="<%= @address.postcode.lat_lng.to_a.join(",") %>">
-	<% @address.full_address_lines.each do |line| %>
-		<%= line %><br>
-	<% end %>
-</h1>
+		<%= render 'addresses/address_validate' %>
 
-<%= render 'addresses/address_validate' %>
+		<%= alternate_link_buttons(class: 'address-search-alt-button') %>
+	</div>
+	<div class="map">
+		<div id="map" style="width: 100%; height: 475px; border: 1px solid black; float: right; margin-bottom: 40px;"></div>
+	</div>
+</div>
 
-<%= alternate_link_buttons(class: 'btn btn-sm btn-default') %>
+<%= render 'addresses/address_submit' %>
