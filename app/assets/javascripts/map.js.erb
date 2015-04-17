@@ -9,7 +9,7 @@ $(document).ready(function () {
 		var popup = L.popup(),
 			openspaceLayer;
 
-		// L.Map with OS options 
+		// L.Map with OS options
 		map = new L.Map('map', {
 			crs: L.OSOpenSpace.getCRS(),
 			continuousWorld: true,
@@ -19,12 +19,12 @@ $(document).ready(function () {
 		});
 
 		// New L.TileLayer.OSOpenSpace with API Key
-		openspaceLayer = L.tileLayer.osopenspace("<%= JiffyBag['OPENSPACE_API_KEY']%>", {debug: true}); 
+		openspaceLayer = L.tileLayer.osopenspace("<%= JiffyBag['OPENSPACE_API_KEY']%>", {debug: true});
 
 		map.addLayer(openspaceLayer);
 		map.setView(OSHQ.WGS84, 1);
 
-		// add some ui elems to the map 
+		// add some ui elems to the map
 
 		var oaIcon = L.icon({
 	    	iconUrl: '/images/mapicon.png',
@@ -38,8 +38,8 @@ $(document).ready(function () {
 		$('*[data-latlng]').each(function () {
 			var latlng = $(this).attr('data-latlng').split(",");
 			console.log($(this).attr('data-latlng'));
-			var lat = latlng[0];
-			var long = latlng[1];
+			var lat = latlng[1];
+			var long = latlng[0];
 			console.log(lat);
 			console.log(long);
 			var marker = L.marker([lat, long], { icon: oaIcon, riseOnHover: true }).addTo(map);
