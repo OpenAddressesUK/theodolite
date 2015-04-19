@@ -25,5 +25,7 @@ Alternatively why not contact your local authority or favourite service provider
 
 <h2 id='currentsponsors'>Current Sponsors</h2>
 
+[British Computer Society](/news/2015/04/20/bcs-press-release)
+
 [Cabinet Office](http://theodi.org/news/383k-government-grant-released-to-create-uk-open-address-list) 
- 
+
