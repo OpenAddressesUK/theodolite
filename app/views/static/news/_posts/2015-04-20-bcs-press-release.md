@@ -1,13 +1,21 @@
 ---
 author: Patrice John-Baptiste
-title: BCS Funding a Beta Address List
+title: British Computer Society Funding a Beta Address List
 ---
 
-#### BCS, The Chartered Institute for IT sponsors the UK’s first open address list
+#### British Computer Society, BCS, The Chartered Institute for IT sponsors the UK’s first open address list
 
 *The BCS LISG Digital National Framework funds Open Addresses and Unique Property Reference Numbers open data enrichment research*
 
-The nation’s first open data address company, [Open Addresses UK](https://openaddressesuk.org) today announces funding donated by BCS, The Chartered Institute for IT’s Location Information Specialist Group’s (BCS LISG) [Digital National Framework](http://www.dnf.org/). The funding will assist in developing open address data for a better connected nation of addresses.
+<%= image_tag("logo.png", :class => "logo", alt: "Open Addresses logo") %>
+
+<%= image_tag("news/2015-04-20-BCS-w-tag.png", :class => "logo", alt: "BCS logo") %>
+
+<%= image_tag("news/2015-04-20-dnfLogo.png", :class => "logo", alt: "DNG logo") %>
+
+<br> <br> <br>
+
+The nation’s first open data address company, [Open Addresses UK](https://openaddressesuk.org) today announces funding donated by [BCS](https://www.bcs.org), The Chartered Institute for IT’s Location Information Specialist Group’s (BCS LISG) [Digital National Framework](http://www.dnf.org/). The funding will assist in developing open address data for a better connected nation of addresses.
 
 Open Addresses gathers, publishes and maintains a list of addresses, published as open data and free for everyone to use, with supporting services that make address data easier and simpler to use. The BCS LISG Digital National Framework (DNF) subgroup funds Open Addresses’ mission to provide improved accurate, affordable and accessible address data to new audiences. 
 
@@ -23,15 +31,14 @@ The Cabinet Office was the first to fund Open Addresses’ work, in December 201
 
 Jeni Tennison, Executive Director at Open Addresses said,
 
-“We’re delighted to receive this landmark funding from the British Computer Society. As our first funding beyond our initial Cabinet Office grant, this support is a demonstration of the wide interest in open address data. Addresses are a vital part of the nation’s information infrastructure. This funding will help promote the use of a common code for each address, enabling people to match and bring data together and to create better services that we can all benefit from.”
+> “We’re delighted to receive this landmark funding from the British Computer Society. As our first funding beyond our initial Cabinet Office grant, this support is a demonstration of the wide interest in open address data. Addresses are a vital part of the nation’s information infrastructure. This funding will help promote the use of a common code for each address, enabling people to match and bring data together and to create better services that we can all benefit from.”
 
 Dan Rickman, Chair of the BCS LIS Group said,
 
-“The recent Ordnance Survey announcement that Unique Property Reference Numbers (UPRNs) are to be made open data has enabled the BCS LISG to sponsor Open Addresses to apply DNF principles”.  
+> “The recent Ordnance Survey announcement that Unique Property Reference Numbers (UPRNs) are to be made open data has enabled the BCS LISG to sponsor Open Addresses to apply DNF principles”.  
 
-- Ends - 
 
-Notes to Editor
+**Notes to Editor**
 
 For media enquiries and interview bids please contact:
 Emma Thwaites - [emma.thwaites@openaddressesuk.org](mailto:emma.thwaites@openaddressesuk.org) 07990 804805
