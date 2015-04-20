@@ -10,4 +10,4 @@ This programme is suited to people and organisations who are willing to invest t
 
 We will contact trialists on a fortnightly basis to ask them detailed questions on their use of the services and bring trialists together for a bi-monthly meeting to discuss Open Addresses.
 
-If you wish to join this programme please contact us at [trialists@openaddressesuk.org](mailto:trialists@openaddressesuk.org).
+If you wish to join this programme please contact us at [info@openaddressesuk.org](mailto:info@openaddressesuk.org).
