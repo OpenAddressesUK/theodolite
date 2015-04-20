@@ -35,14 +35,14 @@ Jeni Tennison, Executive Director at Open Addresses said,
 
 Dan Rickman, Chair of the BCS LIS Group said,
 
-> “The recent Ordnance Survey announcement that Unique Property Reference Numbers (UPRNs) are to be made open data has enabled the BCS LISG to sponsor Open Addresses to apply DNF principles”.  
+> “The recent Ordnance Survey announcement that Unique Property Reference Numbers (UPRNs) are to be made open data has enabled the BCS LISG to sponsor Open Addresses to apply DNF principles.”  
 
 
 **Notes to Editor**
 
-For media enquiries and interview bids please contact:
-Emma Thwaites - [emma.thwaites@openaddressesuk.org](mailto:emma.thwaites@openaddressesuk.org) 07990 804805
-Patrice John-Baptiste - [patrice.jb@openaddressesuk.org](mailto:patrice.jb@openaddressesuk.org) 07825 988 805
+For media enquiries and interview bids please contact: <br>
+Emma Thwaites - [emma.thwaites@openaddressesuk.org](mailto:emma.thwaites@openaddressesuk.org) 07990 804805 <br>
+Patrice John-Baptiste - [patrice.jb@openaddressesuk.org](mailto:patrice.jb@openaddressesuk.org) 07825 988 805 
 
 Open Addresses UK Ltd is an independent company aiming to provide a free, and up to date national address list with its website live at [openaddressesuk.org](https://openaddressesuk.org).  The company has been set up following the award of a grant from the Cabinet Office’s Release of Data Fund. Following an initial project to investigate the feasibility of creating the address list, run by the Open Data Institute (ODI), £383k was awarded to develop the Open Addresses UK platform as an open alternative to other address databases available in the UK.
 
