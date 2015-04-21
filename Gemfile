@@ -71,4 +71,5 @@ group :test do
   gem 'webmock'
   gem 'json_spec'
   gem 'vcr'
+  gem 'timecop'
 end
