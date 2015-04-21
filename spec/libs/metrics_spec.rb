@@ -29,7 +29,7 @@ describe Metrics do
     Timecop.return
   end
 
-  it "sends the correct inferred address count to the Metrics API" do
+  it "sends the correct raw address count to the Metrics API" do
     Timecop.freeze
 
     stub_request(:get, "http://ernest.openaddressesuk.org/addresses").
@@ -40,13 +40,13 @@ describe Metrics do
                 addresses: []
               }.to_json)
 
-    stub_request(:post, "username:password@metrics.openaddressesuk.org/metrics/ernest-addresses")
+    stub_request(:post, "username:password@metrics.openaddressesuk.org/metrics/raw-addresses")
 
-    Metrics.ernest_addresses
+    Metrics.raw_addresses
 
-    expect(WebMock).to have_requested(:post, "username:password@metrics.openaddressesuk.org/metrics/ernest-addresses").
+    expect(WebMock).to have_requested(:post, "username:password@metrics.openaddressesuk.org/metrics/raw-addresses").
                     with(:body => {
-                      name: "ernest-addresses",
+                      name: "raw-addresses",
                       time: DateTime.now,
                       value: 3426371
                     }.to_json).

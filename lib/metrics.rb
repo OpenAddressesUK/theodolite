@@ -12,10 +12,10 @@ module Metrics
     create_metric("inferred-addresses", addresses)
   end
 
-  def self.ernest_addresses
+  def self.raw_addresses
     ernest = JSON.parse HTTParty.get("http://ernest.openaddressesuk.org/addresses").body
     addresses = ernest['total']
-    create_metric("ernest-addresses", addresses)
+    create_metric("raw-addresses", addresses)
   end
 
   def self.create_metric(metric_name, metric)
