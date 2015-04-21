@@ -7,10 +7,12 @@ require 'metrics'
 
 describe Metrics do
 
+  before(:each) do
+    stub_request(:post, /username:password@metrics.openaddressesuk.org\/metrics/)
+  end
+
   it "sends the correct address count to metrics API" do
     Timecop.freeze
-
-    stub_request(:post, "username:password@metrics.openaddressesuk.org/metrics/total-addresses")
 
     25.times do |i|
       FactoryGirl.create(:address, pao: i, town: FactoryGirl.create(:town, name: "GOTHAM CITY"))
@@ -31,8 +33,6 @@ describe Metrics do
 
   it "sends the corrrect inferred address count to the Metrics API" do
     Timecop.freeze
-
-    stub_request(:post, "username:password@metrics.openaddressesuk.org/metrics/inferred-addresses")
 
     25.times do |i|
       FactoryGirl.create(:address,
@@ -72,8 +72,6 @@ describe Metrics do
                 total: 3426371,
                 addresses: []
               }.to_json)
-
-    stub_request(:post, "username:password@metrics.openaddressesuk.org/metrics/raw-addresses")
 
     Metrics.raw_addresses
 
