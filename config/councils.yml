@@ -1,0 +1,1141 @@
+---
+-
+    id: E09000001
+    council: City of London
+-
+    id: E09000002
+    council: Barking and Dagenham
+-
+    id: E09000003
+    council: Barnet
+-
+    id: E09000004
+    council: Bexley
+-
+    id: E09000005
+    council: Brent
+-
+    id: E09000006
+    council: Bromley
+-
+    id: E09000007
+    council: Camden
+-
+    id: E09000008
+    council: Croydon
+-
+    id: E09000009
+    council: Ealing
+-
+    id: E09000010
+    council: Enfield
+-
+    id: E09000011
+    council: Greenwich
+-
+    id: E09000012
+    council: Hackney
+-
+    id: E09000013
+    council: Hammersmith and Fulham
+-
+    id: E09000014
+    council: Haringey
+-
+    id: E09000015
+    council: Harrow
+-
+    id: E09000016
+    council: Havering
+-
+    id: E09000017
+    council: Hillingdon
+-
+    id: E09000018
+    council: Hounslow
+-
+    id: E09000019
+    council: Islington
+-
+    id: E09000020
+    council: Kensington and Chelsea
+-
+    id: E09000021
+    council: Kingston upon Thames
+-
+    id: E09000022
+    council: Lambeth
+-
+    id: E09000023
+    council: Lewisham
+-
+    id: E09000024
+    council: Merton
+-
+    id: E09000025
+    council: Newham
+-
+    id: E09000026
+    council: Redbridge
+-
+    id: E09000027
+    council: Richmond upon Thames
+-
+    id: E09000028
+    council: Southwark
+-
+    id: E09000029
+    council: Sutton
+-
+    id: E09000030
+    council: Tower Hamlets
+-
+    id: E09000031
+    council: Waltham Forest
+-
+    id: E09000032
+    council: Wandsworth
+-
+    id: E09000033
+    council: Westminster
+-
+    id: E08000001
+    council: Bolton
+-
+    id: E08000002
+    council: Bury
+-
+    id: E08000003
+    council: Manchester
+-
+    id: E08000004
+    council: Oldham
+-
+    id: E08000005
+    council: Rochdale
+-
+    id: E08000006
+    council: Salford
+-
+    id: E08000007
+    council: Stockport
+-
+    id: E08000008
+    council: Tameside
+-
+    id: E08000009
+    council: Trafford
+-
+    id: E08000010
+    council: Wigan
+-
+    id: E08000011
+    council: Knowsley
+-
+    id: E08000012
+    council: Liverpool
+-
+    id: E08000013
+    council: St. Helens
+-
+    id: E08000014
+    council: Sefton
+-
+    id: E08000015
+    council: Wirral
+-
+    id: E08000016
+    council: Barnsley
+-
+    id: E08000017
+    council: Doncaster
+-
+    id: E08000018
+    council: Rotherham
+-
+    id: E08000019
+    council: Sheffield
+-
+    id: E08000037
+    council: Gateshead
+-
+    id: E08000021
+    council: Newcastle upon Tyne
+-
+    id: E08000022
+    council: North Tyneside
+-
+    id: E08000023
+    council: South Tyneside
+-
+    id: E08000024
+    council: Sunderland
+-
+    id: E08000025
+    council: Birmingham
+-
+    id: E08000026
+    council: Coventry
+-
+    id: E08000027
+    council: Dudley
+-
+    id: E08000028
+    council: Sandwell
+-
+    id: E08000029
+    council: Solihull
+-
+    id: E08000030
+    council: Walsall
+-
+    id: E08000031
+    council: Wolverhampton
+-
+    id: E08000032
+    council: Bradford
+-
+    id: E08000033
+    council: Calderdale
+-
+    id: E08000034
+    council: Kirklees
+-
+    id: E08000035
+    council: Leeds
+-
+    id: E08000036
+    council: Wakefield
+-
+    id: E06000001
+    council: Hartlepool
+-
+    id: E06000002
+    council: Middlesbrough
+-
+    id: E06000003
+    council: Redcar and Cleveland
+-
+    id: E06000004
+    council: Stockton-on-Tees
+-
+    id: E06000005
+    council: Darlington
+-
+    id: E06000047
+    council: County Durham
+-
+    id: E06000057
+    council: Northumberland
+-
+    id: E06000049
+    council: Cheshire East
+-
+    id: E06000006
+    council: Halton
+-
+    id: E06000007
+    council: Warrington
+-
+    id: E06000050
+    council: Cheshire West and Chester
+-
+    id: E06000008
+    council: Blackburn with Darwen
+-
+    id: E06000009
+    council: Blackpool
+-
+    id: E06000010
+    council: Kingston upon Hull, City of
+-
+    id: E06000011
+    council: East Riding of Yorkshire
+-
+    id: E06000012
+    council: North East Lincolnshire
+-
+    id: E06000013
+    council: North Lincolnshire
+-
+    id: E06000014
+    council: York
+-
+    id: E06000015
+    council: Derby
+-
+    id: E06000016
+    council: Leicester
+-
+    id: E06000017
+    council: Rutland
+-
+    id: E06000018
+    council: Nottingham
+-
+    id: E06000019
+    council: Herefordshire, County of
+-
+    id: E06000020
+    council: Telford and Wrekin
+-
+    id: E06000051
+    council: Shropshire
+-
+    id: E06000021
+    council: Stoke-on-Trent
+-
+    id: E06000022
+    council: Bath and North East Somerset
+-
+    id: E06000023
+    council: Bristol, City of
+-
+    id: E06000024
+    council: North Somerset
+-
+    id: E06000025
+    council: South Gloucestershire
+-
+    id: E06000052
+    council: Cornwall
+-
+    id: E06000053
+    council: Isles of Scilly
+-
+    id: E06000026
+    council: Plymouth
+-
+    id: E06000027
+    council: Torbay
+-
+    id: E06000028
+    council: Bournemouth
+-
+    id: E06000029
+    council: Poole
+-
+    id: E06000030
+    council: Swindon
+-
+    id: E06000054
+    council: Wiltshire
+-
+    id: E06000031
+    council: Peterborough
+-
+    id: E06000032
+    council: Luton
+-
+    id: E06000055
+    council: Bedford
+-
+    id: E06000056
+    council: Central Bedfordshire
+-
+    id: E06000033
+    council: Southend-on-Sea
+-
+    id: E06000034
+    council: Thurrock
+-
+    id: E06000035
+    council: Medway
+-
+    id: E06000036
+    council: Bracknell Forest
+-
+    id: E06000037
+    council: West Berkshire
+-
+    id: E06000038
+    council: Reading
+-
+    id: E06000039
+    council: Slough
+-
+    id: E06000040
+    council: Windsor and Maidenhead
+-
+    id: E06000041
+    council: Wokingham
+-
+    id: E06000042
+    council: Milton Keynes
+-
+    id: E06000043
+    council: Brighton and Hove
+-
+    id: E06000044
+    council: Portsmouth
+-
+    id: E06000045
+    council: Southampton
+-
+    id: E06000046
+    council: Isle of Wight
+-
+    id: W06000001
+    council: Isle of Anglesey
+-
+    id: W06000002
+    council: Gwynedd
+-
+    id: W06000003
+    council: Conwy
+-
+    id: W06000004
+    council: Denbighshire
+-
+    id: W06000005
+    council: Flintshire
+-
+    id: W06000006
+    council: Wrexham
+-
+    id: W06000023
+    council: Powys
+-
+    id: W06000008
+    council: Ceredigion
+-
+    id: W06000009
+    council: Pembrokeshire
+-
+    id: W06000010
+    council: Carmarthenshire
+-
+    id: W06000011
+    council: Swansea
+-
+    id: W06000012
+    council: Neath Port Talbot
+-
+    id: W06000013
+    council: Bridgend
+-
+    id: W06000014
+    council: Vale of Glamorgan
+-
+    id: W06000016
+    council: Rhondda Cynon Taf
+-
+    id: W06000024
+    council: Merthyr Tydfil
+-
+    id: W06000018
+    council: Caerphilly
+-
+    id: W06000019
+    council: Blaenau Gwent
+-
+    id: W06000020
+    council: Torfaen
+-
+    id: W06000021
+    council: Monmouthshire
+-
+    id: W06000022
+    council: Newport
+-
+    id: W06000015
+    council: Cardiff
+-
+    id: E07000004
+    council: Aylesbury Vale
+-
+    id: E07000005
+    council: Chiltern
+-
+    id: E07000006
+    council: South Bucks
+-
+    id: E07000007
+    council: Wycombe
+-
+    id: E07000008
+    council: Cambridge
+-
+    id: E07000009
+    council: East Cambridgeshire
+-
+    id: E07000010
+    council: Fenland
+-
+    id: E07000011
+    council: Huntingdonshire
+-
+    id: E07000012
+    council: South Cambridgeshire
+-
+    id: E07000026
+    council: Allerdale
+-
+    id: E07000027
+    council: Barrow-in-Furness
+-
+    id: E07000028
+    council: Carlisle
+-
+    id: E07000029
+    council: Copeland
+-
+    id: E07000030
+    council: Eden
+-
+    id: E07000031
+    council: South Lakeland
+-
+    id: E07000032
+    council: Amber Valley
+-
+    id: E07000033
+    council: Bolsover
+-
+    id: E07000034
+    council: Chesterfield
+-
+    id: E07000035
+    council: Derbyshire Dales
+-
+    id: E07000036
+    council: Erewash
+-
+    id: E07000037
+    council: High Peak
+-
+    id: E07000038
+    council: North East Derbyshire
+-
+    id: E07000039
+    council: South Derbyshire
+-
+    id: E07000040
+    council: East Devon
+-
+    id: E07000041
+    council: Exeter
+-
+    id: E07000042
+    council: Mid Devon
+-
+    id: E07000043
+    council: North Devon
+-
+    id: E07000044
+    council: South Hams
+-
+    id: E07000045
+    council: Teignbridge
+-
+    id: E07000046
+    council: Torridge
+-
+    id: E07000047
+    council: West Devon
+-
+    id: E07000048
+    council: Christchurch
+-
+    id: E07000049
+    council: East Dorset
+-
+    id: E07000050
+    council: North Dorset
+-
+    id: E07000051
+    council: Purbeck
+-
+    id: E07000052
+    council: West Dorset
+-
+    id: E07000053
+    council: Weymouth and Portland
+-
+    id: E07000061
+    council: Eastbourne
+-
+    id: E07000062
+    council: Hastings
+-
+    id: E07000063
+    council: Lewes
+-
+    id: E07000064
+    council: Rother
+-
+    id: E07000065
+    council: Wealden
+-
+    id: E07000066
+    council: Basildon
+-
+    id: E07000067
+    council: Braintree
+-
+    id: E07000068
+    council: Brentwood
+-
+    id: E07000069
+    council: Castle Point
+-
+    id: E07000070
+    council: Chelmsford
+-
+    id: E07000071
+    council: Colchester
+-
+    id: E07000072
+    council: Epping Forest
+-
+    id: E07000073
+    council: Harlow
+-
+    id: E07000074
+    council: Maldon
+-
+    id: E07000075
+    council: Rochford
+-
+    id: E07000076
+    council: Tendring
+-
+    id: E07000077
+    council: Uttlesford
+-
+    id: E07000078
+    council: Cheltenham
+-
+    id: E07000079
+    council: Cotswold
+-
+    id: E07000080
+    council: Forest of Dean
+-
+    id: E07000081
+    council: Gloucester
+-
+    id: E07000082
+    council: Stroud
+-
+    id: E07000083
+    council: Tewkesbury
+-
+    id: E07000084
+    council: Basingstoke and Deane
+-
+    id: E07000085
+    council: East Hampshire
+-
+    id: E07000086
+    council: Eastleigh
+-
+    id: E07000087
+    council: Fareham
+-
+    id: E07000088
+    council: Gosport
+-
+    id: E07000089
+    council: Hart
+-
+    id: E07000090
+    council: Havant
+-
+    id: E07000091
+    council: New Forest
+-
+    id: E07000092
+    council: Rushmoor
+-
+    id: E07000093
+    council: Test Valley
+-
+    id: E07000094
+    council: Winchester
+-
+    id: E07000095
+    council: Broxbourne
+-
+    id: E07000096
+    council: Dacorum
+-
+    id: E07000242
+    council: East Hertfordshire
+-
+    id: E07000098
+    council: Hertsmere
+-
+    id: E07000099
+    council: North Hertfordshire
+-
+    id: E07000240
+    council: St Albans
+-
+    id: E07000243
+    council: Stevenage
+-
+    id: E07000102
+    council: Three Rivers
+-
+    id: E07000103
+    council: Watford
+-
+    id: E07000241
+    council: Welwyn Hatfield
+-
+    id: E07000105
+    council: Ashford
+-
+    id: E07000106
+    council: Canterbury
+-
+    id: E07000107
+    council: Dartford
+-
+    id: E07000108
+    council: Dover
+-
+    id: E07000109
+    council: Gravesham
+-
+    id: E07000110
+    council: Maidstone
+-
+    id: E07000111
+    council: Sevenoaks
+-
+    id: E07000112
+    council: Shepway
+-
+    id: E07000113
+    council: Swale
+-
+    id: E07000114
+    council: Thanet
+-
+    id: E07000115
+    council: Tonbridge and Malling
+-
+    id: E07000116
+    council: Tunbridge Wells
+-
+    id: E07000117
+    council: Burnley
+-
+    id: E07000118
+    council: Chorley
+-
+    id: E07000119
+    council: Fylde
+-
+    id: E07000120
+    council: Hyndburn
+-
+    id: E07000121
+    council: Lancaster
+-
+    id: E07000122
+    council: Pendle
+-
+    id: E07000123
+    council: Preston
+-
+    id: E07000124
+    council: Ribble Valley
+-
+    id: E07000125
+    council: Rossendale
+-
+    id: E07000126
+    council: South Ribble
+-
+    id: E07000127
+    council: West Lancashire
+-
+    id: E07000128
+    council: Wyre
+-
+    id: E07000129
+    council: Blaby
+-
+    id: E07000130
+    council: Charnwood
+-
+    id: E07000131
+    council: Harborough
+-
+    id: E07000132
+    council: Hinckley and Bosworth
+-
+    id: E07000133
+    council: Melton
+-
+    id: E07000134
+    council: North West Leicestershire
+-
+    id: E07000135
+    council: Oadby and Wigston
+-
+    id: E07000136
+    council: Boston
+-
+    id: E07000137
+    council: East Lindsey
+-
+    id: E07000138
+    council: Lincoln
+-
+    id: E07000139
+    council: North Kesteven
+-
+    id: E07000140
+    council: South Holland
+-
+    id: E07000141
+    council: South Kesteven
+-
+    id: E07000142
+    council: West Lindsey
+-
+    id: E07000143
+    council: Breckland
+-
+    id: E07000144
+    council: Broadland
+-
+    id: E07000145
+    council: Great Yarmouth
+-
+    id: E07000146
+    council: 'King''s Lynn and West Norfolk'
+-
+    id: E07000147
+    council: North Norfolk
+-
+    id: E07000148
+    council: Norwich
+-
+    id: E07000149
+    council: South Norfolk
+-
+    id: E07000150
+    council: Corby
+-
+    id: E07000151
+    council: Daventry
+-
+    id: E07000152
+    council: East Northamptonshire
+-
+    id: E07000153
+    council: Kettering
+-
+    id: E07000154
+    council: Northampton
+-
+    id: E07000155
+    council: South Northamptonshire
+-
+    id: E07000156
+    council: Wellingborough
+-
+    id: E07000163
+    council: Craven
+-
+    id: E07000164
+    council: Hambleton
+-
+    id: E07000165
+    council: Harrogate
+-
+    id: E07000166
+    council: Richmondshire
+-
+    id: E07000167
+    council: Ryedale
+-
+    id: E07000168
+    council: Scarborough
+-
+    id: E07000169
+    council: Selby
+-
+    id: E07000170
+    council: Ashfield
+-
+    id: E07000171
+    council: Bassetlaw
+-
+    id: E07000172
+    council: Broxtowe
+-
+    id: E07000173
+    council: Gedling
+-
+    id: E07000174
+    council: Mansfield
+-
+    id: E07000175
+    council: Newark and Sherwood
+-
+    id: E07000176
+    council: Rushcliffe
+-
+    id: E07000177
+    council: Cherwell
+-
+    id: E07000178
+    council: Oxford
+-
+    id: E07000179
+    council: South Oxfordshire
+-
+    id: E07000180
+    council: Vale of White Horse
+-
+    id: E07000181
+    council: West Oxfordshire
+-
+    id: E07000187
+    council: Mendip
+-
+    id: E07000188
+    council: Sedgemoor
+-
+    id: E07000189
+    council: South Somerset
+-
+    id: E07000190
+    council: Taunton Deane
+-
+    id: E07000191
+    council: West Somerset
+-
+    id: E07000192
+    council: Cannock Chase
+-
+    id: E07000193
+    council: East Staffordshire
+-
+    id: E07000194
+    council: Lichfield
+-
+    id: E07000195
+    council: Newcastle-under-Lyme
+-
+    id: E07000196
+    council: South Staffordshire
+-
+    id: E07000197
+    council: Stafford
+-
+    id: E07000198
+    council: Staffordshire Moorlands
+-
+    id: E07000199
+    council: Tamworth
+-
+    id: E07000200
+    council: Babergh
+-
+    id: E07000201
+    council: Forest Heath
+-
+    id: E07000202
+    council: Ipswich
+-
+    id: E07000203
+    council: Mid Suffolk
+-
+    id: E07000204
+    council: St Edmundsbury
+-
+    id: E07000205
+    council: Suffolk Coastal
+-
+    id: E07000206
+    council: Waveney
+-
+    id: E07000207
+    council: Elmbridge
+-
+    id: E07000208
+    council: Epsom and Ewell
+-
+    id: E07000209
+    council: Guildford
+-
+    id: E07000210
+    council: Mole Valley
+-
+    id: E07000211
+    council: Reigate and Banstead
+-
+    id: E07000212
+    council: Runnymede
+-
+    id: E07000213
+    council: Spelthorne
+-
+    id: E07000214
+    council: Surrey Heath
+-
+    id: E07000215
+    council: Tandridge
+-
+    id: E07000216
+    council: Waverley
+-
+    id: E07000217
+    council: Woking
+-
+    id: E07000218
+    council: North Warwickshire
+-
+    id: E07000219
+    council: Nuneaton and Bedworth
+-
+    id: E07000220
+    council: Rugby
+-
+    id: E07000221
+    council: Stratford-on-Avon
+-
+    id: E07000222
+    council: Warwick
+-
+    id: E07000223
+    council: Adur
+-
+    id: E07000224
+    council: Arun
+-
+    id: E07000225
+    council: Chichester
+-
+    id: E07000226
+    council: Crawley
+-
+    id: E07000227
+    council: Horsham
+-
+    id: E07000228
+    council: Mid Sussex
+-
+    id: E07000229
+    council: Worthing
+-
+    id: E07000234
+    council: Bromsgrove
+-
+    id: E07000235
+    council: Malvern Hills
+-
+    id: E07000236
+    council: Redditch
+-
+    id: E07000237
+    council: Worcester
+-
+    id: E07000238
+    council: Wychavon
+-
+    id: E07000239
+    council: Wyre Forest
+-
+    id: S12000005
+    council: Clackmannanshire
+-
+    id: S12000006
+    council: Dumfries and Galloway
+-
+    id: S12000008
+    council: East Ayrshire
+-
+    id: S12000010
+    council: East Lothian
+-
+    id: S12000011
+    council: East Renfrewshire
+-
+    id: S12000013
+    council: Eilean Siar
+-
+    id: S12000014
+    council: Falkirk
+-
+    id: S12000015
+    council: Fife
+-
+    id: S12000017
+    council: Highland
+-
+    id: S12000018
+    council: Inverclyde
+-
+    id: S12000019
+    council: Midlothian
+-
+    id: S12000020
+    council: Moray
+-
+    id: S12000021
+    council: North Ayrshire
+-
+    id: S12000023
+    council: Orkney Islands
+-
+    id: S12000024
+    council: Perth and Kinross
+-
+    id: S12000026
+    council: Scottish Borders
+-
+    id: S12000027
+    council: Shetland Islands
+-
+    id: S12000028
+    council: South Ayrshire
+-
+    id: S12000029
+    council: South Lanarkshire
+-
+    id: S12000030
+    council: Stirling
+-
+    id: S12000033
+    council: Aberdeen City
+-
+    id: S12000034
+    council: Aberdeenshire
+-
+    id: S12000035
+    council: Argyll and Bute
+-
+    id: S12000036
+    council: City of Edinburgh
+-
+    id: S12000038
+    council: Renfrewshire
+-
+    id: S12000039
+    council: West Dunbartonshire
+-
+    id: S12000040
+    council: West Lothian
+-
+    id: S12000041
+    council: Angus
+-
+    id: S12000042
+    council: Dundee City
+-
+    id: S12000044
+    council: North Lanarkshire
+-
+    id: S12000045
+    council: East Dunbartonshire
+-
+    id: S12000046
+    council: Glasgow City

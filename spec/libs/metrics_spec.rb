@@ -86,4 +86,59 @@ describe Metrics do
     Timecop.return
   end
 
+  it "Gets addresses by council" do
+    Timecop.freeze
+
+    expect(Metrics).to receive(:councils).twice {
+      [
+        {
+          "council" => "Council 1",
+          "id" => "1"
+        },
+        {
+          "council" => "Council 2",
+          "id" => "2"
+        },
+        {
+          "council" => "Council 3",
+          "id" => "3"
+        },
+        {
+          "council" => "Council 4",
+          "id" => "4"
+        },
+        {
+          "council" => "Council 5",
+          "id" => "5"
+        }
+      ]
+    }
+
+    Metrics.councils.each do |council|
+      council["id"].to_i.times do |i|
+        FactoryGirl.create(:address, pao: i, postcode: FactoryGirl.create(:postcode, name: "ABC 12#{council["id"]}", authority: council["id"]))
+      end
+    end
+
+    h = {
+      "council-1" => 1,
+      "council-2" => 2,
+      "council-3" => 3,
+      "council-4" => 4,
+      "council-5" => 5,
+    }
+
+    Metrics.addresses_by_council
+
+    expect(WebMock).to have_requested(:post, "username:password@metrics.openaddressesuk.org/metrics/addresses-by-council").
+                    with(:body => {
+                      name: "addresses-by-council",
+                      time: DateTime.now,
+                      value: h
+                    }.to_json).
+                    once
+
+    Timecop.return
+  end
+
 end

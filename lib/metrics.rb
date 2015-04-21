@@ -2,6 +2,16 @@ require 'httparty'
 
 module Metrics
 
+  def self.addresses_by_council
+    addresses = {}
+
+    councils.each do |council|
+      addresses[council["council"].parameterize] = Address.where("postcode.authority" => council["id"]).count
+    end
+
+    create_metric("addresses-by-council", addresses)
+  end
+
   def self.total_addresses
     addresses = Address.all.count
     create_metric("total-addresses", addresses)
@@ -36,6 +46,10 @@ module Metrics
                   body: json,
                   basic_auth: { username: ENV['METRICS_API_USERNAME'], password: ENV['METRICS_API_PASSWORD'] }
                   )
+  end
+
+  def self.councils
+    YAML.load(File.read File.join(Rails.root, 'config', 'councils.yml'))
   end
 
 end
