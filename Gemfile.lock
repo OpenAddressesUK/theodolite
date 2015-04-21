@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: git://github.com/openaddressesuk/mongoid_address_models.git
-  revision: 92d4965cded6a302d6c00d2d47b08aa3f9dc218c
+  revision: 8b12197dd91f5b54b47f54d7d78d748ea2756826
   specs:
     mongoid_address_models (0.0.1)
       mongoid
@@ -284,6 +284,7 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
+    timecop (0.7.3)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (2.6.0)
@@ -332,6 +333,7 @@ DEPENDENCIES
   spring
   stringex
   thin
+  timecop
   uglifier (>= 1.3.0)
   uk_postcode
   unicorn

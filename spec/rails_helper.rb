@@ -8,6 +8,7 @@ require 'rspec/rails'
 require 'webmock/rspec'
 require 'vcr'
 require 'jiffybag'
+require 'timecop'
 
 Dotenv.load
 
