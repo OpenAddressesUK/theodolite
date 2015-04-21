@@ -29,6 +29,39 @@ describe Metrics do
     Timecop.return
   end
 
+  it "sends the corrrect inferred address count to the Metrics API" do
+    Timecop.freeze
+
+    stub_request(:post, "username:password@metrics.openaddressesuk.org/metrics/inferred-addresses")
+
+    25.times do |i|
+      FactoryGirl.create(:address,
+      pao: i,
+      town: FactoryGirl.create(:town, name: "GOTHAM CITY"),
+      provenance: {
+        "activity" => {
+          "derived_from" => [
+            {
+              type: "inference"
+            }
+          ]
+        }
+      })
+    end
+
+    Metrics.inferred_addresses
+
+    expect(WebMock).to have_requested(:post, "username:password@metrics.openaddressesuk.org/metrics/inferred-addresses").
+                    with(:body => {
+                      name: "inferred-addresses",
+                      time: DateTime.now,
+                      value: 25
+                    }.to_json).
+                    once
+
+    Timecop.return
+  end
+
   it "sends the correct raw address count to the Metrics API" do
     Timecop.freeze
 

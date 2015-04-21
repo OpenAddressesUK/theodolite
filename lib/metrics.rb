@@ -8,7 +8,7 @@ module Metrics
   end
 
   def self.inferred_addresses
-    addresses = Address.where("provenance.activity.derived_from.type" => "Inferred").count
+    addresses = Address.where("provenance.activity.derived_from.type" => "inference").count
     create_metric("inferred-addresses", addresses)
   end
 
