@@ -38,15 +38,7 @@ describe Metrics do
       FactoryGirl.create(:address,
       pao: i,
       town: FactoryGirl.create(:town, name: "GOTHAM CITY"),
-      provenance: {
-        "activity" => {
-          "derived_from" => [
-            {
-              type: "inference"
-            }
-          ]
-        }
-      })
+      source: "inference")
     end
 
     Metrics.inferred_addresses
