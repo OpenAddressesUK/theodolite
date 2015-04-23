@@ -167,6 +167,8 @@ GEM
       activesupport (>= 3.0.0)
     kgio (2.9.2)
     kramdown (1.5.0)
+    legato (0.4.0)
+      multi_json
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     method_source (0.8.2)
@@ -325,6 +327,7 @@ DEPENDENCIES
   jquery-rails
   json_spec
   kaminari
+  legato
   mongoid
   mongoid_address_models!
   pry

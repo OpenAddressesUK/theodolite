@@ -63,6 +63,7 @@ gem 'gabba'
 gem 'jiffybag', github: 'theodi/jiffybag'
 gem 'fog'
 gem 'angerfist'
+gem 'legato'
 
 group :test do
   gem 'rspec-rails', '~> 3.0.0'
