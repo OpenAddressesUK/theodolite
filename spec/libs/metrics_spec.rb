@@ -133,4 +133,26 @@ describe Metrics do
     Timecop.return
   end
 
+  context 'API analytics' do
+
+    it 'gets the count' do
+      Timecop.freeze
+
+      expect_any_instance_of(Analytics).to receive(:result) { 123 }
+
+      Metrics.address_api_usage
+
+      expect(WebMock).to have_requested(:post, "username:password@metrics.openaddressesuk.org/metrics/address-api-usage").
+                      with(:body => {
+                        name: "address-api-usage",
+                        time: DateTime.now,
+                        value: 123
+                      }.to_json).
+                      once
+
+      Timecop.return
+    end
+
+  end
+
 end

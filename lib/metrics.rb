@@ -1,4 +1,5 @@
 require 'httparty'
+require 'analytics'
 
 module Metrics
 
@@ -26,6 +27,12 @@ module Metrics
     ernest = JSON.parse HTTParty.get("http://ernest.openaddressesuk.org/addresses").body
     addresses = ernest['total']
     create_metric("raw-addresses", addresses)
+  end
+
+  def self.address_api_usage
+    analytics = Analytics.new
+    count = analytics.result
+    create_metric("address-api-usage", count)
   end
 
   def self.create_metric(metric_name, metric)
