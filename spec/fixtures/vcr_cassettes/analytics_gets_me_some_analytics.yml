@@ -1,0 +1,156 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/analytics/v3/management/accounts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Bearer <LEGATO_OAUTH_ACCESS_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 23 Apr 2015 13:51:48 GMT
+      Date:
+      - Thu, 23 Apr 2015 13:51:48 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"o-85COrcxoYkAw5itMLG4AKNpMY/QyBJPt-f7YJ21AralFikrzdPGNM"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '1003'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=1
+    body:
+      encoding: UTF-8
+      string: '{"kind":"analytics#accounts","username":"stuart.harrison@theodi.org","totalResults":2,"startIndex":1,"itemsPerPage":1000,"items":[{"id":"34573394","kind":"analytics#account","selfLink":"https://www.googleapis.com/analytics/v3/management/accounts/34573394","name":"Open
+        Data Institute","permissions":{"effective":["COLLABORATE","EDIT","MANAGE_USERS","READ_AND_ANALYZE"]},"created":"2012-09-05T15:29:13.591Z","updated":"2015-03-25T21:28:03.553Z","childLink":{"type":"analytics#webproperties","href":"https://www.googleapis.com/analytics/v3/management/accounts/34573394/webproperties"}},{"id":"55858108","kind":"analytics#account","selfLink":"https://www.googleapis.com/analytics/v3/management/accounts/55858108","name":"Open
+        Addresses Ltd.","permissions":{"effective":["READ_AND_ANALYZE"]},"created":"2014-10-17T09:27:52.754Z","updated":"2015-04-07T17:19:23.642Z","childLink":{"type":"analytics#webproperties","href":"https://www.googleapis.com/analytics/v3/management/accounts/55858108/webproperties"}}]}'
+    http_version: 
+  recorded_at: Thu, 23 Apr 2015 00:00:00 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/analytics/v3/management/accounts/55858108/webproperties/~all/profiles
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Bearer <LEGATO_OAUTH_ACCESS_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 23 Apr 2015 13:51:48 GMT
+      Date:
+      - Thu, 23 Apr 2015 13:51:48 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"o-85COrcxoYkAw5itMLG4AKNpMY/11fM82vijmtZ2DGWJpzKR4bXDPk"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '4502'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=1
+    body:
+      encoding: UTF-8
+      string: '{"kind":"analytics#profiles","username":"stuart.harrison@theodi.org","totalResults":5,"startIndex":1,"itemsPerPage":1000,"items":[{"id":"92622408","kind":"analytics#profile","selfLink":"https://www.googleapis.com/analytics/v3/management/accounts/55858108/webproperties/UA-55858108-1/profiles/92622408","accountId":"55858108","webPropertyId":"UA-55858108-1","internalWebPropertyId":"89135809","name":"http://openaddressesuk.org","currency":"GBP","timezone":"Europe/London","websiteUrl":"http://openaddressesuk.org","type":"WEB","permissions":{"effective":["READ_AND_ANALYZE"]},"created":"2014-10-17T09:27:52.754Z","updated":"2015-01-08T10:00:26.712Z","eCommerceTracking":false,"parentLink":{"type":"analytics#webproperty","href":"https://www.googleapis.com/analytics/v3/management/accounts/55858108/webproperties/UA-55858108-1"},"childLink":{"type":"analytics#goals","href":"https://www.googleapis.com/analytics/v3/management/accounts/55858108/webproperties/UA-55858108-1/profiles/92622408/goals"}},{"id":"96063036","kind":"analytics#profile","selfLink":"https://www.googleapis.com/analytics/v3/management/accounts/55858108/webproperties/UA-55858108-1/profiles/96063036","accountId":"55858108","webPropertyId":"UA-55858108-1","internalWebPropertyId":"89135809","name":"http://alpha.openaddressesuk.org","currency":"GBP","timezone":"Europe/London","websiteUrl":"http://alpha.openaddressesuk.org","type":"WEB","permissions":{"effective":["READ_AND_ANALYZE"]},"created":"2015-01-08T09:28:01.902Z","updated":"2015-01-08T10:00:14.510Z","eCommerceTracking":false,"parentLink":{"type":"analytics#webproperty","href":"https://www.googleapis.com/analytics/v3/management/accounts/55858108/webproperties/UA-55858108-1"},"childLink":{"type":"analytics#goals","href":"https://www.googleapis.com/analytics/v3/management/accounts/55858108/webproperties/UA-55858108-1/profiles/96063036/goals"}},{"id":"96064978","kind":"analytics#profile","selfLink":"https://www.googleapis.com/analytics/v3/management/accounts/55858108/webproperties/UA-55858108-1/profiles/96064978","accountId":"55858108","webPropertyId":"UA-55858108-1","internalWebPropertyId":"89135809","name":"https://alpha.openaddressesuk.org","currency":"GBP","timezone":"Europe/London","websiteUrl":"https://alpha.openaddressesuk.org","type":"WEB","permissions":{"effective":["READ_AND_ANALYZE"]},"created":"2015-01-08T11:02:54.881Z","updated":"2015-01-08T11:03:05.300Z","eCommerceTracking":false,"parentLink":{"type":"analytics#webproperty","href":"https://www.googleapis.com/analytics/v3/management/accounts/55858108/webproperties/UA-55858108-1"},"childLink":{"type":"analytics#goals","href":"https://www.googleapis.com/analytics/v3/management/accounts/55858108/webproperties/UA-55858108-1/profiles/96064978/goals"}},{"id":"96068965","kind":"analytics#profile","selfLink":"https://www.googleapis.com/analytics/v3/management/accounts/55858108/webproperties/UA-55858108-1/profiles/96068965","accountId":"55858108","webPropertyId":"UA-55858108-1","internalWebPropertyId":"89135809","name":"https://openaddressesuk.org","currency":"GBP","timezone":"Europe/London","websiteUrl":"https://openaddressesuk.org","type":"WEB","permissions":{"effective":["READ_AND_ANALYZE"]},"created":"2015-01-08T11:02:24.389Z","updated":"2015-01-08T11:02:35.421Z","eCommerceTracking":false,"parentLink":{"type":"analytics#webproperty","href":"https://www.googleapis.com/analytics/v3/management/accounts/55858108/webproperties/UA-55858108-1"},"childLink":{"type":"analytics#goals","href":"https://www.googleapis.com/analytics/v3/management/accounts/55858108/webproperties/UA-55858108-1/profiles/96068965/goals"}},{"id":"101259804","kind":"analytics#profile","selfLink":"https://www.googleapis.com/analytics/v3/management/accounts/55858108/webproperties/UA-55858108-2/profiles/101259804","accountId":"55858108","webPropertyId":"UA-55858108-2","internalWebPropertyId":"97107579","name":"All
+        Web Site Data","currency":"USD","timezone":"Etc/GMT","websiteUrl":"http://sorting-office.openaddressesuk.org","type":"WEB","permissions":{"effective":["READ_AND_ANALYZE"]},"created":"2015-04-22T14:48:45.066Z","updated":"2015-04-22T14:48:45.066Z","eCommerceTracking":false,"parentLink":{"type":"analytics#webproperty","href":"https://www.googleapis.com/analytics/v3/management/accounts/55858108/webproperties/UA-55858108-2"},"childLink":{"type":"analytics#goals","href":"https://www.googleapis.com/analytics/v3/management/accounts/55858108/webproperties/UA-55858108-2/profiles/101259804/goals"}}]}'
+    http_version: 
+  recorded_at: Thu, 23 Apr 2015 00:00:00 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/analytics/v3/data/ga?dimensions=ga:pagePath,ga:date&end-date=2015-04-23&fields=columnHeaders/name,rows,totalResults,totalsForAllResults&filters=ga:pagePath=~json$&ids=ga:96064978&metrics=ga:pageviews&sort=ga:date&start-date=2015-04-23
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Authorization:
+      - Bearer <LEGATO_OAUTH_ACCESS_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 23 Apr 2015 13:51:49 GMT
+      Date:
+      - Thu, 23 Apr 2015 13:51:49 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"o-85COrcxoYkAw5itMLG4AKNpMY/kNkl-v6F_3FwPJoCEh-Cpr3U_-Q"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '786'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=1
+    body:
+      encoding: UTF-8
+      string: '{"totalResults":15,"columnHeaders":[{"name":"ga:pagePath"},{"name":"ga:date"},{"name":"ga:pageviews"}],"totalsForAllResults":{"ga:pageviews":"23"},"rows":[["/addresses/1D8Rvp.json","20150423","1"],["/addresses/92Po7E.json","20150423","1"],["/addresses/Cc61WP.json","20150423","1"],["/addresses/I3nYkR.json","20150423","1"],["/addresses/ODK23N.json","20150423","1"],["/addresses/TMn29z.json","20150423","1"],["/addresses/Z1uZf5.json","20150423","2"],["/addresses/aY4CdX.json","20150423","1"],["/addresses/iRsMSV.json","20150423","1"],["/addresses/qMTHAO.json","20150423","1"],["/addresses/rFKcKp.json","20150423","1"],["/addresses/siNTBi.json","20150423","1"],["/addresses/taJNzM.json","20150423","4"],["/addresses/wTQsAp.json","20150423","1"],["/postcodes/782tq8.json","20150423","5"]]}'
+    http_version: 
+  recorded_at: Thu, 23 Apr 2015 00:00:00 GMT
+recorded_with: VCR 2.9.3
