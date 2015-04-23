@@ -62,6 +62,7 @@ gem 'rack-tracker'
 gem 'gabba'
 gem 'jiffybag', github: 'theodi/jiffybag'
 gem 'fog'
+gem 'angerfist'
 
 group :test do
   gem 'rspec-rails', '~> 3.0.0'
