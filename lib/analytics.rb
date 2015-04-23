@@ -1,4 +1,5 @@
 require 'legato'
+require 'oauth2'
 
 class Pageview
   extend Legato::Model
