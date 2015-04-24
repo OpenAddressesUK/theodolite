@@ -6,4 +6,5 @@ task :metrics => :environment do
   Metrics.inferred_addresses
   Metrics.raw_addresses
   Metrics.address_api_usage
+  Metrics.sorting_office_usage
 end
