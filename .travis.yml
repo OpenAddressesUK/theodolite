@@ -24,7 +24,9 @@ env:
     - GA_DOMAIN=dsdsfsfs
     - BUGHERD_PROJECT_KEY=dsfdsfsdsdf
     - OPENSPACE_API_KEY=dsfsdfdsfs
-    - LEGATO_OAUTH_ACCESS_TOKEN=thisisfake
+    - LEGATO_OAUTH_REFRESH_TOKEN=thisisfake
+    - LEGATO_OAUTH_CLIENT_ID=fdsfdsdsfs
+    - LEGATO_OAUTH_SECRET_KEY=dsfsdfsdfsfsd
 deploy:
   provider: heroku
   strategy: api

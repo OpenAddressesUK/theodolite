@@ -1,5 +1,8 @@
 require 'legato'
 require 'oauth2'
+require 'jiffybag'
+
+Dotenv.load
 
 class Pageview
   extend Legato::Model
@@ -45,7 +48,8 @@ class Analytics
   end
 
   def access_token
-    OAuth2::AccessToken.from_hash client, {:access_token => ENV['LEGATO_OAUTH_ACCESS_TOKEN'] }
+    access = OAuth2::AccessToken.from_hash client, {:refresh_token => ENV['LEGATO_OAUTH_REFRESH_TOKEN'] }
+    access.refresh!
   end
 
 end

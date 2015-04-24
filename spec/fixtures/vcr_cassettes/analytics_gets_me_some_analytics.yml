@@ -1,6 +1,64 @@
 ---
 http_interactions:
 - request:
+    method: post
+    uri: https://accounts.google.com/o/oauth2/token
+    body:
+      encoding: UTF-8
+      string: client_id=<LEGATO_OAUTH_CLIENT_ID>&client_secret=<LEGATO_OAUTH_SECRET_KEY>&grant_type=refresh_token&refresh_token=<LEGATO_OAUTH_REFRESH_TOKEN>
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Date:
+      - Fri, 24 Apr 2015 09:52:23 GMT
+      Content-Disposition:
+      - attachment; filename="json.txt"; filename*=UTF-8''json.txt
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=1
+      Accept-Ranges:
+      - none
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "access_token" : "ya29.XwFKHqi1bBSDW7_HvrbqblAtQjYXhRZymOTpKLkFRim6GZvdPD5AwyMRMtrI2gbBj-Hnv1gqco05TQ",
+          "token_type" : "Bearer",
+          "expires_in" : 3600
+        }
+    http_version: 
+  recorded_at: Thu, 23 Apr 2015 00:00:00 GMT
+- request:
     method: get
     uri: https://www.googleapis.com/analytics/v3/management/accounts
     body:
@@ -10,7 +68,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.9.1
       Authorization:
-      - Bearer <LEGATO_OAUTH_ACCESS_TOKEN>
+      - Bearer ya29.XwFKHqi1bBSDW7_HvrbqblAtQjYXhRZymOTpKLkFRim6GZvdPD5AwyMRMtrI2gbBj-Hnv1gqco05TQ
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,9 +79,9 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Thu, 23 Apr 2015 13:51:48 GMT
+      - Fri, 24 Apr 2015 09:52:23 GMT
       Date:
-      - Thu, 23 Apr 2015 13:51:48 GMT
+      - Fri, 24 Apr 2015 09:52:23 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
@@ -62,7 +120,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.9.1
       Authorization:
-      - Bearer <LEGATO_OAUTH_ACCESS_TOKEN>
+      - Bearer ya29.XwFKHqi1bBSDW7_HvrbqblAtQjYXhRZymOTpKLkFRim6GZvdPD5AwyMRMtrI2gbBj-Hnv1gqco05TQ
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -73,9 +131,9 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Thu, 23 Apr 2015 13:51:48 GMT
+      - Fri, 24 Apr 2015 09:52:23 GMT
       Date:
-      - Thu, 23 Apr 2015 13:51:48 GMT
+      - Fri, 24 Apr 2015 09:52:23 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
@@ -113,7 +171,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.9.1
       Authorization:
-      - Bearer <LEGATO_OAUTH_ACCESS_TOKEN>
+      - Bearer ya29.XwFKHqi1bBSDW7_HvrbqblAtQjYXhRZymOTpKLkFRim6GZvdPD5AwyMRMtrI2gbBj-Hnv1gqco05TQ
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -124,13 +182,13 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Thu, 23 Apr 2015 13:51:49 GMT
+      - Fri, 24 Apr 2015 09:52:23 GMT
       Date:
-      - Thu, 23 Apr 2015 13:51:49 GMT
+      - Fri, 24 Apr 2015 09:52:23 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
-      - '"o-85COrcxoYkAw5itMLG4AKNpMY/kNkl-v6F_3FwPJoCEh-Cpr3U_-Q"'
+      - '"o-85COrcxoYkAw5itMLG4AKNpMY/L9Up0GGXTeqfztJjLt6lefgmd1w"'
       Vary:
       - Origin
       - X-Origin
@@ -143,14 +201,14 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '786'
+      - '912'
       Server:
       - GSE
       Alternate-Protocol:
       - 443:quic,p=1
     body:
       encoding: UTF-8
-      string: '{"totalResults":15,"columnHeaders":[{"name":"ga:pagePath"},{"name":"ga:date"},{"name":"ga:pageviews"}],"totalsForAllResults":{"ga:pageviews":"23"},"rows":[["/addresses/1D8Rvp.json","20150423","1"],["/addresses/92Po7E.json","20150423","1"],["/addresses/Cc61WP.json","20150423","1"],["/addresses/I3nYkR.json","20150423","1"],["/addresses/ODK23N.json","20150423","1"],["/addresses/TMn29z.json","20150423","1"],["/addresses/Z1uZf5.json","20150423","2"],["/addresses/aY4CdX.json","20150423","1"],["/addresses/iRsMSV.json","20150423","1"],["/addresses/qMTHAO.json","20150423","1"],["/addresses/rFKcKp.json","20150423","1"],["/addresses/siNTBi.json","20150423","1"],["/addresses/taJNzM.json","20150423","4"],["/addresses/wTQsAp.json","20150423","1"],["/postcodes/782tq8.json","20150423","5"]]}'
+      string: '{"totalResults":18,"columnHeaders":[{"name":"ga:pagePath"},{"name":"ga:date"},{"name":"ga:pageviews"}],"totalsForAllResults":{"ga:pageviews":"29"},"rows":[["/addresses/1D8Rvp.json","20150423","1"],["/addresses/92Po7E.json","20150423","1"],["/addresses/Cc61WP.json","20150423","1"],["/addresses/EYkC8L.json","20150423","1"],["/addresses/I3nYkR.json","20150423","1"],["/addresses/ODK23N.json","20150423","1"],["/addresses/TMn29z.json","20150423","1"],["/addresses/VDtibW.json","20150423","1"],["/addresses/Z1uZf5.json","20150423","2"],["/addresses/aY4CdX.json","20150423","1"],["/addresses/iRsMSV.json","20150423","1"],["/addresses/qMTHAO.json","20150423","1"],["/addresses/rFKcKp.json","20150423","1"],["/addresses/rYwoGk.json","20150423","4"],["/addresses/siNTBi.json","20150423","1"],["/addresses/taJNzM.json","20150423","4"],["/addresses/wTQsAp.json","20150423","1"],["/postcodes/782tq8.json","20150423","5"]]}'
     http_version: 
   recorded_at: Thu, 23 Apr 2015 00:00:00 GMT
 recorded_with: VCR 2.9.3

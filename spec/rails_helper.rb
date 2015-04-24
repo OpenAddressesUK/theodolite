@@ -38,6 +38,7 @@ VCR.configure do |config|
   JiffyBag.variables.each do |key|
     config.filter_sensitive_data("<#{key}>") { JiffyBag[key] }
   end
+  config.filter_sensitive_data("<LEGATO_OAUTH_REFRESH_TOKEN>") { CGI::escape(JiffyBag['LEGATO_OAUTH_REFRESH_TOKEN']) }
 end
 
 RSpec.configure do |config|
