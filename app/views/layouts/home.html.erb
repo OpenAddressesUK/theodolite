@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <%= render partial: 'shared/head' %>
+
 <body>
 
   <div class="page-home">
@@ -28,7 +29,7 @@
       <div class="home-ctas">
            <div class="home-cta">
           <h2><a href="/get-involved/add-an-address">Donate Address Data</a></h2>
-          <p>Everyone who uses Open Addresses will benefit from every address donation. Collaborate with us and together we can create better address data that everyone can use.</p> 
+          <p>Everyone who uses Open Addresses will benefit from every address donation. Collaborate with us and together we can create better address data that everyone can use.</p>
         </div>
         <div class="home-cta">
           <h2><a href="/developers/apis-and-data">Open Addresses For Your Apps</a></h2>
@@ -39,7 +40,29 @@
           <p>There should be no barriers to accessing vital national data such as the list of UK addresses. Try Open Addresses within your organisation and begin the journey of using and publishing open data.</p>
         </div>
       </div>
+      <div class="home-ctas counts">
+        <div class="home-cta">
+          <div class="home-cta-data-indicator"><span id="addresses"></span> UK addresses</div>
+        </div>
+        <div class="home-cta">
+          <div class="home-cta-data-indicator"><span id="api"></span> Api hits yesterday</div>
+        </div>
+      </div>
     </div>
+
+    <% content_for :extra_js do %>
+      function mFormatter(num) {
+        return num > 999 ? (num/1000000).toFixed(1) + '<em>m</em>' : num
+      }
+
+      $.get( "https://metrics.openaddressesuk.org/metrics/total-addresses.json", function( data ) {
+        $('#addresses').html(mFormatter(data.value));
+      });
+
+      $.get( "https://metrics.openaddressesuk.org/metrics/address-api-usage.json", function( data ) {
+        $('#api').html(data.value);
+      });
+    <% end %>
 
     <div class="wrapper wrapper-orange">
       <div class="container">
