@@ -30,9 +30,15 @@ module Metrics
   end
 
   def self.address_api_usage
-    analytics = Analytics.new
+    analytics = Analytics.new(profile: 'https://alpha.openaddressesuk.org', path: 'json$')
     count = analytics.result
     create_metric("address-api-usage", count)
+  end
+
+  def self.sorting_office_usage
+    analytics = Analytics.new(property: 'Sorting Office', path: '\/address')
+    count = analytics.result
+    create_metric("sorting-office-usage", count)
   end
 
   def self.create_metric(metric_name, metric)
