@@ -11,7 +11,7 @@ layout: mission-hero
 	</div>
 </div>
 
-Addresses are part of our everyday lives. They pinpoint where we live, work and visit, connecting us to local communities and services we rely on. There is a hidden complexity and cost in the process of locating addresses, entering addresses online, and  accessing an accurate address list. We’re here to change this, to make things simpler and better.
+Addresses are part of our everyday lives: they pinpoint where we live, work and visit and connect us to local communities and services we rely on. Open Addresses makes locating, entering and accessing addresses simpler and better.
 
 #### What we are creating
 
