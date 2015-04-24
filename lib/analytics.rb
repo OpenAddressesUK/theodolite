@@ -14,7 +14,7 @@ end
 
 class Analytics
 
-  def initialize(options)
+  def initialize(options = {})
     @start = Date.today
     @today = Date.today
     @path = options[:path]
