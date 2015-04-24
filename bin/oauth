@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+# If we ever need to generate a new access / refresh token, this script will do it for us
+
+require "rubygems"
+require "google/api_client"
+require 'dotenv'
+Dotenv.load
+
+# Authorizes with OAuth and gets an access token.
+client = Google::APIClient.new
+auth = client.authorization
+auth.client_id = ENV['LEGATO_OAUTH_CLIENT_ID']
+auth.client_secret = ENV['LEGATO_OAUTH_SECRET_KEY']
+auth.scope = "https://www.googleapis.com/auth/analytics.readonly"
+auth.redirect_uri = "urn:ietf:wg:oauth:2.0:oob"
+print("1. Open this page:\n%s\n\n" % auth.authorization_uri)
+print("2. Enter the authorization code shown in the page: ")
+auth.code = $stdin.gets.chomp
+auth.fetch_access_token!
+access_token = auth.access_token
+
+puts "Here be your access token: #{access_token}"
+puts "Here be your refresh token: #{auth.refresh_token}"
