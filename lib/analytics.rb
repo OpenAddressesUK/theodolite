@@ -14,14 +14,20 @@ end
 
 class Analytics
 
-  def initialize
+  def initialize(options)
     @start = Date.today
     @today = Date.today
-    @path = 'json$'
+    @path = options[:path]
+    @profile = options[:profile] || "All Web Site Data"
+    @property = options[:property] || "Open Addresses"
   end
 
   def collection
-    profile.pageview(start_date: @start, end_date: @today, sort: 'date').for_path(@path).collection
+    if @path
+      profile.pageview(start_date: @start, end_date: @today, sort: 'date').for_path(@path).collection
+    else
+      profile.pageview(start_date: @start, end_date: @today, sort: 'date').collection
+    end
   end
 
   def result
@@ -33,11 +39,15 @@ class Analytics
   end
 
   def account
-    user.accounts.select { |h| h.name == "Open Addresses Ltd." }.first
+    select_resource(user.accounts, "Open Addresses Ltd.")
+  end
+
+  def property
+    select_resource(account.web_properties, @property)
   end
 
   def profile
-    account.profiles.select { |p| p.name == "https://alpha.openaddressesuk.org" }.first
+    select_resource(property.profiles, @profile)
   end
 
   def client
@@ -50,6 +60,10 @@ class Analytics
   def access_token
     access = OAuth2::AccessToken.from_hash client, {:refresh_token => ENV['LEGATO_OAUTH_REFRESH_TOKEN'] }
     access.refresh!
+  end
+
+  def select_resource(resource, name)
+    resource.select { |r| r.name == name }.first
   end
 
 end
