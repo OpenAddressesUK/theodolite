@@ -135,7 +135,7 @@ describe Metrics do
 
   context 'API analytics' do
 
-    it 'gets the count' do
+    it 'gets the theodolite count' do
       Timecop.freeze
 
       expect_any_instance_of(Analytics).to receive(:result) { 123 }
@@ -147,6 +147,24 @@ describe Metrics do
                         name: "address-api-usage",
                         time: DateTime.now,
                         value: 123
+                      }.to_json).
+                      once
+
+      Timecop.return
+    end
+
+    it 'get the sorting-office count' do
+      Timecop.freeze
+
+      expect_any_instance_of(Analytics).to receive(:result) { 1974 }
+
+      Metrics.sorting_office_usage
+
+      expect(WebMock).to have_requested(:post, "username:password@metrics.openaddressesuk.org/metrics/sorting-office-usage").
+                      with(:body => {
+                        name: "sorting-office-usage",
+                        time: DateTime.now,
+                        value: 1974
                       }.to_json).
                       once
 
