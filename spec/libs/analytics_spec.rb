@@ -8,7 +8,7 @@ describe Analytics do
       VCR.use_cassette('analytics_gets_me_some_analytics') do
         a = Analytics.new
 
-        expect(a.result).to eq(23)
+        expect(a.result).to eq(29)
       end
     end
   end
