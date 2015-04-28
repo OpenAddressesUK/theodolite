@@ -19,14 +19,15 @@ In our research we learnt more about why these alternative addresses exist, who 
 
 #### There is a legal address
 
-There is a legal basis for addresses. Legislation requires people building [new properties](/blog/2015/03/31/better-addresses-new-addresses) to inform their local authority that the property exists and request a number and street name that delivery services, emergency services, people and other organisations can identify and locate it. It is a legal requirement to clearly label a property to allow these services to physically identify and locate an address.
+There is a legal basis for addresses. Legislation requires people building new properties to inform their local authority that the property exists and request a number and street name that delivery services, emergency services, people and other organisations can identify and locate it. It is a legal requirement to clearly label a property to allow these services to physically identify and locate an address.
 
-The legislation can be found here:
-England and Wales - [Towns Improvement Clauses Act 1847](http://www.legislation.gov.uk/ukpga/Vict/10-11/34) and the [Public Health Act of 1925](http://www.legislation.gov.uk/ukpga/Geo5/15-16/71)
-Scotland - the [Civic Government (Scotland) Act 1982](http://www.legislation.gov.uk/ukpga/1982/45/section/97)
-Northern Ireland - [The Local Government (Miscellaneous Provisions) Order (NI) 1995](http://www.legislation.gov.uk/nisi/1995/759/contents)
+For the truly dedicated the legislation can be found here:
 
-The process for publishing these legal addresses is not perfect, for example the [speed of publishing new addresses is slower](/blog/2015/03/31/better-addresses-new-addresses) than required with modern digital services, but in this article we want to discuss alternative addresses.
+* England and Wales - [Towns Improvement Clauses Act 1847](http://www.legislation.gov.uk/ukpga/Vict/10-11/34) and the [Public Health Act of 1925](http://www.legislation.gov.uk/ukpga/Geo5/15-16/71)
+* Scotland - the [Civic Government (Scotland) Act 1982](http://www.legislation.gov.uk/ukpga/1982/45/section/97)
+* Northern Ireland - [The Local Government (Miscellaneous Provisions) Order (NI) 1995](http://www.legislation.gov.uk/nisi/1995/759/contents)
+
+The process for publishing these legal addresses is not perfect, for example the [speed of publishing new addresses is slower](/blog/2015/03/31/better-addresses-new-addresses) than people need, but in this article we want to discuss alternative addresses.
 
 #### Alternative addresses have uses
 
@@ -37,7 +38,7 @@ Let’s go back to the Woolworths retail chain example with a shop known as:
 
 The first address is the legal address, it will have stayed the same even when the Woolworths store closed down and another chain moved in.
 
-The second address, the alternative, was useful to the general public. If you, or I, had wanted to visit Woolworths to buy a bag of their famous [pic’n’mix](http://news.bbc.co.uk/1/hi/england/london/7903509.stm) we would not have looked for a large sign saying ‘Unit 8’ we would have searched for the Woolworths logo sign, which would be more prominent than the legally required ‘Unit 8’.
+The second address, the alternative, was useful to the general public. If you, or I, had wanted to visit Woolworths to buy a bag of their famous [pic’n’mix](http://news.bbc.co.uk/1/hi/england/london/7903509.stm) we would not have looked for a large sign saying ‘Unit 8’ we would have looked for the Woolworths logo.
 
 <%= image_tag("blog/2015-04-28-picnmix-terry-wha.jpg", alt: "Woolworths pic'n'mix by Terry Whalebone") %>
 
@@ -55,13 +56,13 @@ In Wales many addresses are identified in both Welsh and English languages. You 
 
 *Image from Ordnance Survey OS Open Names*
 
-Sometimes the legal address is the English version, sometimes it is the Welsh. It depends on how the street was named by the local authority officer.
+Sometimes the Welsh address is first, sometimes it is the English. It depends on how the street was added to the list by the local authority.
 
-In some cases people need to use the Welsh version of the address, in others they will need to use the English version.  For example, there are many people in Wales for whom [Welsh is their primary language](http://en.wikipedia.org/wiki/Languages_of_Wales), they will find it easier to remember or locate the Welsh version of the address.
+In some cases people need to use the Welsh version of the address, in others they will need to use the English version. There are many people in Wales for whom [Welsh is their primary language](http://en.wikipedia.org/wiki/Languages_of_Wales) and who will communicate the Welsh form of the address. 
 
 For a retail shop in Wales there may even be four versions of the address (Unit 8, Welsh; Unit 8 English; Woolworths, Welsh; Woolworths, English).
 
-We have even heard of similar cases outside of Wales: roads that are known by multiple names. Maybe because the name of a road changes along its length. Maybe because the physical street sign does not match the entry in the computerised address list. Maybe because people simply know it by another name.
+We have also heard of cases outside of Wales where roads are known by multiple names. Maybe because the name of a road changes along its length. Maybe because the physical street sign does not match the entry in the computerised address list. Maybe because people simply know it by another name.
 
 There is a complex set of user needs being met by alternative addresses.
 
@@ -69,29 +70,29 @@ There is a complex set of user needs being met by alternative addresses.
 
 Elsewhere we learnt that [Companies House](https://www.gov.uk/government/organisations/companies-house), one of our current data sources, need to register addresses exactly as they are provided in company and director registration forms (for the legally curious the legislation is the [Companies Act 2006](http://www.legislation.gov.uk/ukpga/2006/46/contents)).
 
-For their own reasons a company may choose to register its address in what they regard as a preferential location, one that better suits their business. An example that was given to us is that some companies register in Windsor even though the address is actually in Slough.
+For their own reasons a company may choose to register its address in what they regard as a preferential location, one that better suits their business. Some companies register in Windsor even though the address is actually in Slough.
 
 Companies have a legal right to do this but for other people that need to use the address it is incorrect. They may need to be able to discover another form of the address to deliver services to it.
 
-Those businesses change their address because they think it will benefit their business whilst other people may choose to change part of their address because of regional identity. Some older residents of the [City of Salford](http://en.wikipedia.org/wiki/Salford,_Greater_Manchester) are still likely to declare that they live in Lancashire rather than Greater Manchester.
+Those businesses change their address because they think it will benefit their business whilst other people may choose to change the town or country in their address because of regional identity. To give just one example, some residents of the [City of Salford](http://en.wikipedia.org/wiki/Salford,_Greater_Manchester) still declare that they live in Lancashire even though Salford has been in [Greater Manchester](http://en.wikipedia.org/wiki/Greater_Manchester) since 1974.
 
 #### Rose wants to live at Rose Cottage
 
-Our final example of alternative addresses is that some people choose to name their home, to give it a personal address. The legal address might be “8 Acacia Avenue” but the person who lives there, let’s imagine that their name is Rose, might choose to call it “Rose Cottage, Acacia Avenue”. 
+Some people choose to name their home, to give it a personal address. The legal address might be “8 Acacia Avenue” but the person who lives there, let’s imagine that their name is Rose, chooses to call it “Rose Cottage”. 
 
 <%= image_tag("blog/2015-04-28-jenny-stirling.jpg", alt: "Image by Jenny Stirling") %>
 
 *Image submitted to Open Addresses photography competition by Jenny Stirling*
 
-Despite it not being a legal address they may tell friends that Rose Cottage is  their address and their friends may use think that it is the correct address when they post a Christmas card or order a gift online.
+Despite it not being a legal address Rose may tell her friends that Rose Cottage is her address. Rose's friends may think that it is the correct address when they post a Christmas card or order a gift online.
 
 This case may not have the same business needs as Woolworths, the same language needs as a Welsh speaker, or the same legal right as a company registration but Rose has chosen an alternative address for her home. That has a knock-on effect to the organisations that provide Rose with services.
 
-They need to know that that address might be called Rose Cottage. Unless the service provider can discover the legal address which matches this alternative address a sale may be lost and a Christmas card or gift may not arrive because the address can’t be found.
+Service providers need to know that that address might be called Rose Cottage. Without this knowledge a sale may be lost and a Christmas card or gift may not arrive because the address can’t be found.
 
 #### Putting citizens in control will make addresses better
 
-This tweet was in response to our [blog post about Ordnance Survey open data](https://alpha.openaddressesuk.org/blog/2015/05/09/ordnance-survey-open-data) but it is also relevant to the issues discussed in this post.
+The following tweet was in response to our [blog post about Ordnance Survey open data](https://alpha.openaddressesuk.org/blog/2015/05/09/ordnance-survey-open-data) but it is also relevant to the issues discussed in this post.
 
 <blockquote class="twitter-tweet" lang="en"><p>Like playing <a href="https://twitter.com/hashtag/opendata?src=hash">#opendata</a> twister! Good <a href="https://twitter.com/openaddressesuk">@openaddressesuk</a>, let&#39;s put addresses back in the hands of citizens <a href="https://twitter.com/hashtag/GE2015?src=hash">#GE2015</a> <a href="https://t.co/oklkblPjPw">https://t.co/oklkblPjPw</a></p>&mdash; Edafe Onerhime (@ekoner) <a href="https://twitter.com/ekoner/status/586411793456594944">April 10, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -102,31 +103,32 @@ Meanwhile alternative addresses are **needed** in many cases. We cannot expect p
 
 Instead we should be more open to alternative addresses. There are benefits to listening to and learning from how people use addresses so that we can better meet user needs.
 
-If we can build a model that supports alternative addresses:
+If we can build a model that supports alternative addresses as open data:
 
-a policeman can attend a call-out even if the caller reported Woolworths despite a new retail chain having moved into the same building
-a Welsh-language speaker can locate an address in an English-speaking part of Wales, and vice versa
-someone can enter a latitude and longitude and discover what addresses are near that point
-a company can report their address as being in Windsor yet still receive their post in Slough
-the online retailer can receive an order for Rose Cottage and deliver the parcel to the correct postal address of 8 Acacia Avenue
+* a policeman can attend a call-out even if the caller reported Woolworths despite a new retail chain having moved into the same building
+* a Welsh-language speaker can locate an address in an English-speaking part of Wales, and vice versa
+* someone can enter a latitude and longitude or What3Words addresses and discover what postal addresses are near that point
+* a company can report their address as being in Windsor yet still receive their post in Slough
+* [Meals on wheels](https://meals-on-wheels.com/) or [Casserole Club](https://www.casseroleclub.com/) can find Rose at Rose Cottage
+* the online retailer can receive an order for Rose Cottage and deliver the parcel to the correct postal address of 8 Acacia Avenue
 
 At the moment these needs are being poorly met and services will fail.
 
 Some address lists will not store the names of retail chains. Lists of Welsh addresses have patchy support for the Welsh-language. Companies House struggle to match their registered addresses to legal address. Whilst Rose will struggle to get anyone in authority to recognise that she has given a name to her home.
 
-Organisations are in control, not the people they are serving. Putting citizens in control of their addresses means service providers will find it easier to find and locate addresses. This supports the needs of both citizens and service providers, making addresses better.
+Organisations are in control, not the people they serve. Putting citizens in control of their addresses means service providers will find it easier to find and locate addresses. This supports the needs of both citizens and service providers, making addresses better.
 
 #### Open and collaborative is the right way to support alternative addresses
 
-We believe that an open and collaborative model, such as the one Open Addresses uses, is the right way to support alternative addresses and the needs that they serve.
+We believe that an open and collaborative model, such as the one that Open Addresses is building, is the right way to support alternative addresses and the needs that they serve. 
 
 Relying on formalised processes for people to register alternative addresses, or walking the streets to gather the information simply will not work: data collection is unreliable, the cost is high and new data is made available too slowly. That is why these needs are poorly met today.
 
-Instead the collaborative model that Open Addresses is building is one that learns from how people use addresses, and publishes the data in a way that allows service providers to make an informed decision on how they choose to use it.
+Instead a collaborative model that learns from how people use addresses, and publishes the data with a [confidence score](/developers/confidence) will better meet these needs. A legal address might have a higher confidence score but some service providers will make the decision to choose to trust an alternative address.
 
 We will be talking on this topic, and others, at a workshop hosted by the [Open Identity Exchange (OIX)](http://oixuk.org/) on [Wednesday 29th April](https://www.eventbrite.co.uk/e/oix-workshop-wednesday-29th-april-2015-tickets-16013440632). Why not come along to find out more ?
 
-There is a great potential for improvement in UK addresses, putting people in control will make things better.
+There is a great potential for improvement in UK addresses, let's put people in control.
 
 
 
