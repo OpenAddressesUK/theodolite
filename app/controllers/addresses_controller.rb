@@ -68,6 +68,10 @@ class AddressesController < ApplicationController
         @queries[:updated_at] = DateTime.parse(params[:updated_since])
       end
 
+      if params[:no_inference]
+        @queries[:source.ne] = "inference"
+      end
+
       if !params[:postcode].blank?
         postcode = UKPostcode.new(params[:postcode]).normalize
         @queries[:"postcode.name"] = postcode

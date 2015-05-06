@@ -112,6 +112,65 @@ RSpec.describe AddressesController, :type => :controller do
       expect(json['addresses'].count).to eq 2
 
     end
+
+    it 'leaves out inferred addresses' do
+      5.times do |i|
+        FactoryGirl.create(
+          :address,
+          pao: i,
+          town: FactoryGirl.create(:town, name: "GOTHAM CITY"),
+          source: "inference"
+        )
+      end
+
+      FactoryGirl.create(
+        :address,
+        pao: 1,
+        town: FactoryGirl.create(:town, name: "METROPOLIS"),
+      )
+
+      get :index, format: :json, no_inference: "true"
+      json = JSON.parse(response.body)
+      expect(json['addresses'].count).to eq 1
+    end
+
+    it 'leaves out inferred addresses since TIME' do
+      5.times do |i|
+        FactoryGirl.create(
+          :address,
+          pao: i,
+          source: "inference"
+        )
+      end
+
+      FactoryGirl.create(
+        :address,
+        pao: 12,
+      )
+
+      FactoryGirl.create(
+        :address,
+        pao: 1,
+        town: FactoryGirl.create(:town, name: "METROPOLIS"),
+        source: "inference",
+        created_at: 1.day.ago,
+        updated_at: 1.day.ago
+      )
+
+      FactoryGirl.create(
+        :address,
+        pao: 2,
+        town: FactoryGirl.create(:town, name: "METROPOLIS"),
+        created_at: 1.day.ago,
+        updated_at: 1.day.ago
+      )
+
+      sleep(1)
+
+      get :index, format: :json, updated_since: 1.hour.ago.xmlschema, no_inference: "true"
+      json = JSON.parse(response.body)
+      expect(json['addresses'].count).to eq 1
+    end
   end
 
   describe 'GET #show' do
