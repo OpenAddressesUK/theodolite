@@ -45,6 +45,9 @@
           <div class="home-cta-data-indicator"><span id="addresses"></span> UK addresses</div>
         </div>
         <div class="home-cta">
+          <div class="home-cta-data-indicator"><span id="inferred"></span> inferred addresses</div>
+        </div>
+        <div class="home-cta">
           <div class="home-cta-data-indicator"><span id="api"></span> Api hits yesterday</div>
         </div>
       </div>
@@ -52,11 +55,22 @@
 
     <% content_for :extra_js do %>
       function mFormatter(num) {
-        return num > 999 ? (num/1000000).toFixed(1) + '<em>m</em>' : num
+        if (num > 999999) {
+          n = (num/1000000).toFixed(1) + '<em>m</em>';
+        } else if (num > 999) {
+          n = (num/1000).toFixed(1) + '<em>k</em>';
+        } else {
+          n = num;
+        }
+        return n;
       }
 
       $.get( "https://metrics.openaddressesuk.org/metrics/total-addresses.json", function( data ) {
         $('#addresses').html(mFormatter(data.value));
+      });
+
+      $.get( "https://metrics.openaddressesuk.org/metrics/inferred-addresses.json", function( data ) {
+        $('#inferred').html(mFormatter(data.value));
       });
 
       $.get( "https://metrics.openaddressesuk.org/metrics/address-api-usage.json", function( data ) {
