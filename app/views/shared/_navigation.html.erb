@@ -21,6 +21,9 @@
     </li>
     <% end %>
     <% end %>
+    <% if user_signed_in? %>
+      <li><%= link_to('Logout', destroy_user_session_path) %></li>
+    <% end %>
   </ul>
 
   <ul class="nav nav-desktop navbar-nav">
@@ -41,6 +44,9 @@
       <a href="<%=item['path']%>"><%=item['title']%></a>
     </li>
     <% end %>
+    <% end %>
+    <% if user_signed_in? %>
+      <li><%= link_to('Logout', destroy_user_session_path) %></li>
     <% end %>
   </ul>
 
