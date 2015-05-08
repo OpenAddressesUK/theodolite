@@ -1,0 +1,29 @@
+.flash {
+  background: #ff6700;
+  padding: 8px;
+  color: white;
+  border-radius: 7px;
+  margin: 15px;
+  position: relative;
+
+  .close {
+    position: absolute;
+    right: 20px;
+    top: 7px;
+    color: #eee;
+    float: right;
+    font-size: 25px;
+    font-weight: 700;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+  }
+
+  ul {
+    margin: 7px;
+    padding: 0;
+    list-style-type: none;
+  }
+
+}
