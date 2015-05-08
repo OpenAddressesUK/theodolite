@@ -13,6 +13,7 @@
     </div>
 
     <div class='container container-content'>
+        <%= render partial: 'shared/alerts' %>
         <%= content_for?(:content) ? yield(:content) : yield %>
     </div>
 
