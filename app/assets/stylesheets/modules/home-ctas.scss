@@ -7,6 +7,10 @@
 	@extend %clearfix;
 	@include mq(smartphone) {
 		padding-top:40px;
+		padding-bottom:0;
+	}
+	&.counts {
+		padding-top:0;
 		padding-bottom:40px;
 	}
 }
@@ -21,7 +25,7 @@
 	text-align:center;
 	@include mq(medium) {
 		padding-right: 10px;
-		padding-left: 10px;	
+		padding-left: 10px;
 	}
 	@include mq(smartphone) {
 		float:none;
@@ -57,10 +61,10 @@
 	text-transform: none;
 	display:inline-block;
 	background: #FAF3D7;
-	border-radius:50px;
-	height:100px;
-	width:100px;
-	padding-top: 14px;
+	border-radius:60px;
+	height:120px;
+	width:120px;
+	padding-top: 24px;
 	font-size: 45px;
 	font-weight:700;
 	color: rgb(163, 53, 124);
