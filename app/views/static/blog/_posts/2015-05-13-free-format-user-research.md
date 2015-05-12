@@ -3,6 +3,12 @@ author: Ed Jones of Error Creative
 title: Address Entry User Research
 ---
 
+#### Context
+
+The following report was commissioned by Open Addresses and is written by Ed Jones of [Error Creative Studio](http://www.errorstudio.co.uk/).
+
+#### Summary
+
 We tested a selection of participants to confirm or disprove our hypothesis that a single-field address input form would be easier and quicker for users. The subjects were drawn from across the scale of the GDS Digital Inclusion Score. When using a single field, we found a general increase in speed of entry, **text to be finished off**
 
 Participants generally preferred a single field. We have built a [working prototype form](http://embed.openaddressesuk.org/) which can be embedded in any website, and checks data against the Open Addresses ‘[Sorting Office](/developers/sortingoffice)’ API.

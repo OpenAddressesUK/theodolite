@@ -12,7 +12,7 @@ You can try our simple, pre-packaged version of this service here:
 
 (The contribution box is optional, on your own service you could include an appropriate clause in the terms and conditions.)
 
-Free-format address input eases website user journeys, you can find details of some of our research [here - link to be added](link to come) and [here](/blog/2015/04/16/better-addresses-2).
+Free-format address input eases website user journeys, you can find details of some of our research [here](/blog/2015/05/13/free-format-user-research) and [here](/blog/2015/04/16/better-addresses-2).
 
 It makes your website more accessible and increases order completion rates. This service is particularly useful for sites or apps where the user base includes people with have low digital skills. The service removes the need for address drop-down boxes or multi-field entry that requires users to know how an address is structured within your database. Instead the computer does the hard work. Your user's life is simpler.
 
