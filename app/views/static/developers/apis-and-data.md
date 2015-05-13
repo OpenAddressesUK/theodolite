@@ -5,7 +5,7 @@ layout: default
 
 The Open Addresses platform exposes many small APIs to allow people and organisations to retrieve data from the platform, to build their own services, and to collaboratively maintain the data that the platform publishes.
 
-All of our own services are built on top of these APIs and all of our [code is open-source](https://github.com/OpenAddressesUK) under the terms of the [MIT licence](http://opensource.org/licenses/MIT). Anyone can contribute to or use the code.
+All of our own [services](/services/services-overview) such as [free-format address input](/services/free-format-address-input) are built on top of these APIs and all of our [code is open-source](https://github.com/OpenAddressesUK) under the terms of the [MIT licence](http://opensource.org/licenses/MIT). Anyone can contribute to or use the code.
 
 The APIs are still in development but currently available to be freely used by anyone. We'd love your feedback so give them a try.
 
