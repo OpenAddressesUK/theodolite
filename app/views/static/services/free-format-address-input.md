@@ -22,7 +22,7 @@ The APIs do not rely on us having a full address list. In fact, they allow users
 
 ##### Implementation
 
-We have built a simple, pre-packaged form for organisations that want to quickly embed this service. Instructions for how to include this form on your website can be found at [http://embed.openaddressesuk.org/](http://embed.openaddressesuk.org/).
+We have built a simple, pre-packaged form for organisations that want to quickly embed this service. Instructions for how to include this form on your website can be found at [http://openaddressesuk.github.io/openaddresses_form/](http://openaddressesuk.github.io/openaddresses_form/).
 
 Alternatively, if you wish to create your own version of this service you can use our [Sorting Office API](/developers/sortingoffice) and build your own. Some organisations may wish to check how [confident](/developers/confidence) we are in the results to determine whether an address is unusual enough to require an extra confirmation step with the user. That extra confidence step could include presenting the interpreted address back to the user for confirmation or correction before the user journey proceeds.
 
