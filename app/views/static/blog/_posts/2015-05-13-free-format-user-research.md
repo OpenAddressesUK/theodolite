@@ -9,7 +9,7 @@ The following report was commissioned by Open Addresses and is written by Ed Jon
 
 #### Summary
 
-We tested a selection of participants to confirm or disprove our hypothesis that a single-field address input form would be easier and quicker for users. The subjects were drawn from across the scale of the GDS Digital Inclusion Score. When using a single field, we found a general increase in speed of entry, **text to be finished off**
+We tested a selection of participants to confirm or disprove our hypothesis that a single-field address input form would be easier and quicker for users. The subjects were drawn from across the scale of the GDS Digital Inclusion Score. When using a single field, we found a general increase in speed of entry and ease of use, but more of the responsibility for accuracy is transferred from the end-user to the online service. The computer needs to do more of the hard work.
 
 Participants generally preferred a single field. We have built a [working prototype form](http://embed.openaddressesuk.org/) which can be embedded in any website, and checks data against the Open Addresses ‘[Sorting Office](/developers/sortingoffice)’ API.
 
@@ -29,10 +29,9 @@ Liverpool<br>
 L1 4AR
 </td></tr></table>
 <p>&nbsp;</p>
-
 There’s a variety of ways I will likely have to reprocess how my address fits into the usual form address input fields. Here’s a typical mental conundrum: do I put ‘Unit 205’ in street address? Should I type out ‘Unit 205, Vanilla Factory, 39 Fleet Street’ all in one field for street address? Even if enough address liness have been provided, does ’39 Fleet Street’ go into street address, and ‘Unit 205, Vanilla Factory’ go into Address Line 1 and 2? Like most people, I’d likely put ‘Unit 205’ in street address and populate the rest below, meaning ’39 Fleet Street’ becomes the second line and not, as it probably was meant to be, the street address.
 
-Once I’ve conquered that snafu, do I really need to select a county? I don’t normally put ‘Merseyside’ in the address. Why is the form asking me for this?
+Once I’ve conquered that challenge, do I really need to select a county? I don’t normally put ‘Merseyside’ in the address. Why is the form asking me for this?
 
 Of course, much of this happens in the blink of an eye. In the words of [information architect Steve Krug](https://www.sensible.com/), I generally [satisfice](http://en.wikipedia.org/wiki/Don%27t_Make_Me_Think) and succeed. (Judging by my Amazon and Ebay account, I really do.)
 
@@ -65,15 +64,11 @@ We tested the different addresses to see if entry of familiar versus unfamiliar 
 
 #### The two test forms
 
-Multi-field form
-
 <%= image_tag("blog/2015-05-13-multi-line.png", alt: "Multi-line address form") %>
 
 Test Form 1 was formatted in much the same way as the majority of address entry web forms. We added multiple field elements, one for each address part. An input element for the building number and street name, and separate elements for address Line 2, line 3, town/city, and postcode.
 
 The multiple-fields form takes inspiration from some of the better examples of multiple-field address web forms such as Paypal’s account address input, Amazon.co.uk’s delivery address form, and Gov.uk’s ‘register to vote’ web form.
-
-Single-field form
 
 <%= image_tag("blog/2015-05-13-single-field.png", alt: "Single field address form") %>
 
@@ -94,7 +89,7 @@ We asked participants to complete four tasks. We asked them to input a:
 * known address into the single field form;
 * provided unknown address into the single form field.
 
-### The results
+#### The results
 
 Our test participants ranged from 10 years old, up to those in their 60s. On the [Digital Inclusion Scale](https://www.gov.uk/government/publications/government-digital-inclusion-strategy/government-digital-inclusion-strategy#annex-2-digital-inclusion-scale-for-individuals), the range was from 3 (willing and unable) up to 9 (Expert). Most participants registered between 5–7.
 
@@ -114,7 +109,7 @@ Participants would separate the building number and road into different fields (
 
 Optional Address line 2 & 3 fields didn’t feel optional (1 person)
 
-Most participants used the mouse or trackpad to click into the next field. Only expert users seemed to know about tabbing into fields.
+Most participants used the mouse or trackpad to click into the next field. The process of typing into a field, taking their hands off the keyboard to use a mouse or trackpad, then repositioning their hands back on a keyboard to type contributed towards a slower completion time for the multiple fields form.Only expert users seemed to know about tabbing into fields when using a desktop or laptop device.
 
 There was the occasional accidental form submit when pressing enter within a field (1 person)
 
@@ -201,19 +196,21 @@ A final word on the prototype form: During subsequent user testing of this form 
 
 
 
-
 #### Addendum
 
-Users
+**Users**
+
 Please note, the acronym DIS means Digital Inclusion Score.
 
-Phillip
+*Phillip*
+
 10 years old, primary school boy
 Laptop & trackpad, Windows 8
 DIS: 7
 Personal preference: multiple field
 
 Observations
+
 * Fairly self-confident filling both forms in.
 * Unaware that certain input errors had been made, such as using his own postcode for a government address  rather than the postcode supplied.
 
@@ -221,28 +218,32 @@ Quotes
 ‘I preferred lots of boxes because it reminded me of things 
 I might miss out.’
 
-Tom
+*Tom*
+
 12 years old, secondary school boy
 Laptop & trackpad, Windows 8
 DIS: 8
 Personal preference: multiple field
 
 Observations
+
 * Confident inputting into both types of forms. 
-* Consistently put postcode first in an address. 
+* Consistently put postcode first in an address.
 * Inputted the whole address on one line within the single field.
 
 Quotes
 
 ‘[Multiple fields] felt like you were doing the correct thing.’
 
-Joan
+*Joan*
+
 60 years old, grandmother, part-time shop assistant
 Laptop & trackpad, Windows 8
 DIS: 7
 Personal preference: multiple field
 
 Observations
+
 * Confident inputting addresses in both forms. 
 * Didn’t care about case formatting of addresses (some in all capital letters, others all lower case).
 
@@ -250,23 +251,26 @@ Quotes
 Preferred multiple fields because,
 ‘it felt more familiar.’
 
-Keith
+*Keith*
+
 60 years old, grandfather, full-time engineer
 Desktop PC & mouse, Windows 10
 DIS: 9
 Personal preference: multiple field
 
 Observations
+
 * Own computer populated the multiple form fields incorrectly. 
 * Knowingly added county to the Town field because, ‘it doesn’t matter’.
-Uses [Dashlane](https://www.dashlane.com/) to pre-populate fields
+* Uses [Dashlane](https://www.dashlane.com/) to pre-populate fields
 
 Quotes
 ‘I preferred multiple fields. Format is laid out for you how it is wanted (how the information maybe required).’
 
 ‘[Multiple fields] feels structured and useful. It feels like your adding data correctly. Single didn’t.’
 
-Paula
+*Paula*
+
 43 years old, mother and business owner
 English as a second language
 Macbook Air laptop with trackpad
@@ -274,19 +278,22 @@ DIS: 8
 Personal preference: single field
 
 Observations
+
 * Consistently typed in all lowercase. 
 * Made interesting ‘mistakes’ such as ‘3 rd Floor’ and extra spaces in postcodes, such as ‘EC1A 4 HD’.
 
 Quotes
 ‘[I preferred the] single field. Lots of jumping up and down with multiple fields on mobile.’
 
-Claire
+*Claire*
+
 40 years old, full-time mother
 Macbook Pro with trackpad
 DIS: 5
 Personal preference: single field
 
 Observations
+
 * Confident filling in both forms. 
 * Struggled a little with the example provided with the single field form.
 
@@ -294,26 +301,30 @@ Quotes
 Single field form: 
 ‘I like this, you’re just so used to writing your address, I didn’t have to think, I just wrote it how I wanted to’, ‘There’s no pressure to put extra stuff in’
 
-Diane
+*Diane*
+
 64 years old, retired accountant
 Macbook Pro with trackpad, iPad, Android smartphone
 DIS: 5
 Personal preference: single field (originally answered multiple fields)
 
 Observations
+
 * Struggle with tablet and mobile text input
 
 Quotes
 ‘Oh for god’s sake, I hate that, now it says Town or City, 
 I’ll got to go back now and put Hoylake.’
 
-Matt
+*Matt*
+
 39 years old, self-employed handyman
 Macbook Pro with trackpad, iPad, Android smartphone
 DIS: 7
 Personal preference: single field
 
 Observations
+
 * Consistently put number on first line and road name on the next line.
 
 Quotes
@@ -321,38 +332,44 @@ Quotes
 
 ‘You do wonder where to click, but you always click on the box, don’t you.’
 
-Sandy
+*Sandy*
+
 30 years old, self-employed craft-maker
 Macbook Pro with trackpad
 DIS: 8
 Personal preference: undecided
 
 Observations
+
 * Felt that there wasn’t much difference between both forms - ‘You’re either entering or using tab to go to the next bit, so it’s the same thing really’
 
 Quotes
 ‘Town or City bugs me because we don’t really live in one’
 
-Tamara
+*Tamara*
+
 33 years old, full-time mother & self-employed craft-maker
 Macbook Pro with trackpad, iPad, Android smartphone
 DIS: 8
 Personal preference: single field
 
 Observations
+
 * Consistently put number on first line and road name on the next line.
 * Thought that the multi-line placeholder example was useful and meant that you would know to put the whole thing in.
 
 Quotes
 ‘On Tablet and Phone, Form 2 [single field form] was a lot easier because you don’t have to go through all the fields’
 
-Yasser
+*Yasser*
+
 50 years old, cafe-owner
 Macbook Pro with trackpad
 DIS: 3
 Personal preference: single field
 
 Observations
+
 * Had trouble getting back into the box after the postcode error, tried pressing all sorts of keys, had to be prompted to click back into the field.
 * Doesn’t know what to put in Town or City.
 
@@ -360,39 +377,43 @@ Quotes
 Thought that Form 2 was easier,
  ‘For the simple reason, you’ve got your own way and you’re used to it, you just write it your own way’
 
-Jan
+*Jan*
+
 61 years old, retired head teacher
 Macbook Pro with trackpad
 DIS: 7
 Personal preference: single field
 
 Observations
+
 * Appraised whole form before starting
 * Tablet: tried to click on the headings and expected focus to move to the fields, which it didn’t. Implementation should ensure labels.
 
 Quotes
 “Oh this is much better - easier to type into one field”
 
-George
+*George*
+
 65 years old, retired merchant sailor
 Macbook Pro with trackpad, iPad
 DIS: 4
 Personal preference: multiple fields
 
 Observations
+
 * Typed slowly, double checked each line
 * Re-read each line before clicking into the next input
 * Used trackpad to click into next field, rather than tab
 
-Lilly
+*Lilly*
+
 30 years old, midwife
 Macbook Pro with trackpad
 DIS: 5
 Personal preference: single field
 
 Observations
+
 * Quickly completed the fields, tabbed through the whole form
 * Preferred the multi-field form for the unknown-provided address as it is ‘set out and you don’t have to think as much.’
 * Stated that the single text field was better for their own address as there was no need to check the fields.
-
-
