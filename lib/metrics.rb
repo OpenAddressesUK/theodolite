@@ -30,7 +30,7 @@ module Metrics
   end
 
   def self.address_api_usage
-    analytics = Analytics.new(profile: 'https://alpha.openaddressesuk.org', path: 'json$')
+    analytics = Analytics.new(profile: 'https://alpha.openaddressesuk.org', path: '\/addresses')
     count = analytics.result
     create_metric("address-api-usage", count)
   end
