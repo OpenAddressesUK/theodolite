@@ -1,5 +1,5 @@
 
-<h1 class="address-search-title">Search for an address</h1> 
+<h1 class="address-search-title">Search for an address</h1>
 
 <script>
   function filterSearch(){
@@ -29,6 +29,15 @@
   <input type="text" class="form-control" id="postcode" name="postcode" placeholder="Postcode" value="<%= params[:postcode]%>">
 
   <button type="submit" class="btn btn-primary">Search</button>
+
+  <p><a class="btn btn-primary" data-toggle="collapse" href="#advanced" aria-expanded="false" aria-controls="collapseExample">Advanced search</a></p>
+
+  <div class="collapse" id="advanced">
+    <label class="sr-only" for="uprn">UPRN</label>
+    <input type="text" class="form-control" id="uprn" name="uprn" placeholder="UPRN" value="<%= params[:uprn]%>">
+
+    <button type="submit" class="btn btn-primary">Search</button>
+  </div>
 
 </form>
 
