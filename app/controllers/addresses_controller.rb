@@ -47,7 +47,8 @@ class AddressesController < ApplicationController
       @queries = {}
       [
         :pao,
-        :sao
+        :sao,
+        :uprn
       ].each do |name|
         @queries[:"#{name}"] = params[name].upcase if params[name]
       end
