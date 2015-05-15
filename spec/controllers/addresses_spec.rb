@@ -28,6 +28,18 @@ RSpec.describe AddressesController, :type => :controller do
       expect(json['addresses'].count).to eq(25)
     end
 
+    it 'searches for UPRNs' do
+      uprn = "10004546646"
+
+      FactoryGirl.create(:address, uprn: uprn)
+      sleep(1)
+      get :index, format: :json, uprn: uprn
+
+      json = JSON.parse(response.body)
+
+      expect(json['addresses'].count).to eq(1)
+    end
+
     it 'shows the correct pagination information' do
       30.times do |i|
         FactoryGirl.create(:address, pao: i, town: FactoryGirl.create(:town, name: "GOTHAM CITY"))
