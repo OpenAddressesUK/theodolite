@@ -13,9 +13,9 @@ All this changed a few months ago, though, when, along with [releasing a whole b
 
 You may initially think "Great! This solves all the problems with an open address database doesn't it? AddressBase users can just open up all their addressing data, OpenAddresses can suck all the data up and we'll have a lovely free dataset".
 
-Unfortunately, this is not the case, while the dispensation allows the numbers to be released, the actual addresses themselves are not covered. This means that while, in theory, councils can release datasets with addresses and UPRNs as open data, if Open Addresses were to use this data, it may open us up to litigation by Royal Mail.
+Unfortunately, this is not the case, while the dispensation allows the numbers to be released, the actual addresses themselves are not covered. This means that while, in theory, councils can release datasets with addresses and UPRNs as open data, if Open Addresses were to use this data, it may open us up to litigation. This [blogpost](https://alpha.openaddressesuk.org/blog/2015/05/09/ordnance-survey-open-data) explains more of the detail.
 
-That said, we've added UPRNs to the main Open Addresses data model (and you can even [search by UPRN in the advanced search](https://alpha.openaddressesuk.org/addresses) now). But how do you add UPRNs to Open Addresses?
+That said, thanks to [some sponsorship from the BCS](https://alpha.openaddressesuk.org/news/2015/04/20/bcs-press-release) we've added UPRNs to the main Open Addresses data model (and you can even [search by UPRN in the advanced search](https://alpha.openaddressesuk.org/addresses) now). But how do you add UPRNs to Open Addresses?
 
 Originally, the only way you could submit data to [Turbot](http://turbot.openaddressesuk.org/) was by writing code that scrapes and submits full addresses, but we've now added functionality which allows you to write code which submits the URI of an address that exists in Open Addressses already, together with a UPRN.
 
@@ -58,4 +58,4 @@ Here's some very rough Ruby code I've prepared earlier:
       end
     end
 
-Running this code with the planning data as it stands unfortunately doesn't give us any results, but, as the Open Addresses database grows (we're currently importing millions of extra records, through [inference](https://alpha.openaddressesuk.org/blog/2015/02/12/inference)), and more councils start releasing datasets containing UPRNs, this theory could quite easily be put into practice.
+Running this code with the planning data as it stands unfortunately doesn't give us any results, but, as the Open Addresses database grows (we're currently creating millions of extra records, through [inference](https://alpha.openaddressesuk.org/blog/2015/02/12/inference)), and more councils start releasing datasets containing UPRNs, this theory could quite easily be put into practice.
