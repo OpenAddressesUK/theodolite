@@ -10,7 +10,13 @@
 - title: About
   path: /about
   children:
-    - title: Meet the team
+    - title: What is an Address
+      path: /about/what-is-an-address
+    - title: History of Addresses
+      path: /about/a-short-history
+    - title: Collaborative Maintenance
+      path: /about/collaborative-maintenance
+    - title: Meet the Team
       path: /about/team
     - title: Privacy policy
       path: /about/privacy
